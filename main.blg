@@ -1,0 +1,46 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: main.aux
+A level-1 auxiliary file: Chapters/Chapter1.aux
+A level-1 auxiliary file: Chapters/Chapter2.aux
+A level-1 auxiliary file: Chapters/Chapter3.aux
+A level-1 auxiliary file: Chapters/Chapter4.aux
+A level-1 auxiliary file: Chapters/Chapter5.aux
+A level-1 auxiliary file: Chapters/Chapter6.aux
+A level-1 auxiliary file: Chapters/Chapter7.aux
+A level-1 auxiliary file: Chapters/Chapter8.aux
+A level-1 auxiliary file: Appendices/AppendixA.aux
+The style file: unsrt.bst
+Database file #1: bibliography.bib
+Repeated entry---line 596 of file bibliography.bib
+ : @book{antoniou_practical_2007
+ :                              ,
+I'm skipping whatever remains of this entry
+Warning--empty year in silva_mechatronics:_2010
+Warning--empty year in bishop_mechatronics_2002
+Warning--empty year in shetty_mechatronics_2010
+Warning--empty year in portilla-flores_dynamic_nodate
+Warning--empty year in mezura-montes_optimum_2014
+Warning--empty year in portilla-flores_integration_2007
+Warning--empty booktitle in villarreal-cervantes_control_2013
+Warning--empty year in villarreal-cervantes_control_2013
+Warning--empty booktitle in mezura-montes_dynamic_2015
+Warning--empty year in mezura-montes_dynamic_2015
+Warning--empty journal in chica_leal_optimizacion_2015
+Warning--empty year in yang_swarm_2013
+Warning--empty year in dominguez-isidro_memetic_2013
+Warning--empty year in parulekar_why_2014
+Warning--empty year in frazzoli_real-time_2002
+Warning--empty year in liu_real-time_2004
+Warning--empty year in ahat_smart_2013
+Warning--empty year in luenberger_linear_2015
+Warning--empty publisher in tuy_convex_2015
+Warning--empty booktitle in laessig_threshold_2008
+Warning--empty journal in de1975analysis
+Warning--there's a number but no series in shigley1983teoria
+Warning--empty journal in VegaMEC1
+Warning--empty school in capistran_2015
+Warning--empty year in capistran_2015
+Warning--empty journal in Swagatam_2011
+Warning--empty journal in Singer2018
+Warning--empty booktitle in deb_efficient_1998
+Warning--empty publisher in Lowry2004
+(There was 1 error message)

@@ -1,0 +1,141 @@
+
+\chapter{Computación Evolutiva} 
+\label{Chapter4} 
+La computación evolutiva es una subárea dentro de las técnicas bio-inspiradas, que abarca los métodos de resolución de problemas basados en aspectos fundamentales de la teoría de la evolución de Charles Darwin. Específicamente, los componentes de un algoritmo evolutivo, se basan el concepto del sistema evolutivo darwiniano los cuales presentan, entre otras, las siguientes características \cite{de2006evolutionary}:
+\begin{enumerate}
+\item El sistema está conformado por una o más poblaciones de individuos que compiten por recursos limitados.
+\item Las poblaciones son dinámicamente cambiantes debido al nacimiento y muerte de individuos.
+\item La aptitud es una métrica que refleja la capacidad de un individuo para sobrevivir y reproducirse.
+\item La herencia variacional: define que los descendientes se parecen a sus padres, pero no son idénticos.
+\end{enumerate}
+Estas características  permiten entender un sistema evolutivo como un proceso que dado un estado inicial (las condiciones iniciales particulares), realiza una trayectoria a través de un complejo espacio de estados que evolucionan en el tiempo. Este proceso puede ser utilizado como base teórica para el diseño de algoritmos evolutivos. Los modelos de algoritmos evolutivos más simples se centran en la evolución a lo largo del tiempo de una única población de individuos de tamaño fijo que es modificada a través de  mecanismos de reproducción y herencia. Dependiendo del problema y la estrategia, varios componentes  del algoritmo pueden ser fijos o estar sujetos a presiones evolutivas. Algunos de ellos, como el tamaño inicial de la población, el número de puntos de cruce, las probabilidades para la mutación o el cruce pueden ser ajustados de forma adaptativa \cite{angeline1995adaptive}. Desde el punto de vista computacional, los algoritmos evolutivos se pueden estudiar en diversos aspectos, como sus propiedades de convergencia, su sensibilidad a las condiciones iniciales, o su comportamiento transitorio. 
+
+A pesar de que la teoría de la evolución se había concebido como proceso computacional en diversas formas durante la primera mitad del siglo XX, su consolidación durante la década de 1960 debido a la creciente disponibilidad de computadoras digitales de bajo costo para su uso como una herramienta de simulación y modelado por parte de la comunidad científica. Varios grupos científicos comenzaron aplicar los modelos evolutivos simples, los cuales podían expresarse computacionalmente, para resolver problemas informáticos complejos como la planificación de rutas, programación de listas y optimización de diseños \cite{holland1992adaptation}\cite{weise2009global}. 
+
+De forma general, los algoritmos evolutivos exploran simultáneamente el espacio de búsqueda con una población de soluciones candidatas llamadas \textit{individuos}, a los cuales se les asocia un valor para medir su calidad. Este valor es denominado valor de aptitud (fitness en inglés), y se obtiene teniendo cuenta función objetivo evaluada en el individuo y otras características del medio ambiente. A continuación, se seleccionan entre la población aquellas soluciones con mayor aptitud, dando lugar a la siguiente generación que consiste en réplicas de las soluciones más adecuadas que han sido genéticamente mutadas y cruzadas. Estos mecanismos perturban las variables de decisión tal manera que, o bien heredarán algunas características de sus padres, o cambian de manera aleatoria. A pesar de su simplicidad, los algoritmos evolutivos pueden producir un rango amplio de soluciones durante todo el proceso evolutivo como resultado de complejas interacciones de las condiciones iniciales, las elecciones particulares hechas para los mecanismos de reproducción y herencia, y las características de la función de aptitud. Durante las últimas décadas, el éxito de los algoritmos evolutivos en la resolución de problemas reales de optimización los ha convertido en un método popular para resolver problemas de optimización complejos mono y multiobjetivo \cite{deb2001multi}.
+
+\section{Representación}
+Basándose en la metáfora de la evolución natural, el diseño general de un algoritmo evolutivo puede dividirse en dos capas de abstracción \cite{eiben2015evolutionary}. En la capa superior se representa el contexto del problema a resolver. Una posible solución $x \in S$, es tratada como un \textit{fenotipo}, su calidad como individuo o aptitud para la supervivencia se evalúa mediante la función objetivo o una función de aptitud determinada las cuales están sujetas a optimización para dirigir la evolución de los individuos hacia un objetivo específico. En este nivel se aplican mecanismos de selección como los descritos en la sección \ref{Seleccion}. Por otra parte, en el nivel inferior, los fenotipos son representados mediante genotipos, al igual que en la naturaleza, cada ser vivo es una instancia de su genoma $g \in G $, donde $G$ es el espacio generado por todas combinaciones de los valores posibles en las variables de diseño. Los genotipos son son estructuras de datos que pueden manipularse para producir variaciones en las posibles soluciones. En este nivel se aplican los mecanismos de reproducción (Véase sección \ref{Reproduccion}). La relación genotipo-fenotipo $gpm$ enlaza  las dos capas de abstracción y puede plantearse como $x = gpm (g)$ \cite{weise2009global}. Para la representación de genotipos las siguientes estructuras de datos pueden ser utilizadas:
+\begin{enumerate}
+\item\textbf{Representación binaria}: Es la codificación natural para representar genotipos. Esta representación discretiza el espacio de búsqueda de fenotipos continuos, donde el genotipo es una cadena binaria de longitud $l$ que genera $2^l$ puntos en todo el espacio de búsqueda. Idealmente, todos estos puntos deberían estar dispersos de manera uniforme para evitar cualquier sesgo hacia una región en particular del espacio de búsqueda \cite{chiam_issues_2006}.
+\item\textbf{ Representación entera}: Consiste en representar a los individuos como arreglos de números enteros. Este enfoque resulta efectivo en problemas de optimización combinatoria como el problema del agente viajero; donde una solución al problema se plantea como un vector de enteros $\vec{x}=(i_1,i_2,...,i_n)$ que representa un recorrido desde $i_1$ hasta $i_2$, y así sucesivamente terminando con  $i_{n-1}$  hasta $n$ y de regreso a $i_1$. Luego, los operadores cruzamiento y mutación resultan sencillos de definir en comparación con una representación binaria para este problema. La evaluación de los individuos consiste en sumar los costos de viajar de la cuidad $i_1$,$i_2$,...,$i_n$ \cite{michalewicz_genetic_1995}.  
+\item\textbf{ Representación real}: Se representan los individuos como vectores de valor real. Esta representación es utilizada para problemas de optimización continua donde las variables de decisión son dimensiones, masas o potencias \cite{deb_optimization_2004}.
+\item\textbf{Representación híbrida}: El genotipo de los individuos se conforma mediante una representación binaria, una representación real, y una bandera que indican la representación se va a usar en cada generación. Se deben realizar procedimientos de sincronización entre ambas representaciones para que luego de aplicar los operadores correspondientes, ambas mantengan el mismo valor \cite{okabe_evolutionary_2003}. 
+
+\item\textbf{Representación mediante árboles}: Esta representación se utiliza para manipular programas de computadora como datos, que luego puedan compilar, enlazar y ejecutar otros programas o apoyar a un intérprete para ejecutar los nuevos programas. Se aplica en la programación de compiladores para manipular el árbol de análisis sintáctico de un programa y en la compilación de expresiones \cite{Koza94geneticprogramming}
+\end{enumerate}
+
+
+\section{Función de aptitud}
+La función de aptitud (\textit{fitness} en inglés) no solo refleja la calidad o jerarquía de un individuo con respecto a otros en la población, sino que también puede incorporar información de densidad hacía una región determinada del espacio de búsqueda. De esta manera, no sólo se considera qué tan buena es una solución candidata, sino también la diversidad general de la población. Esto puede mejorar la posibilidad de encontrar el óptimo global así como el rendimiento del algoritmo de optimización de manera significativa. La aptitud no solo puede depender de la solución candidata en sí misma, sino de toda la población del algoritmo evolutivo y en caso de que se conozca de las soluciones óptimas \cite{weise2009global}.
+\section{Selección}\label{Seleccion}
+En el proceso  de selección se elige cierto número de individuos en la población de acuerdo a su valor de aptitud. Al igual que en la naturaleza, aquellos individuos con mayor capacidad para adaptarse al medio y sobrevivir, prevalecerán para reproducirse. A mayor valor de aptitud un individuo tendrá más probabilidades de reproducirse y de pasar sus genes a la próxima generación. 
+Los mecanismos de selección pueden ser agrupados en dos categorías: mecanismos de selección con reemplazo y sin reemplazo \cite{weise2009global}. En un mecanismo de selección sin reemplazo, cada individuo de la población se toma en consideración para la reproducción a lo sumo una vez y por lo tanto también aparecerá en conjunto de individuos seleccionados para la reproducción una vez como máximo. Por otra parte, los mecanismos con  reemplazo pueden generar conjunto padres en los que se repitan individuos, lo cual se corresponde con el hecho de que en la naturaleza, un individuo puede tener múltiples descendientes.
+
+Los mecanismos de selección tienen un gran impacto en el rendimiento de los algoritmos evolutivos, por lo que su comportamiento ha sido objeto de varios estudios, destacándose los trabajos Goldberg y Deb \cite{Goldberg91acomparative}, Sarma y De Jong \cite{sarma1997analysis} , y Zhong \cite{Zhong_comparisonof}. En la literatura especializada se destacan los siguientes mecanismos de selección:
+\begin{itemize}
+\item\textbf{Selección determinista}: También llamada selección de umbral, devuelve los mejores $k$ individuos. Estos elementos se copian tantas veces como sea necesario hasta que se alcanza cantidad de inviduos deseada  en el grupo padres. El procedimiento de forma general consiste en ordenar ascendentemente la población de acuerdo a su valor de aptitud y seleccionar los primeros $k$ individuos de la población ordenada. En estos casos, los algoritmos evolutivos deben combinarse con un proceso de asignación de aptitud que incorpore información de diversidad para evitar la convergencia prematura \cite{laessig_threshold_2008}.
+
+\item \textbf{Selección proporcional al valor de aptitud}: Es el mecanismo aplicado en los algoritmos genéticos originales introducidos por Holland \cite{holland1992adaptation} donde la probabilidad $P (x_i)$ del individuo $x_i \in X$ de ser seleccionado para la reproducción es proporcional a su aptitud $fitness (x_i)$ (sujeto a maximización) en comparación con la sumatoria de las aptitudes los individuos de la población. Esta relación en su forma original se define en la ecuación a continuación:
+\begin{equation}
+   P(x_i)= \frac{fitness(x_i)}{\sum_{j\neq i}{fitness(x_j)}}
+\end{equation}
+Existe una amplia variedad de estrategias de selección que realizan distribuciones de probabilidad como la selección del resto estocástico y selección estocástica universal. El método más conocido es la selección de la rueda de la ruleta de Monte Carlo por De Jong \cite{de1975analysis}, donde de manera imaginaria los individuos son posicionados en una rueda de ruleta. Los individuos con mayor valor de aptitud  ocupan mayor área por lo que será más probable que la ruleta se detenga sobre ellos. Este procedimiento se repite hasta que se hayan seleccionado los $k$ individuos padres. 
+\item \textbf{Selección por torneo}: La selección mediante torneos, es uno de los esquemas de selección más populares y efectivos. En la selección por torneo, $k$ elementos se seleccionan de la población y se comparan entre sí en un torneo. El ganador de esta competencia es seleccionado para la reproducción. El individuo con mayor valor de aptitud en la población ganará todos los concursos en los que participe y, por lo tanto se repetirá más en el conjunto de padres. El peor individuo en la población perderá todos sus desafíos frente a otros candidatos \cite{weise2009global}.
+
+\end{itemize}
+
+
+\section{Reproducción}\label{Reproduccion} 
+El siguiente paso en la estructura general de un algoritmo evolutivo es la reproducción. Los operadores de reproducción utiliza la información obtenida en la generación actual para generar nuevas soluciones candidatas que se evaluarán en la siguiente generación. A continuación se describen los operadores básicos de reproducción \cite{weise2009global}:
+\begin{enumerate}
+\item \textbf{Creación}: Consiste en crear un nuevo genotipo sin antepasados o herencia. Por lo tanto, se puede comparar con la aparición de las primeras células vivas a partir de la mezcla de ciertos elementos químicos. La operación de creación se usa para generar un nuevos genotipos con una configuración aleatoria ya que en la generación cero, aún no se ha obtenido información sobre el espacio de búsqueda. 
+\item \textbf{Duplicación}: Se asemeja a la división celular, lo que resulta en dos individuos similares a uno de los padres.  La operación de duplicación se usa para crear una copia exacta de un genotipo existente.
+\item \textbf{Cruza}: Al igual que en la reproducción sexual, la cruza o recombinación combina dos genotipos parentales dando lugar a un nuevo genotipo que incluye rasgos de ambos ancestros. 
+
+\item \textbf{Mutación}: Realiza variaciones pequeñas y aleatorias en el genotipo de un individuo, al igual que su contraparte natural. La cantidad de variación puede ser controlada especificando cuántos genes se van a modificar y la manera en que se modificarán los genes.
+\end{enumerate}
+
+
+
+\section{Paradigmas de la Computación Evolutiva}
+Desde su surgimiento la computación evolutiva ha sido un área de investigación fértil, dando lugar a una gran cantidad de modelos evolutivos para la resolución de problemas. No obstante, existen tres paradigmas principales que pueden ser analizados independientemente pues se distinguen desde el punto de vista conceptual y de diseño. 
+\subsection{Programación Evolutiva}
+Las métodos de programación evolutiva (PE) fueron propuestos  Fogel  en su tesis doctoral en 1964, donde fueron utilizados para solucionar problemas de control \cite{fogel1993applying}. En general, es difícil distinguir la Programación Evolutiva de los Algoritmos Genéticos y las Estrategias Evolutivas. Sin embargo existen diferencia que distinguen la programación evolutiva del resto de los paradigmas.
+
+Según \cite{weise2009global}, a pesar de que no existe una especificación clara o variante algorítmica para la programación evolutiva; se puede identificar una diferencia semántica con respecto a las demás clases de algoritmos evolutivos. Mientras que la mayoría de los algoritmos evolutivos, los individuos de una especie son la metáfora biológica de las soluciones candidatas, en la programación evolutiva, se considera que una solución candidata es una especie. Por lo tanto, la mutación y la selección son los únicos operadores utilizado en la PE y la recombinación generalmente no se aplica. El esquema de selección utilizado en la programación evolutiva es normalmente bastante similar al método clásico. En determinados aspectos del enfoque de la programación evolutiva se han fusionado con estas otras áreas de investigación.
+
+
+\subsection{Estrategia evolutivas}
+Las Estrategias Evolutivas fueron propuestas por Rechenberg en \cite{rechenberg1973evolution} como una técnica de optimización experimental basadas en los conceptos de adaptación y evolución. Este tipo de algoritmo evolutivo presenta las siguientes características que las diferencian de los demás paradigmas evolutivos \cite{schwefel1995contemporary} \cite{weise2009global}:
+\begin{enumerate}
+\item Generalmente utilizan vectores reales de tamaño fijo como representación de soluciones candidatas.
+\item La mutación y selección son los operadores principales.
+\item La mutación modifica los componentes de un vector $x_i$ utilizando números aleatorios de una distribución normal.
+\item Generalmente utiliza selección de truncamiento con una estrategia de población variable 
+$(\mu+\lambda)$ donde $\mu$ es el número de padres y $\lambda$ es el número de hijos.
+\item La regla de $\frac{1}{5}$ definida por Rechenberg plantea que el cociente del número de mutaciones exitosas entre el número total de mutaciones debe ser de aproximadamente igual a $\frac{1}{5}$. 
+\end{enumerate}
+
+\subsection{Algoritmos Genéticos}
+Los algoritmos genéticos fueron reconocidos formalmente como un nuevo  enfoque para la resolución de problemas gracias a los trabajos de Holland \cite{holland1962outline} \cite{holland1969adaptive} \cite{holland1992adaptation} en la década de 1960. 
+Los algoritmos genéticos (GA por sus siglas en inglés) son una subclase de algoritmos evolutivos que se distingue por el uso de representación binaria para los genotipos. En un algoritmo genético los elementos del espacio de búsqueda son cadenas binarias o matrices de otros tipos elementales. Los genotipos se usan en las operaciones de reproducción mientras que los valores de la función objetivo se calculan con base en los fenotipos que se obtienen a través del mapeo genotipo-fenotipo \cite{weise2009global}.
+
+Los GA también implementan la noción biológica de la aptitud de una forma diferente a las estrategias vistas anteriormente. Los algoritmos basados en paradigmas como Estrategias de Evolución o Programación Evolutiva usan la aptitud para determinar qué descendientes sobreviven hasta la edad adulta (es decir, cuáles son los que llegarán a ser padres). Luego, los individuos que conformar el conjunto de padres tienen las mismas oportunidades de reproducirse. Ocasionalmente, se podría permitir que ciertos individuos sobrevivan hasta la edad adulta y luego pasen intactos a la nueva generación. Sin embargo, tales sistemas no son biológicamente probables ni computacionalmente deseables ya que permitir que los individuos sobrevivan y se reproduzcan indefinidamente puede resultar en una pérdida significativa de diversidad en la población y puede aumentar la probabilidad de que el algoritmo quede atrapado en un mínimo local. Los GA atacan este problema de varias formas. Una estrategia válida es  permitir (con poca frecuencia) que nuevos individuos reemplacen a las individuos en la próxima generación a pesar de que estos últimos presente un mejor valor de aptitud. Otra forma de atacar este problema es mediante un modelo generacional en el cual los padres sobreviven exactamente una generación y son completamente reemplazados por su descendencia \cite{de2006evolutionary}.
+\section{Evolución Diferencial}
+Desarrollada por Storn y Price en 1996, la Evolución Diferencial (ED) se ha convertido en uno de los algoritmos más eficientes en la resolución de problemas no lineales de optimización numérica, como es el caso de los problemas de optimización de diseño mecatrónico abordados en el presente trabajo de tesis.
+
+En el artículo \textit{``Differential Evolution - A simple and efficient adaptive scheme for global optimization over continuous spaces"} Storn y Price definen la ED como método de búsqueda directa paralela que utiliza un conjunto de $NP$ vectores  de $D$ dimensiones $x_{i,G}; i = 1; 2; ...; NP$  como población para cada generación $G$. Donde $NP$ es el tamaño de la población el cual se mantiene constante durante el proceso de minimización. La población inicial de vectores se elige de forma aleatoria siguiendo una distribución de probabilidad uniforme.
+
+Una de las características más significativas de la ED es su operador de mutación definido en la ecuación \ref{mutacionED}. El vector mutado o vector ruido $v_{i,G+1}$ se genera a partir tres vectores seleccionados aleatoriamente, tal que los indices aleatorios cumplan que $ i \neq r_1 \neq r_2 \neq r_3$. Luego $v_{i,G+1}$ se calcula sumando la diferencia ponderada entre dos vectores de los vectores a un tercer vector.
+\begin{equation} \label{mutacionED}
+v_{i,G+1} = x_{r_1,G} + F (x_{r_2 ,G}-x_{r_3,G})
+\end{equation}
+Donde $F >0$ es una constante real qué determina que tan amplia será la variación diferencial. Una vez obtenido el vector ruido se procede a realizar la cruza. Como se describe en la ecuación \ref{cruzaED}, esta operación consiste recorrer cada variable $j$  generando un número aleatorio $randb(j)$  si este es menor que la probabilidad de cruza $CR$ la variable $u_{ji,G+1}$ tomará el valor de  $v_{ji,G+1}$. 
+\begin{equation} \label{cruzaED}
+  u_{ij,G+1} = 
+\begin{cases}
+    v_{ij,G+1},& \text{si($randb(j) \leq CR$) o $j=rnbr(i)$}\\
+    x_{ij,G},& \text{ en otro caso}
+\end{cases}
+\end{equation}
+Nótese que en la ecuación anterior $rnbr(i)$ es número entero aleatorio entre 1 y $D$ que garantiza que  $u_{i,G+1}$ herede al menos uno de los valores de $v_{i,G+1}$. 
+
+En el artículo original el mecanismo selección se basa en un criterio voraz. El vector $u_{i,G+1}$ sustituye al padre  $x_{ji,G}$ si tiene un menor valor de función objetivo, asumiendo minimización; en caso contrario, $x_{ji,G}$ se conserva para la próxima generación. Gracias a la flexibilidad de este algoritmo otros mecanismos de selección pueden ser utilizados con éxito. En este sentido se destaca el trabajo de Mezura en \cite{mezura2004simple} donde se incorpora un mecanismo simple para el manejo de restricciones que prioriza las soluciones factibles o aquellas que violan menor cantidad de restricciones. Este enfoque de manejo de restricciones no agrega ningún parámetro adicional definido por el usuario al algoritmo de evolución diferencial, obteniéndose además resultados competitivos con respecto a tres técnicas representativas del estado del arte en problemas de optimización con restricciones. El pseudo-código de la ED se puede se describe en el Algoritmo \ref{alg:ED}, donde $G_{MAX}$ es la cantidad de generaciones a obtener, y $NP$ es el tamaño de la población.
+\begin{algorithm}
+	\begin{algorithmic}[1]
+		\STATE Generar aleatoriamente una población inicial $x_{i,G}; \quad \forall i,i = 1, 2, ..., NP$. 
+        \STATE Evaluar la población inicial $f(x_{i,G}); \quad  \forall i,i = 1, 2, ..., NP$. 
+
+         \FOR{$G \in \{1,\dots,G_{MAX}\}$}
+            \FOR{$i \in \{1,\dots,NP\}$}
+             \STATE Seleccionar aleaoriamente $r_1$, $r_2$,$r_3$, tal que $ r_1 \neq r_2 \neq r_3  \neq i$
+             
+             \STATE Generar aleatoriamente el índice $randb(j)=(1,D)$ 
+               \FOR{$j \in \{1,\dots,D\}$}
+              \IF{($randb(j) \leq CR) \quad \OR \quad (j==randb(j))$}
+              	\STATE $u_{ij,G+1} = x_{r_1j,G} + F (x_{r_2 j ,G}-x_{r_3 j,G})$
+              	\ELSE 
+                  \STATE $u_{ij,G+1} = x_{ij,G}$
+                \ENDIF
+              \ENDFOR
+               \IF{$f(u_{i,G+1}) \leq f(x_{i,G})$}
+                  \STATE $x_{i,G+1} = u_{i,G+1}$
+                  \ELSE
+                 \STATE $x_{i,G+1} = x_{i,G}$
+               \ENDIF
+           \ENDFOR
+          \ENDFOR
+        
+	\end{algorithmic}
+	\caption{Algoritmo de Evolución Diferencial}\label{alg:ED}
+\end{algorithm}
+
+
+\section{Conclusiones del capítulo}
+Los algoritmos evolutivos son un método eficiente para resolver problemas de optimización que presenten espacios de búsqueda complejos, y  pueden ser considerados algoritmos de optimización global.  En las últimas décadas se han desarrollado una gran diversidad de variantes de algoritmos evolutivos con aplicaciones en ramas como la optimización numérica y combinatoria  \cite{wright1991genetic} \cite{han2000genetic}, la robótica \cite{nolfi2016evolutionary} \cite{wang2016double},  el diseño ingenieril \cite{yildiz2013comparison}\cite{dasgupta2013evolutionary}, entre otros.
+Además de su simplicidad y flexibilidad ante la incorporación de nuevos operadores o mecanismos para el manejo de restricciones, la ventaja principal de los algoritmos evolutivos en comparación con otros métodos de optimización es que se requiere una comprensión menor de la naturaleza del espacio búsqueda (no necesitan información de la derivada) para la construcción de heurística eficaz. Por lo tanto, los Algoritmos Evolutivos pueden ser aplicados a un diferentes categorías de problemas de problemas de optimización obteniendo resultados positivos.
+
+
+
+

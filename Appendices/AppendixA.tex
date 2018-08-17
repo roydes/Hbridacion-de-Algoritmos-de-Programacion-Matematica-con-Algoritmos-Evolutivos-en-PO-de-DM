@@ -1,0 +1,73 @@
+% Appendix A
+
+\chapter{Implementación de variantes de HNMED en Matlab} % Main appendix title
+
+\label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
+
+\lstset{
+	literate=%
+	{á}{{\'a}}1
+	{í}{{\'i}}1
+	{é}{{\'e}}1
+	{ý}{{\'y}}1
+	{ú}{{\'u}}1
+	{ó}{{\'o}}1
+	{ě}{{\v{e}}}1
+	{š}{{\v{s}}}1
+	{č}{{\v{c}}}1
+	{ř}{{\v{r}}}1
+	{ž}{{\v{z}}}1
+	{ď}{{\v{d}}}1
+	{ť}{{\v{t}}}1
+	{ň}{{\v{n}}}1                
+	{ů}{{\r{u}}}1
+	{Á}{{\'A}}1
+	{Í}{{\'I}}1
+	{É}{{\'E}}1
+	{Ý}{{\'Y}}1
+	{Ú}{{\'U}}1
+	{Ó}{{\'O}}1
+	{Ě}{{\v{E}}}1
+	{Š}{{\v{S}}}1
+	{Č}{{\v{C}}}1
+	{Ř}{{\v{R}}}1
+	{Ž}{{\v{Z}}}1
+	{Ď}{{\v{D}}}1
+	{Ť}{{\v{T}}}1
+	{Ň}{{\v{N}}}1                
+	{Ů}{{\r{U}}}1, 	
+	language=Matlab,%
+	%basicstyle=\color{red},
+	inputencoding=latin1,
+	breaklines=true,%
+	morekeywords={matlab2tikz},
+	keywordstyle=\color{blue},%
+	morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+	identifierstyle=\color{black},%
+	stringstyle=\color{mylilas},
+	commentstyle=\color{mygreen},%
+	showstringspaces=false,%without this there will be a symbol in the places where there is a space
+	numbers=left,%
+	numberstyle={\tiny \color{black}},% size of the numbers
+	numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{gamma,beta,alpha},emphstyle=[1]\color{black}, %some words to emphasise
+	%emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+Teniendo en cuenta que las variantes con mejor desempeño fueron HNMED-V5 y HNMED-V6 se describirá a detalle su codificación en Matlab. La implentación de todos los algoritmos esta concebida para estos sean ejecutados dentro de un entorno, en el cual se abstrae la implementación del algoritmo del problema de optimización que se resuelve. En la URL:  \url{https://github.com/roydes/Implementacion-y-Pruebas}, se encuentra la implementación de los algoritmos y los experimentos realizados. Se puede observar que el entorno donde se ejecuta el algoritmo configura el valor de $N$, los límites $bounds$ y número de evaluaciones $NE$ antes de la ejecución del algoritmo para el $i$-ésimo problema de optimización. Las funciones $get\_problem\_n()$ y $get\_problem\_bound()$ acceden a variables globales  de $Ns$ (arreglo de número de variables por problema) y $bounds$ (límites de las variables por problemas).
+
+ La función $evaluate\_x\_i(x,n)$ llama a la función $f(x)$ para el problema actual y asigna a las posiciones $n+1$ el valor de función objetivo y $n+2$ la suma de violación de restricciones obtenidas para  $x$. la función f(x) accede al número del problema actual mediante selecciona la función correspondiente. Para agregar nuevas funciones o modificar el orden de los problemas se debe cambiar la estructura de control $switch$ de la función.
+ 
+ La función de ordenamiento $sort\_by\_rules(X)$ utiliza el método de ordenación de inserción. Toma un arreglo de vectores como parámetros y devuelve el arreglo ordenado de acuerdo a las reglas de Deb, las cuales fueron codificadas en la función boleana descrita en \ref{sec:Debs rules}.
+ 
+ La función $update\_E\_F(E,E,best)$ agrega en la ultima posición del arreglo $E\_F$(contiene tuplas $\left[ E,F(best)\right]$) una tupla con el valor actual de $E$ y $F(best)$. El arreglo es devuelto por la función $HNMEDV5$para generar la gráfica de convergencia de la ejecución.
+ 
+Por último las funciones auxiliares más importantes son descritas secciones posteriores. Para más detalles sobre la ejecución de los algoritmos de forma individual y de los experimentos descritos en el Capítulo \ref{Chapter7}, leer el archivo README.txt en el repositorio.     
+ 
+\section{Codificación de HNMED-V5 }
+\lstinputlisting{Matlab/HNMEDV5.m}
+\section{Codificación de HNMED-V6 }
+\lstinputlisting{Matlab/HNMEDV6.m}
+\section{Codificación de las reglas de Deb}\label{sec:Debs rules}
+\lstinputlisting{Matlab/compare_by_rules.m}
+\section{Codificación de la Estrategia de Inicialización de los Símplecess}
+\lstinputlisting{Matlab/generate_border_simplex.m}

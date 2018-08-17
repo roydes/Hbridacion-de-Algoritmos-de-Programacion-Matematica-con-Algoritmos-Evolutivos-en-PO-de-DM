@@ -1,0 +1,219 @@
+% Chapter 2
+
+\chapter{Optimización} % Main chapter title
+
+\label{Chapter2} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+Como concepto general, la optimización es el proceso de obtener el mejor resultado dadas ciertas circunstancias \cite{rao_engineering_2009}. El patrón de encontrar condiciones o estados óptimos de funcionamiento, se observa en la naturaleza tanto  sistemas físicos que tienden a converger a estados mínimos de energía, como en organismos unicelulares o seres complejos como el ser humano cuando evalúan las mejores opciones como base para tomar decisiones beneficiosas \cite{nocedal2006numerical}. Estas decisiones tienen la finalidad de minimizar el esfuerzo requerido o maximizar el beneficio deseado, lo que implica la selección de valores para una serie de variables interrelacionadas, pero centrando la atención en un único objetivo diseñado para cuantificar el desempeño y medir la calidad de la decisión. Debido a que el esfuerzo requerido o el beneficio deseado de una situación práctica pueden expresarse como una función de ciertas variables de decisión las cuales describen las características del problema, la optimización consiste en encontrar las condiciones que dan el valor máximo o mínimo de una función \cite{rao_engineering_2009}. Antoniou y Lu \cite{antoniou_practical_2007} proporcionan un concepto que desde el punto de vista metodológico divide la optimización en teoría y práctica:
+
+\begin{quote}
+\textit{``La teoría de la optimización es la rama de las matemáticas que abarca el estudio cuantitativo de los óptimos y los métodos para encontrarlos. La práctica de la optimización, por otro lado, es la colección de técnicas, métodos, procedimientos y algoritmos que se pueden utilizar para encontrar el óptimo".}
+\end{quote}
+El presente trabajo se enfoca en la práctica de la optimización debido a que se propondrá un algoritmo que sea capaz de resolver de forma eficiente un conjunto de problemas de optimización. Los problemas en ingeniería son generalmente problemas de programación no lineales (NLP por sus siglas en inglés). La palabra programación significa planificación en este contexto \cite{belegundu_optimization_2011}. La rama de la optimización llamda programación matemática será objeto de análisis en el siguiente capítulo donde se abordarán sus conceptos y métodos principales que además servirán como base para la solución propuesta. 
+
+Diferentes autores coinciden en que una fase importante de la optimización, visto como proceso científico, es la modelación del problema una vez que ha sido identificado en la realidad \cite{rao_engineering_2009} \cite{nocedal2006numerical} \cite{luenberger_linear_2015}. El modelado es el proceso de expresar observaciones sobre un problema práctico en forma matemática, mediante funciones que realizan operaciones matemáticas básicas como suma, resta, multiplicación y división sobre las variables de decisión medidas en las unidades correspondientes. Las observaciones se refieren a los datos obtenidos para el problema en cuestión, variando ciertos parámetros del problema a través de experimentos. El objetivo de los  modelos matemáticos es proporcionar una predicción del comportamiento del problema para diferentes entradas. Si el modelo no arroja los resultados esperados, este puede refinarse realizando más experimentos como es el caso de los modelos de optimización en el proceso de diseño mecatrónico \cite{arora_optimization:_2015}.  
+
+En el presente trabajo los modelos serán planteados como problemas de minimización. Esta norma es adoptada sobre todo en problemas de ingeniería y responde al hecho de que si un punto $x^*$ corresponde al valor mínimo de la función $f(x^*)$, el mismo punto también corresponde al valor máximo del negativo de la función, $-f(x^*)$. Por tanto, sin pérdida de generalidad, la optimización de una función puede considerarse entonces como la minimización ya que el máximo de una función se puede encontrar buscando el mínimo del negativo de la misma función. Además, se debe destacar que las operaciones de multiplicación, división, adición o sustracción de $f(x)$ por una constante positiva $c$, no cambiarán la solución óptima $x^*$ \cite{rao_engineering_2009}. 
+
+El modelo general de minimización se plantea en \cite{luenberger_linear_2015} de la siguiente forma:
+\begin{equation}
+Min\quad  f(\vec{x})
+\end{equation}
+sujeto a:
+\begin{equation}
+h_{i}(\vec{x})=0 \quad i=1,2,...,m
+\end{equation}
+\begin{equation}
+g_{j}(\vec{x}) \geq 0 \quad j=1,2,...,p 
+\end{equation}
+\begin{equation}
+	\vec{x} \in S
+\end{equation}
+Donde $\vec{x}$ es el vector de variables de decisión que pertenece a $S$ un subespacio de ${\rm I\!R}^{n}$. $f(\vec{x})$  es la función objetivo a optimizar, siendo $h_{i}(\vec{x})$ y $g_{j}(\vec{x})$ las restricciones de igualdad y desigualdad respectivamente. Teniendo en cuenta que tanto $f(\vec{x})$ , $h_{i}(\vec{x})$ como $g_{j}(\vec{x})$ son funciones escalares de $\vec{x}$. 
+\section{Variables de diseño}\label{variables}
+Las variables en la función objetivo se denotan como las \textit{variables de diseño} o \textit{variables de decisión}. Si bien ambos términos son válidos, en lo adelante se denominarán variables de diseño, debido a que el campo de acción del presente trabajo radica en el área de la mecatrónica.
+
+En problemas de ingeniería las variables de diseño pueden ser capacidades de producción o demanda en un problema de transporte, las dimensiones de una estructura o sus atributos de material, para un problema de optimización de la estructura por ejemplo. A partir de consideraciones prácticas, las variables de diseño pueden tomar valores dentro de un límite inferior y un límite superior solamente. Estas pueden ser números reales o tomar valores dentro de un conjunto discreto de números, así como pueden estar definidas para valores binarios o enteros \cite{arora_optimization:_2015}.
+
+El conjunto de variables de diseño se representa mediante  el vector de diseño $\vec{x}=[x_1, x_2, ..., x_n]^T$. Para la definición de $\vec{x}$ se plantea un espacio cartesiano $n$-dimensional llamado \textit{espacio de diseño}. Donde el i-ésimo eje de coordenadas cartesianas constituye una variable de diseño $x_i$ para  $i = \{1,2, ..., n\}$. Luego cada  vector de diseño describe un punto en el espacio de diseño \textit{n}-dimensional llamado punto de diseño  el cual representa una solución factible o no al problema de optimización \cite{rao_engineering_2009}.
+
+Desde el punto de vista de la complejidad computacional se debe tener el orden del vector $\vec{x}$, ya que la dimensionalidad impacta directamente la complejidad del problema, y por tanto en la eficacia de los métodos y su rapidez de convergencia.
+
+\section{Función Objetivo}
+La \textit{función objetivo} es el criterio con respecto al cual se optimiza el diseño, expresado en función de un conjunto de variables. La elección de la función objetivo se rige por la naturaleza del problema. Los procedimientos de diseño convencionales apuntan a encontrar un diseño aceptable o adecuado que sea capaz de satisfacer los requisitos funcionales o de otro tipo del problema bajo estudio. En general, existe más de un diseño aceptable para el mismo problema, y el objetivo de la optimización es elegir el mejor de los muchos diseños aceptables y disponibles \cite{arora_optimization:_2015}.
+
+La elección de la función objetivo parece ser directa en la mayoría de los problemas de diseño. Sin embargo, existen casos donde la optimización con respecto a un criterio particular puede conducir a resultados que pueden no ser satisfactorios con respecto a otro criterio. Por lo tanto, la selección de la función objetivo puede ser una de las decisiones más importantes en todo el proceso de diseño óptimo. 
+
+\section{Restricciones de Diseño}
+Los problemas de optimización con restricciones surgen de modelos que incluyen requisitos explícitos sobre las posibles soluciones. En estos problemas, las posibles soluciones se restringen lo cual puede ser desafiante para los algoritmos de optimización, sobre todo si se trata de un problema multivariable con varias restricciones no lineales, alcanzar un solución factible en el espacio de diseño puede resultar una tarea difícil. De forma general se pueden encontrar restricciones de igualdad y desigualdad. Estas restricciones pueden ser límites simples a las variables dentro de ciertos intervalos, restricciones lineales generales, o desigualdades no lineales que representan relaciones complejas entre las variables. 
+
+En un problema de optimización con sólo restricciones de desigualdad $g_j (\vec{x}) \leq 0$, el conjunto de puntos $X$ que satisfacen la ecuación $g_j (X) = 0$, forma una hipersuperficie en el espacio de diseño que se denomina \textit{superficie de restricción}. Dicha superficie  divide el espacio de diseño en dos regiones: la región cuyos  puntos cumplen la condición de que $g_j (X) <0$ y la otra en la que $g_j (X)> 0$. Tanto los puntos que se encuentran en la hipersuperficie como los puntos que se encuentran dentro de la región donde $g_j (X) <0$  pertenecen al \textit{espacio factible}, y son a su vez \textit{puntos factibles}. Por el contrario, los puntos que se encuentran en la región donde $g_j (X)> 0$ son \textit{puntos no factibles}. El conjunto de las superficies de restricción $g_j (X) = 0$, para $j = \{1,2, ..., m\}$, que separa la región factible se denomina \textit{superficie de restricción compuesta} \cite{rao_engineering_2009}.
+
+Si una restricción de desigualdad $g_i(x) \leq 0$ evaluada en un punto factible $x_k$ cumple que $g_i(x_k)=0$, se dice que esta restricción está \textit{activa}  e \textit{inactiva} en caso de que $g_i(x_k) < 0$. Lo planteado anteriormente puede generalizarse  para las restricciones de igualdad $h_i(\vec{x})=0$, si se aplica la convención de que cualquier restricción de igualdad $h_i(\vec{x})=0$ se encuentra activa en cualquier punto factible. Las restricciones activas en un punto factible $x_k$ restringen el espacio factible en la vecindad de $x_k$, mientras que las otras restricciones inactivas no tienen influencia en vecindades de $x_k$. Si las restricciones del problema excluyen al mínimo de la función es común que el mínimo factible se encuentre en la hipersuperficie. Por lo tanto, al estudiar las propiedades de un punto mínimo local, se debe centrar la  atención en las restricciones activas.\cite{luenberger_linear_2015}. Los puntos de diseño pueden ser clasificados de acuerdo a la región a que pertenecen de la siguiente forma según \cite{rao_engineering_2009}:
+\begin{itemize}
+\item[1.] \textbf{Punto libre factible}: no se encuentran en ninguna superficie y es factible.
+\item[2.] \textbf{Punto libre no factible}:  no se encuentran en ninguna superficie y está fuera del espacio factible.
+\item[3.] \textbf{Punto límite factible}:  Se encuentra en una o más de una superficie de restricción y cumple con todas las restricciones.
+\item[4.] \textbf{Punto límite no factible}: Se encuentra en una o más de una superficie de restricción y no cumple con todas las restricciones.
+ \end{itemize}
+
+En ingeniería las restricciones pueden ser clasificadas de acuerdo a los requerimientos planteados para el sistema que se estudia. Las restricciones que se aplican colectivamente para obtener un diseño aceptable se denominan restricciones de diseño. Las restricciones que representan limitaciones en el comportamiento o el rendimiento del sistema se denominan restricciones funcionales o de comportamiento. Las restricciones que representan limitaciones físicas en las variables de diseño, como la disponibilidad, fabricabilidad y transportabilidad, se conocen como restricciones geométricas o laterales  \cite{rao_engineering_2009}.
+
+Cuando tanto la función objetivo como todas las restricciones son funciones lineales de $x$, se considera un problema de programación lineal. Las ciencias de la gestión y la investigación de operaciones hacen un amplio uso de los modelos lineales. Por otra parte, los problemas de programación no lineal son aquellos en los que al menos algunas de las restricciones o la función objetivo son funciones no lineales. Este tipo de problemas son más comunes en las ciencias físicas y en la ingeniería como es el caso de la Mecatrónica. \cite{nocedal2006numerical}. En la sección 2.6 se abordan una serie de clasificaciones entre las que se encuentran este tipo de problemas. 
+\section{Óptimos locales y globales}
+Para presentar las características de los óptimos locales y globales en una función objetivo se debe introducir primeramente el concepto de \textit{convexidad}. Si se tienen un conjunto $S$ de elementos y se cumple que: para todo par de elementos cualesquiera $x_1$ y $x_2$ de $S$, el segmento rectilíneo que une ambos se encuentra dentro de $S$, entonces el conjunto $S$ es un \textit{conjunto convexo}. De lo contrario se dice que el  conjunto $S$, es \textit{no convexo}, véase Figura 2.2. 
+%Vea la Figura 1.7 para los conjuntos convexo y no convexo.
+
+\begin{figure}[h]  
+\centering 
+  \begin{subfigure}[b]{0.45\linewidth}
+    \begin{tikzpicture}   
+       \draw[->] (-0.5,0) -- (5,0) node[right] {$x$};
+        \draw[->] (0,-0.5) -- (0,5) node[above] {$y$};
+          \draw (2,0.5) -- (0.5,2.5) -- (2,4.5) --(3.5,4.5) --             (5,2.5)--(3.5,0.5)--cycle;
+          \draw (1.5,3) -- (3.5,1.5)  node[right] {$x_2$};
+          \draw (3.5,1.5) -- (1.5,3) node[above] {$x_1$};
+          %\draw  -- (1.4,2.5) (3,1.4) node[above] {$x_1$};
+          %\draw (1,2.5) -- (3.5,1.4)  node[left] {$x_2$};
+          \foreach \point in {(3.5,1.5), (1.5,3)} {
+          \fill[black] \point circle[radius=1pt];
+          }
+      \qquad    \qquad \qquad \qquad
+    \end{tikzpicture}%
+    \caption{Conjunto convexo} \label{fig:M1}  
+  \end{subfigure}
+\begin{subfigure}[b]{0.45\linewidth}
+  \begin{tikzpicture}  
+     \draw[->] (-0.5,0) -- (5,0) node[right] {$x$};
+        \draw[->] (0,-0.5) -- (0,5) node[above] {$y$};
+          \draw (2,0.5) -- (0.5,2.5) -- (2,4.5) --(3.5,4.5) --            (3,2.5)--(5,2.5)--(3.5,0.5)--cycle;
+          \draw (2.6,4) -- (4,2.2)  node[right] {$x_2$};
+          \draw (4,2.2) -- (2.6,4) node[above] {$x_1$};
+          %\draw  -- (1.4,2.5) (3,1.4) node[above] {$x_1$};
+          %\draw (1,2.5) -- (3.5,1.4)  node[left] {$x_2$};
+          \foreach \point in {(2.6,4),(4,2.2)} {
+          \fill[black] \point circle[radius=1pt];
+          } 
+\end{tikzpicture}
+\caption{Conjunto no convexo} \label{fig:M2}  
+\end{subfigure}
+\caption{Convexidad de conjuntos}
+\end{figure}
+	 
+El concepto de convexidad puede ser aplicado tanto a conjuntos como a funciones permitiendo analizar la función objetivo para identificar si tiene un solo mínimo. Un ejemplo ilustrativo consiste en plantear una función uni-variable $f(x)$ y dos puntos $x_1$ y $x_2$ en los cuales el valor de la función es $f(x_1)$ y $f(x_2)$ respectivamente. Si para cualquier punto $x$ que se seleccione entre $x_1$ y $x_2$, el valor de $f(x)$ es menor que el valor de la función lineal $l(x)$ que intersecta a $f(x_1)$ y $f(x_2)$, entonces $f(x)$ es una \textit{función convexa} y $-f(x)$ es una \textit{función cóncava}, véase Figura 2.3.  
+Formalmente se plantea que una función $f(x)$ definida sobre un conjunto convexo ${\rm I\!R}^{n}$,  es convexa si para todo par de puntos $x_1, x_2$  y cada número real $\alpha$ en el rango $0 < \alpha <1$, se cumple la desigualdad \cite{antoniou_practical_2007}: 
+\begin{equation}
+f [\alpha x_1 + ( 1-\alpha) x_2]  \leq \alpha f(x_1) + (1-\alpha) f (x_2). 
+\end{equation}
+Luego si $x_1 \neq x_2$:
+\begin{equation}
+f [\alpha x_1 + ( 1-\alpha) x_2]  < \alpha f(x_1) + (1-\alpha) f (x_2). 
+\end{equation}
+
+
+\begin{figure}
+\centering
+\begin{tikzpicture}
+\begin{axis}[width=5in,axis equal image,
+    axis lines=middle,
+    xmin=0,xmax=8,
+    xlabel=$x$,ylabel=$y$,
+    ymin=-0.25,ymax=4,
+    xtick={\empty},ytick={\empty}, axis on top
+]
+
+% 
+\addplot[thick,domain=0.25:7,black,name path = A]  {-x/3 + 2.75} coordinate[pos=0.4] (m) ;
+\draw[thick,black, name path =B] (0.15,4) .. controls (1,1) and (4,0) .. (6,2) node[pos=0.95, color=black, right]  {$f(x)$} coordinate[pos=0.075] (a1)  coordinate[pos=0.95] (a2);
+\path [name intersections={of=A and B, by={a,b}}];
+
+% 
+\draw[densely dashed] (0,0) -| node[pos=0.5, color=black, label=below:$a$] {}(a1);
+\draw[densely dashed] (0,0) -| node[pos=0.5, color=black, label=below:$x_{1}$] {}(a);
+\draw[densely dashed, name path=D] (3,0) -|node[pos=0.5, color=black, label=below:$\alpha x_{1}+ (1-\alpha)x_{2}$] {} node[pos=1, fill,circle,inner sep=1pt] {}(m);
+\draw[densely dashed] (0,0) -|node[pos=0.5, color=black, label=below:$x_{2}$] {}(b);
+\draw[densely dashed] (0,0) -|node[pos=0.5, color=black, label=below:$b$] {}(a2);
+
+% 
+\path [name intersections={of=B and D, by={c}}] node[fill,circle,inner sep=1pt] at (c) {}; 
+
+% 
+\node[anchor=south west, text=black] (d) at (0.75,3) {$f[\alpha x_{1}+(1-\alpha)x_{2}]$};
+\node[anchor=south west, text=black] (e) at (5,2.5) {$\alpha f(x_{1})+(1-\alpha)f(x_{2})$};
+\draw[-{Latex[width=4pt,length=6pt]}, densely dashed] (d) -- (c);
+\draw[-{Latex[width=4pt,length=6pt]}, densely dashed] (e) -- (m);
+\end{axis}
+\end{tikzpicture}
+\caption{Función convexa.}
+
+\end{figure}
+
+
+Cuando la función objetivo presenta varios cambios de monotonía en todo su dominio, se le denomina como \textit{función multimodal}. La condición de multimodalidad no depende ni de la continuidad ni de la convexidad de la función. En estos casos se debe diferenciar entre un punto que representa una solución óptima global y los que representan óptimos locales. Si conoce que $S \in {\rm I\!R}^{n}$ como el conjunto de todos puntos factibles del problema, el punto $x^* \in S$  que satisface:
+\begin{equation}
+f(x^*) \leq f(x) \quad \forall x \in S
+\end{equation}
+se denomina \textit{óptimo global} o \textit{solución óptima global}. Por otra parte si un punto $x'$  tal que existe una vecindad $Q \in S$ de $x'$ que satisface:
+\begin{equation}
+f(x') \leq f(x) \quad \forall x \in Q
+\end{equation}
+se denomina \textit{óptimo local} o \textit{solución óptima local}. Cuando el problema es convexo, o sea, cuando todas las funciones $f(x)$, $h_i(x)$ $g_i(x)$ son convexas, cualquier mínimo local es global. Se dice que un problema es multiextremal cuando tiene varios mínimos locales con diferentes valores de función objetivo. Por su propia naturaleza, la optimización global requiere métodos significativamente diferentes de los utilizados en la optimización no lineal convencional, que hasta ahora se ha centrado principalmente en la búsqueda de óptimos locales.
+
+La esencia de un método iterativo de optimización es que dada una solución de inicial $x_0$ para el problema se busca una mejor. Si el método utilizado es algún procedimiento clásico de programación no lineal no existe garantía de que $x_0$ sea una solución global. La facilidad para quedar atascados en puntos estacionarios es la principal deficiencia de los métodos clásicos de programación no lineal y motiva la necesidad de desarrollar procedimientos de búsqueda globales. Por lo tanto, cualquier procedimiento de búsqueda global debe ser capaz de abordar la cuestión fundamental de cómo trascender una solución factible dada, que puede ser un punto estacionario y converger al mínimo global.
+\cite{tuy_convex_2015}.
+%Vea la Figura funciones convexo y no convexo.
+
+\section{Clasificación de Problemas de Optimización}
+En la literatura especializada se puede encontrar diversas clasificaciones para los problemas de optimización que abarcan desde la existencia de las restricciones y su naturaleza, la naturaleza de la función objetivo y las variables de diseño hasta las clasificaciones basadas en la complejidad del problema medido por el número de variables (dimensionalidad) y el número de restricciones\cite{luenberger_linear_2015}. La tarea de clasificar el problema de optimización puede resultar beneficiosa para la elección del algoritmo de optimización y el análisis de complejidad del problema. En las siguientes secciones se describen una serie clasificaciones descritas por Rao \cite{rao_engineering_2009}, las cuales abarcan un amplio espectro de problemas de optimización.
+
+\subsection{Clasificación basada en la existencia de restricciones}
+Los problemas de optimización se pueden clasificar como teniendo en cuenta la existencia de restricciones:
+\begin{itemize}
+\item [1.]  \textit{Problemas de optimización con restricciones}: Problemas en los que, las soluciones posibles necesitan cumplir con un grupo de requerimientos representados como funciones escalares de las variables de diseño.
+\item [2.]  \textit{Problemas de optimización sin restricciones}: Surgen de aplicaciones prácticas en las cuales, aunque existen restricciones naturales sobre las variables,es ignorarlas y es posible ignorarlas debido a que no tienen ningún efecto sobre la solución óptima. Los problemas no restringidos surgen también como reformulaciones de problemas de optimización restringida, en los cuales las restricciones son reemplazadas por términos de penalización en la función objetivo que tienen el efecto de desalentar las violaciones de restricciones.
+\end{itemize}
+
+\subsection{Clasificación basada en la naturaleza de las variables de diseño} 
+En función de la naturaleza de las variables de diseño, los problemas de optimización se pueden clasificar en dos categorías:
+\begin{itemize}
+\item[1.]  \textit{Problemas de optimización estática} o \textit{problemas de optimización de parámetros}: son los problemas que consisten en encontrar valores para un conjunto de parámetros de diseño que minimizan a ciertas funciones prescritas de estos parámetros al tiempo que cumplen con las restricciones a las que están sujetas. 
+\item[2.] Problema de \textit{trayectoria} o \textit{optimización dinámica}: en este caso el objetivo es encontrar un conjunto de parámetros de diseño, que son todos funciones continuas de algún otro parámetro, y que a la vez minimiza una función objetivo sujeta a un conjunto de restricciones. En estos problemas, se deben realizar varias optimizaciones en secuencia y se puede requerir una estrategia general para lograr una solución óptima global.
+\end{itemize}
+ \subsection{Clasificación basada en la estructura física del problema} 
+En esta categoría se encuentran los \textit{problemas control óptimo } (OC por sus siglas en inglés). Esta clasificación se refiere a los problemas de programación matemática que involucran una cantidad de etapas, donde cada etapa evoluciona desde la etapa anterior de una manera prescrita. Por lo general, se describen mediante dos tipos de variables: variables de control (diseño) y las variables de estado. Las variables de control definen el sistema y rigen la evolución del sistema de una etapa a la siguiente, y las variables de estado describen el comportamiento o el estado del sistema en cualquier etapa. El problema es encontrar un conjunto de variables de control tales que la función objetivo total (también conocida como índice de rendimiento) en todas las etapas se minimice; cumpliendo con un conjunto de restricciones sobre las variables de control y de estado.
+
+\subsection{Clasificación basada en la naturaleza de las ecuaciones involucradas} 
+Esta clasificación se basa en la naturaleza de las expresiones para la función objetivo y las restricciones.  Incluye los siguientes problemas: 
+\begin{itemize}
+\item [1.] \textit{Problema de programación no lineal}: abarca a los problemas en los que al menos una de las funciones involucradas es no lineal. Este es el problema general de programación matemática, el resto  pueden considerarse como casos especiales de dicho problema.
+\item[2.]\textit{Problema de programación geométrica (GMP)}: es un problema de optimización en el que la función objetivo y las restricciones se expresan como posinomios en $\vec{x}$. Una función $f(\vec{x})$ se denomina posinomial si se puede expresar como la suma de los términos de potencia de cada uno de la forma: $c_i{x_1}^{ai1} {x_2}^{ai2} \cdots {x_n}^{ain}$; donde $c_i$ y $a_{ij}$ son constantes con $c_i> 0$ y $x_j> 0$.
+\item[3.] \textit{Problema de programación cuadrático}: Un problema de programación cuadrática es un problema de programación no lineal con una función objetivo cuadrática y restricciones lineales. Los problemas de optimización analizados en el presente trabajo son ejemplos de este tipo de problemas. 
+\item[4.] \textit{Problema de programación lineal}: Si la función objetivo y todas las restricciones son funciones lineales de las variables de diseño; el problema de programación matemática se denomina problema de programación lineal (PL).
+\end{itemize}
+Esta clasificación resulta útil a la hora de aplicar un método efectivo para solucionar el problema ya que existen  métodos especiales disponibles para la solución eficiente de una clase particular de problemas. Los métodos de programación cuadrática secuencial pueden ser aplicados a problemas cuadráticos mientras que el método simplex puede ser aplicado a un problema de programación lineal, por ejemplo. Luego, la primera tarea de un diseñador sería investigar la clase de problema encontrado y seleccionar el método correspondiente.
+
+\subsection{Clasificación basada en los valores permisibles de las variables de diseño}
+Dependiendo de los valores permitidos para las variables de diseño, los problemas de optimización se pueden clasificar como problemas de programación enteros y de valor real:
+\begin{itemize}
+\item[1.] \textit{Problema de programación entera}: Se refiere a problemas donde algunas o todas las variables de diseño $x_1, x_2, ..., x_n$ están restringidas para tomar solo valores enteros (o discretos).
+\item[2.] \textit{Problema de programación real}: Cuando se permite que todas las variables de diseño tengan un valor de los reales, el problema de optimización se denomina problema de programación de valor real.
+
+\end{itemize}
+\subsection{Clasificación basada en la naturaleza determinista de las variables}
+Respecto a la naturaleza determinista de las variables involucradas, los problemas de optimización se pueden clasificar como:
+\begin{itemize}
+\item [1.]\textit{Problemas determinísticos}: En esta categoría se incluyen la mayoría de los problemas de optimización. En estos problemas se asume que si ciertas acciones son realizadas se podrá predecir con certeza tanto el resultado que se obtiene como los requerimientos para realizar estas acciones \cite{dantzig_linear_2016}.
+\item[2.] \textit{Programación estocástica}:
+Un problema de programación estocástica es un problema de optimización en el que algunos o todos los parámetros (variables de diseño y / o parámetros preasignados) son probabilísticos (no deterministas o estocásticos).
+
+\end{itemize}
+ 
+\subsection{Clasificación basada en la separabilidad de las funciones} 
+Los problemas de optimización pueden clasificarse como problemas de programación \textit{separables} y\textit{ no separables} basados en la separabilidad de las funciones objetivo y de restricción. Un problema de programación separable es aquel en el que la función objetivo y las restricciones son separables. Una función $f(\vec{x})$, con $\vec{x} \in {\rm I\!R}^{n}$ es separable si se puede expresar como la suma de $n$ funciones de uni-variables, $ f_1(x_1), f_2 (x_2), \cdots, f_n (x_n)$.
+
+\subsection{Clasificación basada en el número de funciones objetivo} 
+Dependiendo de la cantidad de funciones objetivo que se deben minimizar, los problemas de optimización se pueden clasificar como problemas de programación de \textit{mono o multi objetivo}. Un problema de optimización multiobjetivo involucra múltiples funciones objetivo, por tanto, existe una posibilidad de conflicto. Una forma simple de manejar el problema es construir una función objetivo general como una combinación lineal de las funciones objetivo múltiples que entran en conflicto. Así, si $f_1(\vec{x})$ y $f_2 (\vec{x})$ denotan dos funciones objetivo, se construye una nueva función objetivo (global) para el problema de optimización.
+
+
+\section{Conclusiones del capítulo}
+En el capítulo se presentan un serie de conceptos que sirven como marco teórico para la presente investigación. Se describen las características de los principales componentes de la formulación del problema de optimización: la  función objetivo, las variables de diseño y las restricciones. Se presentan los conceptos de los mínimos locales y globales mediante el análisis de convexidad de la función objetivo y su modalidad. Una vez planteado el problema de optimización se procede a la aplicación de un algoritmo capaz de resolverlo. Los algoritmos de optimización pueden ser dividios en dos grandes grupos: los algoritmos deterministas entre los que se encuentran los métodos de programación matemática y los algoritmos aproximados que engloban las técnicas evolutivas; los cuales serán abordados en los siguientes dos capítulos.
