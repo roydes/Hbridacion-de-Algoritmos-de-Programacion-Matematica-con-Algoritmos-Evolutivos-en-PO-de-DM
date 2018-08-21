@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.6.12)  21 AUG 2018 13:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.6.12)  21 AUG 2018 14:24
 entering extended mode
 **./main.tex
 (main.tex
@@ -8395,12 +8395,12 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  58444 strings out of 493305
- 1305085 string characters out of 3138865
+ 1304660 string characters out of 3138865
  1887001 words of memory out of 3000000
  59492 multiletter control sequences out of 15000+200000
  629642 words of font info for 226 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,21n,430p,2493b,3254s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 82i,21n,430p,2496b,3254s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\ESTANCIA\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ectt1200.pk>{C:/MikTex/fonts/enc/dvips/base/8r.enc}<C:/MikTex/fonts/type1/pu
 blic/amsfonts/cm/cmex10.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmmi10.pf
@@ -8410,7 +8410,7 @@ C:/MikTex/fonts/type1/public/mathpazo/fplmr.pfb><C:/MikTex/fonts/type1/public/m
 athpazo/fplmri.pfb><C:/MikTex/fonts/type1/urw/palatino/uplb8a.pfb><C:/MikTex/fo
 nts/type1/urw/palatino/uplr8a.pfb><C:/MikTex/fonts/type1/urw/palatino/uplr8a.pf
 b><C:/MikTex/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (192 pages, 2935705 bytes).
+Output written on main.pdf (192 pages, 2935681 bytes).
 PDF statistics:
  3503 PDF objects out of 3580 (max. 8388607)
  1442 named destinations out of 1728 (max. 500000)
