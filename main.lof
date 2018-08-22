@@ -23,14 +23,14 @@
 \contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de las variantes HNMED\relax }}{102}{figure.caption.522}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {7.1}{\ignorespaces Resultados de las pruebas de Bonferroni-Dunn para las variantes NMELA y NM en los tres casos de estudio del mecanismo de cuatro barras (MCE1-3) y los dos casos de estudio del griper (GCE1-2).\relax }}{119}{figure.caption.693}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Gr\IeC {\'a}ficas de convergencia para las variantes HNMED y ED/rand/1/bin para el experimento B\relax }}{124}{figure.caption.715}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el Experitmento C\relax }}{129}{figure.caption.731}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Gr\IeC {\'a}ficas de convergencia para las variantes HNMED y ED/rand/1/bin para el Experimento D\relax }}{134}{figure.caption.756}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en experimento E.\relax }}{136}{figure.caption.758}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por HNMED-V5 y CLSHADE para el Experimento F\relax }}{141}{figure.caption.778}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por HNMED-V5 y CLSHADE para el Experimento G\relax }}{142}{figure.caption.783}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Mecanismos correspondientes a las mejores soluciones encontradas por el algoritmo HNMED-V6 en los tres casos de estudio de la S\IeC {\'\i }ntesis \IeC {\'O}ptima del Mecanismo de Cuatro Barras.\relax }}{148}{figure.caption.793}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Efectores finales correspondientes a las mejores soluciones encontradas por el algoritmo HNMED-V6 en los dos casos de estudio de la S\IeC {\'\i }ntesis \IeC {\'O}ptima de un Efector Final de Tres Dedos.\relax }}{150}{figure.caption.796}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Visualizaci\IeC {\'o}n del suministro de energ\IeC {\'\i }a durante las 24 horas del d\IeC {\'\i }a para el funcionamiento de la microrred aislada, obtenido por el algoritmo HNMED-V6.\relax }}{153}{figure.caption.799}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el experimento B\relax }}{124}{figure.caption.719}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el Experitmento B\relax }}{127}{figure.caption.721}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el Experimento C\relax }}{132}{figure.caption.750}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el experimento C.\relax }}{134}{figure.caption.752}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por HNMED-V5 y CLSHADE para el Experimento D.\relax }}{139}{figure.caption.772}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por HNMED-V6 y CLSHADE en el Experimento E.\relax }}{140}{figure.caption.777}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Mecanismos correspondientes a las mejores soluciones encontradas por el algoritmo HNMED-V6 en los tres casos de estudio de la S\IeC {\'\i }ntesis \IeC {\'O}ptima del Mecanismo de Cuatro Barras.\relax }}{146}{figure.caption.787}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Efectores finales correspondientes a las mejores soluciones encontradas por el algoritmo HNMED-V6 en los dos casos de estudio de la S\IeC {\'\i }ntesis \IeC {\'O}ptima de un Efector Final de Tres Dedos.\relax }}{148}{figure.caption.790}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Visualizaci\IeC {\'o}n del suministro de energ\IeC {\'\i }a durante las 24 horas del d\IeC {\'\i }a para el funcionamiento de la microrred aislada, obtenido por el algoritmo HNMED-V6.\relax }}{151}{figure.caption.793}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
