@@ -6,10 +6,10 @@ La investigación de algoritmos metaheurísticos y, especialmente, en la computa
 	\item  Encontrar la mejor asignación para un conjunto de variables reales (dentro de un rango dado) que representan los parámetros del algoritmo para una clase de problema.
 	\item Dadas las posibles formas de modificar un algoritmo $A$ (por ejemplo, mediante el uso de operadores adicionales) encontrar la mejor combinación para una clase de problema.
 \end{enumerate}
-El presente capítulo se enfoca fundamentalmente en esta última tarea. Sin embargo, las muestras que se pueden obtener para realizar las comparaciones en número determinado de aspectos como: operadores, problemas de optimización, parámetros, número de evaluaciones entre otros; no permiten necesariamente obtener conclusiones generales sobre los algoritmos comparados. Por tanto, la pregunta de investigación más adecuada es bajo qué condiciones  un algoritmo $A$ es mejor que $A'$ y por qué. En este caso, se trata de comparar los algoritmos propuestos con aquellos algoritmos que mejores resultados han obtenido en el conjunto específico de problemas planteados. 
+El presente capítulo se enfoca fundamentalmente en esta última tarea. Sin embargo, las muestras que se pueden obtener para realizar las comparaciones en un número determinado de aspectos como: operadores, problemas de optimización, parámetros, número de evaluaciones entre otros; no permiten necesariamente obtener conclusiones generales sobre los algoritmos comparados. Por tanto, la pregunta de investigación más adecuada es bajo qué condiciones  un algoritmo $A$ es mejor que $A'$ y por qué. En este caso, se trata de comparar los algoritmos propuestos con aquellos que mejores resultados han obtenido en el conjunto específico de problemas planteados. Para realizar estas comparaciones se realizarán mediciones que permitirán además describir el comportamiento de los algoritmos propuestos e implementar ciertas mejoras.
 \section{Diseño Experimental}
 
-El diseño experimental de la propuesta de solución se estructuran de acuerdo a la metodología planteada a continuación. El objetivo  de especificar una metodología es organizar el proceso de experimentación y garantizar la calidad de los resultados. Se plantea una metodología que contempla los siguientes pasos basados en \cite{BartzBeielstein2014ExperimentalAO}:
+El diseño experimental de la propuesta de solución se estructuran de acuerdo a la metodología planteada a continuación. El objetivo  de especificar una metodología es organizar el proceso de experimentación y garantizar la calidad de los resultados. Basado en lo presentado en \cite{BartzBeielstein2014ExperimentalAO}, se plantea una metodología que contempla los siguientes pasos:
 \begin{enumerate}
 	\item\textbf{ Planteamiento objetivos del experimento}: para cada tipo experimento se debe indicar si se realizan para:
 	\begin{enumerate}
@@ -21,7 +21,7 @@ El diseño experimental de la propuesta de solución se estructuran de acuerdo a
 	\item \textbf{Definición de medidas y pruebas de desempeño}: Con base en los objetivos del experimento se debe definir cómo realizar las mediciones:
 	\begin{enumerate}
 		\item El rendimiento será medido en términos del número de evaluaciones de la función objetivo.
-		\item Para medir la robustez del algoritmo se utilizará la estadística descriptiva: medidas de tendencia central y de dispersión de una muestra de $n$ ejecuciones del algoritmo $A$.
+		\item Para medir la robustez del algoritmo se utilizará la estadística descriptiva: medidas de tendencia central y de dispersión de una muestra de tamaño $n$ ejecuciones del algoritmo $A$.
 		\item La comparación de los algoritmos se realizará mediante pruebas de estadística inferencial: Pruebas de Friedman, Bonferroni-Dunn, prueba no paramétrica de suma de rangos de Wilcoxon.
 		\item Se utilizarán medidas como tasa de éxito de los operadores, medidas de diversidad y gráficas de convergencia para explicar o comprender comportamientos y detectar novedades.
 	\end{enumerate}
@@ -33,9 +33,9 @@ El diseño experimental de la propuesta de solución se estructuran de acuerdo a
 \end{enumerate}
 
 \section{Estadística inferencial: Pruebas estadísticas no paramétricas}
-Para la realización de las comparaciones entre los algoritmos propuestos y los de mejor desempeño encontrados en la literatura se utilizarán medidas de estadística  descriptiva y pruebas de estadística no paramétrica. A diferencia de la estadística descriptiva, cuyos cálculos son sencillos y de conocimiento general; las pruebas de estadística no paramétrica presentan procedimientos más complejos y se debe explicar claramente para que se utiliza cada una de estas pruebas.
+Para la realización de las comparaciones entre los algoritmos propuestos y los de mejor desempeño encontrados en la literatura se utilizarán medidas de estadística  descriptiva e inferencial. A diferencia de la estadística descriptiva, cuyos cálculos son sencillos y de conocimiento general; las estadística inferencial, que abarca las pruebas estadísticas no paramétrica, presentan procedimientos más complejos y se debe explicar claramente para qué se utiliza cada una de estas pruebas.
 
-La tarea esencial de la estadística inferencial es determinar conclusiones sobre un dominio completo de fenómenos (una población), a partir del análisis de una muestra limitada de instancias extraídas de ese dominio. Para lograr esto, se formulan dos hipótesis sobre el fenómeno. La hipótesis nula $H_0$ enuncia que no existen diferencias entre los fenómenos observados y la hipótesis alternativa $H_1$  el caso contrario. Sin embargo, la visión del fenómeno proporcionada por la muestra puede representar o no la realidad objetiva; esta última posibilidad se deriva del hecho de que los fenómenos en naturaleza pueden presentar variabilidad aleatoria. En cualquier caso, hasta que se evalúe rigurosamente esa posibilidad, no se pueden extraer conclusiones razonables de una muestra. La significación estadística es el aparato lógico y matemático mediante el cual se lleva a cabo esa evaluación. \cite{Lowry2004}.
+La tarea esencial de la estadística inferencial es determinar conclusiones sobre un dominio completo de fenómenos (una población), a partir del análisis de una muestra limitada de instancias extraídas de ese dominio. Para lograr esto, se formulan dos hipótesis sobre el fenómeno. La hipótesis nula $H_0$ enuncia que no existen diferencias entre los fenómenos observados y la hipótesis alternativa $H_1$  el caso contrario. Sin embargo, la visión del fenómeno proporcionada por la muestra puede representar o no la realidad objetiva; esta última posibilidad se deriva del hecho de que los fenómenos en naturaleza pueden presentar variabilidad aleatoria. En cualquier caso, hasta que se evalúe rigurosamente esa posibilidad, no se pueden extraer conclusiones razonables de una muestra. La significación estadística es el mecanismo lógico y matemático mediante el cual se lleva a cabo esa evaluación. \cite{Lowry2004}.
 
 En las pruebas no paramétricas, el estadístico $p$ es calculado en lugar de definir un valor de significancia a priori. El valor de $p$ determina el nivel de significancia resultante de rechazar $H_0$ y provee información sobre si la prueba estadística es significativa o no. A menor valor de $p$, resulta mayor la evidencia en contra de $H_0$. Luego el rechazo o aceptación de cada hipótesis se realiza de la siguiente forma:
 \begin{eqnarray}
@@ -114,25 +114,25 @@ APV_i=min \{v,1\} \text{, donde } v=(k-1)p_i
 Los experimentos preliminares se realizan con el objetivo de implementar las primeras variantes de la propuesta de solución y demostrar la competitividad del enfoque propuesto. Por competitividad del enfoque se entiende que los algoritmos diseñados de acuerdo al enfoque puedan obtener resultados iguales o mejores a los encontrados en la literatura especializada de acuerdo a diferentes pruebas de desempeño. Los resultados obtenidos serán medidos de acuerdo a los siguientes aspectos:
 \begin{enumerate}
 	\item \textbf{Robustez}: dada por las medidas de tendencia central y de dispersión en una muestra de $n$ ejecuciones. La estadística descriptiva permite conocer si los algoritmos logran encontrar los mínimos conocidos de la función y con qué frecuencia lo hacen. 
-	\item \textbf{Eficiencia}: dada por la tasa de convergencia de los algoritmos implementados a partir del enfoque. La taza de convergencia será calculada en función del número de evaluaciones. Permite conocer cuantas evaluaciones necesita un algoritmo determinado para encontrar un valor igual o cercano al mínimo.
+	\item \textbf{Eficiencia}: dada por la rapidez de convergencia de los algoritmos implementados a partir del enfoque. Para métodos deterministas se utiliza la taza de convergencia la cual determina rapidez con que este se aproxima al mínimo en cada iteración. En el caso de una metaheurística este valor varía en cada ejecución, por lo que generalmente se grafica el valor de función objetivo del mejor individuo, o el promedio de los valores de $f(x)$ de todos los individuos; para una ejecución representativa de una muestra de ejecuciones como es la mediana. Debido a que la operación con mayor complejidad temporal es generalmente la función objetivo, es común que se grafique el valor de f(x) en función del número de evaluaciones para tener una medida la rapidez del método independientemente de plataforma (hardware y software) en que se ejecuta.  
 	\item \textbf{Nivel de significación}: las pruebas de estadística inferencial se aplicarán para determinar si existen diferencias significativas entre el desempeño (ya sea mejor o peor) de algoritmos propuestos y los encontrados en la literatura especializada.
 \end{enumerate}
 
-Para esto se someten a prueba todas las variantes descritas en la sección \ref{sec:HNMEDV1}. Se realizan cuatro experimentos preliminares. El experimento A  consiste en obtener las estadísticas descriptivas para evaluar la robustez del algoritmo y la calidad de las soluciones. Además se realizaran gráficas de convergencia de la ejecución correspondiente a la mediana de la muestra para todos los algoritmos algoritmos propuestos y la  ED/rand/1/bin en los 6 problemas de optimización.
+Para esto se someten a prueba todas las variantes descritas en la sección \ref{sec:HNMEDV1}. Se realizan tres experimentos preliminares. El experimento A  consiste en obtener la estadística descriptiva e inferencial para tomar decisiones de diseño sobre el método de programación matemática a utilizar.
 
-El experimento B consiste en realizar una comparación múltiple entre las variantes propuestas y la ED/rand/1/bin mediante las pruebas de Friedman y Bonferroni-Dunn, manteniendo el mismo número de evaluaciones para los 6 problemas de optimización a resolver. 
+El experimento B consiste en realizar una comparación múltiple entre las variantes HNMED propuestas y la ED/rand/1/bin mediante las pruebas de Friedman y Bonferroni-Dunn, manteniendo el mismo número de evaluaciones para los 6 problemas de optimización a resolver. 
 
-En el experimento C se reduce el número de evaluaciones de las variantes híbridas teniendo en cuenta la tasa de convergencia de cada algoritmo. Se realiza un ajuste de parámetros para cada variante y se mide el desempeño tanto desde el punto de vista estadístico  tanto descriptivo como inferencial.
+En el experimento C se reduce el número de evaluaciones de las variantes híbridas teniendo en cuenta las gráficas de convergencia de cada algoritmo. Se realiza un ajuste de parámetros para cada variante y se mide el desempeño tanto desde el punto de vista estadístico descriptivo como inferencial.
 
  \subsection{Experimento A: Pruebas de estadísticas sobre el Método Nelder Mead con Expansión de Longitud Aleatoria}\label{Experimento A: Pruebas de estadísticas sobre el Método Nelder Mead con Expansión de Longitud Aleatoria}
 
- Debido a que la hibridación bajo el enfoque propuesto plantea la interacción entre los métodos de búsqueda local y global, el primer experimento se realiza para responder preguntas de investigación, relacionadas con el comportamiento del Nelder Mead al utilizar aleatoriedad en sus operadores:
+ Debido a que la hibridación bajo el enfoque propuesto plantea la interacción entre los métodos de búsqueda local y global, el primer experimento se realiza para responder preguntas de investigación, relacionadas con el comportamiento del Nelder Mead al introducir aleatoriedad o información global en sus operadores:
  \begin{enumerate}
- 	\item ¿ Como introducir aleatoriedad en los operadores del NM para aumentar su capacidad de exploración?
+ 	\item ¿ Cómo introducir aleatoriedad en los operadores del NM para aumentar su capacidad de exploración?
  	\item ¿ Introducir operadores que exploren puntos distantes de la vecindad actual puede aumentar el desempeño en los problemas de optimización a resolver?
  
  \end{enumerate}
-Para responder estas interrogantes se plantearon las variantes NMELA descritas en las sección \ref{sec:NMELA}.
+Para responder estas interrogantes se plantearon las variantes NMELA descritas en las Sección \ref{sec:NMELA}.
  \subsubsection{Definición de medidas}
  Se obtendrá para cada algoritmo una muestra de $n$ ejecuciones. Cada elemento de la muestra es el valor de la función objetivo del mejor individuo factible encontrado en la ejecución $i$ para $i= \{ 1,2,...,n\}$. Para cada muestra se obtendrá:
  \begin{enumerate}
@@ -141,7 +141,9 @@ Para responder estas interrogantes se plantearon las variantes NMELA descritas e
  	\item \textbf{Mediana}: valor que se encuentra en el centro de la muestra ordenada. Esta medida es fundamental para evaluar el desempeño ya que el promedio puede ser afectado por valores anómalos. 
  	\item \textbf{Promedio}: valor característico o tendencia central la muestra.
  	\item \textbf{Desviación estándar}: grado de dispersión de las soluciones registradas en la muestra con respecto al promedio.
- 	\item \textbf{Tasa de convergencia}: velocidad con que la mejor solución encontrada se aproxima al mínimo.  
+ 	\item \textbf{Prueba de Friedman}: con nivel significancia $\alpha=0.05$ para determinar si existen diferencias significativas entre el desempeño de al menos dos de los algoritmos comparados. 
+ 	\item \textbf{Prueba Bonferroni-Dunn}: con nivel significancia $\alpha=0.05$. Teniendo en cuenta el promedio jerarquías obtenidas en la prueba de Friedman se determina entre cuáles de los algoritmos comparados existe una diferencia significativa de desempeño.
+
  \end{enumerate}
  \subsubsection{Planificación pre-experimental y configuración}
  Para el presente experimento se generaron 5 muestras por cada problema, correspondientes a los algoritmos NMELA, NMEILA, NM2ELA, las versiones deterministas NM y el método Nelder Mead con operador de encogimiento. Cada muestra tiene un tamaño tamaño $n=31$. Las pruebas se realizaron sobre los resultados obtenidos en los 5 primeros problemas de optimización correspondientes al diseño cinemático. Las ejecuciones se llevaron a cabo en una computadora con procesador AMD Athlon II X2, memoria RAM 2GB, sistema operativo Windows 7 con arquitectura de 64 bits y como entorno de programación se utilizó  MatLab R2016b. 
@@ -169,10 +171,10 @@ Para responder estas interrogantes se plantearon las variantes NMELA descritas e
  \end{enumerate}
  
  \subsubsection{Presentación de resultados}
- En la Tabla \ref{tab:resultados NMELA} se observan los resultados obtenidos para las medidas de estadística descriptivas definidas para el experimento. Las primeras dos columnas muestran los resultados correspondientes a las variantes deterministas NS(versión descrita en sección \ref{sec: Metodo NM}) y el NM con operador de encogimiento (NMS).  La Figura \ref{fig: Bonferroni-Dunn -NMELA} muestra los resultados de las pruebas post hoc de Bonferroni-Dunn para los 5 problemas de diseño cinemático. Las etiquetas 1 y 2, corresponden al NM y NMS, y las etiquetas 3, 4 y 5 corresponden a NMELA, NMEILA y NM2ELA respectivamente. Las lineas son los intervalos de confianza calculados. En caso de que dos intervalos se traslapen indica que la sub-hipótesis nula se cumple para ambos algoritmos.
+ En la Tabla \ref{tab:resultados NMELA} se observan los resultados obtenidos para las medidas de estadística descriptivas definidas para el experimento. Las primeras dos columnas muestran los resultados correspondientes a las variantes deterministas NM(versión descrita en sección \ref{sec: Metodo NM}) y el NM con operador de encogimiento (NMS).  La Figura \ref{fig: Bonferroni-Dunn -NMELA} muestra los resultados de las pruebas post hoc de Bonferroni-Dunn utilizando los promedios de jerarquías obtenidos en la prueba de Friedman para los 5 problemas de diseño cinemático. Las etiquetas 1 y 2, corresponden al NM y NMS, y las etiquetas 3, 4 y 5 corresponden a NMELA, NMEILA y NM2ELA respectivamente. Las lineas son los intervalos de confianza calculados. En caso de que dos intervalos se traslapen indica que la sub-hipótesis nula se cumple para ambos algoritmos.
  \begin{table}[]  
  	\centering
- 	\caption{Resultados estadísticos obtenidos por las versiones aleatorizadas del NM. Los mejores resultados se resaltan en negritas.}
+ 	\caption[Resultados estadísticos obtenidos por las versiones aleatorizadas NMELA en el Experimento A.]{Resultados estadísticos obtenidos por las versiones aleatorizadas NMELA en el Experimento A. Los mejores resultados se resaltan en negritas.}
  	\label{tab:resultados NMELA}
  		\resizebox{\textwidth}{!}{%
  	\begin{tabular}{clccccc}
@@ -242,11 +244,11 @@ Para responder estas interrogantes se plantearon las variantes NMELA descritas e
 		\includegraphics[width=\linewidth]{Figures/NMELA_FB_P5}
 		\caption{GCE2} \label{fig:M4} 
 	\end{subfigure}
-	\caption{Resultados de las pruebas de Bonferroni-Dunn para las variantes NMELA y NM en los tres casos de estudio del mecanismo de cuatro barras (MCE1-3) y los dos casos de estudio del griper (GCE1-2).} \label{fig: Bonferroni-Dunn -NMELA} 
+	\caption[Resultados de las pruebas de Bonferroni-Dunn para las variantes NMELA y NM en Experimento A.]{Resultados de las pruebas de Bonferroni-Dunn para las variantes NMELA y NM en Experimento A. Se etiquetan en el eje vertical del 1 al 5 los algoritmos NM, NMS, NMELA, NMEILA, NM2ELA respectivamente.} \label{fig: Bonferroni-Dunn -NMELA} 
 	
 \end{figure}
 \subsubsection{Observaciones}
-En la Tabla \ref{tab:resultados NMELA} se pueden observar que las variantes NMLEA obtienen los mejores resultados en todas las medidas de estadística descriptiva y son capaces de acercase, igualar o superar en el mejor valor de la muestra a los mínimos encontrados para estos problemas. Sin embargo las medidas de tendencia central y dispersión  se encuentran lejos de estos mínimos en la mayoría de los problemas, lo que indica la sensibilidad de estos algoritmos a los puntos iniciales. El resultado de las pruebas de Friedman y Bonferroni-Dunn indican en  todos los problemas existen diferencias significativas entre al menos una variante determinista y una variante aleatorizada. Para los problemas MCE2 y MCE3 existen diferencias significativas entre el grupo determinista marcado en azul y las versiones propuestas que se encuentran a la izquierda en el grupo rojo con las mejores jerarquías. La capacidad del método Nelder-Mead para utilizar eficazmente información proveniente de regiones lejanas al área donde se encuentra operando, fue la característica fundamental por la cual fue elegido como método de búsqueda local para el diseño de los algoritmos híbridos HNMED. 
+En la Tabla \ref{tab:resultados NMELA} se pueden observar que las variantes NMLEA obtienen los mejores resultados en todas las medidas de estadística descriptiva y son capaces de acercase, igualar o superar en el mejor valor de la muestra a los mínimos encontrados para estos problemas. Sin embargo las medidas de tendencia central y dispersión  se encuentran lejos de estos mínimos en la mayoría de los problemas, lo que indica la sensibilidad de estos algoritmos a los puntos iniciales. El resultado de las pruebas de Friedman y Bonferroni-Dunn indican en  todos los problemas existen diferencias significativas entre al menos una variante determinista y una variante aleatorizada. Para los problemas MCE2 y MCE3 existen diferencias significativas entre el grupo determinista marcado en azul y las versiones propuestas que se encuentran a la izquierda en el grupo de color rojo con las mejores jerarquías. La capacidad del método Nelder-Mead para utilizar eficazmente información proveniente de regiones lejanas al área donde se encuentra operando, es la característica fundamental observada de forma experimental, por la cual se elige como método de búsqueda local para el diseño de los algoritmos híbridos HNMED. 
 
 
 
@@ -255,7 +257,7 @@ En la Tabla \ref{tab:resultados NMELA} se pueden observar que las variantes NMLE
 El primer experimento se realiza para responder preguntas de investigación básicas sobre el enfoque de hibridación propuesto:
 \begin{enumerate}
 	\item ¿ Son los algoritmos diseñados de acuerdo al enfoque propuesto capaces de hallar valores iguales o cercanos a los mínimos conocidos para los problemas planteados ?
-	\item ¿ Con qué frecuencia son los algoritmos diseñados de acuerdo al enfoque propuesto son capaces de hallar valores iguales o cercanos a  los mínimos conocidos para los problemas planteados ?
+	\item ¿ Con qué frecuencia los algoritmos diseñados de acuerdo al enfoque propuesto son capaces de hallar valores iguales o cercanos a  los mínimos conocidos para los problemas planteados ?
 	\item ¿ Con qué rapidez los algoritmos diseñados de acuerdo al enfoque propuesto son capaces converger a los mínimos conocidos para los problemas planteados ?
 	\item ¿ Presentan los algoritmos propuestos en conjunto un desempeño significativamente mejor a la Evolución Diferencial en los problemas de optimización a resolver?
 	\item ¿ Cuáles de los algoritmos propuestos presentan mejor desempeño?
@@ -268,7 +270,7 @@ Se obtendrá para cada algoritmo una muestra de $n$ ejecuciones. Cada elemento d
 	\item \textbf{Mediana}: valor que se encuentra en el centro de la muestra ordenada. Esta medida es fundamental para evaluar el desempeño ya que el promedio puede ser afectado por valores anómalos. 
 	\item \textbf{Promedio}: valor característico o tendencia central la muestra.
 	\item \textbf{Desviación estándar}: grado de dispersión de las soluciones registradas en la muestra con respecto al promedio.
-	\item \textbf{Gráfica de convergencia}: Presenta el valor de la función objetivo del mejor individuo en la población en cada evaluación.
+	\item \textbf{Gráfica de convergencia}: Presenta el valor de la función objetivo del mejor individuo en la población en cada evaluación para la ejecución correspondiente a la mediana de la muestra. La graficación de estos valores permite observar la rapidez de convergencia de los métodos.
     \item \textbf{Prueba de Friedman}: con nivel significancia $\alpha=0.05$ para determinar si existen diferencias significativas entre el desempeño de al menos dos de los algoritmos comparados. 
 	\item \textbf{Prueba Bonferroni-Dunn}: con nivel significancia $\alpha=0.05$. Teniendo en cuenta el promedio jerarquías obtenidas en la prueba de Friedman se determina entre cuáles de los algoritmos comparados existe una diferencia significativa de desempeño.     
 \end{enumerate}
@@ -319,11 +321,11 @@ La configuración de parámetros utilizada por las variantes HNMED y la ED es la
 \end{table}
 
 \subsubsection{Presentación de resultados}
-En la Tabla \ref{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin  experimento B.} se muestran los resultados obtenidos en la estadísticas descriptivas para las variantes propuestas y la ED/rand/1/bin en los 6 problemas de optimización. Los resultados ganadores se resaltan en letra negrita. A pesar de que existe el análisis teórico para determinar la tasa de convergencia, los experimentos realizados se limitaron a la graficación del valor de $f(x)$ presentado por el mejor individuo factible en la población, en función del número de evaluaciones de $f(x)$ denominado $NEF$. En la Figura \ref{fig: Gráficas de convergencia para las variantes HNMED y ED/rand/1/bin} se muestran las gráficas de convergencia de la ejecución correspondiente a la mediana de la muestra. En caso del problema de la micro-red eléctrica Se grafican los valores de función objetivo correspondientes a la hora 12.   
+En la Tabla \ref{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin  experimento B.} se muestran los resultados obtenidos en la estadísticas descriptivas para las variantes propuestas y la ED/rand/1/bin en los 6 problemas de optimización. Los resultados ganadores se resaltan en letra negrita. A pesar de que existe el análisis teórico para determinar la velocidad de convergencia, los experimentos realizados se limitaron a la graficación del valor de $f(x)$ presentado por el mejor individuo factible en la población, en función del número de evaluaciones de $f(x)$ denominado $NEF$. En la Figura \ref{fig: Gráficas de convergencia para las variantes HNMED y ED/rand/1/bin} se muestran las gráficas de convergencia de la ejecución correspondiente a la mediana de la muestra. En caso del problema de la micro-red eléctrica Se grafican los valores de función objetivo correspondientes a la hora 12.   
 
 \begin{table}
 	
-	\caption{Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin en experimento B para los seis problemas de diseño cinemático. Se marcan en negritas los mejores valores de cada medida.}\label{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin  experimento B.}
+	\caption[Resultados estadísticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de optimización.]{Resultados estadísticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de optimización. Se marcan en negritas los mejores valores de cada medida.}\label{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin  experimento B.}
 	
 	\centering
 	\resizebox{\textwidth}{!}{%
@@ -408,19 +410,19 @@ En la Tabla \ref{tab:Resultados estadísticos obtenidos por variantes HNMED y DE
 		\includegraphics[width=\linewidth]{Figures/B-Grafica_Convergencia_Problema_6}
 		\caption{SCE2} \label{fig:S1} 
 	\end{subfigure}
-	\caption{Gráficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el experimento B} \label{fig: Gráficas de convergencia para las variantes HNMED y ED/rand/1/bin} 
+	\caption[Gráficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el Experimento B.]{Gráficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el Experimento B. El eje horizontal presenta el número de evaluaciones de la función objetivo (NEF) y el eje vertical el valor de  $f(x)$.  } \label{fig: Gráficas de convergencia para las variantes HNMED y ED/rand/1/bin} 
 	
 \end{figure}
 En la Tabla \ref{tab:Resultados Firedman obtenidos por variantes HNMED y DE/rand/1/bin  experimento B.} se presentan las jerarquías promedios obtenidas por los algoritmos, los valores $p$ y la aceptación o rechazo de la hipótesis obtenidas en la prueba de Firedman en cada uno de los problemas de optimización. Se resaltan en letra negrita las promedios de jerarquías ganadores.
 
-Teniendo en cuenta los resultados de la prueba de Friedman, la Figura \ref{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el Experitmento B} la prueba post hoc de Bonferroni-Dunn para los 6 problemas. En las gráficas, el eje vertical presenta las etiquetas dadas a cada algoritmo y el horizontal las jerarquías promedios. Los círculos corresponden a la asignación de la etiqueta $L_j$ con el promedio jerarquía  $R_j$. Las lineas son los intervalos de confianza calculados por la prueba. Las etiquetas están asignadas de la siguiente forma: a la ED le corresponde el número 1 y a las variantes HNMED desde V1 a V5 les corresponden los números del 2 al 6 respectivamente.
+Teniendo en cuenta los resultados de la prueba de Friedman, la Figura \ref{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el Experitmento B} la prueba post hoc de Bonferroni-Dunn para los 6 problemas. En las gráficas, el eje vertical presenta las etiquetas dadas a cada algoritmo y el horizontal las jerarquías promedios. Las etiquetas están asignadas de la siguiente forma: a la ED le corresponde el número 1 y a las variantes HNMED desde V1 a V5 les corresponden los números del 2 al 6 respectivamente. Los círculos corresponden a la asignación de la etiqueta $L_j$ con el promedio jerarquía  $R_j$. Las lineas son los intervalos de confianza calculados por la prueba. 
 
-Cuando los intervalos de confianza de dos muestras no se traslapan indica que se rechaza la sub-hipótesis nula y por lo tanto que existen diferencias significativas entre los algoritmos que describen dichas muestras. En las figuras presentadas los promedios de jerarquía e intervalos de confianza entre los cuales existen diferencias significativas se dibujan con colores diferentes (azul y rojo) para hacer más legible la gráfica.     
+Cuando los intervalos de confianza de dos muestras no se traslapan, se rechaza la sub-hipótesis nula y por lo tanto se afirma que existen diferencias significativas entre los algoritmos que describen dichas muestras. En las figuras presentadas los promedios de jerarquía e intervalos de confianza entre los cuales existen diferencias significativas se dibujan con colores diferentes (azul y rojo) para hacer más legible la gráfica.     
 %%%%%%%%%%%%%%%%%%%%%%
 
 \begin{table}
 	\centering
-	\caption{Resultados de la prueba de Friedman en variantes HNMED y DE/rand/1/bin en experimento B para los seis problemas de diseño mecatrónico}
+	\caption[Resultados de la prueba de Friedman obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de diseño mecatrónico.]{Resultados de la prueba de Friedman obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de diseño mecatrónico. Se resaltan en negrita los promedios de jerarquía ganadores.}
 	\label{tab:Resultados Firedman obtenidos por variantes HNMED y DE/rand/1/bin  experimento B.}
 	\resizebox{\textwidth}{!}{%{0.3132\textheight}{%
 		\begin{tabular}{lccccc}
@@ -503,35 +505,41 @@ Cuando los intervalos de confianza de dos muestras no se traslapan indica que se
 		\includegraphics[width=\linewidth]{Figures/B-Bonferroni_HNMED_VS_ED6}
 		\caption{SCE1} \label{fig:Bon_S1} 
 	\end{subfigure}
-	\caption{Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el Experitmento B.} \label{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el Experitmento B} 
+	\caption[Resultados de las pruebas de Bonferroni-Dunn  obtenidos por las variantes HNMED vs ED/rand/1/bin en el Experimento B.]{Resultados de las pruebas de Bonferroni-Dunn  obtenidos por las variantes HNMED vs ED/rand/1/bin en el Experimento B. Se etiquetan en el eje vertical del 1 al 6 los algoritmos ED/rand/1/bin y HNMEDV1 a HNMEDV5   respectivamente.} \label{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el Experitmento B} 
 	
 \end{figure}
 %
 
 
 \subsubsection{Observaciones}
-Los resultados obtenidos por en la estadística descriptiva responde la primera pregunta de investigación planteada para el experimento B; ya que en efecto, las variantes propuestas son capaces de hallar valores iguales o mejores a los mínimos conocidos para todos los problemas de optimización a resolver. Las observaciones por cada problema son las siguientes:
+Los resultados obtenidos en la estadística descriptiva responden la primera pregunta de investigación planteada para el experimento B; ya que en efecto, las variantes propuestas son capaces de hallar valores iguales o mejores a los mínimos conocidos para todos los problemas de optimización a resolver. Las observaciones por cada problema son las siguientes:
 \begin{enumerate}
 	\item \textbf{MCE1}: Las variantes HNMED superan a la ED en las medidas de mejor y peor solución, promedio y desviación estándar. Ninguna logra superar el valor de la mediana de la ED. La variante HNMED con mejores resultados es V3.
-	\item \textbf{MCE2}: las variantes HNMED superan a la ED en todas las medidas. La variante con mejores resultados es V5.
-	\item \textbf{MCE3}: Se iguala a la ED en la mejor y peor solución de la muestra. La ED supera a las variantes HNMED en los valores de mediana, promedio y desviación estándar.La variante con mejores resultados es la V3.
-	\item \textbf{GCE1}: las variantes Se supera a la ED en todas las medidas. HNMED-V5 presenta los mejores resultados.
-	\item \textbf{GCE2}: Todas las variantes superan a la ED en su mejor y peor solución, excepto HNMED-V1 . Sólo HNMED-V5 (variante con mejores resultados)supera la mediana de la ED la cual prevalece en las demás medidas (promedio y desviación estándar).
+	\item \textbf{MCE2}: Las variantes HNMED superan a la ED en todas las medidas. La variante con mejores resultados es V5.
+	\item \textbf{MCE3}: Se iguala a la ED en la mejor y peor observación de la muestra. La ED supera a las variantes HNMED en los valores de mediana, promedio y desviación estándar.La variante con mejores resultados es la V3.
+	\item \textbf{GCE1}: Las variantes supera a la ED en todas las medidas. HNMED-V5 presenta los mejores resultados.
+	\item \textbf{GCE2}: Todas las variantes superan a la ED en su mejor y peor solución, excepto HNMED-V1. Sólo HNMED-V5 (variante con mejores resultados) supera la mediana de la ED la cual prevalece en las demás medidas (promedio y desviación estándar).
 	\item \textbf{SCE1}: Todas las variantes superan a la ED en el mejor resultado, siendo HNMED-V5 la que logra superar a la ED en las medidas de promedio y mediana. 
 \end{enumerate}
-De forma general, las variantes propuestas presentan mejores valores de las medidas de tendencia central en la mayoría de los problemas y valores modestos de desviación estándar lo que indica cierta sensibilidad a la distribución inicial de la población. Se destacan además las medida de la mejor solución de la muestra en la cual las variantes siempre obtienen resultados iguales (para MCE2 y MCE3) o mejores (MCE1,GCE1,GCE2,SCE1) a la ED. Esto se debe a la capacidad de explotación de las instancias del método Nelder Mead.
+De forma general, las variantes propuestas presentan mejores valores en las medidas de tendencia central para la mayoría de los problemas y valores modestos de desviación estándar lo que indica cierta sensibilidad a la distribución inicial de la población. Se destacan además las medida de la mejor solución de la muestra en la cual las variantes siempre obtienen resultados iguales (para MCE2 y MCE3) o mejores (MCE1,GCE1,GCE2,SCE1) a la ED. Esto se debe a la capacidad de explotación de las instancias del método Nelder Mead.
 
-En la Figura \ref{fig: Gráficas de convergencia para las variantes HNMED y ED/rand/1/bin} se observa que, para todos los problemas las curvas descritas por las variantes HNMED se encuentran por debajo a las de ED/rand/1/bin. Esto significa que todas las versiones pueden obtener resultados competitivos en un menor número de evaluaciones. También se puede observar que las curvas dadas por los algoritmos propuestos se encuentran ligeramente corridas a la izquierda, lo que indica que son capaces de encontrar individuos factibles en iteraciones tempranas. Este comportamiento se debe a la capacidad del simplex de muestrear el espacio de búsqueda con pocas evaluaciones. Es importante destacar que con los resultados obtenidos se demuestran dos aspectos principales robustez y eficiencia del enfoque propuesto de forma general. 
-En la Tabla \ref{tab:Resultados Firedman obtenidos por variantes HNMED y DE/rand/1/bin  experimento B.} se observan los resultados obtenidos en la prueba de friedman para cada problema:
+En la Figura \ref{fig: Gráficas de convergencia para las variantes HNMED y ED/rand/1/bin} se observa que, para todos los problemas las curvas descritas por las variantes HNMED se encuentran por debajo a las de ED/rand/1/bin. Esto significa que todas las versiones pueden obtener resultados competitivos en un menor número de evaluaciones. También se puede observar que las curvas dadas por los algoritmos propuestos se encuentran ligeramente corridas a la izquierda, lo que indica que son capaces de encontrar individuos factibles en iteraciones tempranas. Este comportamiento se debe a la capacidad del simplex de muestrear el espacio de búsqueda con pocas evaluaciones. Es importante destacar que con los resultados obtenidos se demuestran dos aspectos principales robustez y eficiencia del enfoque propuesto. 
+
+En la Tabla \ref{tab:Resultados Firedman obtenidos por variantes HNMED y DE/rand/1/bin  experimento B.} se observan los resultados obtenidos en la prueba de Friedman para cada problema:
 \begin{enumerate}
-	\item \textbf{MCE1}: El mejor promedio de jerarquía obtenido corresponde a la ED. Sin embargo, se acepta la hipótesis nula con un valor de $p=8.1173E-01$ Esto significa que a pesar de que la ED obtiene mejores resultados en este problema,  no se puede afirmar que son significativamente mejores y por lo tanto su desempeño es similar al de las variantes HNMED. La mejor jerarquía obtenida por las variantes HNMED corresponden a V5.
+	\item \textbf{MCE1}: El mejor promedio de jerarquía obtenido corresponde a la ED. Sin embargo, se acepta la hipótesis nula con un valor de $p=8.1173E-01$. Esto significa que a pesar de que la ED obtiene mejores resultados en este problema,  no se puede afirmar que son significativamente mejores y por lo tanto su desempeño es similar al obtenido por las variantes HNMED. La mejor jerarquía obtenida por las variantes HNMED corresponden a V5.
 	\item \textbf{MCE2}: El algoritmo HNMED-V5  obtiene el mejor promedio de jerarquía. Además, todas las versiones HNMED obtienen una mejor jerarquía promedio con respecto a la ED. En este caso se rechaza la hipótesis nula con valor de $p=1.3277E-26$. En este problema se evidencia un desempeño significativamente mejor por parte de las 5 variantes propuestas en comparación con la ED.
+	
 	\item \textbf{MCE3}: La ED/rand/1/bin alcanza el mejor promedio de jerarquía. No obstante, se acepta la hipótesis nula con valor de $p=9.4985E-01$. Al igual que en la prueba para el problema MCE1 se concluye que existe un desempeño similar entre todos los algoritmos comparados.
-	\item \textbf{GCE1}: De forma similar al problema MCE1 todas las variantes HNMED obtienen mejor jerarquía respecto a la ED, siendo la V5 el algoritmo ganador. La hipótesis nula se rechaza concluyendo que las versiones V5 se comportan significativamente mejor que la ED.
-	\item \textbf{GCE2}: EL algoritmo ganador es HNMED-V5. Todas las versiones HNMED obtienen mejores jerarquías que la ED  a excepción de la V1. En es te caso la hipótesis nula se acepta por lo tanto no se confirma que existen diferencias significativas entre el desempeño de las variantes ganadoras y la ED. 
-	\item \textbf{SCE1}: En este caso se rechaza la hipótesis nula con valor de $p=1.7205E-03$, siendo HNMED-V5 el algoritmo con mejor promedio de jerarquía. Sin embargo, como se puede observar en la Subfigura F de la Figura \ref{fig: Resultados de las pruebas de Bonferroni-Dunn  para las variantes HNMED y ED/rand/1/bin}, las diferencias significativas se encuentran entre HNMED-V5 y las variantes V1 y V2.   
+	
+	\item \textbf{GCE1}: De forma similar al problema MCE2 todas las variantes HNMED obtienen mejor jerarquía respecto a la ED, siendo la V5 el algoritmo ganador. La hipótesis nula se rechaza concluyendo que las versiones V5 se comportan significativamente mejor que la ED.
+	
+	\item \textbf{GCE2}: EL algoritmo ganador es HNMED-V5. Todas las versiones HNMED obtienen mejores jerarquías que la ED  a excepción de la V1. En este caso la hipótesis nula se acepta por lo tanto no se confirma que existen diferencias significativas entre el desempeño de las variantes ganadoras y la ED. 
+	
+	\item \textbf{SCE1}: En este caso se rechaza la hipótesis nula con valor de $p=1.7205E-03$, siendo HNMED-V5 el algoritmo con mejor promedio de jerarquía. Sin embargo, como se puede observar en la Subfigura F de la Figura \ref{fig: Resultados de las pruebas de Bonferroni-Dunn  para las variantes HNMED y ED/rand/1/bin}, las diferencias significativas se encuentran entre HNMED-V5 y las variantes V1 y V2.  
+	 
 \end{enumerate}
-De forma general se observa un desempeño competitivo de las variantes propuestas, obteniéndose resultados significativamente mejores en 2 de problemas y desempeño similar el resto con respecto a la ED/rand/1/bin. La variante HNMED-V5 consigue el mejor desempeño de forma general la cual obtiene mejor promedio de jerarquías en 4 de los 6 problemas de optimización. Los peores promedios de jerarquía se obtienen en los problemas MCE1,MCE3 y GCE2 los cuales presentan mayor dimensión, restricciones y complejidad de la función. A pesar de que las variantes propuestas ganan en rapidez de convergencia, heredan en cierta medida las deficiencias del método de búsqueda local cuyas operaciones están destinadas a la explotación. Por tanto, se presenta un decremento del desempeño para problemas de mayor dimensionailidad  aunque este no es significativo.
+De forma general se observa un desempeño competitivo de las variantes propuestas, obteniéndose resultados significativamente mejores en 2 de los problemas y desempeño similar el resto con respecto a la ED/rand/1/bin. La variante HNMED-V5 consigue el mejor desempeño de forma general la cual obtiene mejor promedio de jerarquías en 4 de los 6 problemas de optimización. Los peores promedios de jerarquía se obtienen en los problemas MCE1,MCE3 y GCE2 los cuales presentan mayor dimensión, restricciones y complejidad de la función. A pesar de que las variantes propuestas ganan en rapidez de convergencia, heredan en cierta medida las deficiencias del método de búsqueda local cuyas operaciones están destinadas a la explotación. Por tanto, se presenta un decremento del desempeño para problemas de mayor dimensionalidad aunque este no es significativo.
 
 
 
@@ -542,20 +550,20 @@ De forma general se observa un desempeño competitivo de las variantes propuesta
 
 
 \subsection{Experimentos C : Comparación de Variantes HNMED vs ED con reducción del número de evaluaciones}
-Los experimentos D y E se realizan para conocer de forma exacta el número de evaluaciones en las que las variantes propuestas presentan un desempeño competitivo en comparación con la ED/rand/1/bin. Con la realización de estos experimentos se reúne la información necesaria sobre las variables contempladas en la hipótesis de investigación (calidad de resultados y rapidez) para concluir una aceptación o rechazo de la misma.  
+El experimento C se realiza para conocer de forma exacta el número de evaluaciones en las que, las variantes propuestas presentan un desempeño competitivo en comparación con la ED/rand/1/bin. Con la realización de estos experimentos se reúne información sobre las variables contempladas en la hipótesis de investigación (calidad de resultados y rapidez) que permitirá junto con los experimentos finales una aceptación o rechazo de la misma.  
 
 \subsubsection{Definición de medidas}
-Se obtiene para cada algoritmo una muestra de $n=31$ ejecuciones.Para cada problema las observaciones en la muestra corresponden a el valor de la función objetivo del mejor individuo factible encontrado por el algoritmo $A_i$en la ejecución $j$ para $j= \{ 1,2,...,n\}$. Se aplicarán al conjunto de muestras las siguientes pruebas de estadística descriptiva e inferencial:
+Se obtiene para cada algoritmo una muestra de $n=31$ ejecuciones. Para cada problema las observaciones en la muestra corresponden al valor de la función objetivo del mejor individuo factible encontrado por el algoritmo $A_i$en la ejecución $j$ para $j= \{ 1,2,...,n\}$. Se aplicarán al conjunto de muestras las siguientes pruebas de estadística descriptiva e inferencial:
 \begin{enumerate}
 
 		\item \textbf{Estadística descriptiva}: Se obtiene la la mejor y peor solución, mediana, promedio y desviación estándar de las muestras
-		\item \textbf{Tasa de convergencia}: Se presenta la gráfica de convergencia correspondiente a la mediana de la muestra para cada algoritmo en comparación.
+		\item \textbf{Gráfica de convergencia}: Se presenta la gráfica de convergencia correspondiente a la mediana de la muestra para cada algoritmo en comparación.
 		\item \textbf{Prueba de Friedman}: con nivel significancia $\alpha=0.05$ para determinar si existen diferencias significativas entre el desempeño de al menos dos de los algoritmos comparados. 
 		\item \textbf{Prueba Bonferroni-Dunn}: con nivel significancia $\alpha=0.05$ para determina entre cuáles de los algoritmos comparados existe una diferencia significativa de desempeño.
 
 \end{enumerate}
 \subsubsection{Planificación pre-experimental y configuración}
-Para este experimento se mantuvo el número de evaluaciones realizadas por la ED según se describe en la literatura. El número de evaluaciones fue reducido para cada cada uno de los algoritmos en comparación en cada problema de optimización según se describe en la Tabla \ref{tab:Evaluaciones utilizadas por problema de optimización Experimentos C.}:
+Para este experimento se mantuvo el número de evaluaciones realizadas por la ED según se describe en la literatura. El número de evaluaciones fue reducido para cada uno de los algoritmos en comparación en cada problema de optimización según se describe en la Tabla \ref{tab:Evaluaciones utilizadas por problema de optimización Experimentos C.}:
 
 \begin{table}[]
 	
@@ -564,14 +572,14 @@ Para este experimento se mantuvo el número de evaluaciones realizadas por la ED
 	\centering
 	\resizebox{\textwidth}{!}{%
 		\begin{tabular}{ccccccc}
-			\textbf{Problema} &   ED     &HNMED-V1&HNMED-V2&HNMED-V3&HNMED-V4&HNMED-V5   \\
+			\textbf{Problema} &  \textbf{ ED    } &\textbf{HNMED-V1}&\textbf{HNMED-V2}&\textbf{HNMED-V3}&\textbf{HNMED-V4}&\textbf{HNMED-V5  } \\
 			\hline
 			MCE1   &   750030 &500000 &400000&400000&400000&400000   \\
 			MCE2   &   20000  &15000  &15000 &15000 &15000 &15000  \\
-			MCE3   &   450018 &35000  &25000 &25000 &200000 &200000 \\
+			MCE3   &   450018 &35000  &25000 &25000 &225000 &225000 \\
 			GCE1   &   750030 &125000  &125000 &125000 &125000 &125000  \\
 			GCE2   &   750030 &225000  &225000 &225000 &225000 &225000 \\
-			SCE1   &   288000 &240000  &240000 &240000 &240000 &240000 \\
+			SCE1   &   288000 &240000  &240000 &240000 &216000 &216000 \\
 		\end{tabular}
 	}
 \end{table}
@@ -605,13 +613,13 @@ La configuración de parámetros utilizada por las variantes HNMED y la ED es la
 
 
 \subsubsection{Presentación de resultados}
-La Tabla \ref{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin  en experimento C.} se muestran los resultados estadísticos y en la Figura \ref{fig: Gráficas de convergencia para las variantes HNMED y ED/rand/1/bin para el Experimento C} las funciones de convergencias. En la Tabla \ref{tab:Resultados de la prueba de Friedman en las variantes HNMED y DE/rand/1/bin en el experimento C para los seis problemas de diseño mecatrónico.} se presentan los resultados de la prueba de Friedman y en la Figura \ref{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el experimento C.} prueba post hoc de Bonferroni-Dunn para los 6 problemas correspondientes al Experimento C.
+La Tabla \ref{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin  en experimento C.} muestra los resultados estadísticos obtenidos para cada problema indicando la reducción de evaluaciones en porciento. En la Figura \ref{fig: Gráficas de convergencia para las variantes HNMED y ED/rand/1/bin para el Experimento C} se muestra las gráficas de convergencias. La Tabla \ref{tab:Resultados de la prueba de Friedman en las variantes HNMED y DE/rand/1/bin en el experimento C para los seis problemas de diseño mecatrónico.} presenta los resultados de la prueba de Friedman y en la Figura \ref{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el experimento C.} contiene las pruebas post hoc de Bonferroni-Dunn para los 6 problemas de optimización.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{table}
 	
-	\caption{Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin en el experimento C para los seis problemas de diseño cinemático. Se marcan en negritas los mejores valores de cada medida.}\label{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin  en experimento C.}
+	\caption[Resultados estadísticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento C para los seis problemas de optimización.]{Resultados estadísticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento C para los seis problemas de optimización. Se marcan en negritas los mejores valores de cada medida.}\label{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin  en experimento C.}
 	
 	\centering
 	\resizebox{\textwidth}{!}{%
@@ -658,7 +666,7 @@ La Tabla \ref{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/ra
 			& Mediana     &1.5513E-01&	1.5417E-01&	1.1746E-01&	1.5202E-01&	1.5294E-01 & \textbf{1.1447E-01}  \\
 			& Promedio    & 1.4773E-01&	1.4407E-01&	1.3132E-01&	1.3611E-01&	1.3934E-01 &\textbf{ 1.2080E-01 } \\
 			& Desv. Est.  &2.1528E-02&	2.6887E-02	&2.06472E-02	&2.0660E-02	&2.0410E-02& \textbf{1.4713E-02 }\\
-			& Evaluaciones &\textbf{250000}(-44.4\%) &\textbf{250000}(-44.4\%) &\textbf{250000}(-44.4\%)  & \textbf{250000}(-44.4\%)  &\textbf{200000}(-55.5\%)  &  450018 \\
+			& Evaluaciones &\textbf{250000}(-44.4\%) &\textbf{250000}(-44.4\%) &\textbf{250000}(-44.4\%)  & \textbf{250000}(-44.4\%)  &\textbf{225000}(-50.0\%)  &  450018 \\
 			
 			
 			
@@ -705,12 +713,12 @@ La Tabla \ref{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/ra
 		\includegraphics[width=\linewidth]{Figures/C-Grafica_Convergencia_Problema_6}
 		\caption{SCE2} \label{fig:S1} 
 	\end{subfigure}
-	\caption{Gráficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el Experimento C.} \label{fig: Gráficas de convergencia para las variantes HNMED y ED/rand/1/bin para el Experimento C} 
+	\caption[Gráficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el Experimento C.]{Gráficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el Experimento C. El eje horizontal presenta el número de evaluaciones de la función objetivo (NEF) y el eje vertical el valor de  $f(x)$.} \label{fig: Gráficas de convergencia para las variantes HNMED y ED/rand/1/bin para el Experimento C} 
 	
 \end{figure}
 \begin{table}
 	\centering
-	\caption{Resultados de la prueba de Friedman en las variantes HNMED y DE/rand/1/bin en el experimento C para los seis problemas de diseño mecatrónico.}
+	\caption[Resultados de la prueba de Friedman obtenidos por las variantes HNMED y DE/rand/1/bin en el experimento C para los seis problemas de diseño mecatrónico.]{Resultados de la prueba de Friedman obtenidos por las variantes HNMED y DE/rand/1/bin en el experimento C para los seis problemas de diseño mecatrónico. Se resaltan en negritas los promedios de jerarquías ganadores}
 	\label{tab:Resultados de la prueba de Friedman en las variantes HNMED y DE/rand/1/bin en el experimento C para los seis problemas de diseño mecatrónico.}
 	\resizebox{\textwidth}{!}{%{0.3132\textheight}{%
 		\begin{tabular}{lccccc}
@@ -800,15 +808,15 @@ La Tabla \ref{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/ra
 		\includegraphics[width=\linewidth]{Figures/C-Bonferroni_HNMED_VS_ED6}
 		\caption{SCE1} \label{fig:Bon_S1} 
 	\end{subfigure}
-	\caption{Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el experimento C.} \label{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el experimento C.} 
+	\caption[Resultados de las pruebas de Bonferroni-Dunn  obtenidos por las variantes HNMED vs ED/rand/1/bin en el Experimento C.]{Resultados de las pruebas de Bonferroni-Dunn  obtenidos por las variantes HNMED vs ED/rand/1/bin en el Experimento C. Se etiquetan en el eje vertical del 1 al 6 los algoritmos ED/rand/1/bin y HNMEDV1 a HNMEDV5   respectivamente.} \label{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el experimento C.} 
 	
 \end{figure}
 \subsubsection{Observaciones}
 Teniendo en cuenta los resultados obtenidos en ambos experimentos se pueden realizar las siguientes observaciones:
 \begin{enumerate}
-	\item Las variantes HNMED son capaces de encontrar resultados iguales o mejores para la mayoría de los problemas de optimización utilizando un número de evaluaciones menor, el cual representa un ahorro de más del 44\% en la mayoría de los problemas con excepción de MCE2 (-33.3\%) y SCE1 (-25.3\% para las variante HNMED-V4 y V5).      
-	\item De forma similar a los resultados obtenidos en el experimento A, las curvas que describen funciones de convergencia obtenidas por las versiones de HNMED correspondientes a la mediana de las muestras se encuentran por debajo de la curva de la ED/ran/1/bin para la todos los problemas. Esto se logra reduciendo el número de símpleces y por tanto el tamaño de la población, esto implica un ahorro de evaluaciones por iteración y  permite realizar más operaciones de explotación. El hecho de que se alcancen los mínimos conocidos y valores de tendencia central competitivos descarta la posibilidad de HNMED presente convergencia prematura o estancamiento para los problemas presentados. 
-	\item Al reducir el número de evaluaciones algunas versiones comienzan a presentar un desempeño significativamente inferior a la ED como es el caso de la V1. La variante HNMED-V5 es la que presenta mejor promedio de jerarquía en la mayoría de los problemas obteniendo resultados significativamente iguales o mejores que la ED.
+	\item Las variantes HNMED son capaces de encontrar resultados iguales o mejores para la mayoría de los problemas de optimización utilizando un número de evaluaciones menor, el cual representa un ahorro de más del 44\% en la mayoría de los problemas con excepción de MCE2 (-33.3\%) y SCE1 (-25.3\%) para las variante HNMED-V4 y V5).      
+	\item De forma similar a los resultados obtenidos en el experimento A, las curvas de convergencia que describen las versiones de HNMED correspondientes a la mediana de las muestras se encuentran por debajo de la curva de la ED/ran/1/bin para la todos los problemas. Esto se logra reduciendo el número de símpleces y por tanto el tamaño de la población, esto implica un ahorro de evaluaciones por iteración y  permite realizar más operaciones de explotación. El hecho de que se alcancen los mínimos conocidos y valores de tendencia central competitivos descarta la posibilidad de que HNMED presente una tendencia a la convergencia prematura o estancamiento para los problemas presentados. 
+	\item Al reducir el número de evaluaciones algunas versiones comienzan a presentar un desempeño significativamente inferior a la ED como es el caso de la V1. La variante HNMED-V5 es la que presenta mejor promedio de jerarquía en la mayoría de los problemas obteniendo resultados significativamente mejores o similares a la ED.
 \end{enumerate}
 
 
@@ -816,18 +824,18 @@ Teniendo en cuenta los resultados obtenidos en ambos experimentos se pueden real
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experimentos finales}
-Los experimentos iniciales permitieron observar el comportamiento de las variantes HNMED diseñadas bajo el enfoque de hibridación propuesto en la sección \ref{sec:Enfoque propuesto}. Se evidenció que a pesar de la rapidez de estos algoritmos, se presentaron dificultades en los problemas MCE1, MCE3 y GCE2. Estos problemas presentan un espacio de búsqueda más complejo, ya sea por presentar mayor número de restricciones, dimesionalidad, complejidad de la función objetivo o la cualquier combinación de estas características. 
+Los experimentos iniciales permitieron observar el comportamiento de las variantes HNMED diseñadas bajo el enfoque de hibridación propuesto en la Sección \ref{sec:Enfoque propuesto}. Se evidenció que a pesar de la rapidez de estos algoritmos, se presentaron dificultades en los problemas MCE1, MCE3 y GCE2. Estos problemas presentan un espacio de búsqueda más complejo, ya sea por presentar mayor número de restricciones, dimesionalidad, complejidad de la función objetivo o la cualquier combinación de estas características. 
 
 Las variantes propuestas heredan, en cierta medida, algunas deficiencias del método de búsqueda local utilizado como la reducción del desempeño ante un aumento de la dimesionalidad del problema y la sensibilidad a los puntos iniciales. Por tanto, una mayor capacidad de exploración es requerida en orden de alcanzar mejores resultados. Con este objetivo trazado, se diseñó la HNMED-V6 cuyo desempeño es medido en los experimentos finales junto a la variante HNMED-V5.
 
 
 \subsection{Experimentos D y E : Comparación de Variantes HNMED-V5 y HNMED-V6 con Algoritmo C-LSHADE}
-El objetivo de ambos experimentos es comprobar la competitividad  de las dos mejores versiones HNMED. Por tanto, se realizan dos comparaciones finales por medio de estadística descriptiva e inferencial: el algoritmo HNMED-V5 y HNMED-V6 con el algoritmo C-LSHADE propuesto por Zapata en \cite{zapata_zapata_control_2017}.
+El objetivo de ambos experimentos es comprobar la competitividad  de las dos mejores versiones HNMED. Por tanto, se realizan dos comparaciones finales por medio de estadística descriptiva e inferencial: el algoritmo HNMED-V5 y HNMED-V6 con el algoritmo C-LSHADE propuesto por Zapata en \cite{zapata_zapata_control_2017}, el cual es una variante competitiva del algoritmo DECV para el conjunto de problemas a resolver.
 \subsubsection{Definición de medidas}
 Se obtiene para cada algoritmo una muestra de $n=31$ ejecuciones. Para cada problema las observaciones en la muestra corresponden al valor de la función objetivo del mejor individuo factible encontrado por el algoritmo $A_i$en la ejecución $j$ para $j= \{ 1,2,...,n\}$. Se aplicarán al conjunto de muestras las siguientes pruebas de estadística descriptiva e inferencial:
 \begin{enumerate}
 	\item \textbf{Estadística descriptiva}: Se obtiene la la mejor y peor solución, mediana, promedio y desviación estándar de las muestras
-	\item \textbf{Tasa de convergencia}: Se presenta la gráfica de convergencia correspondiente a la mediana de la muestra para cada los dos algoritmo en comparación.
+	\item \textbf{Gráfica de convergencia}: Se presenta la gráfica de convergencia correspondiente a la mediana de la muestra para cada los dos algoritmo en comparación.
 	\item \textbf{Prueba suma de Jerarquías de Wilcoxon}: con nivel significancia $\alpha=0.05$ para determinar si existen diferencias significativas entre el desempeño los dos algoritmos comparados. 
 	
 \end{enumerate}
@@ -856,13 +864,13 @@ La configuración de parámetros utilizada por las variantes HNMED-V6:
 \begin{enumerate}
 	\item Se establece la probabilidad de cruza $CR=\{0.8, 1\}$ para ED y HNMED para todos los problemas.
 	\item Se establece el factor de escala $F=\{0.3, 0.9\}$ para ED y HNMED para todos los problemas.
-	\item Para la variante  establecieron los parámetros de reflexión $\alpha=2$, expansión $\gamma=1.7$ $\beta=0.3$ para todos los problemas.
+	\item Para la variante HNMEDV5 establecieron los parámetros de reflexión $\alpha=2$, expansión $\gamma=1.7$ $\beta=0.3$ para todos los problemas.
 	\item El tamaño de población utilizado se ajusta para cada algoritmo según la Tabla \ref{tab:Tamaños de población utilizados para cada problema en los experimentos finales}. 
 \end{enumerate}
 
 \begin{table}[]
 	\centering
-	\caption{Tamaños de población utilizados para cada problema en los experimentos finales}
+	\caption{Tamaños de población utilizados para cada problema en los experimentos finales.}
 	\label{tab:Tamaños de población utilizados para cada problema en los experimentos finales}
 	
 	\begin{tabular}{cccccccccccc}
@@ -882,14 +890,14 @@ La configuración de parámetros utilizada por las variantes HNMED-V6:
 
 
 \subsubsection{Resultados del Experimento D}
-La Tabla \ref{tab:Resultados estadísticos obtenidos por HNMED-V5 y el algoritmo C-LSHADE en los seis problemas de diseño mecatrónico} se muestran los resultados estadísticos obtenidos por HNMED-V5 y los obtenidos por C-LSHADE en \cite{zapata_zapata_control_2017}. En la Figura \ref{fig: Gráficas de convergencia obtenidas por HNMED-V5 y CLSHADE para el Experimento D} se presentan las gráficas de convergencias correspondientes al Expermiento D para los seis problemas. Finalmente, la Tabla \ref{tab:Wilcoxon HNMED-V5-CLSHADE} contiene los resultados de la prueba de suma de jerarquías de Wilcoxon con un nivel de significancia de 95\%.
+La Tabla \ref{tab:Resultados estadísticos obtenidos por HNMED-V5 y el algoritmo C-LSHADE en los seis problemas de diseño mecatrónico} muestra los resultados estadísticos obtenidos por HNMED-V5 y los obtenidos por C-LSHADE en \cite{zapata_zapata_control_2017}. En la Figura \ref{fig: Gráficas de convergencia obtenidas por HNMED-V5 y CLSHADE para el Experimento D} se presentan las gráficas de convergencias correspondientes al Experimento D para los seis problemas. Finalmente, la Tabla \ref{tab:Wilcoxon HNMED-V5-CLSHADE} contiene los resultados de la prueba de Suma de Jerarquías de Wilcoxon con un nivel de significancia de 95\%.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{table}
 	\centering
-	\caption[Resultados estadísticos obtenidos por HNMED-V5 y el algoritmo C-LSHADE
-	en los seis problemas de diseño mecatrónico en el Experimento D]{Resultados estadísticos obtenidos por HNMED-V5 y el algoritmo C-LSHADE
-		en los seis problemas de diseño mecatrónico en el Experimento D. Se marcan en negritas los
+	\caption[Resultados estadísticos obtenidos por HNMED-V5 y C-LSHADE
+	 en el Experimento D para los seis problemas de diseño mecatrónico.]{Resultados estadísticos obtenidos por HNMED-V5 y C-LSHADE
+	 	en el Experimento D para los seis problemas de diseño mecatrónico. Se marcan en negritas los
 		mejores valores de cada medida.}\label{tab:Resultados estadísticos obtenidos por HNMED-V5 y el algoritmo C-LSHADE en los seis problemas de diseño mecatrónico}
 	\begin{tabular}{clcc} 
 		\hline
@@ -972,13 +980,13 @@ La Tabla \ref{tab:Resultados estadísticos obtenidos por HNMED-V5 y el algoritmo
 		\includegraphics[width=\linewidth]{Figures/D-Grafica_Convergencia_Problema_6}
 		\caption{SCE2} \label{fig:S1} 
 	\end{subfigure}
-	\caption{Gráficas de convergencia obtenidas por HNMED-V5 y CLSHADE para el Experimento D.} \label{fig: Gráficas de convergencia obtenidas por HNMED-V5 y CLSHADE para el Experimento D} 
+	\caption[Gráficas de convergencia obtenidas por la variante HNMED-V5 y C-LSHADE en el Experimento D.]{Gráficas de convergencia obtenidas por la variante HNMED y C-LSHADE en el Experimento D. El eje horizontal presenta el número de evaluaciones de la función objetivo (NEF) y el eje vertical el valor de  $f(x)$.} \label{fig: Gráficas de convergencia obtenidas por HNMED-V5 y CLSHADE para el Experimento D} 
 	
 \end{figure}
 
 \begin{table}
 	\centering
-	\caption[Comparación de C-LSHADE y HNMED-V5 en los seis problemas de optimización mediante la prueba de Suma de jerarquías de Wilcoxon]{Comparación de C-LSHADE y HNMED-V5 en los seis problemas de optimización. Los símbolos +, - y $\approx$ señalan que HNMED-V5 obtuvo un desempeño significativamente mejor (+), significativamente peor (-) o no significativamente diferente ($\approx$) comparado contra C-LSHADE usando la prueba de suma de jerarquías de Wilcoxon con un 95 \% de confianza} \label{tab:Wilcoxon HNMED-V5-CLSHADE}
+	\caption[Comparación de C-LSHADE y HNMED-V5 en los seis problemas de optimización mediante la prueba de Suma de Jerarquías de Wilcoxon.]{Comparación de C-LSHADE y HNMED-V5 en los seis problemas de optimización mediante la prueba de Suma de Jerarquías de Wilcoxon. Los símbolos +, - y $\approx$ señalan que HNMED-V5 obtuvo un desempeño significativamente mejor (+), significativamente peor (-) o no significativamente diferente ($\approx$) comparado contra C-LSHADE usando la prueba de suma de jerarquías de Wilcoxon con un 95 \% de confianza} \label{tab:Wilcoxon HNMED-V5-CLSHADE}
 	\begin{tabular}{cccccccc}
 		\multirow{2}{*}{\textbf{vs C-LSHADE}} & \multicolumn{6}{c}{\textbf{Problemas}}           & \textbf{Total}  \\
 		& MCE1 & MCE2 & MCE3 & GCE1 & GCE2 & SCE1 &        \\
@@ -996,9 +1004,9 @@ Las Tablas \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y ED
 
 \begin{table}
 	\centering
-	\caption[Resultados estadísticos obtenidos por HNMED-V6 vs ED/rand/1/bin
-	en los seis problemas de diseño mecatrónico.]{Resultados estadísticos obtenidos por HNMED-V6 vs ED/rand/1/bin
-		en los seis problemas de diseño mecatrónico en el experimento E. Se marcan en negritas los
+	\caption[Resultados estadísticos obtenidos por HNMED-V6 vs ED/rand/1/bin en el experimento E
+		para los seis problemas de diseño mecatrónico.]{Resultados estadísticos obtenidos por HNMED-V6 vs ED/rand/1/bin en el experimento E
+		para los seis problemas de diseño mecatrónico. Se marcan en negritas los
 		mejores valores de cada medida.} \label{tab:Resultados estadísticos obtenidos por variantes HNMED6 y ED  en experimento E.}
 	\begin{tabular}{clcc} 
 		\hline
@@ -1148,14 +1156,14 @@ Las Tablas \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y ED
 		\includegraphics[width=\linewidth]{Figures/E-Grafica_Convergencia_Problema_6}
 		\caption{SCE2} \label{fig:S1} 
 	\end{subfigure}
-	\caption{Gráficas de convergencia obtenidas por HNMED-V6 y CLSHADE en el Experimento E.} \label{fig: Gráficas de convergencia obtenidas por HNMED-V6 y CLSHADE para el Experimento E.} 
+	\caption[Gráficas de convergencia obtenidas por la variante HNMED-V6 y C-LSHADE en el Experimento E.]{Gráficas de convergencia obtenidas por la variante HNMED-V6 y C-LSHADE en el Experimento E. El eje horizontal presenta el número de evaluaciones de la función objetivo (NEF) y el eje vertical el valor de  $f(x)$.} \label{fig: Gráficas de convergencia obtenidas por HNMED-V6 y CLSHADE para el Experimento E.} 
 	
 \end{figure}
 
 
 \begin{table}
 	\centering
-	\caption[Comparación de C-LSHADE y HNMED-V6 en los seis problemas de optimización mediante la prueba de Suma de jerarquías de Wilcoxon]{Comparación de C-LSHADE y HNMED-V6 en los seis problemas de optimización. Los símbolos +, - y $\approx$ señalan que HNMED-V6 obtuvo un desempeño significativamente mejor (+), significativamente peor (-) o no significativamente diferente ($\approx$) comparado contra LSHADE-CV usando la prueba de suma de jerarquías de Wilcoxon con un 95 \% de confianza} \label{tab:Wilcoxon HNMED-V6-CLSHADE}
+	\caption[Comparación de C-LSHADE y HNMED-V6 en los seis problemas de optimización mediante la prueba de Suma de Jerarquías de Wilcoxon.]{Comparación de C-LSHADE y HNMED-V6 en los seis problemas de optimización mediante la prueba de Suma de Jerarquías de Wilcoxon. Los símbolos +, - y $\approx$ señalan que HNMED-V6 obtuvo un desempeño significativamente mejor (+), significativamente peor (-) o no significativamente diferente ($\approx$) comparado contra LSHADE-CV usando la prueba de suma de jerarquías de Wilcoxon con un 95 \% de confianza} \label{tab:Wilcoxon HNMED-V6-CLSHADE}
 	\begin{tabular}{cccccccc}
 		\multirow{2}{*}{\textbf{vs C-LSHADE}} & \multicolumn{6}{c}{\textbf{Problemas}}           & \textbf{Total}  \\
 	                                        	& MCE1 & MCE2 & MCE3 & GCE1 & GCE2 & SCE1 &        \\
@@ -1167,28 +1175,28 @@ Las Tablas \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y ED
 \end{table}
 
 \subsubsection{Observaciones Finales}
-Los resultados de los experimentos F y G permiten plantear las siguientes observaciones finales:
+Los resultados de los experimentos E y D permiten plantear las siguientes observaciones finales:
 \begin{enumerate}
  \item La versión con peor desempeño en comparación a C-LSHADE resultó ser V5, la cual obtiene un desempeño significativamente inferior en los problemas MCE1, MCE3 y GCE2  y sólo alcanza mejores resultados para los problemas MCE2 y SCE1 (los de menor dimensión). A pesar de que HNMED-V5 es capaz de utilizar un número menor de evaluaciones para los problemas GCE1 y SCE1; para los casos MCE3 y GCE2 el algoritmo C-LSHADE utiliza menos evaluaciones de la función objetivo. Las gráficas de convergencia muestran que HNMED-V5 presenta mayor rapidez de convergencia respecto C-LSHADE, sin embargo el punto al que converge no siempre es mejor que el encontrado por C-LSHADE para todos los problemas de optimización.  
 
  \item  La versión más competitiva es HNMED-V6, lo que se evidencia tanto en las pruebas de estadística descriptiva como inferencial. HNMED-V6 obtienen resultados de mediana y promedio mejores que C-LSHADE en los problemas MCE1, MCE2, GCE1 y SCE1. Para el problema MCE2 se encuentra un nuevo mínimo $(f(\vec{x})=2.5643E-04)$ el cual supera al obtenido tanto por la ED/rand/1/bin como por C-LSHADE con valor de $(f(\vec{x})=2.6280E-03)$. En la sección de visualización de resultados se puede observar que éste mínimo se encuentra en un punto del espacio de búsqueda distante de la solución encontrada hasta el momento en la literatura. Para el problema de la micro-red aislada se logra encontrar un ahorro total significativamente mayor con un valor de $\sum_{1}^{24}f(\vec{x})=-5.5147$, en este caso las curvas de costo en tiempo son similares a las descritas por la soluciones dadas por C-LSHADE y ED/rand/1/bin. Esto significa que se mejoran los resultados tanto por capacidad de exploración como por explotación. Al igual que la variante anterior, se presentan los peores resultados para los problemas MCE3 y GCE1 con respecto C-LSHADE.
 
-  \item Un aspecto importante sobre el desempeño de la variante seis es su rápida convergencia para todos los problemas de optimización, lo que resulta en reducción del número de evaluaciones frente a las utilizadas por C-LSHADE y el algoritmo ED/rand/1/bin. Respecto a este último, HNMED-V6 logra reducir el número de evaluaciones en más del 50\% para 5 de los 6 problemas de optimización. Por otra parte, se puede observar en la Tabla \ref{tab:Tamaños de población utilizados para cada problema en los experimentos finales}, que el número de símpleces y por tanto los tamaños de población utilizados son inferiores, lo que constituye un ahorro de espacio en memoria. Esto se debe a la estrategia de inicialización de la población que genera símpleces de mayor tamaño  garantizando un cubrimiento efectivo del espacio de búsqueda en etapas tempranas del proceso de minimización. Al utilizar menor número de símpleces también se reducen los ordenamientos y las evaluaciones realizadas por generación, permitiendo el ahorro de evaluaciones en general y la rapidez de convergencia alcanzados.
+  \item Un aspecto importante sobre el desempeño de la variante HNMED-V6 es su rápida convergencia para todos los problemas de optimización, lo que resulta en reducción del número de evaluaciones frente a las utilizadas por C-LSHADE y el algoritmo ED/rand/1/bin. Respecto a este último, HNMED-V6 logra reducir el número de evaluaciones en más del 50\% para 5 de los 6 problemas de optimización. Por otra parte, se puede observar en la Tabla \ref{tab:Tamaños de población utilizados para cada problema en los experimentos finales}, que el número de símpleces y por tanto los tamaños de población utilizados son inferiores, lo que constituye un ahorro de espacio en memoria. Esto se debe a la estrategia de inicialización de la población que genera símpleces de mayor tamaño  garantizando un cubrimiento efectivo del espacio de búsqueda en etapas tempranas del proceso de minimización. Al utilizar menor número de símpleces también se reducen los ordenamientos y las evaluaciones realizadas por generación, permitiendo el ahorro de evaluaciones en general y la rapidez de convergencia alcanzados.
 
 \item Finalmente, se concluye que la hipótesis de la presente investigación es \textbf{aceptada}, debido a que los algoritmos propuestos, los cuales están basados en un método de programación matemática y utilizan operadores de un algoritmo evolutivo son capaces de encontrar resultados iguales o mejores que los ya reportados en la literatura especializada en los problemas de optimización de diseño mecatrónico, utilizando un menor número de evaluaciones.
 \end{enumerate}
 
 \section{Visualización de Resultados}
-En las secciones anteriores se evidenció que los mejores resultados fueron obtenidos por HNMED-V6. A continuación se presentan los vectores de diseño obtenidos por esta variante de HNMED para los seis problemas de optimización. Se realizan además, ciertas comparaciones en aquellos casos en los que se logró superar los resultados obtenidos en la literatura especializada, así como aquellos donde se encuentran diferentes vectores de diseño con igual valor de función objetivo. Las simulaciones de los problemas de diseño cinemático fueron implementadas y ejecutadas en el software Geobegra 2.9.
+En las secciones anteriores se evidenció que los mejores resultados fueron obtenidos por HNMED-V6. A continuación se presentan los vectores de diseño obtenidos por esta variante de HNMED para los seis problemas de optimización. Se realizan además, ciertas comparaciones en aquellos casos en los que se logró superar los resultados obtenidos en la literatura especializada, así como en aquellos donde se encuentran diferentes vectores de diseño con igual valor de función objetivo. Las simulaciones de los problemas de diseño cinemático fueron implementadas y ejecutadas en el software Geobegra 2.9.
 \subsection{Mecanismo de Cuatro Barras}
 En la Tabla \ref{tab:Vectores de diseño por HNMED-V6 y C-LSHADE para los tres casos de estudio del mecanismo de cuatro barras, correspondientes al la mejor observación de la muestra.} se muestran los resultados obtenidos por HNMED-V6 y se incorporan además los vectores obtenidos mediante C-LSHADE. Se puede observar para el caso del MEC2, que el vector obtenido por HNMED-V6 es un punto del espacio de búsqueda distante del encontrado por C-LSHADE y ED/rand/1/bin. En los demás casos se encontraron vectores similares.  
 
 A partir de los vectores obtenidos por HNMED-V6 se realizaron las simulaciones correspondientes, cuyas graficas se presentan en la Figura \ref{fig: Mecanismos correspondientes a las mejores soluciones encontradas por el algoritmo HNMED-V6 en los
-	tres casos de estudio de la Síntesis Óptima del Mecanismo de Cuatro Barras.}. Se obtienen tres mecanismos diferentes para cada caso de estudio. EN el problema MCE1 el vector de diseño describe un mecanismo que sigue una trayectoria lineal vertical con una precisión cercan a cero.  Para el caso MCE2 se obtiene un nuevo mecanismo que es capaz de seguir una trayectoria no alineada con mayor precisión. Por último,  se obtiene para el caso 3 un mecanismo similar a los ya encontrados, capaz de trasladar el acoplador entre los diez pares de puntos de precisión.
+	tres casos de estudio de la Síntesis Óptima del Mecanismo de Cuatro Barras.}. Se obtienen tres mecanismos diferentes para cada caso de estudio. EN el problema MCE1 el vector de diseño describe un mecanismo que sigue una trayectoria lineal vertical con una precisión cercan a cero.  Para el caso MCE2 se obtiene un nuevo mecanismo que es capaz de seguir una trayectoria no alineada con mayor precisión ($f(\vec{x})=\boldsymbol{2.5644E-04}$). Por último,  se obtiene para el caso 3 un mecanismo similar a los ya encontrados, capaz de trasladar el acoplador entre los diez pares de puntos de precisión.
 
 \begin{table}
 	\centering
-	\caption{Vectores de diseño obtenidos por HNMED-V6 y C-LSHADE para los tres casos de estudio del mecanismo de cuatro barras, correspondientes al la mejor observación de la muestra.}
+	\caption{Vectores de diseño obtenidos por HNMED-V6 y C-LSHADE para los tres casos de estudio del mecanismo de cuatro barras, correspondientes a la mejor observación de una muestra de ejecuciones independientes.}
 	\label{tab:Vectores de diseño por HNMED-V6 y C-LSHADE para los tres casos de estudio del mecanismo de cuatro barras, correspondientes al la mejor observación de la muestra.}
 	\resizebox{\textwidth}{!}{%	
 	\begin{tabular}{|c|c|c|c|c|c|c|}
@@ -1333,7 +1341,7 @@ de estudio de la Síntesis Óptima del  Efector Final de Tres Dedos se muestran 
 
 \subsection{Microrred Aislada}
 
-En el problema de la Micro-red Eléctrica Aislada se logró minimizar el costo de generación de energía eléctrica durante cada hora del día, alcanzándose un costo total de -5.5147E+05, superior al alcanzado por C-LSHADE, LSHADE-CV y ED/rand/1/bin. El valor negativo significa el ahorro monetario alcanzado, debido a la mayor utilización de las Fuentes de Energía Renovable(FER) durante el despacho en el día.
+En el problema de la Micro-red Eléctrica Aislada se logró minimizar el costo de generación de energía eléctrica durante cada hora del día, alcanzándose un costo total de \textbf{-5.5147E+05}, superior al alcanzado por C-LSHADE, LSHADE-CV y ED/rand/1/bin. El valor negativo significa el ahorro monetario alcanzado, debido a la mayor utilización de las Fuentes de Energía Renovable(FER) durante el despacho en el día.
 La Tabla \ref{Vectores de diseño obtenidos por HNMED-V6 para la microrred aislada en las 24 horas del día, correspondientes al la mejor observación de la muestra} se muestra los valores encontrados para las variables de
 diseño en cada hora del día. A modo de comparación se agregaron los valores obtenidos por el algoritmo LSHADE-CV el cual obtuvo mejores resultados que C-LSHADE para este problema en \cite{zapata_zapata_control_2017}. Se puede observar que en la hora 12 HNMED-V6 obtiene un mayor ahorro reduciendo la generación mediante diesel y ESS y aumentando la generación por medio de energía solar y eólica respecto a la hora anterior. 
 
