@@ -117,7 +117,7 @@
 \contentsline {subsubsection}{Presentaci\IeC {\'o}n de resultados}{131}{section*.748}
 \contentsline {subsubsection}{Observaciones}{131}{section*.753}
 \contentsline {section}{\numberline {7.4}Experimentos finales}{135}{section.757}
-\contentsline {subsection}{\numberline {7.4.1}Experimentos D y E : Comparaci\IeC {\'o}n de Variantes HNMED-V5 y HNMED-V6 con Algoritmo C-LSHADE}{135}{subsection.758}
+\contentsline {subsection}{\numberline {7.4.1}Experimentos D y E : Comparaci\IeC {\'o}n de Variantes HNMED-V5 y HNMED-V6 con Algoritmo C-LSHADE}{136}{subsection.758}
 \contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{136}{section*.759}
 \contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{136}{section*.763}
 \contentsline {subsubsection}{Resultados del Experimento D}{137}{section*.770}
@@ -127,7 +127,7 @@
 \contentsline {subsection}{\numberline {7.5.1}Mecanismo de Cuatro Barras}{145}{subsection.785}
 \contentsline {subsection}{\numberline {7.5.2}Efector Final de Tres Dedos}{145}{subsection.788}
 \contentsline {subsection}{\numberline {7.5.3}Microrred Aislada}{147}{subsection.791}
-\contentsline {section}{\numberline {7.6}Conclusiones del cap\IeC {\'\i }tulo}{149}{section.794}
+\contentsline {section}{\numberline {7.6}Conclusiones del cap\IeC {\'\i }tulo}{152}{section.794}
 \contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{153}{chapter.795}
 \contentsline {section}{\numberline {8.1}Observaciones Finales}{154}{section.796}
 \contentsline {section}{\numberline {8.2}Objetivos cumplidos}{155}{section.804}

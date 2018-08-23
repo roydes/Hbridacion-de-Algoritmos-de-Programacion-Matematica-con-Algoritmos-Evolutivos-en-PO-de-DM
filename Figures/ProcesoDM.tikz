@@ -24,7 +24,7 @@
 	\draw [line width=1.6pt,color=yqqqqq] (15.,18.699646500799158)-- (15.,21.199646500799158);
 	\draw [line width=1.6pt,color=yqqqqq] (15.,21.199646500799158)-- (5.,21.199646500799158);
 	\draw [line width=1.6pt,color=yqqqqq] (5.,21.199646500799158)-- (5.,18.699646500799158);
-	\draw (6.188492416985203,23.417105576081543) node[anchor=north west] {\textbf{Modelado y Simulaci\'ons}};
+	\draw (6.188492416985203,23.417105576081543) node[anchor=north west] {\textbf{Modelado y Simulaci\'on}};
 	\draw (5.326730767224088,20.910451470922403) node[anchor=north west] {\parbox{3.6858238084221395 cm}{Reconocimiento\linebreak de requerimientos}};
 	\draw [line width=1.6pt] (19.905790996259658,25.010576311594114)-- (19.905790996259658,-8.132253688405882);
 	\draw [line width=1.6pt] (19.905790996259658,-8.132253688405882)-- (31.905790996259658,-8.132253688405882);
