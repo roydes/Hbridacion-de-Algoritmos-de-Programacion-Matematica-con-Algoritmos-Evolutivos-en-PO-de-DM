@@ -22,10 +22,10 @@
 \contentsline {subsection}{\numberline {2.5.2}Clasificaci\IeC {\'o}n basada en la naturaleza de las variables de dise\IeC {\~n}o}{20}{subsection.56}
 \contentsline {subsection}{\numberline {2.5.3}Clasificaci\IeC {\'o}n basada en la estructura f\IeC {\'\i }sica del problema}{20}{subsection.57}
 \contentsline {subsection}{\numberline {2.5.4}Clasificaci\IeC {\'o}n basada en la naturaleza de las ecuaciones involucradas}{21}{subsection.58}
-\contentsline {subsection}{\numberline {2.5.5}Clasificaci\IeC {\'o}n basada en los valores permisibles de las variables de dise\IeC {\~n}o}{21}{subsection.59}
+\contentsline {subsection}{\numberline {2.5.5}Clasificaci\IeC {\'o}n basada en los valores permisibles de las variables de dise\IeC {\~n}o}{22}{subsection.59}
 \contentsline {subsection}{\numberline {2.5.6}Clasificaci\IeC {\'o}n basada en la naturaleza determinista de las variables}{22}{subsection.60}
 \contentsline {subsection}{\numberline {2.5.7}Clasificaci\IeC {\'o}n basada en la separabilidad de las funciones}{22}{subsection.61}
-\contentsline {subsection}{\numberline {2.5.8}Clasificaci\IeC {\'o}n basada en el n\IeC {\'u}mero de funciones objetivo}{22}{subsection.62}
+\contentsline {subsection}{\numberline {2.5.8}Clasificaci\IeC {\'o}n basada en el n\IeC {\'u}mero de funciones objetivo}{23}{subsection.62}
 \contentsline {section}{\numberline {2.6}Conclusiones del cap\IeC {\'\i }tulo}{23}{section.63}
 \contentsline {chapter}{\numberline {3}Programaci\IeC {\'o}n Matem\IeC {\'a}tica}{25}{chapter.64}
 \contentsline {section}{\numberline {3.1}Informaci\IeC {\'o}n de la Derivada}{25}{section.65}
@@ -33,18 +33,18 @@
 \contentsline {section}{\numberline {3.3}M\IeC {\'e}todos de Optimizaci\IeC {\'o}n Univariable}{29}{section.79}
 \contentsline {subsection}{\numberline {3.3.1}M\IeC {\'e}todo de Fibonacci }{29}{subsection.80}
 \contentsline {subsection}{\numberline {3.3.2}M\IeC {\'e}todo de la Secci\IeC {\'o}n Dorada}{31}{subsection.86}
-\contentsline {subsection}{\numberline {3.3.3}M\IeC {\'e}todo de Newton-Rapson}{32}{subsection.90}
+\contentsline {subsection}{\numberline {3.3.3}M\IeC {\'e}todo de Newton-Raphson}{32}{subsection.90}
 \contentsline {section}{\numberline {3.4}M\IeC {\'e}todos de optimizaci\IeC {\'o}n multivariable}{33}{section.93}
 \contentsline {subsection}{\numberline {3.4.1}M\IeC {\'e}todo del Descenso Inclinado}{33}{subsection.94}
 \contentsline {subsection}{\numberline {3.4.2}M\IeC {\'e}todo de Newton}{34}{subsection.102}
 \contentsline {subsection}{\numberline {3.4.3}M\IeC {\'e}todo Nelder-Mead}{35}{subsection.106}
 \contentsline {subsection}{\numberline {3.4.4}M\IeC {\'e}todo de Hooke-Jeeves}{38}{subsection.128}
-\contentsline {section}{\numberline {3.5}T\IeC {\'e}cnicas de optimizaci\IeC {\'o}n con restricciones}{38}{section.162}
+\contentsline {section}{\numberline {3.5}T\IeC {\'e}cnicas de optimizaci\IeC {\'o}n con restricciones}{40}{section.162}
 \contentsline {subsection}{\numberline {3.5.1}M\IeC {\'e}todo de Multiplicadores de Lagrange}{40}{subsection.163}
 \contentsline {subsection}{\numberline {3.5.2}Condiciones de Optimalidad en problemas con restricciones}{41}{subsection.169}
-\contentsline {subsection}{\numberline {3.5.3}M\IeC {\'e}todo de Penalizaci\IeC {\'o}n de Restricciones}{42}{subsection.174}
+\contentsline {subsection}{\numberline {3.5.3}M\IeC {\'e}todo de Penalizaci\IeC {\'o}n de Restricciones}{43}{subsection.174}
 \contentsline {subsection}{\numberline {3.5.4}Programaci\IeC {\'o}n Cuadr\IeC {\'a}tica Secuencial}{44}{subsection.186}
-\contentsline {section}{\numberline {3.6}Conclusiones del cap\IeC {\'\i }tulo}{44}{section.190}
+\contentsline {section}{\numberline {3.6}Conclusiones del cap\IeC {\'\i }tulo}{45}{section.190}
 \contentsline {chapter}{\numberline {4}Computaci\IeC {\'o}n Evolutiva}{47}{chapter.191}
 \contentsline {section}{\numberline {4.1}Representaci\IeC {\'o}n}{48}{section.196}
 \contentsline {section}{\numberline {4.2}Funci\IeC {\'o}n de aptitud}{50}{section.202}
@@ -81,7 +81,7 @@
 \contentsline {subsection}{\numberline {5.2.2}Planteamiento del Problema de Optimizaci\IeC {\'o}n}{83}{subsection.378}
 \contentsline {subsubsection}{Restricciones de Dise\IeC {\~n}o}{83}{section*.383}
 \contentsline {section}{\numberline {5.3}Conclusiones}{85}{section.392}
-\contentsline {chapter}{\numberline {6}Hibridaci\IeC {\'o}n de Algoritmos de Programaci\IeC {\'o}n Matem\IeC {\'a}tica con Algoritmos Evolutivos}{87}{chapter.393}
+\contentsline {chapter}{\numberline {6}Hibridaci\IeC {\'o}n de M\IeC {\'e}todos de Programaci\IeC {\'o}n Matem\IeC {\'a}tica con Algoritmos Evolutivos}{87}{chapter.393}
 \contentsline {section}{\numberline {6.1}Hibridaci\IeC {\'o}n del Algoritmo Evoluci\IeC {\'o}n Diferencial con M\IeC {\'e}todos de B\IeC {\'u}squeda Local}{89}{section.405}
 \contentsline {section}{\numberline {6.2}Enfoque propuesto}{91}{section.406}
 \contentsline {subsection}{\numberline {6.2.1}M\IeC {\'e}todo de Nelder Mead con Expansi\IeC {\'o}n de Longitud Aleatoria: NMELA}{92}{subsection.414}
