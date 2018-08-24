@@ -147,19 +147,19 @@ headsepline, % Uncomment to get a line under the header
 	bottom=2.5cm, % Bottom margin
 	%showframe, % Uncomment to show how the type block is set on the page
 }
-
+\decimalpoint
 %----------------------------------------------------------------------------------------
 %	THESIS INFORMATION
 %----------------------------------------------------------------------------------------
 
 \thesistitle{Hibridación de Algoritmos de Programación Matemática con Algoritmos Evolutivos en Problemas de Optimización de Diseño Mecatrónico} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
-\supervisor{Dr. Efrén \textsc{Mezura Montes}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\supervisor{Dr. Efrén Mezura Montes} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{Maestro en Computación Aplicada} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
-\author{Ing. Roides Javier \textsc{Cruz Lara}} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\author{Ing. Roides Javier Cruz Lara} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
 \addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
 
-\subject{Inteligencia Artifcial} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+\subject{Inteligencia Artificial} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
 \keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
 \university{\href{http://www.lania.mx}{Laboratorio Nacional de Informática Avanzada}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
 \department{\href{http://department.university.com}{Department or School Name}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
@@ -261,9 +261,9 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{abstract}
 \addchaptertocentry{\abstractname} % Add the abstract to the table of 
-La presente investigación realiza un estudio sobre la hibridación de Métodos de programación matemática con Algoritmos Evolutivos. Se resuelven seis problemas de optimización de Diseño Mecatrónico. Los primeros tres problemas son casos de estudio de la ``Síntesis Óptima de un Mecanismo de Cuatro Barras", los cuales consisten en minimizar el error respecto a una trayectoria deseada. De forma similar, se procede para los dos casos de la ``Síntesis Óptima de un Efector Final de Tres Dedos", donde se necesita maximizar la precisión de los dedos del efector mediante la minimización del error de la trayectoria del acoplador. El último problema resolver es la ``Optimización de la Generación de Energía en una micro-red eléctrica aislada". Para este problema se considera cada hora del día como un problema de optimización donde las límites para las variables de diseño varían de acuerdo a lo acontecido en la hora anterior. 
+La presente investigación realiza un estudio sobre la hibridación de Métodos de programación matemática con Algoritmos Evolutivos. Se resuelven seis problemas de optimización de Diseño Mecatrónico. Los primeros tres problemas son casos de estudio de la "Síntesis Óptima de un Mecanismo de Cuatro Barras", los cuales consisten en minimizar el error respecto a una trayectoria deseada. De forma similar, se procede para los dos casos de la "Síntesis Óptima de un Efector Final de Tres Dedos", donde se necesita maximizar la precisión de los dedos del efector mediante la minimización del error de la trayectoria del acoplador. El último problema resolver es la " {Optimización de la Generación de Energía en una micro-red eléctrica aislada}". Para este problema se considera cada hora del día como un problema de optimización donde las límites para las variables de diseño varían de acuerdo a lo acontecido en la hora anterior. 
 
-Se propone un nuevo enfoque de hibridación que plantea siete lineamientos de diseño. La distribución de diferentes instancias de un buscador local en puntos aleatorios del espacio de búsqueda, la comunicación y el balance entre los métodos de búsqueda global y local son las directrices más representativas. Siguiendo este enfoque se propusieron seis variantes del Algoritmo Híbrido basado en el Método Nelder Mead con Evolución Diferencial (HNMED). El algoritmo divide la población en $NS$ de símpleces los cuales son operados por las instancias del Método Nelder Mead modificado. La Evolución Diferencial es aplicada a un subconjunto élite de la población en cada generación. El diseño experimental se dividió en Experimentos preliminares y finales. En los primeros se obtuvieron las primeras cinco variantes HNMED mediante la aplicación de pruebas de estadística descriptiva e inferencial. Teniendo en cuenta los resultados obtenidos se plantea HNMED-V6 la cual alcanza el mejor desempeño. Los experimentos finales comparan las dos ultimas variantes HNMED con la ED/rand/1/bin y C-LSHADE. 
+Se propone un nuevo enfoque de hibridación que plantea siete lineamientos de diseño. La distribución de diferentes instancias de un buscador local en puntos aleatorios del espacio de búsqueda, la comunicación y el balance entre los métodos de búsqueda global y local son las directrices más representativas. Siguiendo este enfoque se propusieron seis variantes del Algoritmo Híbrido basado en el Método Nelder Mead con Evolución Diferencial (HNMED). El algoritmo divide la población en $NS$ de símpleces los cuales son operados por las instancias del Método Nelder Mead modificado. La Evolución Diferencial es aplicada a un subconjunto élite de la población en cada generación. El diseño experimental se dividió en Experimentos Preliminares y Finales. En los primeros se obtuvieron las primeras cinco variantes HNMED mediante la aplicación de pruebas de estadística descriptiva e inferencial. Teniendo en cuenta los resultados obtenidos se plantea HNMED-V6 la cual alcanza el mejor desempeño. Los experimentos finales comparan las dos ultimas variantes HNMED con la ED/rand/1/bin y C-LSHADE. 
 Los resultados obtenidos muestran que las variantes propuestas son capaces de obtener resultados iguales o mejores a los ya reportados en la literatura utilizando un número significativamente menor de evaluaciones durante el proceso de minimización.
 \end{abstract}
 
