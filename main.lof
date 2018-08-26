@@ -11,26 +11,26 @@
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Posibles movientos del simplex durante una iteraci\IeC {\'o}n del Nelder Mead para $n=2$\relax }}{37}{figure.caption.124}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Mecanismo de cuatro barras\relax }}{59}{figure.caption.248}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Mecanismo de seis barras para el dise\IeC {\~n}o de un dedo.}}{68}{figure.caption.296}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Mecanismo manivela-biela-corredera en el Efector Final.}}{69}{figure.caption.298}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Mecanismo manivela-biela-corredera para $r_4 > 0$ en el Efector Final.}}{70}{figure.caption.300}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Mecanismo manivela-biela-corredera para $r_4<0$ en el Efector Final.}}{71}{figure.caption.310}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Mecanismo manivela-biela-corredera para $r_4 =0$ en el Efector Final.}}{72}{figure.caption.315}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Mecanismo de cuatro barras de un dedo del Efector Final.}}{73}{figure.caption.319}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Mecanismo de cuatro barras.\relax }}{60}{figure.caption.248}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Mecanismo de seis barras para el dise\IeC {\~n}o de un dedo del Efector Final.}}{68}{figure.caption.297}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Mecanismo manivela-biela-corredera en el Efector Final.}}{69}{figure.caption.299}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Mecanismo manivela-biela-corredera para $r_4 > 0$ en el Efector Final.}}{70}{figure.caption.301}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Mecanismo manivela-biela-corredera para $r_4<0$ en el Efector Final.}}{71}{figure.caption.311}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Mecanismo manivela-biela-corredera para $r_4 =0$ en el Efector Final.}}{72}{figure.caption.316}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Mecanismo de cuatro barras de un dedo del Efector Final.}}{74}{figure.caption.320}
 \contentsline {figure}{\numberline {5.8}{\ignorespaces Acoplador del mecanismo de cuatro barras en el Efector Final}}{76}{figure.caption.337}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de las variantes HNMED\relax }}{103}{figure.caption.519}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Esquema de las variantes HNMED\relax }}{103}{figure.caption.520}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Resultados de las pruebas de Bonferroni-Dunn para las variantes NMELA y NM en Experimento A.}}{120}{figure.caption.691}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el Experimento B.}}{125}{figure.caption.717}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Resultados de las pruebas de Bonferroni-Dunn obtenidos por las variantes HNMED vs ED/rand/1/bin en el Experimento B.}}{128}{figure.caption.719}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el Experimento C.}}{134}{figure.caption.748}
-\contentsline {figure}{\numberline {7.5}{\ignorespaces Resultados de las pruebas de Bonferroni-Dunn obtenidos por las variantes HNMED vs ED/rand/1/bin en el Experimento C.}}{136}{figure.caption.750}
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por la variante HNMED-V5 y C-LSHADE en el Experimento D.}}{141}{figure.caption.770}
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por la variante HNMED-V6 y C-LSHADE en el Experimento E.}}{142}{figure.caption.775}
-\contentsline {figure}{\numberline {7.8}{\ignorespaces Mecanismos correspondientes a las mejores soluciones encontradas por el algoritmo HNMED-V6 en los tres casos de estudio de la S\IeC {\'\i }ntesis \IeC {\'O}ptima del Mecanismo de Cuatro Barras.\relax }}{148}{figure.caption.785}
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Efectores finales correspondientes a las mejores soluciones encontradas por el algoritmo HNMED-V6 en los dos casos de estudio de la S\IeC {\'\i }ntesis \IeC {\'O}ptima de un Efector Final de Tres Dedos.\relax }}{150}{figure.caption.788}
-\contentsline {figure}{\numberline {7.10}{\ignorespaces Visualizaci\IeC {\'o}n del suministro de energ\IeC {\'\i }a durante las 24 horas del d\IeC {\'\i }a para el funcionamiento de la microrred aislada, obtenido por el algoritmo HNMED-V6.\relax }}{153}{figure.caption.791}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Resultados de las pruebas de Bonferroni-Dunn para las variantes NMELA y NM en Experimento A.}}{120}{figure.caption.692}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el Experimento B.}}{125}{figure.caption.718}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Resultados de las pruebas de Bonferroni-Dunn obtenidos por las variantes HNMED vs ED/rand/1/bin en el Experimento B.}}{128}{figure.caption.720}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por las variantes HNMED y ED/rand/1/bin en el Experimento C.}}{134}{figure.caption.749}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Resultados de las pruebas de Bonferroni-Dunn obtenidos por las variantes HNMED vs ED/rand/1/bin en el Experimento C.}}{136}{figure.caption.751}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por la variante HNMED-V5 y C-LSHADE en el Experimento D.}}{141}{figure.caption.771}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Gr\IeC {\'a}ficas de convergencia obtenidas por la variante HNMED-V6 y C-LSHADE en el Experimento E.}}{142}{figure.caption.776}
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Mecanismos correspondientes a las mejores soluciones encontradas por el algoritmo HNMED-V6 en los tres casos de estudio de la S\IeC {\'\i }ntesis \IeC {\'O}ptima del Mecanismo de Cuatro Barras.\relax }}{148}{figure.caption.786}
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Efectores finales correspondientes a las mejores soluciones encontradas por el algoritmo HNMED-V6 en los dos casos de estudio de la S\IeC {\'\i }ntesis \IeC {\'O}ptima de un Efector Final de Tres Dedos.\relax }}{150}{figure.caption.789}
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Visualizaci\IeC {\'o}n del suministro de energ\IeC {\'\i }a durante las 24 horas del d\IeC {\'\i }a para el funcionamiento de la microrred aislada, obtenido por el algoritmo HNMED-V6.\relax }}{153}{figure.caption.792}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
