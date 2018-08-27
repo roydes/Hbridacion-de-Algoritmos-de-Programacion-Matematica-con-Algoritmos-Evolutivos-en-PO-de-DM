@@ -5,8 +5,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Signo del radical seg\IeC {\'u}n el tipo de mecanismo\relax }}{61}{table.caption.263}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Signo del radical seg\IeC {\'u}n el tipo de mecanismo\relax }}{67}{table.caption.295}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Signo del radical seg\IeC {\'u}n el tipo de mecanismo.\relax }}{61}{table.caption.263}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Pares de puntos de precisi\IeC {\'o}n para el Caso de Estudio 3 del Mecanismo de Cuatro Barras.\relax }}{67}{table.caption.295}
 \contentsline {table}{\numberline {5.3}{\ignorespaces Par\IeC {\'a}metros del Sistemas de Almacenamiento de Energ\IeC {\'\i }a en la Micro-Red No Interconectable.\relax }}{85}{table.caption.386}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
@@ -16,7 +16,7 @@
 \contentsline {table}{\numberline {7.4}{\ignorespaces Tama\IeC {\~n}o de poblaci\IeC {\'o}n utilizados para cada problema en el experimento B.\relax }}{123}{table.caption.715}
 \contentsline {table}{\numberline {7.5}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de optimizaci\IeC {\'o}n.}}{124}{table.caption.717}
 \contentsline {table}{\numberline {7.6}{\ignorespaces Resultados de la prueba de Friedman obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico.}}{127}{table.caption.719}
-\contentsline {table}{\numberline {7.7}{\ignorespaces Evaluaciones utilizadas por problema de optimizaci\IeC {\'o}n Experimentos C.\relax }}{131}{table.caption.741}
+\contentsline {table}{\numberline {7.7}{\ignorespaces Evaluaciones utilizadas por problema de optimizaci\IeC {\'o}n: Experimento C.\relax }}{131}{table.caption.741}
 \contentsline {table}{\numberline {7.8}{\ignorespaces Tama\IeC {\~n}os de poblaci\IeC {\'o}n utilizados para cada problema en el Experimento C.\relax }}{132}{table.caption.746}
 \contentsline {table}{\numberline {7.9}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento C para los seis problemas de optimizaci\IeC {\'o}n.}}{133}{table.caption.748}
 \contentsline {table}{\numberline {7.10}{\ignorespaces Resultados de la prueba de Friedman obtenidos por las variantes HNMED y DE/rand/1/bin en el experimento C para los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico.}}{135}{table.caption.750}
@@ -28,7 +28,7 @@
 \contentsline {table}{\numberline {7.16}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por HNMED-V6 vs C-LSHADE en los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico}}{145}{table.caption.775}
 \contentsline {table}{\numberline {7.17}{\ignorespaces Comparaci\IeC {\'o}n de C-LSHADE y HNMED-V6 en los seis problemas de optimizaci\IeC {\'o}n mediante la prueba de Suma de Jerarqu\IeC {\'\i }as de Wilcoxon.}}{146}{table.caption.777}
 \contentsline {table}{\numberline {7.18}{\ignorespaces Vectores de dise\IeC {\~n}o obtenidos por HNMED-V6 y C-LSHADE para los tres casos de estudio del mecanismo de cuatro barras, correspondientes a la mejor observaci\IeC {\'o}n de una muestra de ejecuciones independientes.\relax }}{148}{table.caption.785}
-\contentsline {table}{\numberline {7.19}{\ignorespaces Vectores de dise\IeC {\~n}o por HNMED-V6 y C-LSHADE para los dos casos de estudio del efector final de tres dedos, correspondientes al la mejor observaci\IeC {\'o}n de la muestra.\relax }}{150}{table.caption.788}
-\contentsline {table}{\numberline {7.20}{\ignorespaces Vectores de dise\IeC {\~n}o obtenidos por HNMED-V6 para la microrred aislada en las 24 horas del d\IeC {\'\i }a, correspondientes al la mejor observaci\IeC {\'o}n de la muestra\relax }}{152}{table.caption.791}
+\contentsline {table}{\numberline {7.19}{\ignorespaces Vectores de dise\IeC {\~n}o por HNMED-V6 y C-LSHADE para los dos casos de estudio del efector final de tres dedos, correspondientes al la mejor observaci\IeC {\'o}n de una muestra de ejecuciones independientes.\relax }}{150}{table.caption.788}
+\contentsline {table}{\numberline {7.20}{\ignorespaces Vectores de dise\IeC {\~n}o obtenidos por HNMED-V6 para la microrred aislada en las 24 horas del d\IeC {\'\i }a, correspondientes al la mejor observaci\IeC {\'o}n de una muestra de ejecuciones independientes.\relax }}{152}{table.caption.791}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

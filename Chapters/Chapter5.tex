@@ -37,13 +37,13 @@ Para el análisis de la posición, velocidad y aceleración se comienza por plan
 \begin{equation}\label{eq:MElazoPolar}
 r_1e^{j\theta_1}+r_4e^{j\theta_4}=r_2e^{j\theta_2}+r_3e^{j\theta_3}
 \end{equation}
-Donde $e^{j\theta_1}$ es la entidad de Euler y $\theta_i$ es el angulo comprendido entre cada barra y el eje de coordenadas. La identidad de Euler plantea la siguiente relación donde $j$ es la unidad imaginaria \cite{weisstein_euler_nodate}:
+Donde $e^{j\theta_1}$ es la entidad de Euler y $\theta_i$ es el ángulo comprendido entre cada barra y el eje de coordenadas. La identidad de Euler plantea la siguiente relación donde $j$ es la unidad imaginaria \cite{weisstein_euler_nodate}:
 \begin{equation}\label{eq:Euler}
  e^{jx}=\cos{x}+j\sin{x} 
 \end{equation}
 
 
-Luego sustituyendo \ref{eq:Euler} en \ref{eq:MElazoPolar} se obtiene la expresión:
+Luego sustituyendo la Ecuación \ref{eq:Euler} en \ref{eq:MElazoPolar} se obtiene la expresión:
 \begin{equation}\label{eq:MEPolarEuler}
 r_1(\cos{\theta_1}+j\sin{\theta_1})+r_4(\cos{\theta_4}+j\sin{\theta_1})=r_2(\cos{\theta_2}+j\sin{\theta_2})+r_3(\cos{\theta_3}+j\sin{\theta_3})
 \end{equation}
@@ -51,7 +51,7 @@ Resolviendo:
 \begin{equation}\label{eq:MEPolarEuler2}
 r_1 \cos{\theta_1}+r_1 j \sin{\theta_1}+r_4\cos{\theta_4}+r_4j\sin{\theta_4}=r_2\cos{\theta_2}+r_2 j\sin{\theta_2}+r_3\cos{\theta_3}+r_3j\sin{\theta_3}
 \end{equation}
-Agrupando la parte imaginaria en el miembro izquierdo y la real en el miembro derecho:
+Agrupando la real en el miembro izquierdo y la parte imaginaria en el miembro derecho:
 \begin{equation}\label{eq:MEPolarEuler21}
 r_1 \cos{\theta_1}+r_4\cos{\theta_4}- r_2\cos{\theta_2}-r_3\cos{\theta_3}=r_2 j\sin{\theta_2}+r_3j\sin{\theta_3} -r_1 j \sin{\theta_1}-r_4j\sin{\theta_4}
 \end{equation} 
@@ -86,12 +86,12 @@ El ángulo $\theta_3$ se puede obtener como función de $A_1$, $B_1$, $C_1$ y $\
 \sin{\theta_3}= \frac{2tan(\frac{\theta_3}{2})}{1+tan^2(\frac{\theta_3}{2})}&,& \cos{\theta_3}= \frac{1-tan^2(\frac{\theta_3}{2})}{1+tan^2(\frac{\theta_3}{2})} \label{eq:enFuncionTheta3}
 \end{eqnarray}
 
-Sustituyendo la Ecuación \ref{eq:enFuncionTheta3} en la Ecuación \ref{eq:A1B1C1} se obtiene una ecuación lineal de segundo orden:
+Sustituyendo la Ecuación \ref{eq:enFuncionTheta3} en la Ecuación \ref{eq:A1B1C1} se obtiene una ecuación no lineal de segundo orden:
 \begin{equation} \label{eq:Lineal2dOrden}
  \left[C_1 -A_1\right]= tan^2{\frac{\theta_3}{2}}+\left[2B_1\right]\tan{(\frac{\theta_3}{2})}+A_1+C1=0
 \end{equation}
 Resolviendo la ecuación \ref{eq:Lineal2dOrden} el ángulo $\theta_3$ puede ser expresado de la siguiente forma:
-\begin{equation} \label{eq:Lineal2dOrden}
+\begin{equation} \label{eq:Lineal2dOrden_resuelta}
 \theta_3= 2\arctan \left[ \frac{-B_1 \pm \sqrt{B^2_1+A^2_1-C^2_1}}{C_1-A_1} \right]
 \end{equation}
 El ángulo $\theta_4$ se obtiene de forma similar, seleccionando el signo del radical para los
@@ -105,7 +105,7 @@ la Tabla \ref{tab:Signo del radical}.
 abierto &  $+ \sqrt{}$&   $- \sqrt{}$  \\ \hline
 cerrado & $- \sqrt{}$ & $ + \sqrt{}$  \\ \hline
 \end{tabular}
-\caption{Signo del radical según el tipo de mecanismo}
+\caption{Signo del radical según el tipo de mecanismo.}
 \label{tab:Signo del radical}
 \end{table}
 
@@ -140,7 +140,7 @@ Las ecuaciones anteriores permiten calcular la trayectoria del punto $C$ durante
 Con base en el análisis cinemático abordado en la Sección \ref{sec:Análisis cinemático de un Mecanismo de Cuatro Barras} se plantea un problema de optimización numérico que tiene como objetivo minimizar el error entre el punto $C$ del acoplador y ciertos puntos de precisión para describir una trayectoria determinada. Los componentes del mecanismo como las  barras y los ángulos de rotación están sujetas ciertas restricciones para garantizar el movimiento. 
 
 \subsubsection{Función Objetivo}\label{sec:Funcion Objetivo de MEC}
-La síntesis óptima del mecanismo de cuatro barras persigue hallar una configuración que permita la máxima precisión del mecanismo al realizar una trayectoria deseada. Esto significa que se deben encontrar las longitudes de las barras, el angulo de rotación respecto al eje $OXY$, la distancia entre los dos sistemas de referencias, los valores para el conjunto de ángulos para la barra de entrada que permitirán generar la trayectoria deseada. Esta trayectoria puede ser lograda definiendo un conjunto de puntos de precisión. En el sistema global de coordenadas el punto de precisión $i$ esta dado por:
+La síntesis óptima del mecanismo de cuatro barras persigue hallar una configuración que permita la máxima precisión del mecanismo al realizar una trayectoria deseada. Esto significa que se deben encontrar las longitudes de las barras, el ángulo de rotación respecto al eje $OXY$, la distancia entre los dos sistemas de referencias, los valores para el conjunto de ángulos para la barra de entrada que permitirán generar la trayectoria deseada. Esta trayectoria puede ser lograda definiendo un conjunto de puntos de precisión. En el sistema global de coordenadas el punto de precisión $i$ esta dado por:
 \begin{equation}
 C^i_d=\left[C^i_x,C^i_y \right],
 \end{equation}
@@ -173,7 +173,7 @@ Además de estas condiciones, se deben tomar en cuenta las siguientes restriccio
 \begin{equation}
 r_2 < r_3;\quad r_3 < r_4;\quad r_4 < r_1 
 \end{equation}
-Debido a que el problema de la síntesis es de generación de trayectoria sin sincronizan prescrita, los valores que toman los ángulos de la manivela deben estar ordenados secuencialmente. Si el angulo
+Debido a que el problema de la síntesis es de generación de trayectoria sin sincronizan prescrita, los valores que toman los ángulos de la manivela deben estar ordenados secuencialmente. Si el ángulo
 del punto de precisión $i$ se denota como $\theta^i_2$ , se debe cumplir que:
 \begin{equation}
 \theta^1_2 < \theta^2_2< ... < \theta^N_2
@@ -278,7 +278,7 @@ r_1,r_2,r_3,r_4& \in & \left[ 0,60\right] \\
 r_{cx},r_{cy},\theta_0,x_0,y_0 & \in & \left[ -60,60\right] \\
 \theta_0,\theta^1_2,...,\theta^{10}_2& \in & \left[ 0,2\pi \right] \\
 \end{eqnarray}
- En este caso se necesita minimizar la distancia entro los puntos del acoplador a los dos puntos de cada par de coordenadas. Por tanto, se plantea una función diferente y trece restricciones como se describe desde la Ecuación \ref{eq:FO_MEC3} a la Ecuación \ref{eq:g13_MEC3}:
+ En este caso se necesita minimizar la distancia entre los puntos de la trayectoria de $C$ en el acoplador y los $K$ pares de puntos de precisión. Básicamente, el punto $C$ debe pasar entre cada par de puntos de precisión de manera que la sumatoria de las distancias entre cada punto del par $i$ y $C$ sea mínima. Por tanto, se plantea una función diferente y trece restricciones como se describe desde la Ecuación \ref{eq:FO_MEC3} a la Ecuación \ref{eq:g13_MEC3}:
  \begin{equation}\label{eq:FO_MEC3}
  \begin{aligned}
 min\quad  f(\vec{p})=
@@ -320,7 +320,7 @@ g_{13}(\vec{p})&=&p_{18}-p_{19} \leq 0 \label{eq:g13_MEC3}
 9 &(0.442, 1.549) &(0.558, 1.742)\\ \hline
 10& (1.055, 1.905)& (1.186, 2.088)\\ \hline
 \end{tabular}
-\caption{Signo del radical según el tipo de mecanismo}
+\caption{Pares de puntos de precisión para el Caso de Estudio 3 del Mecanismo de Cuatro Barras.}
 \label{tab:Coordenadas MEC3}
 \end{table}
 \subsection{Diseño de un Efector Final de Tres Dedos}
@@ -341,17 +341,17 @@ Para llegar al planteamiento final de este problema de optimización se debe rea
 \begin{figure}[htb]
     \centering
      \includegraphics[width=0.8\textwidth]{Griper2.jpg}
-    \caption[Mecanismo manivela-biela-corredera en el Efector Final.]{Mecanismo manivela-biela-corredera en el Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
+    \caption[Mecanismo manivela-biela-corredera en un dedo del Efector Final.]{Mecanismo manivela-biela-corredera en un dedo del Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
     \label{fig:Griper_MBC}
 \end{figure}
 \begin{enumerate}
 \item \textbf{Si} $r_4>0$ \textbf{entonces}:
 
-Se calcula el valor del angulo $\theta_3$ mediante la sumatoria de los ángulos $\theta_2$, $\varphi$ y $\pi$  (igual a 180). En la Figura \ref{fig:Griper_MBC1} se muestran los ángulos requeridos para efectuar los cálculos necesarios en este caso.
+Se calcula el valor del ángulo $\theta_3$ mediante la sumatoria de los ángulos $\theta_2$, $\varphi$ y $\pi$  (igual a 180). En la Figura \ref{fig:Griper_MBC1} se muestran los ángulos requeridos para efectuar los cálculos necesarios en este caso.
 \begin{figure}[htb]
     \centering
      \includegraphics[width=0.8\textwidth]{Griper3.jpg}
-    \caption [Mecanismo manivela-biela-corredera para $r_4 > 0$ en el Efector Final.]{Mecanismo manivela-biela-corredera para $r_4 > 0$ en el Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
+    \caption [Mecanismo manivela-biela-corredera para $r_4 > 0$ en un dedo del Efector Final.]{Mecanismo manivela-biela-corredera para $r_4 > 0$ un dedo del el Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
     \label{fig:Griper_MBC1}
 \end{figure}
 
@@ -367,11 +367,11 @@ Aplicando la ley de cosenos y despejando se obtiene la Ecuación \ref{eq:griper_
 \begin{equation} \label{eq:griper_gamma}
 \gamma=\cos^{-1}\left[  \frac{r^2_2 +l^2-r^2_3}{2r_2l}\right]
 \end{equation}
-Para cálculo  del angulo se plantea que:
+Para cálculo  del ángulo se plantea que:
 \begin{equation}\label{eq:griper_beta} 
 \beta=\tan^{-1}\left[  \frac{|r_4|}{r_1}\right]
 \end{equation}
-Sustituyendo las Ecuaciones \ref{eq:griper_gamma} y \ref{eq:griper_beta} en la Ecuación \ref{eq:griper_theta2}:
+Sustituyendo las Ecuaciones \ref{eq:griper_gamma} y \ref{eq:griper_beta} en la Ecuación \ref{eq:griper_theta2} se obtiene:
 \begin{equation}\label{eq:griper_theta22}
 \theta_2=  \cos^{-1}\left[  \frac{r^2_2 +l^2-r^2_3}{2r_2l}\right]+ \tan^{-1}\left[  \frac{|r_4|}{r_1}\right]
 \end{equation}
@@ -393,11 +393,11 @@ Esto es:
 \begin{figure}[htb]
     \centering
      \includegraphics[width=0.8\textwidth]{Griper4.jpg}
-    \caption [Mecanismo manivela-biela-corredera para $r_4<0$ en el Efector Final.]{Mecanismo manivela-biela-corredera para $r_4<0$ en el Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
+    \caption [Mecanismo manivela-biela-corredera para $r_4<0$ en un dedo del Efector Final.]{Mecanismo manivela-biela-corredera para $r_4<0$ en un dedo del Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
     \label{fig:Griper_MBC2}
 \end{figure}
 
-De forma similar al caso anterior el análisis matemático es similar al del caso anterior, se debe calcular el valor del angulo $\theta_3$ solo que, en este caso el angulo $\theta_2$ es la diferencia entre los ángulos $\beta$ y $\gamma$:
+De forma similar al caso anterior el análisis matemático es similar al del caso anterior, se debe calcular el valor del ángulo $\theta_3$ solo que, en este caso el ángulo $\theta_2$ es la diferencia entre los ángulos $\beta$ y $\gamma$:
 \begin{equation}\label{eq:griper_theta23}
 \theta_2=\beta-\gamma
 \end{equation}
@@ -417,11 +417,11 @@ Luego, el valor de $\theta_3$ se obtiene sustituyendo este valor de $\theta_2$  
 \begin{figure}[htb]
     \centering
      \includegraphics[width=0.8\textwidth]{Griper6.png}
-    \caption[Mecanismo manivela-biela-corredera para $r_4 =0$ en el Efector Final.]{Mecanismo manivela-biela-corredera para $r_4 =0$ en el Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
+    \caption[Mecanismo manivela-biela-corredera para $r_4 =0$ en un dedo del Efector Final.]{Mecanismo manivela-biela-corredera para $r_4 =0$ en un dedo del Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
     \label{fig:Griper_MBC3}
 \end{figure}
 
-Debido que $r_4 = 0$ corredera del mecanismo se alinea con el eje $x$. Al igual que en los casos anteriores el valor del angulo $\theta_3$ es igual a la suma de los ángulos $\theta_2$, $\varphi$ y $\pi$ . Para el calculo de $\theta_2$y $\varphi$ se aplica la ley de cosenos y se despeja, obteniendo las Ecuaciones \ref{eq:griper_theta25} y \ref{eq:griper_varphi3}
+Debido que $r_4 = 0$ corredera del mecanismo se alinea con el eje $x$. Al igual que en los casos anteriores el valor del ángulo $\theta_3$ es igual a la suma de los ángulos $\theta_2$, $\varphi$ y $\pi$ . Para el calculo de $\theta_2$y $\varphi$ se aplica la ley de cosenos y se despeja, obteniendo las Ecuaciones \ref{eq:griper_theta25} y \ref{eq:griper_varphi3}
 \begin{equation}\label{eq:griper_theta25}
 \theta_2=\cos^{-1}\left[ \frac{r^2_1 +r^2_2-r^2_3}{2r_1r_2}\right]
 \end{equation}
@@ -519,7 +519,7 @@ en donde:
 \begin{figure}[htb]
     \centering
      \includegraphics[width=0.8\textwidth]{Griper8.png}
-    \caption[Acoplador del mecanismo de cuatro barras en el Efector Final]{Acoplador del mecanismo de cuatro barras en el Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
+    \caption[Acoplador del mecanismo de cuatro barras en un dedo del Efector Final]{Acoplador del mecanismo de cuatro barras en un dedo del Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
     \label{fig:Griper_MEC1}
 \end{figure}
 \subsection{Declaración de Problemas de Optimización para Casos de Estudio del Efector}
@@ -789,7 +789,7 @@ donde $GD_{nominal}$ es la capacidad nominal del generador diesel, con un valor 
 						
 
 
-\section{Conclusiones}
+\section{Conclusiones del capítulo}
 En el presente capítulo se plantea la formulación matemática de los problemas a resolver por la propuesta de solución. Es necesario primeramente destacar la complejidad de los diferentes casos de diseño cinemático de mecanismos, donde el análisis realizado para obtener la trayectoria deseada por el punto del acoplador, concibe una función compleja no lineal que incluye operaciones mediante funciones trigonométricas y de potencias sobre las variables de diseño. Se puede observar que la función objetivo de estos problemas puede tener valores imaginarios (Ecuación \ref{eq:MEPolarEuler}) para vectores reales. Al no estar definida en los reales para todo su dominio, los métodos de optimización basados en información del gradiente suelen no ser aplicables, surgiendo la necesidad de aplicar métodos directos. Además, las restricciones de diseño para garantizar el cumplimiento de las leyes de Grashoff y la secuencia de ángulos acotan el espacio factible aumentando la dificultad del problema. 
 
 A diferencia de los casos de diseño de mecanismos, la función objetivo a optimizar en el problema de la MR-RNI es una función cuadrática. Sin embargo, en este problema se presentan límites diferentes en cada hora del día para las variables de diseño. Para la potencia generada por el sistema de almacenamiento de energía, este límite depende del estado de la carga en la hora anterior lo que representa un reto para el algoritmo de optimización. Por otra parte, el balance de carga implica una restricción de igualdad, las cuales son generalmente más difíciles de satisfacer. 

@@ -11,7 +11,7 @@ Cada variante fue aplicada a seis problemas de optimización de diseño mecatró
 	\item El enfoque propuesto permite diseñar algoritmos con mayor capacidad de exploración de diferentes regiones del espacio de búsqueda las cuales son localmente minimizadas por las instancias de los buscadores locales.
 	\item A diferencia de los enfoques mayormente utilizados en el estado del arte, el buscador local tiene un papel preponderante en el proceso de minimización.
 	\item El buscador global debe ser aplicado a un subconjunto élite de la población para garantizar mayor rapidez de convergencia.
-	 \item Las variantes propuestas utilizan diferentes instancias del método Nelder-Mead modificado con un operador que concibe información global del espacio de búsqueda. La Evaluación Diferencial es utilizada como buscador global, actuando sobre los mejores puntos de cada símplex.
+	 \item Las variantes propuestas utilizan diferentes instancias del método Nelder-Mead modificado con un operador que concibe información global del espacio de búsqueda. La Evolución Diferencial es utilizada como buscador global, actuando sobre los mejores puntos de cada símplex.
 	 \item La variante HNMED-V6 aplica una estrategia de inicialización de los símpleces, ubicando los símpleces iniciales en la vecindad de los límites del espacio de búsqueda. Esta variante contempla la naturaleza geométrica del método Nelder-Mead, por lo que genera símpleces iniciales más regulares y de mayor tamaño. 
 	 \item Se obtuvieron resultados competitivos en todos los problemas de optimización de diseño mecatrónico utilizando un número significativamente inferior a los ya reportados en la literatura para los seis problemas de optimización. En el caso de HNMED-V6 se utilizan menos símpleces iniciales ya que la los vértices iniciales se encuentran a mayor distancia por lo tanto son capaces de muestrear mayores áreas del espacio de búsqueda. Esto constituye una disminución de la complejidad temporal como de espacio en memoria.
 	 \item Finalmente se obtuvieron nuevas soluciones para tres de los seis problemas de optimización. En el  caso MCE2 se encontró una nueva solución que describe un mecanismo diferente que alcanza una trayectoria con menor error respecto a los puntos de precisión. Para el caso 1 del gripper se obtuvieron vectores distantes que alcanzan el valor de $F(\vec{x})=0$, lo que demuestra la naturaleza multimodal de la función objetivo obtenida durante el diseño cinemático del mecanismo. Estos resultados demuestran la complejidad de estos problemas, sobre todo los de diseño cinemático. 
@@ -21,7 +21,7 @@ Cada variante fue aplicada a seis problemas de optimización de diseño mecatró
 	  El objetivo general de la presente investigación fue diseñar un Algoritmo Híbrido de Programación Matemática con elementos de Algoritmos Evolutivos  para resolver problemas no lineales de optimización de  Diseño Mecatrónico. El cual fue cumplido, ya que bajo el enfoque de hibridación propuesto se generaron seis algoritmos competitivos que utilizan un número inferior de evaluaciones de la función objetivo respecto a los encontrados en la literatura especializada. Para cumplir el objetivo general se satisficieron los siguientes objetivos específicos:
 	 \begin{enumerate}
 	 	\item	Estudiar el comportamiento de al menos dos algoritmos de programación matemática al resolver problemas de diseño mecatrónico.
-	 	\item	Determinar bondades y deficiencias algoritmos de programación matemática.
+	 	\item	Determinar bondades y deficiencias de los métodos de programación matemática.
 	 	\item	Diseñar un Algoritmo Híbrido de programación matemática con elementos de algoritmos evolutivos para mejorar la búsqueda.
 	 	\item	Aplicar el Algoritmo Híbrido a problemas de optimización de diseño mecatrónico.
 	 	\item	Realizar pruebas de medición de desempeño mediante el análisis estadístico y medición del número de evaluaciones del algoritmo propuesto.
@@ -29,17 +29,16 @@ Cada variante fue aplicada a seis problemas de optimización de diseño mecatró
 	 \end{enumerate}
 	 
  \section{Contribuciones}
- Las contribuciones del presente trabajo se dividen en dos áreas fundamentales. La primera es proveer a la comunidad científica de un nuevo enfoque de diseño para la hibridación entre métodos de búsqueda local y global, que permite la implementación de algoritmos eficientes para problemas de optimización no lineales con restricciones. Por otra parte, los algoritmos propuestos permiten una optimización eficaz y eficiente de un conjunto diverso de problemas mecatrónicos complejos; por lo que quedan a disposición de los investigadores dedicados al diseño mecatrónico para futuros problemas de este tipo. 
+ Las contribuciones del presente trabajo se dividen en dos vertientes fundamentales. La primera es proveer a la comunidad científica de un nuevo enfoque de diseño para la hibridación entre métodos de búsqueda local y global, que permite la implementación de algoritmos eficientes para problemas de optimización no lineales con restricciones. Por otra parte, los algoritmos propuestos permiten una optimización eficaz y eficiente de un conjunto diverso de problemas mecatrónicos complejos; por lo que quedan a disposición de los investigadores dedicados al diseño mecatrónico para futuros problemas de este tipo. 
  \section{Trabajo Futuro}
  De acuerdo a los resultados obtenidos durante la investigación se contemplan los siguientes trabajos futuros:
  \begin{enumerate}
-    \item Aplicar el enfoque de hibridación en el diseño de algoritmos que combinen otros métodos de búsqueda local y con metaheurísticas para la búsqueda global. 
-    \item Continuar investigando el presente conjunto de problemas de optimización de diseño mecatrónico para alcanzar mejores resultados en los problemas MCE2,GCE2 y SCE1.
+    \item Aplicar el enfoque de hibridación en el diseño de algoritmos que combinen otros métodos de búsqueda local y metaheurísticas para la búsqueda global. 
+    \item Continuar investigando el presente conjunto de problemas de optimización de diseño mecatrónico para alcanzar mejores resultados en los problemas MCE2, GCE2 y SCE1.
     \item Aplicar el enfoque de hibridación para la resolución de problemas de optimización no lineales con restricciones que permitan una validación general del mismo. 
     \item Aplicar las variantes propuestas a nuevos problemas de optimización no lineales de diseño mecatrónico.
     \item Comprobar el desempeño de las variantes con otros mecanismos para el manejo de restricciones y reglas de acotamiento para las variables de diseño.
     \item Realizar un análisis detallado que incluya estadísticas sobre las operaciones realizadas por cada buscador durante la minimización como  conteo de aplicación de operadores, mejora de la función objetivo por operador, evaluación de la diversidad de la población entre otras.
-    \item Realizar un estudio sobre los parámetros del algoritmo HNMED-V6.
- 
+    \item Realizar un estudio sobre la configuración de parámetros del algoritmo HNMED-V6.
  \end{enumerate}
  
