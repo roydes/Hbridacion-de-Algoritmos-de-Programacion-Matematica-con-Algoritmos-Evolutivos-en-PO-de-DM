@@ -98,12 +98,12 @@ Neri Ferrante, Cotta Carlos, and Moscato Pablo.
 \newblock {\em Handbook of {Memetic} {Algorithms}}.
 \newblock Springer-Verlag, 2012.
 
-\bibitem{dominguez-isidro_memetic_2013}
-Saúl Domínguez-Isidro, Efrén Mezura-Montes, and Guillermo Leguizamón.
-\newblock Memetic differential evolution for constrained numerical optimization
-  problems.
-\newblock In {\em 2013 {{IEEE Congress}} on {{Evolutionary Computation}}},
-  pages 2996--3003. {IEEE}.
+\bibitem{VegaMEC1}
+Eduardo Vega-Alvarado, Edgar Flores, Efrén Mezura-Montes, Leticia
+  Flores~Pulido, and Maria Bárbara Calva-Yáñez.
+\newblock A memetic algorithm applied to the optimal design of a planar
+  mechanism for trajectory tracking.
+\newblock 53:83--90, 01 2016.
 
 \bibitem{anandan_our_????}
 Tanya~M. Anandan.
@@ -338,6 +338,12 @@ Jinghui Zhong, Xiaomin Hu, Min Gu, and Jun~Zhang (corresponding.
 \newblock Comparison of performance between different selection strategies on
   simple genetic algorithms.
 
+\bibitem{deb_efficient_1998}
+Kalyanmoy Deb.
+\newblock An {Efficient} {Constraint} {Handling} {Method} for {Genetic}
+  {Algorithms}.
+\newblock pages 311--338, 1998.
+
 \bibitem{laessig_threshold_2008}
 Joerg Laessig, Karl Heinz~Hoffmann, and Mihaela Enachescu.
 \newblock Threshold selecting: {Best} possible probability distribution for
@@ -434,13 +440,6 @@ Joseph~Edward Shigley, John~Joseph Uicker, Jos{\'e}~H P{\'e}rez, and
   Hortensia~Corona de~Cont{\'\i}n.
 \newblock {\em Teor{\'\i}a de m{\'a}quinas y mecanismos}.
 \newblock Number TJ145. S54 1983. McGraw-Hill M{\'e}xico;, 1983.
-
-\bibitem{VegaMEC1}
-Eduardo Vega-Alvarado, Edgar Flores, Efrén Mezura-Montes, Leticia
-  Flores~Pulido, and Maria Bárbara Calva-Yáñez.
-\newblock A memetic algorithm applied to the optimal design of a planar
-  mechanism for trajectory tracking.
-\newblock 53:83--90, 01 2016.
 
 \bibitem{Portilla_Mezura_MEC3}
 Á. Sánchez-Márquez, E.~Vega-Alvarado, E.~A. Portilla-Flores, and
@@ -548,12 +547,6 @@ Sanja Singer and Saša Singer.
 \newblock Complexity analysis of nelder-mead search iterations.
 \newblock 06 2018.
 
-\bibitem{deb_efficient_1998}
-Kalyanmoy Deb.
-\newblock An {Efficient} {Constraint} {Handling} {Method} for {Genetic}
-  {Algorithms}.
-\newblock pages 311--338, 1998.
-
 \bibitem{han_effect_2006}
 Lixing Han and Michael Neumann.
 \newblock Effect of dimensionality on the {Nelder}–{Mead} simplex method.
@@ -577,5 +570,12 @@ Joaqu{\'\i}n Derrac, Salvador Garc{\'\i}a, Daniel Molina, and Francisco
 \newblock A practical tutorial on the use of nonparametric statistical tests as
   a methodology for comparing evolutionary and swarm intelligence algorithms.
 \newblock {\em Swarm and Evolutionary Computation}, 1(1):3--18, 2011.
+
+\bibitem{tanabe2014improving}
+Ryoji Tanabe and Alex~S Fukunaga.
+\newblock Improving the search performance of shade using linear population
+  size reduction.
+\newblock In {\em Evolutionary Computation (CEC), 2014 IEEE Congress on}, pages
+  1658--1665. IEEE, 2014.
 
 \end{thebibliography}

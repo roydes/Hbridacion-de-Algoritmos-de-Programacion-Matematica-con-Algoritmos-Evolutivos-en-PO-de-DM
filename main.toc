@@ -1,141 +1,141 @@
 \babel@toc {spanish}{}
 \contentsline {chapter}{Resumen}{\es@scroman {iii}}{section*.2}
 \contentsline {chapter}{Agradecimientos}{\es@scroman {v}}{section*.3}
-\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.8}
-\contentsline {section}{\numberline {1.1}Descripci\IeC {\'o}n de la problem\IeC {\'a}tica}{4}{section.10}
-\contentsline {section}{\numberline {1.2}Planteamiento del Problema de investigaci\IeC {\'o}n}{8}{section.24}
-\contentsline {section}{\numberline {1.3}Objetivo general}{8}{section.25}
-\contentsline {subsection}{\numberline {1.3.1}Objetivos espec\IeC {\'\i }ficos}{9}{subsection.26}
-\contentsline {section}{\numberline {1.4}Hip\IeC {\'o}tesis de investigaci\IeC {\'o}n}{9}{section.33}
-\contentsline {section}{\numberline {1.5}Justificaci\IeC {\'o}n}{9}{section.34}
-\contentsline {section}{\numberline {1.6}Alcances}{10}{section.35}
-\contentsline {section}{\numberline {1.7}Limitaciones}{10}{section.36}
-\contentsline {section}{\numberline {1.8}Organizaci\IeC {\'o}n del documento}{11}{section.37}
-\contentsline {section}{\numberline {1.9}Conclusiones del cap\IeC {\'\i }tulo}{12}{section.38}
-\contentsline {chapter}{\numberline {2}Optimizaci\IeC {\'o}n}{13}{chapter.39}
-\contentsline {section}{\numberline {2.1}Variables de dise\IeC {\~n}o}{14}{section.44}
-\contentsline {section}{\numberline {2.2}Funci\IeC {\'o}n Objetivo}{15}{section.45}
-\contentsline {section}{\numberline {2.3}Restricciones de Dise\IeC {\~n}o}{16}{section.46}
-\contentsline {section}{\numberline {2.4}\IeC {\'O}ptimos locales y globales}{17}{section.47}
-\contentsline {section}{\numberline {2.5}Clasificaci\IeC {\'o}n de Problemas de Optimizaci\IeC {\'o}n}{19}{section.54}
-\contentsline {subsection}{\numberline {2.5.1}Clasificaci\IeC {\'o}n basada en la existencia de restricciones}{19}{subsection.55}
-\contentsline {subsection}{\numberline {2.5.2}Clasificaci\IeC {\'o}n basada en la naturaleza de las variables de dise\IeC {\~n}o}{20}{subsection.56}
-\contentsline {subsection}{\numberline {2.5.3}Clasificaci\IeC {\'o}n basada en la estructura f\IeC {\'\i }sica del problema}{20}{subsection.57}
-\contentsline {subsection}{\numberline {2.5.4}Clasificaci\IeC {\'o}n basada en la naturaleza de las ecuaciones involucradas}{21}{subsection.58}
-\contentsline {subsection}{\numberline {2.5.5}Clasificaci\IeC {\'o}n basada en los valores permisibles de las variables de dise\IeC {\~n}o}{22}{subsection.59}
-\contentsline {subsection}{\numberline {2.5.6}Clasificaci\IeC {\'o}n basada en la naturaleza determinista de las variables}{22}{subsection.60}
-\contentsline {subsection}{\numberline {2.5.7}Clasificaci\IeC {\'o}n basada en la separabilidad de las funciones}{22}{subsection.61}
-\contentsline {subsection}{\numberline {2.5.8}Clasificaci\IeC {\'o}n basada en el n\IeC {\'u}mero de funciones objetivo}{23}{subsection.62}
-\contentsline {section}{\numberline {2.6}Conclusiones del cap\IeC {\'\i }tulo}{23}{section.63}
-\contentsline {chapter}{\numberline {3}Programaci\IeC {\'o}n Matem\IeC {\'a}tica}{25}{chapter.64}
-\contentsline {section}{\numberline {3.1}Informaci\IeC {\'o}n de la Derivada}{25}{section.65}
-\contentsline {section}{\numberline {3.2}Informaci\IeC {\'o}n del Gradiente}{27}{section.72}
-\contentsline {section}{\numberline {3.3}M\IeC {\'e}todos de Optimizaci\IeC {\'o}n Univariable}{29}{section.79}
-\contentsline {subsection}{\numberline {3.3.1}M\IeC {\'e}todo de Fibonacci }{29}{subsection.80}
-\contentsline {subsection}{\numberline {3.3.2}M\IeC {\'e}todo de la Secci\IeC {\'o}n Dorada}{31}{subsection.86}
-\contentsline {subsection}{\numberline {3.3.3}M\IeC {\'e}todo de Newton-Raphson}{32}{subsection.90}
-\contentsline {section}{\numberline {3.4}M\IeC {\'e}todos de optimizaci\IeC {\'o}n multivariable}{33}{section.93}
-\contentsline {subsection}{\numberline {3.4.1}M\IeC {\'e}todo del Descenso Inclinado}{33}{subsection.94}
-\contentsline {subsection}{\numberline {3.4.2}M\IeC {\'e}todo de Newton}{34}{subsection.102}
-\contentsline {subsection}{\numberline {3.4.3}M\IeC {\'e}todo Nelder-Mead}{35}{subsection.106}
-\contentsline {subsection}{\numberline {3.4.4}M\IeC {\'e}todo de Hooke-Jeeves}{38}{subsection.128}
-\contentsline {section}{\numberline {3.5}T\IeC {\'e}cnicas de optimizaci\IeC {\'o}n con restricciones}{40}{section.162}
-\contentsline {subsection}{\numberline {3.5.1}M\IeC {\'e}todo de Multiplicadores de Lagrange}{40}{subsection.163}
-\contentsline {subsection}{\numberline {3.5.2}Condiciones de Optimalidad en problemas con restricciones}{41}{subsection.169}
-\contentsline {subsection}{\numberline {3.5.3}M\IeC {\'e}todo de Penalizaci\IeC {\'o}n de Restricciones}{43}{subsection.174}
-\contentsline {subsection}{\numberline {3.5.4}Programaci\IeC {\'o}n Cuadr\IeC {\'a}tica Secuencial}{44}{subsection.186}
-\contentsline {section}{\numberline {3.6}Conclusiones del cap\IeC {\'\i }tulo}{45}{section.190}
-\contentsline {chapter}{\numberline {4}Computaci\IeC {\'o}n Evolutiva}{47}{chapter.191}
-\contentsline {section}{\numberline {4.1}Representaci\IeC {\'o}n}{48}{section.196}
-\contentsline {section}{\numberline {4.2}Funci\IeC {\'o}n de aptitud}{50}{section.202}
-\contentsline {section}{\numberline {4.3}Selecci\IeC {\'o}n}{50}{section.203}
-\contentsline {section}{\numberline {4.4}Reproducci\IeC {\'o}n}{51}{section.205}
-\contentsline {section}{\numberline {4.5}Paradigmas de la Computaci\IeC {\'o}n Evolutiva}{52}{section.210}
-\contentsline {subsection}{\numberline {4.5.1}Programaci\IeC {\'o}n Evolutiva}{52}{subsection.211}
-\contentsline {subsection}{\numberline {4.5.2}Estrategia evolutivas}{53}{subsection.212}
-\contentsline {subsection}{\numberline {4.5.3}Algoritmos Gen\IeC {\'e}ticos}{53}{subsection.218}
-\contentsline {section}{\numberline {4.6}Evoluci\IeC {\'o}n Diferencial}{54}{section.219}
-\contentsline {section}{\numberline {4.7}Conclusiones del cap\IeC {\'\i }tulo}{56}{section.243}
-\contentsline {chapter}{\numberline {5}Problemas de Optimizaci\IeC {\'o}n de Dise\IeC {\~n}o de Mecatr\IeC {\'o}nico}{57}{chapter.244}
-\contentsline {section}{\numberline {5.1}Dise\IeC {\~n}o cinem\IeC {\'a}tico de Mecanismos}{58}{section.249}
-\contentsline {subsection}{\numberline {5.1.1}An\IeC {\'a}lisis cinem\IeC {\'a}tico de un Mecanismo de Cuatro Barras}{59}{subsection.250}
-\contentsline {subsection}{\numberline {5.1.2}Planteamiento del Problema de Optimizaci\IeC {\'o}n para casos de estudio del Mecanismo de Cuatro Barras}{62}{subsection.268}
-\contentsline {subsubsection}{Funci\IeC {\'o}n Objetivo}{62}{section*.269}
-\contentsline {subsubsection}{Restricciones de dise\IeC {\~n}o}{63}{section*.274}
-\contentsline {subsection}{\numberline {5.1.3}Caso de estudio 1: seguimiento de una trayectoria lineal vertical, sin sincronizaci\IeC {\'o}n previa - MCE1}{64}{subsection.279}
-\contentsline {subsection}{\numberline {5.1.4}Caso de estudio 2: seguimiento de una trayectoria no alineada, con sincronizacion previa - MCE2}{65}{subsection.285}
-\contentsline {subsection}{\numberline {5.1.5}Caso de estudio 3: generaci\IeC {\'o}n de movimiento delimitado por un conjunto de pares de puntos - MCE3}{66}{subsection.292}
-\contentsline {subsection}{\numberline {5.1.6}Dise\IeC {\~n}o de un Efector Final de Tres Dedos}{67}{subsection.298}
-\contentsline {subsection}{\numberline {5.1.7}Cinem\IeC {\'a}tica del Efector Final de Tres Dedos }{68}{subsection.300}
-\contentsline {subsection}{\numberline {5.1.8}Declaraci\IeC {\'o}n de Problemas de Optimizaci\IeC {\'o}n para Casos de Estudio del Efector}{76}{subsection.341}
-\contentsline {subsubsection}{Funci\IeC {\'o}n objetivo}{77}{section*.344}
-\contentsline {subsubsection}{Restricciones de dise\IeC {\~n}o}{77}{section*.346}
-\contentsline {subsection}{\numberline {5.1.9}Caso de estudio 1: Dise\IeC {\~n}o sin normalizaci\IeC {\'o}n de barras -GCE1}{78}{subsection.353}
-\contentsline {subsection}{\numberline {5.1.10}Caso de estudio 2: Dise\IeC {\~n}o con normalizaci\IeC {\'o}n de barras - GCE2}{79}{subsection.357}
-\contentsline {section}{\numberline {5.2}Gesti\IeC {\'o}n de Generaci\IeC {\'o}n de Energ\IeC {\'\i }a en una Microrred El\IeC {\'e}ctrica}{80}{section.362}
-\contentsline {subsection}{\numberline {5.2.1}Optimizaci\IeC {\'o}n del costo de la generaci\IeC {\'o}n de energ\IeC {\'\i }a en una Microrred El\IeC {\'e}ctrica No Interconectable - SCE1}{81}{subsection.363}
-\contentsline {subsubsection}{Costo de Generaci\IeC {\'o}n Di\IeC {\'e}sel}{81}{section*.367}
-\contentsline {subsubsection}{Costo de Generaci\IeC {\'o}n Solar Fotovoltaica}{82}{section*.370}
-\contentsline {subsubsection}{Costo de Generaci\IeC {\'o}n de Energ\IeC {\'\i }a E\IeC {\'o}lica}{82}{section*.374}
-\contentsline {subsubsection}{Costo de Sistema de Almacenamiento de Energ\IeC {\'\i }a}{82}{section*.376}
-\contentsline {subsection}{\numberline {5.2.2}Planteamiento del Problema de Optimizaci\IeC {\'o}n}{83}{subsection.378}
-\contentsline {subsubsection}{Restricciones de Dise\IeC {\~n}o}{83}{section*.383}
-\contentsline {section}{\numberline {5.3}Conclusiones}{85}{section.392}
-\contentsline {chapter}{\numberline {6}Hibridaci\IeC {\'o}n de M\IeC {\'e}todos de Programaci\IeC {\'o}n Matem\IeC {\'a}tica con Algoritmos Evolutivos}{87}{chapter.393}
-\contentsline {section}{\numberline {6.1}Hibridaci\IeC {\'o}n del Algoritmo Evoluci\IeC {\'o}n Diferencial con M\IeC {\'e}todos de B\IeC {\'u}squeda Local}{89}{section.405}
-\contentsline {section}{\numberline {6.2}Enfoque propuesto}{91}{section.406}
-\contentsline {subsection}{\numberline {6.2.1}M\IeC {\'e}todo de Nelder Mead con Expansi\IeC {\'o}n de Longitud Aleatoria: NMELA}{92}{subsection.414}
-\contentsline {subsubsection}{Operador de Expansi\IeC {\'o}n con Longitud Aleatoria}{93}{section*.415}
-\contentsline {subsubsection}{Operador de Expansi\IeC {\'o}n Inversa con Longitud Aleatoria }{94}{section*.451}
-\contentsline {subsubsection}{Combinaci\IeC {\'o}n de los operadores}{94}{section*.484}
-\contentsline {subsection}{\numberline {6.2.2}Observaciones Preliminares}{98}{subsection.519}
-\contentsline {subsection}{\numberline {6.2.3}Algoritmo H\IeC {\'\i }brido basado en el M\IeC {\'e}todo Nelder Mead con Evoluci\IeC {\'o}n Diferencial: HNMED. Variante I}{99}{subsection.520}
-\contentsline {subsubsection}{HNMED. Variantes II y III}{100}{section*.569}
-\contentsline {subsubsection}{HNMED. Variantes IV y V }{103}{section*.572}
-\contentsline {subsubsection}{HNMED. Variante VI}{103}{section*.575}
-\contentsline {section}{\numberline {6.3}Conclusiones del cap\IeC {\'\i }tulo}{105}{section.631}
-\contentsline {chapter}{\numberline {7}Experimentos y Resultados}{109}{chapter.632}
-\contentsline {section}{\numberline {7.1}Dise\IeC {\~n}o Experimental}{110}{section.636}
-\contentsline {section}{\numberline {7.2}Estad\IeC {\'\i }stica inferencial: Pruebas estad\IeC {\'\i }sticas no param\IeC {\'e}tricas}{111}{section.651}
-\contentsline {subsection}{\numberline {7.2.1}Prueba de suma de jerarqu\IeC {\'\i }as de Wilcoxon}{112}{subsection.653}
-\contentsline {subsection}{\numberline {7.2.2}Pruebas de Friedman}{113}{subsection.662}
-\contentsline {subsection}{\numberline {7.2.3}Pruebas Post-hoc: Bonferroni-Dunn}{114}{subsection.670}
-\contentsline {section}{\numberline {7.3}Experimentos preliminares}{115}{section.673}
-\contentsline {subsection}{\numberline {7.3.1}Experimento A: Pruebas de estad\IeC {\'\i }sticas sobre el M\IeC {\'e}todo Nelder Mead con Expansi\IeC {\'o}n de Longitud Aleatoria}{116}{subsection.677}
-\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{117}{section*.680}
-\contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{117}{section*.688}
-\contentsline {subsubsection}{Presentaci\IeC {\'o}n de resultados}{118}{section*.692}
-\contentsline {subsubsection}{Observaciones}{118}{section*.695}
-\contentsline {subsection}{\numberline {7.3.2}Experimento B: Comparaci\IeC {\'o}n de desempe\IeC {\~n}o entre Variantes HNMED vs ED/rand/1/bin}{121}{subsection.696}
-\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{121}{section*.702}
-\contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{122}{section*.711}
-\contentsline {subsubsection}{Presentaci\IeC {\'o}n de resultados}{123}{section*.718}
-\contentsline {subsubsection}{Observaciones}{126}{section*.723}
-\contentsline {subsection}{\numberline {7.3.3}Experimentos C : Comparaci\IeC {\'o}n de Variantes HNMED vs ED con reducci\IeC {\'o}n del n\IeC {\'u}mero de evaluaciones}{130}{subsection.736}
-\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{130}{section*.737}
-\contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{131}{section*.742}
-\contentsline {subsubsection}{Presentaci\IeC {\'o}n de resultados}{132}{section*.749}
-\contentsline {subsubsection}{Observaciones}{132}{section*.754}
-\contentsline {section}{\numberline {7.4}Experimentos finales}{137}{section.758}
-\contentsline {subsection}{\numberline {7.4.1}Experimentos D y E : Comparaci\IeC {\'o}n de Variantes HNMED-V5 y HNMED-V6 con Algoritmo C-LSHADE}{137}{subsection.759}
-\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{137}{section*.760}
-\contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{138}{section*.764}
-\contentsline {subsubsection}{Resultados del Experimento D}{138}{section*.771}
-\contentsline {subsubsection}{Resultados del Experimento E}{139}{section*.775}
-\contentsline {subsubsection}{Observaciones Finales}{139}{section*.780}
-\contentsline {section}{\numberline {7.5}Visualizaci\IeC {\'o}n de Resultados}{146}{section.785}
-\contentsline {subsection}{\numberline {7.5.1}Mecanismo de Cuatro Barras}{146}{subsection.786}
-\contentsline {subsection}{\numberline {7.5.2}Efector Final de Tres Dedos}{147}{subsection.789}
-\contentsline {subsection}{\numberline {7.5.3}Microrred Aislada}{151}{subsection.792}
-\contentsline {section}{\numberline {7.6}Conclusiones del cap\IeC {\'\i }tulo}{151}{section.795}
-\contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{155}{chapter.796}
-\contentsline {section}{\numberline {8.1}Observaciones Finales}{156}{section.797}
-\contentsline {section}{\numberline {8.2}Objetivos cumplidos}{157}{section.805}
-\contentsline {section}{\numberline {8.3}Contribuciones}{157}{section.812}
-\contentsline {section}{\numberline {8.4}Trabajo Futuro}{158}{section.813}
-\contentsline {chapter}{\numberline {A}Implementaci\IeC {\'o}n de variantes de HNMED en Matlab}{159}{appendix.821}
-\contentsline {section}{\numberline {A.1}Codificaci\IeC {\'o}n de HNMED-V5 }{160}{section.822}
-\contentsline {section}{\numberline {A.2}Codificaci\IeC {\'o}n de HNMED-V6 }{163}{section.944}
-\contentsline {section}{\numberline {A.3}Codificaci\IeC {\'o}n de las reglas de Deb}{166}{section.1078}
-\contentsline {section}{\numberline {A.4}Codificaci\IeC {\'o}n de la Estrategia de Inicializaci\IeC {\'o}n de los S\IeC {\'\i }mplecess}{166}{section.1105}
-\contentsline {chapter}{Referencias}{169}{lstnumber.1157}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n}{1}{chapter.5}
+\contentsline {section}{\numberline {1.1}Descripci\IeC {\'o}n de la problem\IeC {\'a}tica}{4}{section.7}
+\contentsline {section}{\numberline {1.2}Planteamiento del Problema de investigaci\IeC {\'o}n}{8}{section.21}
+\contentsline {section}{\numberline {1.3}Objetivo general}{8}{section.22}
+\contentsline {subsection}{\numberline {1.3.1}Objetivos espec\IeC {\'\i }ficos}{9}{subsection.23}
+\contentsline {section}{\numberline {1.4}Hip\IeC {\'o}tesis de investigaci\IeC {\'o}n}{9}{section.30}
+\contentsline {section}{\numberline {1.5}Justificaci\IeC {\'o}n}{9}{section.31}
+\contentsline {section}{\numberline {1.6}Alcances}{10}{section.32}
+\contentsline {section}{\numberline {1.7}Limitaciones}{11}{section.33}
+\contentsline {section}{\numberline {1.8}Organizaci\IeC {\'o}n del documento}{11}{section.34}
+\contentsline {section}{\numberline {1.9}Conclusiones del cap\IeC {\'\i }tulo}{12}{section.35}
+\contentsline {chapter}{\numberline {2}Optimizaci\IeC {\'o}n}{13}{chapter.36}
+\contentsline {section}{\numberline {2.1}Variables de dise\IeC {\~n}o}{15}{section.41}
+\contentsline {section}{\numberline {2.2}Funci\IeC {\'o}n Objetivo}{15}{section.42}
+\contentsline {section}{\numberline {2.3}Restricciones de Dise\IeC {\~n}o}{16}{section.43}
+\contentsline {section}{\numberline {2.4}\IeC {\'O}ptimos locales y globales}{17}{section.44}
+\contentsline {section}{\numberline {2.5}Clasificaci\IeC {\'o}n de Problemas de Optimizaci\IeC {\'o}n}{19}{section.51}
+\contentsline {subsection}{\numberline {2.5.1}Clasificaci\IeC {\'o}n basada en la existencia de restricciones}{20}{subsection.52}
+\contentsline {subsection}{\numberline {2.5.2}Clasificaci\IeC {\'o}n basada en la naturaleza de las variables de dise\IeC {\~n}o}{20}{subsection.53}
+\contentsline {subsection}{\numberline {2.5.3}Clasificaci\IeC {\'o}n basada en la estructura f\IeC {\'\i }sica del problema}{20}{subsection.54}
+\contentsline {subsection}{\numberline {2.5.4}Clasificaci\IeC {\'o}n basada en la naturaleza de las ecuaciones involucradas}{21}{subsection.55}
+\contentsline {subsection}{\numberline {2.5.5}Clasificaci\IeC {\'o}n basada en los valores permisibles de las variables de dise\IeC {\~n}o}{22}{subsection.56}
+\contentsline {subsection}{\numberline {2.5.6}Clasificaci\IeC {\'o}n basada en la naturaleza determinista de las variables}{22}{subsection.57}
+\contentsline {subsection}{\numberline {2.5.7}Clasificaci\IeC {\'o}n basada en la separabilidad de las funciones}{22}{subsection.58}
+\contentsline {subsection}{\numberline {2.5.8}Clasificaci\IeC {\'o}n basada en el n\IeC {\'u}mero de funciones objetivo}{23}{subsection.59}
+\contentsline {section}{\numberline {2.6}Conclusiones del cap\IeC {\'\i }tulo}{23}{section.60}
+\contentsline {chapter}{\numberline {3}Programaci\IeC {\'o}n Matem\IeC {\'a}tica}{25}{chapter.61}
+\contentsline {section}{\numberline {3.1}Informaci\IeC {\'o}n de la Derivada}{26}{section.62}
+\contentsline {section}{\numberline {3.2}Informaci\IeC {\'o}n del Gradiente}{27}{section.69}
+\contentsline {section}{\numberline {3.3}M\IeC {\'e}todos de Optimizaci\IeC {\'o}n Univariable}{29}{section.76}
+\contentsline {subsection}{\numberline {3.3.1}M\IeC {\'e}todo de Fibonacci }{30}{subsection.77}
+\contentsline {subsection}{\numberline {3.3.2}M\IeC {\'e}todo de la Secci\IeC {\'o}n Dorada}{31}{subsection.83}
+\contentsline {subsection}{\numberline {3.3.3}M\IeC {\'e}todo de Newton-Rapson}{32}{subsection.87}
+\contentsline {section}{\numberline {3.4}M\IeC {\'e}todos de optimizaci\IeC {\'o}n multivariable}{33}{section.90}
+\contentsline {subsection}{\numberline {3.4.1}M\IeC {\'e}todo del Descenso Inclinado}{33}{subsection.91}
+\contentsline {subsection}{\numberline {3.4.2}M\IeC {\'e}todo de Newton}{34}{subsection.99}
+\contentsline {subsection}{\numberline {3.4.3}M\IeC {\'e}todo Nelder-Mead}{35}{subsection.103}
+\contentsline {subsection}{\numberline {3.4.4}M\IeC {\'e}todo de Hooke-Jeeves}{38}{subsection.125}
+\contentsline {section}{\numberline {3.5}T\IeC {\'e}cnicas de optimizaci\IeC {\'o}n con restricciones}{38}{section.159}
+\contentsline {subsection}{\numberline {3.5.1}M\IeC {\'e}todo de Multiplicadores de Lagrange}{40}{subsection.160}
+\contentsline {subsection}{\numberline {3.5.2}Condiciones de Optimalidad en problemas con restricciones}{41}{subsection.166}
+\contentsline {subsection}{\numberline {3.5.3}M\IeC {\'e}todo de Penalizaci\IeC {\'o}n de Restricciones}{42}{subsection.171}
+\contentsline {subsection}{\numberline {3.5.4}Programaci\IeC {\'o}n Cuadr\IeC {\'a}tica Secuencial}{44}{subsection.183}
+\contentsline {section}{\numberline {3.6}Conclusiones del cap\IeC {\'\i }tulo}{44}{section.187}
+\contentsline {chapter}{\numberline {4}Computaci\IeC {\'o}n Evolutiva}{47}{chapter.188}
+\contentsline {section}{\numberline {4.1}Representaci\IeC {\'o}n}{48}{section.193}
+\contentsline {section}{\numberline {4.2}Funci\IeC {\'o}n de aptitud}{50}{section.199}
+\contentsline {section}{\numberline {4.3}Selecci\IeC {\'o}n}{50}{section.200}
+\contentsline {section}{\numberline {4.4}Reproducci\IeC {\'o}n}{52}{section.202}
+\contentsline {section}{\numberline {4.5}Paradigmas de la Computaci\IeC {\'o}n Evolutiva}{52}{section.207}
+\contentsline {subsection}{\numberline {4.5.1}Programaci\IeC {\'o}n Evolutiva}{52}{subsection.208}
+\contentsline {subsection}{\numberline {4.5.2}Estrategia evolutivas}{53}{subsection.209}
+\contentsline {subsection}{\numberline {4.5.3}Algoritmos Gen\IeC {\'e}ticos}{53}{subsection.215}
+\contentsline {section}{\numberline {4.6}Evoluci\IeC {\'o}n Diferencial}{54}{section.216}
+\contentsline {section}{\numberline {4.7}Conclusiones del cap\IeC {\'\i }tulo}{56}{section.240}
+\contentsline {chapter}{\numberline {5}Problemas de Optimizaci\IeC {\'o}n de Dise\IeC {\~n}o de Mecatr\IeC {\'o}nico}{57}{chapter.241}
+\contentsline {section}{\numberline {5.1}Dise\IeC {\~n}o cinem\IeC {\'a}tico de Mecanismos}{58}{section.246}
+\contentsline {subsection}{\numberline {5.1.1}An\IeC {\'a}lisis cinem\IeC {\'a}tico de un Mecanismo de Cuatro Barras}{59}{subsection.247}
+\contentsline {subsection}{\numberline {5.1.2}Planteamiento del Problema de Optimizaci\IeC {\'o}n para casos de estudio del Mecanismo de Cuatro Barras}{62}{subsection.266}
+\contentsline {subsubsection}{Funci\IeC {\'o}n Objetivo}{62}{section*.267}
+\contentsline {subsubsection}{Restricciones de dise\IeC {\~n}o}{63}{section*.272}
+\contentsline {subsection}{\numberline {5.1.3}Caso de estudio 1: seguimiento de una trayectoria lineal vertical, sin sincronizaci\IeC {\'o}n previa - MCE1}{64}{subsection.277}
+\contentsline {subsection}{\numberline {5.1.4}Caso de estudio 2: seguimiento de una trayectoria no alineada, con sincronizacion previa - MCE2}{65}{subsection.283}
+\contentsline {subsection}{\numberline {5.1.5}Caso de estudio 3: generaci\IeC {\'o}n de movimiento delimitado por un conjunto de pares de puntos - MCE3}{66}{subsection.290}
+\contentsline {subsection}{\numberline {5.1.6}Dise\IeC {\~n}o de un Efector Final de Tres Dedos}{68}{subsection.296}
+\contentsline {subsection}{\numberline {5.1.7}Cinem\IeC {\'a}tica del Efector Final de Tres Dedos }{69}{subsection.298}
+\contentsline {subsection}{\numberline {5.1.8}Declaraci\IeC {\'o}n de Problemas de Optimizaci\IeC {\'o}n para Casos de Estudio del Efector}{76}{subsection.338}
+\contentsline {subsubsection}{Funci\IeC {\'o}n objetivo}{77}{section*.341}
+\contentsline {subsubsection}{Restricciones de dise\IeC {\~n}o}{77}{section*.343}
+\contentsline {subsection}{\numberline {5.1.9}Caso de estudio 1: Dise\IeC {\~n}o sin normalizaci\IeC {\'o}n de barras -GCE1}{78}{subsection.350}
+\contentsline {subsection}{\numberline {5.1.10}Caso de estudio 2: Dise\IeC {\~n}o con normalizaci\IeC {\'o}n de barras - GCE2}{79}{subsection.354}
+\contentsline {section}{\numberline {5.2}Gesti\IeC {\'o}n de Generaci\IeC {\'o}n de Energ\IeC {\'\i }a en una Microrred El\IeC {\'e}ctrica}{80}{section.359}
+\contentsline {subsection}{\numberline {5.2.1}Optimizaci\IeC {\'o}n del costo de la generaci\IeC {\'o}n de energ\IeC {\'\i }a en una Microrred El\IeC {\'e}ctrica No Interconectable - SCE1}{81}{subsection.360}
+\contentsline {subsubsection}{Costo de Generaci\IeC {\'o}n Di\IeC {\'e}sel}{82}{section*.365}
+\contentsline {subsubsection}{Costo de Generaci\IeC {\'o}n Solar Fotovoltaica}{82}{section*.368}
+\contentsline {subsubsection}{Costo de Generaci\IeC {\'o}n de Energ\IeC {\'\i }a E\IeC {\'o}lica}{83}{section*.372}
+\contentsline {subsubsection}{Costo de Sistema de Almacenamiento de Energ\IeC {\'\i }a}{83}{section*.374}
+\contentsline {subsection}{\numberline {5.2.2}Planteamiento del Problema de Optimizaci\IeC {\'o}n}{83}{subsection.376}
+\contentsline {subsubsection}{Restricciones de Dise\IeC {\~n}o}{84}{section*.381}
+\contentsline {section}{\numberline {5.3}Conclusiones}{86}{section.390}
+\contentsline {chapter}{\numberline {6}Hibridaci\IeC {\'o}n de M\IeC {\'e}todos de Programaci\IeC {\'o}n Matem\IeC {\'a}tica con Algoritmos Evolutivos}{87}{chapter.391}
+\contentsline {section}{\numberline {6.1}Hibridaci\IeC {\'o}n de la Evoluci\IeC {\'o}n Diferencial con M\IeC {\'e}todos de B\IeC {\'u}squeda Local}{89}{section.403}
+\contentsline {section}{\numberline {6.2}Enfoque propuesto}{91}{section.404}
+\contentsline {subsection}{\numberline {6.2.1}M\IeC {\'e}todo de Nelder Mead con Expansi\IeC {\'o}n de Longitud Aleatoria: NMELA}{92}{subsection.412}
+\contentsline {subsubsection}{Operador de Expansi\IeC {\'o}n con Longitud Aleatoria}{93}{section*.413}
+\contentsline {subsubsection}{Operador de Expansi\IeC {\'o}n Inversa con Longitud Aleatoria }{94}{section*.449}
+\contentsline {subsubsection}{Combinaci\IeC {\'o}n de los operadores}{94}{section*.482}
+\contentsline {subsection}{\numberline {6.2.2}Observaciones Preliminares}{98}{subsection.517}
+\contentsline {subsection}{\numberline {6.2.3}Algoritmo H\IeC {\'\i }brido basado en el M\IeC {\'e}todo Nelder Mead con Evoluci\IeC {\'o}n Diferencial: HNMED. Variante I}{99}{subsection.518}
+\contentsline {subsubsection}{HNMED. Variantes II y III}{101}{section*.567}
+\contentsline {subsubsection}{HNMED. Variantes IV y V }{103}{section*.570}
+\contentsline {subsubsection}{HNMED. Variante VI}{103}{section*.573}
+\contentsline {section}{\numberline {6.3}Conclusiones del cap\IeC {\'\i }tulo}{105}{section.582}
+\contentsline {chapter}{\numberline {7}Experimentos y Resultados}{109}{chapter.630}
+\contentsline {section}{\numberline {7.1}Dise\IeC {\~n}o Experimental}{110}{section.634}
+\contentsline {section}{\numberline {7.2}Estad\IeC {\'\i }stica inferencial: Pruebas estad\IeC {\'\i }sticas no param\IeC {\'e}tricas}{111}{section.649}
+\contentsline {subsection}{\numberline {7.2.1}Prueba de suma de jerarqu\IeC {\'\i }as de Wilcoxon}{113}{subsection.651}
+\contentsline {subsection}{\numberline {7.2.2}Pruebas de Friedman}{114}{subsection.660}
+\contentsline {subsection}{\numberline {7.2.3}Pruebas Post-hoc: Bonferroni-Dunn}{114}{subsection.668}
+\contentsline {section}{\numberline {7.3}Experimentos preliminares}{115}{section.671}
+\contentsline {subsection}{\numberline {7.3.1}Experimento A: Pruebas de estad\IeC {\'\i }sticas sobre el M\IeC {\'e}todo Nelder Mead con Expansi\IeC {\'o}n de Longitud Aleatoria}{116}{subsection.675}
+\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{117}{section*.678}
+\contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{117}{section*.686}
+\contentsline {subsubsection}{Presentaci\IeC {\'o}n de resultados}{118}{section*.690}
+\contentsline {subsubsection}{Observaciones}{121}{section*.693}
+\contentsline {subsection}{\numberline {7.3.2}Experimento B: Comparaci\IeC {\'o}n de desempe\IeC {\~n}o entre Variantes HNMED vs ED/rand/1/bin}{121}{subsection.694}
+\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{122}{section*.700}
+\contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{122}{section*.709}
+\contentsline {subsubsection}{Presentaci\IeC {\'o}n de resultados}{123}{section*.716}
+\contentsline {subsubsection}{Observaciones}{126}{section*.721}
+\contentsline {subsection}{\numberline {7.3.3}Experimentos C : Comparaci\IeC {\'o}n de Variantes HNMED vs ED con reducci\IeC {\'o}n del n\IeC {\'u}mero de evaluaciones}{130}{subsection.734}
+\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{130}{section*.735}
+\contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{131}{section*.740}
+\contentsline {subsubsection}{Presentaci\IeC {\'o}n de resultados}{132}{section*.747}
+\contentsline {subsubsection}{Observaciones}{132}{section*.752}
+\contentsline {section}{\numberline {7.4}Experimentos finales}{137}{section.756}
+\contentsline {subsection}{\numberline {7.4.1}Experimentos D y E : Comparaci\IeC {\'o}n de Variantes HNMED-V5 y HNMED-V6 con Algoritmo C-LSHADE}{137}{subsection.757}
+\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{138}{section*.758}
+\contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{138}{section*.762}
+\contentsline {subsubsection}{Resultados del Experimento D}{139}{section*.769}
+\contentsline {subsubsection}{Resultados del Experimento E}{139}{section*.773}
+\contentsline {subsubsection}{Observaciones Finales}{143}{section*.778}
+\contentsline {section}{\numberline {7.5}Visualizaci\IeC {\'o}n de Resultados}{147}{section.783}
+\contentsline {subsection}{\numberline {7.5.1}Mecanismo de Cuatro Barras}{147}{subsection.784}
+\contentsline {subsection}{\numberline {7.5.2}Efector Final de Tres Dedos}{147}{subsection.787}
+\contentsline {subsection}{\numberline {7.5.3}Microrred Aislada}{150}{subsection.790}
+\contentsline {section}{\numberline {7.6}Conclusiones del cap\IeC {\'\i }tulo}{154}{section.793}
+\contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{155}{chapter.794}
+\contentsline {section}{\numberline {8.1}Observaciones Finales}{156}{section.795}
+\contentsline {section}{\numberline {8.2}Objetivos cumplidos}{157}{section.803}
+\contentsline {section}{\numberline {8.3}Contribuciones}{158}{section.810}
+\contentsline {section}{\numberline {8.4}Trabajo Futuro}{158}{section.811}
+\contentsline {chapter}{\numberline {A}Implementaci\IeC {\'o}n de variantes de HNMED en Matlab}{159}{chapter.819}
+\contentsline {section}{\numberline {A.1}Codificaci\IeC {\'o}n de HNMED-V5 }{160}{section.820}
+\contentsline {section}{\numberline {A.2}Codificaci\IeC {\'o}n de HNMED-V6 }{163}{section.942}
+\contentsline {section}{\numberline {A.3}Codificaci\IeC {\'o}n de las reglas de Deb}{166}{section.1076}
+\contentsline {section}{\numberline {A.4}Codificaci\IeC {\'o}n de la Estrategia de Inicializaci\IeC {\'o}n de los S\IeC {\'\i }mplecess}{167}{section.1103}
+\contentsline {chapter}{Referencias}{169}{lstnumber.1155}

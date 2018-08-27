@@ -5,27 +5,27 @@ En el capítulo introductorio del presente trabajo se abordaron algunos concepto
 \item El modelado de un sistema mecatrónico tiene como objetivo representar el comportamiento de un sistema real mediante un conjunto de ecuaciones matemáticas.
 \item Los sistemas reales son sistemas físicos, cuyo comportamiento se basa en la materia y la energía.
 \item   Los modelos utilizados en el diseño mecatrónico representan estructuras de causa y efecto, aceptan información externa y la procesan con su lógica y ecuaciones para producir una o más salidas. 
-\item El objetivo de la optimización es, dado un modelo de un sistema determinado, encontrar una configuración óptima para este sistema. 
+\item El objetivo de la optimización es, dado un modelo de un sistema determinado físico, encontrar una configuración óptima para este sistema. 
 \end{enumerate}
-Estos conceptos son la base para el desarrollo de la siguientes secciones. En adelante se describen primeramente 3 casos de estudio de la Síntesis Óptima de un Mecanismo de Cuatro Barras, para luego abordar el problema de optimización del costo de generación en una Micro-red Eléctrica Aislada. Estos problemas han sido formulados y resueltos por investigadores del departamento de mecatrónica del Centro de Innovación y Desarrollo Tecnológico en Cómputo (CIDETEC) del Instituto Politécnico Nacional (IPN), lo que brinda un marco de referencia tanto desde el punto de vista del problema (conocimiento de óptimos) como en el conocimiento del desempeño de los algoritmos utilizados (número de evaluaciones, tasa de convergencia, resultados de pruebas de comparaciones múltiples).
+Estos conceptos son la base para el desarrollo de la siguientes secciones. En adelante se describen primeramente tres casos de estudio de la "Síntesis Óptima de un Mecanismo de Cuatro Barras", luego se presentan dos casos de la "{Síntesis Óptima de un Efector Final de Tres Dedos}". Por último, se presenta el problema de "{Optimización del costo de generación de energía en una Micro-red Eléctrica no Interconectable}". Estos problemas han sido formulados y resueltos por investigadores del departamento de mecatrónica del Centro de Innovación y Desarrollo Tecnológico en Cómputo (CIDETEC) del Instituto Politécnico Nacional (IPN), lo que brinda un marco de referencia tanto desde el punto de vista del problema (conocimiento de óptimos) como en el conocimiento del desempeño de los algoritmos utilizados (número de evaluaciones, rapidez de convergencia, resultados de pruebas estadísticas).
 \section{Diseño cinemático de Mecanismos}
-Las máquinas son dispositivos utilizados para alterar, transmitir y dirigir las fuerzas para lograr un objetivo específico. Un mecanismo es la parte mecánica de una máquina que tiene la función de transferir movimiento y fuerzas desde una fuente de alimentación a una salida. Los mecanismos se pueden considerar como piezas rígidas que están dispuestas y conectadas para que produzcan el movimiento deseado de la máquina. Los mecanismos de enlaces son aquellos compuestos por diferentes eslabones (partes rígidas o barras) conectados entre sí para formar una cadena. Los eslabones son las partes individuales del mecanismo y se consideran cuerpos rígidos que se encadenan  para transmitir movimiento y fuerza. Teóricamente, un cuerpo rígido no cambia de forma durante el movimiento. A pesar de que no existe un verdadero cuerpo rígido, pues los componentes del mecanismo siempre están sujetos a ciertas deformaciones, en lo adelante se consideran estos componentes como cuerpos rígidos, atendiendo solo al análisis cinemático. En los mecanismos de enlace un eslabón se designa como marco (frame en inglés) de referencia para el movimiento de todas las otras partes. El marco de referencia es típicamente un eslabón que no realiza movimiento. Entre dos eslabones existe una conexión movible que permite el movimiento relativo entre los enlaces llamada \textit{junta}. Las articulaciones básicas pueden ser clasificadas en giratorias y deslizantes. La articulación giratoria permite la rotación pura entre los dos enlaces que conecta. La junta deslizante también llamada pistón o junta prismática, permite el deslizamiento lineal entre los enlaces conectados. Además existen otros tipos de juntas como la junta de leva que permite tanto la rotación como el deslizamiento entre los dos enlaces que conecta. La junta de engranaje también permite la rotación y el deslizamiento entre dos engranajes. Ambos tipos de juntas son consideradas articulaciones de orden superior debido a que permiten movimientos más complejos \cite{myszka2004machines}.
+Las máquinas son dispositivos utilizados para alterar, transmitir y dirigir las fuerzas para lograr un objetivo específico. Un mecanismo es la parte mecánica de una máquina que tiene la función de transferir movimiento y fuerzas desde una fuente de alimentación a una salida. Los mecanismos se pueden considerar como piezas rígidas que están dispuestas y conectadas para que produzcan el movimiento deseado de la máquina. Los mecanismos de enlace son aquellos compuestos por diferentes eslabones (barras) conectados entre sí para formar una cadena. Los eslabones son las partes individuales del mecanismo y se consideran cuerpos rígidos que se encadenan  para transmitir movimiento y fuerza. Teóricamente, un cuerpo rígido no cambia de forma durante el movimiento. A pesar de que no existe un verdadero cuerpo rígido, pues los componentes del mecanismo siempre están sujetos a ciertas deformaciones, en lo adelante se consideran estos componentes como cuerpos rígidos, atendiendo solo al análisis cinemático. En los mecanismos de enlace un eslabón se designa como marco (frame en inglés) de referencia para el movimiento de todas las otras partes. El marco de referencia es típicamente un eslabón que no realiza movimiento. Entre dos eslabones existe una conexión movible que permite el movimiento relativo entre estos, llamada \textit{junta}. Las articulaciones básicas pueden ser clasificadas en giratorias y deslizantes. La articulación giratoria permite la rotación pura entre los dos enlaces que conecta. La junta deslizante también llamada pistón o junta prismática, permite el deslizamiento lineal entre los enlaces conectados. Además existen otros tipos de juntas como la junta de leva que permite tanto la rotación como el deslizamiento entre los dos enlaces que conecta. La junta de engranaje también permite la rotación y el deslizamiento entre dos engranajes. Ambos tipos de juntas son consideradas articulaciones de orden superior debido a que permiten movimientos más complejos \cite{myszka2004machines}.
 
-La síntesis es el proceso de desarrollar un mecanismo para satisfacer un conjunto de requisitos de rendimiento para la máquina. El análisis asegura que el mecanismo mostrará un movimiento que cumplirá con el conjunto de requisitos. Por otra parte, la cinemática estudia la forma en que se mueven los cuerpos. Analiza también la geometría del movimiento, por lo que implica el análisis de la posición, el desplazamiento, la rotación, la velocidad, y la aceleración de un mecanismo. Para lograr la síntesis óptima de un mecanismo es necesario recurrir a técnicas analíticas avanzadas que implican el modelado mediante funciones matemáticas. Las técnicas analíticas combinan las teorías de geometría, trigonometría y análisis de mecanismos gráficos. La síntesis óptima comprende la modelación de estos mecanismos matemáticamente, en forma de problemas de optimización numérica. Estos problemas pueden ser resueltos mediante algunas de las técnicas abordadas en capítulos anteriores \cite{myszka2004machines}. 
+La síntesis es el proceso de desarrollar un mecanismo para satisfacer un conjunto de requisitos de rendimiento para una máquina. De forma general, la cinemática estudia el movimiento de los cuerpos sólidos. Aplicada al diseño de mecanismos, se utiliza para analizar la geometría del movimiento, lo que implica el análisis de la posición, el desplazamiento, la rotación, la velocidad, y la aceleración de los componentes. Por tanto, el análisis cinemático asegura que el mecanismo mostrará un movimiento que cumplirá con determinado conjunto de requisitos. Para lograr la síntesis óptima de un mecanismo es necesario recurrir a técnicas analíticas avanzadas que implican el modelado mediante funciones matemáticas. Las técnicas analíticas combinan las teorías de geometría, trigonometría y análisis de mecanismos gráficos. La síntesis óptima comprende la modelación de estos mecanismos matemáticamente, en forma de problemas de optimización numérica. Estos problemas pueden ser resueltos mediante algunas de las técnicas abordadas en capítulos anteriores \cite{myszka2004machines}. 
 
 
 \subsection{Análisis cinemático de un Mecanismo de Cuatro Barras}\label{sec:Análisis cinemático de un Mecanismo de Cuatro Barras}
-El mecanismo de cuatro barras es una combinación de cuatro eslabones, que están conectado por cuatro juntas de giratorias. Este mecanismo tiene una gran cantidad de aplicaciones por lo que se encuentra con mucha frecuencia en la literatura. 
+El mecanismo de cuatro barras es una combinación de cuatro eslabones, que están conectado por cuatro juntas de giratorias. Este mecanismo tiene una gran cantidad de aplicaciones por lo que se encuentra frecuentemente en la literatura. 
 
 
-El mecanismo de cuatro barras que se muestra en la Figura \ref{fig:MEC} está formado por una barra de referencia $r_1$, una barra de entrada $r_2$ (manivela), un acoplador $r_3$ y una barra de salida $r_4$ (basculante). Para analizar este mecanismo se establecen dos sistemas de coordenadas: un sistema que se fija al mundo real ($OXY$) y otro para la auto-referencia \cite{herne1_two_swim_2016}.
+El esquema general del mecanismo de cuatro barras que se muestra en la Figura \ref{fig:MEC}. Está formado por una barra de referencia $r_1$, una barra de entrada $r_2$ (manivela), un acoplador $r_3$ y una barra de salida $r_4$ (basculante). Para analizar este mecanismo se establecen dos sistemas de coordenadas: un sistema que se fija al mundo real ($OXY$) y otro para la auto-referencia \cite{herne1_two_swim_2016}.
 
 \begin{figure}[htb]
     \centering
     \resizebox {\textwidth} {\height} {
      \includegraphics[width=0.6\textwidth]{MEC.tikz}
      }
-    \caption{Mecanismo de cuatro barras}
+    \caption{Mecanismo de cuatro barras.}
     \label{fig:MEC}
 \end{figure}
 Para el análisis de la posición, velocidad y aceleración se comienza por plantear las ecuaciones que describen el hecho de que las barras del mecanismo conforman un lazo cerrado:
@@ -33,11 +33,11 @@ Para el análisis de la posición, velocidad y aceleración se comienza por plan
 \begin{equation}\label{eq:MElazo}
 \vec{r_1}+\vec{r_4}=\vec{r_2}+\vec{r_3}
 \end{equation}
-Como se puede observar en la ecuación \ref{eq:MElazo} las barras son consideras vectores. Como cualquier vector puede ser expresado como un número complejo utilizando notación polar, donde la parte real corresponde al eje de las abscisas y la parte imaginaria pertenece al eje de las coordenadas. Luego la ecuación \ref{eq:MElazo} puede ser expresada en coordenadas polares de la siguiente forma:
+ En la Ecuación \ref{eq:MElazo} las barras son consideras vectores. Como cualquier vector puede ser expresado como un número complejo utilizando notación polar, donde la parte real corresponde al eje de las abscisas y la parte imaginaria pertenece al eje de las coordenadas. Luego, la Ecuación \ref{eq:MElazo} puede ser expresada en coordenadas polares de la siguiente forma:
 \begin{equation}\label{eq:MElazoPolar}
 r_1e^{j\theta_1}+r_4e^{j\theta_4}=r_2e^{j\theta_2}+r_3e^{j\theta_3}
 \end{equation}
-La identidad de Euler plantea la siguiente relación donde $j$ es la unidad imaginaria \cite{weisstein_euler_nodate}:
+Donde $e^{j\theta_1}$ es la entidad de Euler y $\theta_i$ es el angulo comprendido entre cada barra y el eje de coordenadas. La identidad de Euler plantea la siguiente relación donde $j$ es la unidad imaginaria \cite{weisstein_euler_nodate}:
 \begin{equation}\label{eq:Euler}
  e^{jx}=\cos{x}+j\sin{x} 
 \end{equation}
@@ -49,25 +49,29 @@ r_1(\cos{\theta_1}+j\sin{\theta_1})+r_4(\cos{\theta_4}+j\sin{\theta_1})=r_2(\cos
 \end{equation}
 Resolviendo:
 \begin{equation}\label{eq:MEPolarEuler2}
-r_1 \cos{\theta_1}+r_1 j \sin{\theta_1}+r_4\cos{\theta_4}+r_4j\sin{\theta_4}=r_2\cos{\theta_2}+r_2\sin{\theta_2}+r_3\cos{\theta_3}+r_3j\sin{\theta_3}
+r_1 \cos{\theta_1}+r_1 j \sin{\theta_1}+r_4\cos{\theta_4}+r_4j\sin{\theta_4}=r_2\cos{\theta_2}+r_2 j\sin{\theta_2}+r_3\cos{\theta_3}+r_3j\sin{\theta_3}
 \end{equation}
-Separando la parte real y parte imaginaria en un sistema de ecuaciones se obtiene:
+Agrupando la parte imaginaria en el miembro izquierdo y la real en el miembro derecho:
+\begin{equation}\label{eq:MEPolarEuler21}
+r_1 \cos{\theta_1}+r_4\cos{\theta_4}- r_2\cos{\theta_2}-r_3\cos{\theta_3}=r_2 j\sin{\theta_2}+r_3j\sin{\theta_3} -r_1 j \sin{\theta_1}-r_4j\sin{\theta_4}
+\end{equation} 
+Separando la parte real y la parte imaginaria en un sistema de ecuaciones se obtiene:
 \begin{eqnarray}
-r_1 \cos{\theta_1}+r_4\cos{\theta_4}&=&r_2\cos{\theta_2} -r_3\cos{\theta_3} \label{eq:MEPolarEuler4} \\
+r_1 \cos{\theta_1}+r_4\cos{\theta_4}&=&r_2\cos{\theta_2} +r_3\cos{\theta_3} \label{eq:MEPolarEuler4} \\
 r_1j\sin{\theta_1}+r_4j\sin{\theta_4} &=&r_2j\sin{\theta_2}+r_3j\sin{\theta_3}\label{eq:MEPolarEuler3}
 \end{eqnarray}
-Dividiendo por la unidad imaginaria en la ecuación \ref{eq:MEPolarEuler4}: 
+Dividiendo por la unidad imaginaria en la ecuación \ref{eq:MEPolarEuler3}: 
 \begin{eqnarray}
-r_1 \cos{\theta_1}+r_4\cos{\theta_4}&=&r_2\cos{\theta_2} -r_3\cos{\theta_3} \label{eq:MEPolarEuler4} \\
-r_1\sin{\theta_1}+r_4\sin{\theta_4} &=&r_2\sin{\theta_2}+r_3\sin{\theta_3}\label{eq:MEPolarEuler3}
+r_1 \cos{\theta_1}+r_4\cos{\theta_4}&=&r_2\cos{\theta_2} +r_3\cos{\theta_3} \label{eq:MEPolarEuler5} \\
+r_1\sin{\theta_1}+r_4\sin{\theta_4} &=&r_2\sin{\theta_2}+r_3\sin{\theta_3}\label{eq:MEPolarEuler6}
 \end{eqnarray}
 Este sistema de ecuaciones se expresa en función de $\theta_4$ para obtener:
 \begin{eqnarray}
-r_4\cos{\theta_4}&=&r_2\cos{\theta_2} +r_3\cos{\theta_3}-r_1 \cos{\theta_1}\label{eq:MEPolarEuler5} \\
-r_4\sin{\theta_4} &=&r_2\sin{\theta_2}+r_3\sin{\theta_3}-r_1\sin{\theta_1}\label{eq:MEPolarEuler6}
+r_4\cos{\theta_4}&=&r_2\cos{\theta_2} +r_3\cos{\theta_3}-r_1 \cos{\theta_1}\label{eq:MEPolarEuler7} \\
+r_4\sin{\theta_4} &=&r_2\sin{\theta_2}+r_3\sin{\theta_3}-r_1\sin{\theta_1}\label{eq:MEPolarEuler8}
 \end{eqnarray}
-Se obtiene la ecuación compacta de Freudenstein elevando al cuadrado los términos
-del sistema de ecuaciones anterior y sumando sus términos:
+Se obtiene la ecuación compacta de Freudenstein elevando al cuadrado y sumando los términos
+del sistema de ecuaciones anterior:
 \begin{equation} \label{eq:A1B1C1}
  A_1\cos{\theta_3}+B_1\sin{\theta_3}+C_1=0 
 \end{equation}
@@ -105,7 +109,7 @@ cerrado & $- \sqrt{}$ & $ + \sqrt{}$  \\ \hline
 \label{tab:Signo del radical}
 \end{table}
 
-Debido a que el punto de interés del acoplador es $C$, establece la siguiente ecuación para  determinar su posición en el sistema $O_2 X_r Y_r$:
+Debido a que el punto de interés del acoplador es $C$, se establece la siguiente ecuación para determinar su posición en el sistema $O_2 X_r Y_r$:
 
 \begin{eqnarray}
 C_{xr}&=&r_2\cos{\theta_2} +r_{cx}\cos{\theta_3}-r_{cy}\sin{\theta_3} \label{eq:Cxr} \\
@@ -133,7 +137,7 @@ En el sistema global de coordenadas, este punto puede expresarse como:
 Las ecuaciones anteriores permiten calcular la trayectoria del punto $C$ durante el movimiento de  las barras del mecanismo. Teniendo en cuenta este análisis cinemático se puede encontrar una configuración para los componentes del mecanismo tal que el punto $C$ recorra una trayectoria deseada. 
 
 \subsection{Planteamiento del Problema de Optimización para casos de estudio del Mecanismo de Cuatro Barras}
-Teniendo en cuenta el análisis cinemático abordado en la sección \ref{sec:Análisis cinemático de un Mecanismo de Cuatro Barras} se plantea un problema de optimización numérico que tiene como objetivo minimizar el error entre el punto $C$ del acoplador y ciertos puntos de precisión para describir una trayectoria determinada. Los componentes del mecanismo como las  barras y los ángulos de rotación están sujetas ciertas restricciones para garantizar el movimiento. 
+Con base en el análisis cinemático abordado en la Sección \ref{sec:Análisis cinemático de un Mecanismo de Cuatro Barras} se plantea un problema de optimización numérico que tiene como objetivo minimizar el error entre el punto $C$ del acoplador y ciertos puntos de precisión para describir una trayectoria determinada. Los componentes del mecanismo como las  barras y los ángulos de rotación están sujetas ciertas restricciones para garantizar el movimiento. 
 
 \subsubsection{Función Objetivo}\label{sec:Funcion Objetivo de MEC}
 La síntesis óptima del mecanismo de cuatro barras persigue hallar una configuración que permita la máxima precisión del mecanismo al realizar una trayectoria deseada. Esto significa que se deben encontrar las longitudes de las barras, el angulo de rotación respecto al eje $OXY$, la distancia entre los dos sistemas de referencias, los valores para el conjunto de ángulos para la barra de entrada que permitirán generar la trayectoria deseada. Esta trayectoria puede ser lograda definiendo un conjunto de puntos de precisión. En el sistema global de coordenadas el punto de precisión $i$ esta dado por:
@@ -155,9 +159,9 @@ f(\theta^i_2)= \sum_{i=1}^{N} \big[\big(C^{i}_{xd}-C^{i}_{x} \big)^2 +\big(C^{i}
 \subsubsection{Restricciones de diseño}\label{sec:Restricciones de diseño MEC}
 Las restricciones aplicadas al mecanismo de cuatro barras están dirigidas a garantizar la movilidad del mecanismo y a cumplir con especificaciones de dimensionamiento. las restricciones relacionadas con la movilidad del mecanismo se derivan de las \textit{Ley de Grashoff} las cuales establecen el tipo de movimiento del mecanismo de cuatro barras atendiendo a la longitud de sus elementos. Shigley define lo siguiente en \cite{shigley1983teoria}:
 \begin{quote}
-\textit{``Para que un eslabonamiento plano de cuatro barras, la suma de las longitudes más corta y más larga de los eslabones no puede ser mayor que la suma de las longitudes de los dos eslabones restantes, sí se desea que exista una rotación relativa continua entre dos elementos."} 
+\textit{``{En un eslabonamiento plano de cuatro barras, la suma de las longitudes más corta y más larga de los eslabones no puede ser mayor que la suma de las longitudes de los dos eslabones restantes, sí se desea que exista una rotación relativa continua entre dos elementos}."} 
 \end{quote}
-Si se aplica la convención de que el eslabón más largo tiene la longitud $l$, la del más corto es $s$ y los otros dos tienen las longitudes $p$ y $q$. La ley de Grashof especifica que uno de los eslabones, en particular el más pequeño, girará continuamente en relación con los otros tres sólo cuando se satisfaga la siguiente desigualdad:
+Si se aplica la convención de que el eslabón más largo tiene la longitud $l$, la del más corto es $s$ y los otros dos tienen las longitudes $p$ y $q$. La ley de Grashof especifica que uno de los eslabones, en particular el más pequeño, podrá girar continuamente en relación con los otros tres sólo cuando se satisfaga la siguiente desigualdad:
 \begin{equation}
 s+l \leq p+q
 \end{equation}
@@ -176,7 +180,7 @@ del punto de precisión $i$ se denota como $\theta^i_2$ , se debe cumplir que:
 \end{equation}
 \subsection{Caso de estudio 1: seguimiento de una trayectoria lineal vertical, sin
 sincronización previa - MCE1}
-Este caso de estudio es tomado de \cite{VegaMEC1}, en el cual el acoplador debe pasar por
+El presente caso de estudio es tomado de \cite{VegaMEC1}, en el cual el acoplador debe pasar por
 seis puntos de precisión indicados en la Ecuación \ref{eq:Puntos de Presicion MEC1}, los cuales se encuentran alineados verticalmente.
 \begin{equation}\label{eq:Puntos de Presicion MEC1}
 \Omega = \left \{ (20, 20), (20, 25), (20, 30), (20, 35), (20, 40) (20, 45)\right\} 
@@ -274,7 +278,7 @@ r_1,r_2,r_3,r_4& \in & \left[ 0,60\right] \\
 r_{cx},r_{cy},\theta_0,x_0,y_0 & \in & \left[ -60,60\right] \\
 \theta_0,\theta^1_2,...,\theta^{10}_2& \in & \left[ 0,2\pi \right] \\
 \end{eqnarray}
- En este caso se necesita minimizar la distancia del acoplador a los dos puntos de cada par de coordenadas. Por tanto, se plantea una función diferente y trece restricciones como se describe en la Ecuación \ref{eq:FO_MEC3} a la Ecuación \ref{eq:g13_MEC3}:
+ En este caso se necesita minimizar la distancia entro los puntos del acoplador a los dos puntos de cada par de coordenadas. Por tanto, se plantea una función diferente y trece restricciones como se describe desde la Ecuación \ref{eq:FO_MEC3} a la Ecuación \ref{eq:g13_MEC3}:
  \begin{equation}\label{eq:FO_MEC3}
  \begin{aligned}
 min\quad  f(\vec{p})=
@@ -324,16 +328,16 @@ De forma similar a los casos de estudio planteados en el problema del mecanismo 
 \begin{figure}[htb]
     \centering
      \includegraphics[width=0.9\textwidth]{Griper1.png}
-    \caption [Mecanismo de seis barras para el diseño de un dedo.]{Mecanismo de seis barras para el diseño de un dedo. Tomado de \cite{zapata_zapata_control_2017} }
+    \caption [Mecanismo de seis barras para el diseño de un dedo del Efector Final.]{Mecanismo de seis barras para el diseño de un dedo del Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
     \label{fig:Griper}
 \end{figure}
 
-En la Figura \ref{fig:Griper}, se muestra el diseño de un dedo conformado por dos sub-sistemas que simulan las falanges del mismo. El primer sub-sistema corresponde a un mecanismo manivela-biela-corredera (MBC) que se usa en la entrada ($r_2$, $r_3$, $r_4$), y el segundo es un mecanismo de cuatro barras en la salida ($r_0$, $r^{\prime}_2$, $r_5$, $r_6$). Ambos mecanismos conforman el sistema, en donde el impulsor es la corredera y el punto $E$ en el acoplador es la salida. El análisis de este problema fue tomado del trabajo realizado por Capistrán en \cite{capistran_2015} y se presenta en la siguiente sección.
+En la Figura \ref{fig:Griper}, se muestra el diseño de un dedo conformado por dos sub-sistemas que simulan las falanges del mismo. El primer sub-sistema corresponde a un mecanismo manivela-biela-corredera (MBC) que se usa en la entrada ($r_2$, $r_3$, $r_4$), y el segundo es un mecanismo de cuatro barras en la salida ($r_0$, $r^{\prime}_2$, $r_5$, $r_6$). Ambos mecanismos conforman el sistema, en donde el impulsor es la corredera y el punto $E$ en el acoplador es la salida. El análisis de este problema fue tomado del trabajo realizado por Capistrán, Portilla y Mezura en \cite{capistran_2015} y se presenta en la siguiente sección.
 
 
 \subsection{Cinemática del Efector Final de Tres Dedos }
 
-Para llegar al planteamiento final del problema de optimización se debe realizar primeramente el análisis de los dos sub-sistemas mencionados en la sección anterior individualmente. Luego, las ecuaciones que describen el comportamiento cinemático de ambos sistemas son integrados para conformar el problema de optimización. Primeramente se analiza el mecanismo MBC (Figura \ref{fig:Griper_MBC}) respecto al eje $x$ según la posición de la corredera $r_4$, en donde se pueden presentar tres casos posibles: $r_4 > 0$, $r_4 < 0$ y $r_4 = 0$. En cada caso la variable de interés que describe al sub-sistema es $\theta_3$. A continuación se presenta el modelo de cada caso \cite{capistran_2015}:
+Para llegar al planteamiento final de este problema de optimización se debe realizar primeramente el análisis de los dos sub-sistemas mencionados en la sección anterior individualmente. Luego, las ecuaciones que describen el comportamiento cinemático de ambos sistemas son integrados para conformar el problema de optimización. Primeramente se analiza el mecanismo MBC (Figura \ref{fig:Griper_MBC}) respecto al eje $X$ según la posición de la corredera $r_4$, en donde se pueden presentar tres casos posibles: $r_4 > 0$, $r_4 < 0$ y $r_4 = 0$. En cada caso la variable de interés que describe al sub-sistema es $\theta_3$. A continuación se presenta el modelo de cada caso \cite{capistran_2015}:
 \begin{figure}[htb]
     \centering
      \includegraphics[width=0.8\textwidth]{Griper2.jpg}
@@ -352,7 +356,7 @@ Se calcula el valor del angulo $\theta_3$ mediante la sumatoria de los ángulos 
 \end{figure}
 
 Para calcular $\theta_2$ se procede de la siguiente forma:
-\begin{equation}
+\begin{equation}\label{eq:griper_theta2}
 \theta_2=\beta+\gamma
 \end{equation}
 Para obtener $\gamma$ debe calcular $l$ mediante el teorema de pitágoras:
@@ -368,7 +372,7 @@ Para cálculo  del angulo se plantea que:
 \beta=\tan^{-1}\left[  \frac{|r_4|}{r_1}\right]
 \end{equation}
 Sustituyendo las Ecuaciones \ref{eq:griper_gamma} y \ref{eq:griper_beta} en la Ecuación \ref{eq:griper_theta2}:
-\begin{equation}\label{eq:griper_theta2}
+\begin{equation}\label{eq:griper_theta22}
 \theta_2=  \cos^{-1}\left[  \frac{r^2_2 +l^2-r^2_3}{2r_2l}\right]+ \tan^{-1}\left[  \frac{|r_4|}{r_1}\right]
 \end{equation}
 El valor de $\varphi$ se calcula aplicando ley de cosenos y se despejando:
@@ -394,17 +398,17 @@ Esto es:
 \end{figure}
 
 De forma similar al caso anterior el análisis matemático es similar al del caso anterior, se debe calcular el valor del angulo $\theta_3$ solo que, en este caso el angulo $\theta_2$ es la diferencia entre los ángulos $\beta$ y $\gamma$:
-\begin{equation}\label{eq:griper_theta22}
+\begin{equation}\label{eq:griper_theta23}
 \theta_2=\beta-\gamma
 \end{equation}
 
-Sustituyendo las Ecuaciones \ref{eq:griper_gamma} y \ref{eq:griper_beta} en la Ecuación \ref{eq:griper_theta22} se obtiene:
-\begin{equation}\label{eq:griper_theta221}
+Sustituyendo las Ecuaciones \ref{eq:griper_gamma} y \ref{eq:griper_beta} en la Ecuación \ref{eq:griper_theta23} se obtiene:
+\begin{equation}\label{eq:griper_theta24}
 \theta_2=  \cos^{-1}\left[  \frac{r^2_2 +l^2-r^2_3}{2r_2l}\right]- \tan^{-1}\left[  \frac{|r_4|}{r_1}\right]
 \end{equation}
 
-Luego, el valor de $\theta_3$ se calcula por la sumatoria expresada en la Ecuación \ref{eq:griper_theta3}
-\begin{equation}\label{eq:griper_theta3}
+Luego, el valor de $\theta_3$ se obtiene sustituyendo este valor de $\theta_2$  y el valor de $\varphi$ de la Ecuación \ref{eq:griper_varphi},  en la Ecuación \ref{eq:griper_theta3}:
+\begin{equation}\label{eq:griper_theta34}
 \theta_3= \cos^{-1}\left[  \frac{r^2_2 +l^2-r^2_3}{2r_2l}\right]- \tan^{-1}\left[  \frac{|r_4|}{r_1}\right]+\cos^{-1}\left[ \frac{r^2_2 +r^2_3-l^2}{2r_2r_3}\right]+\pi
 \end{equation}
 %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -417,8 +421,8 @@ Luego, el valor de $\theta_3$ se calcula por la sumatoria expresada en la Ecuaci
     \label{fig:Griper_MBC3}
 \end{figure}
 
-Debido que $r_4 = 0$ corredera del mecanismo se alinea con el eje $x$. Al igual que en los casos anteriores el valor del angulo $\theta_3$ es igual a la suma de los ángulos $\theta_2$, $\varphi$ y $\pi$ . Para el calculo de $\theta_2$y $\varphi$ se aplica la ley de cosenos y se despeja, obteniendo las Ecuaciones \ref{eq:griper_theta23} y \ref{eq:griper_varphi3}
-\begin{equation}\label{eq:griper_theta23}
+Debido que $r_4 = 0$ corredera del mecanismo se alinea con el eje $x$. Al igual que en los casos anteriores el valor del angulo $\theta_3$ es igual a la suma de los ángulos $\theta_2$, $\varphi$ y $\pi$ . Para el calculo de $\theta_2$y $\varphi$ se aplica la ley de cosenos y se despeja, obteniendo las Ecuaciones \ref{eq:griper_theta25} y \ref{eq:griper_varphi3}
+\begin{equation}\label{eq:griper_theta25}
 \theta_2=\cos^{-1}\left[ \frac{r^2_1 +r^2_2-r^2_3}{2r_1r_2}\right]
 \end{equation}
 \begin{equation}\label{eq:griper_varphi3}
@@ -430,15 +434,15 @@ Finalmente, se sustituyen los ángulos $\theta_2$ y $\varphi$  en la Ecuación \
 \end{equation}
 
 \end{enumerate}
-El análisis cinemático presentado hasta el momento corresponde al sub-sistema MBC del mecanismo de seis barras. A continuación se procede a  desarrollar el modelo cinemático del mecanismo de cuatro barras conformado por los eslabones $r_0$, $r^{\prime}_2$, $r_5$ y $r_6$. En la Figura \ref{} se muestra dicho mecanismo sin el acoplador. Nótese, que la barra $r_2$ del sub-sistema MBC también forma parte del mecanismo de cuatro barras fungiendo como su impulsor y formando junto con $r^{\prime}_2$ un único eslabón.
+El análisis cinemático presentado hasta el momento corresponde al sub-sistema MBC del mecanismo de seis barras. A continuación se procede a  desarrollar el modelo cinemático del mecanismo de cuatro barras conformado por los eslabones $r_0$, $r^{\prime}_2$, $r_5$ y $r_6$. En la Figura \ref{fig:Griper_MEC} se muestra dicho mecanismo sin el acoplador. Nótese, que la barra $r_2$ del sub-sistema MBC también forma parte del mecanismo de cuatro barras fungiendo como su impulsor y formando junto con $r^{\prime}_2$ un único eslabón.
 
 \begin{figure}[htb]
     \centering
      \includegraphics[width=0.8\textwidth]{Griper7.jpg}
     \caption [Mecanismo de cuatro barras de un dedo del Efector Final.]{Mecanismo de cuatro barras de un dedo del Efector Final. Tomado de \cite{zapata_zapata_control_2017} }
-    \label{fig:Griper_MEC1}
+    \label{fig:Griper_MEC}
 \end{figure}
-El análisis cinemático del sub-sistema de cuatro barras es similar al del problema descrito en la Seccion \ref{}. Para iniciar se establece la ecuación de lazo cerrado:
+El análisis cinemático del sub-sistema de cuatro barras es similar al del problema descrito en la Sección \ref{sec:Análisis cinemático de un Mecanismo de Cuatro Barras}. Para iniciar se establece la ecuación de lazo cerrado:
 \begin{equation}\label{eq:griper_lazo}
 \vec{r^{\prime}_2}+\vec{r_5}=\vec{r_0}+\vec{r_6}
 \end{equation}
@@ -446,24 +450,19 @@ Utilizando la notación polar se tiene que:
 \begin{equation}\label{eq:griper_lazoPolar}
 r^{\prime}_2e^{j\theta^{\prime}_2}+r_5e^{j\theta_5}=r_0e^{j\theta_0}+r_6e^{j\theta_6}
 \end{equation}
-Aplicando la ecuación de Euler y Separando la parte real de la parte imaginaria se obtiene:
+Aplicando la ecuación de Euler y separando la parte real de la parte imaginaria se obtiene:
 \begin{eqnarray}
-r_1 \cos{\theta_1}+r_4\cos{\theta_4}&=&r_2\cos{\theta_2} -r_3\cos{\theta_3} \label{eq:griper_PolarEuler4} \\
-r_1j\sin{\theta_1}+r_4j\sin{\theta_4} &=&r_2j\sin{\theta_2}+r_3j\sin{\theta_3}\label{eq:griper_PolarEuler3}
-\end{eqnarray}
-Dividiendo por la unidad imaginaria en la ecuación \ref{eq:griper_PolarEuler4}: 
-\begin{eqnarray}
-r^{\prime}_2 \cos{\theta^{\prime}_2}+r_5\cos{\theta_4}&=&r_0\cos{\theta_2} -r_6\cos{\theta_6} \label{eq:griper_PolarEuler4} \\
-r^{\prime}_2 \sin{\theta^{\prime}_2}+r_5\sin{\theta_4} &=&r_0\sin{\theta_2}+r_6\sin{\theta_6}\label{eq:griper_PolarEuler3}
+r^{\prime}_2 \cos{\theta^{\prime}_2}+r_5\cos{\theta_4}&=&r_0\cos{\theta_2} +r_6\cos{\theta_6} \label{eq:griper_PolarEuler5} \\
+r^{\prime}_2 \sin{\theta^{\prime}_2}+r_5\sin{\theta_4} &=&r_0\sin{\theta_2}+r_6\sin{\theta_6}\label{eq:griper_PolarEuler6}
 \end{eqnarray}
 en donde:
 \begin{equation}
 \theta^{\prime}_2=\theta_2+\alpha
 \end{equation}
-El ángulo $\theta_2$ se obtiene del análisis cinemático del sub-sistema MBC. Luego para calcular $\theta_5$, el sistema de ecuaciones \ref{eq:griper_PolarEuler4} se expresa en función de $\theta_4$ para obtener:
+El ángulo $\theta_2$ se obtiene del análisis cinemático del sub-sistema MBC. Luego para calcular $\theta_5$, el sistema de ecuaciones \ref{eq:griper_PolarEuler5} se expresa en función de $\theta_4$ para obtener:
 \begin{eqnarray}
-r_6\cos{\theta_6}&=& r^{\prime}_2\cos{\theta^{\prime}_2}+r_5\cos{\theta_5}-r_0\cos{\theta_0}\label{eq:griper_PolarEuler5} \\
-r_6\sin{\theta_6} &=&r^{\prime}_2\sin{\theta^{\prime}_2}-r_5\sin{\theta_5}r_0\cos{\theta_0}\label{eq:griper_PolarEuler6}
+r_6\cos{\theta_6}&=& r^{\prime}_2\cos{\theta^{\prime}_2}+r_5\cos{\theta_5}-r_0\cos{\theta_0}\label{eq:griper_PolarEuler7} \\
+r_6\sin{\theta_6} &=&r^{\prime}_2\sin{\theta^{\prime}_2}-r_5\sin{\theta_5}r_0\cos{\theta_0}\label{eq:griper_PolarEuler8}
 \end{eqnarray}
 Se obtiene la ecuación compacta de Freudenstein elevando al cuadrado los términos del sistema de ecuaciones anterior y sumando sus términos:
 \begin{equation} \label{eq:griper_A1B1C1}
@@ -480,36 +479,36 @@ El ángulo $\theta_5$ se puede obtener como función de $A$, $B$ y $C$, si $\sen
 \sin{\theta_5}= \frac{2tan(\frac{\theta_5}{2})}{1+tan^2(\frac{\theta_5}{2})}&,& \cos{\theta_5}= \frac{1-tan^2(\frac{\theta_5}{2})}{1+tan^2(\frac{\theta_5}{2})} \label{eq:griper_enFuncionTheta3}
 \end{eqnarray}
 
-Sustituyendo la Ecuación \ref{eq:griper_enFuncionTheta3} en la Ecuación \ref{eq:A1B1C1} se obtiene una ecuación no lineal de segundo orden:
+Sustituyendo la Ecuación \ref{eq:griper_enFuncionTheta3} en la Ecuación \ref{eq:griper_A1B1C1} se obtiene una ecuación no lineal de segundo orden:
 \begin{equation} \label{eq:griper_Lineal2dOrden}
  \left[C-A\right]= tan^2{\frac{\theta_3}{2}}+\left[2B\right]\tan{(\frac{\theta_3}{2})}+A+C=0
 \end{equation}
-Resolviendo la ecuación \ref{eq:Lineal2dOrden} el ángulo $\theta_3$ puede ser expresado de la siguiente forma:
+Resolviendo la ecuación \ref{eq:griper_Lineal2dOrden} el ángulo $\theta_3$ puede ser expresado de la siguiente forma:
 \begin{equation} \label{eq:griper_noLineal2dOrden_theta5}
 \theta_5= 2\arctan \left[ \frac{-B \pm \sqrt{B^2+A^2-C^2}}{C-A} \right]
 \end{equation}
 El ángulo $\theta_6$ se obtiene de forma similar, siendo la ecuación compacta de Freudenstein:
-\begin{equation} \label{eq:griper_A1B1C1}
+\begin{equation} \label{eq:griper_A1B1C1_2}
  D\cos{\theta_6}+E\sin{\theta_6}+F=0 
 \end{equation}
 Donde:
 \begin{eqnarray}
-D&=& 2r_6(r_0\cos{\theta_0}-r^{\prime}_2\cos{\theta^{\prime}_2}) \label{eq:griper_A} \\
-E&=& 2r_6(r_0\sin{\theta_0}-r^{\prime}_2\cos{\theta^{\prime}_2}) \label{eq:griper_B} \\
-F&=& r_0^2+r^{\prime}_2+r_5^2-r_6^2 -2r_0r^{\prime}_2\cos(\theta_0-\theta^{\prime}_2) \label{eq:griper_C}
+D&=& 2r_6(r_0\cos{\theta_0}-r^{\prime}_2\cos{\theta^{\prime}_2}) \label{eq:griper_A_2} \\
+E&=& 2r_6(r_0\sin{\theta_0}-r^{\prime}_2\cos{\theta^{\prime}_2}) \label{eq:griper_B_2} \\
+F&=& r_0^2+r^{\prime}_2+r_5^2-r_6^2 -2r_0r^{\prime}_2\cos(\theta_0-\theta^{\prime}_2) \label{eq:griper_C_2}
 \end{eqnarray}
 Luego, $\theta_6$ se define como:
 \begin{equation} \label{eq:griper_noLineal2dOrden_theta6}
 \theta_6= 2\arctan \left[ \frac{-E \pm \sqrt{E^2+D^2-F^2}}{F-D} \right]
 \end{equation}
-Las Ecuaciones \ref{eq:griper_noLineal2dOrden_theta5} y \ref{eq:griper_noLineal2dOrden_theta6} determinan los ángulos de la biela y el balancín del mecanismo de cuatro barras. El signo del radical para los ángulos $\theta_5$ y $\theta_6$ también se seleccionan de acuerdo a la la Tabla \ref{} de la Sección \ref{}. Para analizar, se debe determinar la posición del punto $E$ del acoplador (Figura \ref{}) a través de la siguiente relación:
+Las Ecuaciones \ref{eq:griper_noLineal2dOrden_theta5} y \ref{eq:griper_noLineal2dOrden_theta6} determinan los ángulos de la biela y el balancín del mecanismo de cuatro barras. El signo del radical para los ángulos $\theta_5$ y $\theta_6$ también se seleccionan de acuerdo a la la Tabla \ref{tab:Signo del radical} de la Sección \ref{sec:Análisis cinemático de un Mecanismo de Cuatro Barras}. Para analizar, se debe determinar la posición del punto $E$ del acoplador (Figura \ref{fig:Griper_MEC1}) a través de la siguiente relación:
 \begin{equation} \label{eq:griper_E}
 E=r^{\prime}_2+ r_{EX}+r_{EY}
 \end{equation}
 En términos de componentes tenemos que:
 \begin{eqnarray}
-E_{x}&=&r^{\prime}_2\cos{\theta^{\prime}_2} +r_{EX}\cos{\theta_5}+r_{EY}\sin{\theta_{EY}} \label{eq:Cxr} \\
-E_{y}&=&r^{\prime}_2\cos{\theta^{\prime}_2} +r_{EY}\sin{\theta_5}+r_{EY}\cos{\theta_{EY}}\label{eq:Cyr}
+E_{x}&=&r^{\prime}_2\cos{\theta^{\prime}_2} +r_{EX}\cos{\theta_5}+r_{EY}\sin{\theta_{EY}} \label{eq:gripper_Cxr} \\
+E_{y}&=&r^{\prime}_2\cos{\theta^{\prime}_2} +r_{EY}\sin{\theta_5}+r_{EY}\cos{\theta_{EY}}\label{eq:gripper_Cyr}
 \end{eqnarray}
 en donde:
 \begin{eqnarray}
@@ -524,26 +523,27 @@ en donde:
     \label{fig:Griper_MEC1}
 \end{figure}
 \subsection{Declaración de Problemas de Optimización para Casos de Estudio del Efector}
-Para la optimización del diseño correspondiente a un dedo del efector final, se deben encontrar las dimensiones de todas los eslabones del mecanismo de seis barras de tal forma que el punto E del acoplador siga una trayectoria esferica. Los puntos de la trayectoria se encuentran definidos por la Ecuación \ref{} y fueron tomados de \cite{capistran_2015}.
+Para la optimización del diseño correspondiente a un dedo del efector final, se deben encontrar las dimensiones de todas los eslabones del mecanismo de seis barras de tal forma que el punto E del acoplador siga una trayectoria esferica. Los puntos de la trayectoria se encuentran definidos por la Ecuación \ref{eq:griper_puntosP} y fueron tomados de \cite{capistran_2015}.
 \begin{equation} \label{eq:griper_puntosP}
  \Omega= \left\{(10, 160), (10, 170), (40, 165) \right\}
 \end{equation}
 El vector de variables para este caso está constituido por 14 componentes:
-\begin{eqnarray}\label{eq:Vector variables MEC1}
+\begin{eqnarray}\label{eq:gripper_Vector variables MEC1}
 \vec{p} &=& \{p_1,p_2,p_3,...,p_{14} \}\\
        &=& \{ r_1,r_2,r_3,r^1_4,r^2_4,r^3_4,r_0,r^{\prime}_2,r_5,r_6,r_{EX},r_{EY},\alpha,\theta_0 \} 
 \end{eqnarray}
-En donde $r_1$, $r_2$, $r_3$, $r_0$, $r^{\prime}_2$, $r_5$ y $r_6$ son las dimensiones de las barras,$r^1_4$,$r^2_4$,$r^3_4$, corresponden a las posiciones de la corredera y se emplean para calcular los puntos en los que se ubica el sistema, $r_{EX}$ y $r_{EY}$ son las dimensiones de las barras del acoplador, mientras que  $\alpha$ es el ángulo entre $r_2$ y $r^{\prime}_2$ , y $\theta_0$ el ángulo de $r_0$.
+En donde $r_1$, $r_2$, $r_3$, $r_0$, $r^{\prime}_2$, $r_5$ y $r_6$ son las dimensiones de las barras. Las variables $r^1_4$,$r^2_4$,$r^3_4$, corresponden a las posiciones de la corredera y se emplean para calcular los puntos en los que se ubica el sistema, $r_{EX}$ y $r_{EY}$ son las dimensiones de las barras del acoplador, mientras que  $\alpha$ es el ángulo entre $r_2$ y $r^{\prime}_2$ , y $\theta_0$ el ángulo de $r_0$.
 \subsubsection{Función objetivo}
 Para el primer caso del efector final  se plantea la función de error 
-\begin{equation}\label{eq:gripper_FO1}
+\begin{equation}
  \begin{aligned}
 min\quad  f(r^i_4)=\sum_{i=1}^{N}\big[\big(C^{i}_{1d}-C^{i} \big)^2=
 \sum_{i=1}^{N}\big[\big(C^{i}_{1xd}-C^{i}_{x} \big)^2 +\big(C^{i}_{yd}-C^{i}_{y} \big)^2\big] 
 \end{aligned}
+\label{eq:gripper_FO}
 \end{equation}
-En la ecuación \ref{eq:gripper_FO1} se calcula la distancia (a minimizar) de los puntos de precisión $C^i_d$ y los puntos calculados $C_i$ a partir de $r^i_4$. Donde  $C^i_x$ y $C^i$ son las coordenadas $(x,y)$ del punto $E$ del acoplador.
-\subsubsection{Restricciones de diseño}\label{sec:Restricciones de diseño MEC}
+En la Ecuación \ref{eq:gripper_FO} se calcula la distancia (a minimizar) de los puntos de precisión $C^i_d$ y los puntos calculados $C_i$ a partir de $r^i_4$. Donde  $C^i_x$ y $C^i$ son las coordenadas $(x,y)$ del punto $E$ del acoplador.
+\subsubsection{Restricciones de diseño}\label{sec:Restricciones de diseño MEC_gripper}
 Para el correcto funcionamiento del gripper se deben tener en cuenta las siguientes restricciones de diseño: 
 \begin{itemize}
 \item \textit{Ley de Grashof:} De forma similar al mecanismo de 4 barras, debe cumplirse la ley de Grashof para el mecanismo de seis barras:
@@ -611,7 +611,7 @@ p_{14} & \in & \left[ \frac{3\pi}{4},\frac{5\pi}{4} \right]
 \end{eqnarray}
 \subsection{Caso de estudio 2: Diseño con normalización de barras - GCE2}
 
-En el segundo caso de estudio se agrega una función de normalización ($f(\vec{x})$) para las barras del mecanismo, con el fin de obtener un diseño  estético y antropomórfico de las falanges del griper.La función objetivo queda definida de la siguiente forma:
+En el segundo caso de estudio se agrega una función de normalización ($f(\vec{x})$) para las barras del mecanismo, con el fin de obtener un diseño  estético y antropomórfico de las falanges del gripper. La función objetivo queda definida de la siguiente forma:
 \begin{equation}\label{eq:griper_FOG1}
   f_r= w_1f(\vec{p})+w_2f(\vec{x})
 \end{equation}
@@ -635,7 +635,7 @@ g_{8}(\vec{p})&=&p_{2}-\frac{p_3}{3} \leq 0,\\
 g_{9}(\vec{p})&=&\frac{p_3}{3}-p_{2} \leq 0
 \end{eqnarray}
 Los límites superior e inferior para las variables de diseño son:
-\begin{eqnarray}\label{eq:limites variables griper1}
+\begin{eqnarray}\label{eq:limites variables griper2}
 p_1,p_2,p_3 & \in & \left[ 0,100\right] \\
 p_4,p_5,p_6 & \in & \left[ -50,0\right] \\
 p_7,p_8,p_{10},p_{11},p_{12} & \in & \left[ 0,150 \right] \\
@@ -646,22 +646,23 @@ p_{14} & \in & \left[ \frac{3\pi}{4},\frac{5\pi}{4} \right]
 En la Ecuación \ref{eq:griper_FOG1}, $w_1$ y $w2$ , son pesos que controlan la precisión de la trayectoria y la estética del mecanismo, respectivamente. La suma de ambos pesos debe ser igual 1, por lo que, para este caso se tomarán los valores de $w_1=0.9$ y $w_2=0.1$. Las variables $x_i$ y $x_j$ de la Ecuación \ref{eq:griper_NORM} están relacionadas con las coordenadas de cada barra del sistema.
 
 \section{Gestión de Generación de Energía en una Microrred Eléctrica}
-En la actualidad los sistemas de generación y distribución de energía convencionales enfrentan diversos problemas como el agotamiento gradual de los recursos de combustibles fósiles, la escasa eficiencia energética y la contaminación ambiental. Estos problemas han llevado a una nueva tendencia de generar energía localmente mediante el uso de \textit{Fuentes de Energía Renovables} (FER) como gas natural, biogás, energía eólica, panales solares fotovoltaicos, sistemas combinados de calor y energía, y su integración en la red de distribución de servicios públicos. Este tipo de generación de energía se denomina \textit{generación distribuida} (GD) y las fuentes de energía se denominan\textit{ recursos de energía distribuida }(RED). El término "generación distribuida" se ha diseñado para distinguir este concepto de generación de generación convencional centralizada. Debido al aumento tanto de la demanda de energía eléctrica como del uso las FER, el uso microrredes eléctricas ha tenido un aumento en las ultimas décadas. Lasseter plantea lo siguiente en  \cite{lasseter2002microgrids}:
+En la actualidad los sistemas de generación y distribución de energía convencionales enfrentan diversos problemas como el agotamiento gradual de los recursos de combustibles fósiles, la escasa eficiencia energética y la contaminación ambiental. Estos problemas han impulsado la nueva tendencia de generar energía localmente mediante el uso de \textit{Fuentes de Energía Renovables} (FER) como gas natural, biogás, energía eólica, panales solares fotovoltaicos, sistemas combinados de calor y energía, y su integración en la red de distribución energía de uso público. Este tipo de generación de energía se denomina \textit{generación distribuida} (GD) y las fuentes de energía se denominan\textit{ recursos de energía distribuida }(RED). El término generación distribuida se utiliza para distinguir este concepto de generación convencional centralizada. Debido al aumento tanto de la demanda de energía eléctrica como del uso las FER, la utilización de microrredes eléctricas ha tenido un aumento en las ultimas décadas. Lasseter plantea lo siguiente en  \cite{lasseter2002microgrids}:
 \begin{quote}
-\textit{"Las microrredes son redes de suministro de energía de pequeña escala, diseñadas para suministrar cargas eléctricas o térmicas a una comunidad pequeña, como una urbanización o una localidad suburbana. Una Microrred es esencialmente una red de distribución ya que es un conglomerado de sistemas GD con diferentes cargas a nivel de voltaje de distribución. Los generadores o micro-fuentes empleados en una Microrred suelen ser de Generación Distribuida renovable o no convencional."}
+\textit{``Las microrredes son redes de suministro de energía de pequeña escala, diseñadas para suministrar cargas eléctricas o térmicas a una comunidad pequeña, como una urbanización o una localidad suburbana. Una Microrred es esencialmente una red de distribución ya que es un conglomerado de sistemas GD con diferentes cargas a nivel de voltaje de distribución. Los generadores o micro-fuentes empleados en una Microrred suelen ser de Generación Distribuida renovable o no convencional."}
 \end{quote}
 
 
 Desde el punto de vista operativo, las micro-fuentes deben estar equipadas con interfaces electrónicas de potencia (IEP) y controles para proporcionar la flexibilidad requerida y  garantizar así el funcionamiento como sistema único. Esta flexibilidad de control permite que la Micro-red se presente al sistema de energía de la red principal como una sola unidad controlada que satisface las necesidades locales de energía. La principal ventaja de una Microrred es su facilidad de control, así como el cumplimiento de las regulaciones de la red sin obstaculizar la confiabilidad y seguridad del servicio eléctrico. Desde el punto de vista de los clientes, las microrredes son beneficiosas para satisfacer localmente sus requisitos eléctricos. Pueden suministrar energía ininterrumpible, mejorar la confiabilidad local y proporcionar soporte de voltaje local. Desde el punto de vista ambiental, las microrredes reducen la contaminación ambiental y el calentamiento global mediante la utilización de tecnología que produce bajas emisiones de carbono  \cite{lasseter2002microgrids}. 
 
-Sin embargo, para lograr una operación estable y segura mediante micro-redes, es necesario resolver una serie de problemas técnicos, normativos y económicos. Ciertas características de las microrredes pueden resultar problemáticas. Algunas intrínsecas, como la naturaleza intermitente y dependiente del clima de la generación mediante ciertos tipos de FER como la fotovoltaica y la eólica; u otras como el bajo contenido de energía de los combustibles, la falta de estándares y regulaciones para operar las Microrredes de forma factible. El estudio de estas cuestiones requiere un amplio análisis en tiempo real y en simulaciones, que han sido objeto de diferentes investigaciones.
+Sin embargo, para lograr una operación estable y segura mediante micro-redes, es necesario resolver una serie de problemas técnicos, normativos y económicos. Ciertas características de las microrredes pueden resultar problemáticas. Algunas intrínsecas, como la naturaleza intermitente y dependiente del clima de la generación mediante ciertos tipos de FER como la fotovoltaica y la eólica; u otras como el bajo contenido de energía de los combustibles no fósiles, la falta de estándares y regulaciones para operar las Microrredes de forma factible. El estudio de estas cuestiones requiere un amplio análisis en tiempo real y en simulaciones, que ha sido objeto de diferentes investigaciones.
 
  \subsection{Optimización del costo de la generación de energía en una Microrred Eléctrica No Interconectable - SCE1}
-En este caso de estudio el objetivo es minimizar el costo de operación de una  Microrred Eléctrica en un lugar remoto no interconectable (MR-RNI), al tiempo que se garantiza el equilibrio entre la generación y la demanda. La generación fiable de energía se logra mediante la generación híbrida de potencia en donde se emplean Fuentes de Energía Renovables (FER), generación convencional con diésel y Sistemas de Almacenamiento de Energía (ESS). Las variables de diseño representan entonces, las potencias que serán suministradas por los Generadores de Diésel (GD), energía fotovoltáica (PV), energía eólica (GE) y el SAE de la MR-RNI en función del tiempo dentro de un intervalo de 24 horas. Se define un modelo de optimización basado en el despacho económico, el cual intenta obtener el menor costo del sistema mientras los generadores entregan potencia a la carga por el despacho de fuentes de generación.El cálculo de minimización del costo de la generación de energía en la MR-RNI se debe realizar para un periodo de 24 horas tomando en cuenta los siguientes escenarios\cite{zapata_zapata_control_2017}: 
+En el presente problema el objetivo es minimizar el costo de operación de una  Microrred Eléctrica en un lugar remoto no interconectable (MR-RNI), al tiempo que se garantiza el equilibrio entre la generación y la demanda. La generación fiable de energía se logra mediante la generación híbrida de potencia en donde se emplean Fuentes de Energía Renovables (FER), generación convencional con diésel y Sistemas de Almacenamiento de Energía (SAE). Las variables de diseño representan entonces, las potencias que serán suministradas por los Generadores de Diésel (GD), energía fotovoltáica (GFV), energía eólica (GE) y el  de la MR-RNI en función del tiempo dentro de un intervalo de 24 horas. Se define un modelo de optimización basado en el despacho económico, el cual intenta obtener el menor costo posible derivado del uso del sistema, mientras los generadores entregan potencia a la carga total. El cálculo de minimización del costo de la generación de energía  eléctrica en la MR-RNI se debe realizar para un periodo de 24, donde cada hora del día representa un problema de optimización con límites para las variables de diseño diferentes en cada hora. Esto se debe a que los recursos para la generación diaria son variables. Específicamente debe tomarse en cuenta los siguientes escenarios \cite{zapata_zapata_control_2017}: 
 \begin{enumerate}
 \item Las FER no pueden entregar energía las 24 horas.
 \item La demanda total de energía no puede ser entregada solo por las FER.
-\item Los costos más representativos son los del combustible y la generación mediante el generador diesel.
+\item Los costos más representativos son los de combustible,y por tanto la potencia entregada por el generador de diésel es la más costosa.
+\item La operación de los sistemas de generación híbrida de potencia tiene un costo generalmente no lineal.
 \end{enumerate}
 \subsubsection{Costo de Generación Diésel}
 La GD presenta una función de costo asociada a la potencia del generador. Dicha función se encuentra dada por la Ecuación \ref{eq:GD}, en donde $i$ es la $i$-ésima fuente de generación , $P_i$ y $F_i$ son la salida de potencia eléctrica y el costo de operación de la fuente $i$, respectivamente, mientras que $\alpha$, $\beta$  y $\gamma$ son los cocientes de costo.
@@ -683,8 +684,8 @@ Para el generador de energía fotovoltaica se define la siguiente función de co
   \alpha = \frac{r}{\left[1+(1+r)^{-N}\right]}
  \end{equation}
 
-En este caso $P_3$ es la potencia de salida de PV, $\alpha$ es la tasa de retorno de inversión y $r$ corresponde a la tasa de interés (se considera de 0.09 para el caso base), $N$ es la vida útil del generador, que ha sido establecida
-en 20 años, $I^p$ indica el costo de inversión por unidad de potencia (\$5000=kW) y GE es el costo de operación y mantenimiento por unidad de potencia generada. La función de costo por generación fotovoltaica queda definida entonces como:
+En este caso $P_3$ es la potencia de salida de GFV, $\alpha$ es la tasa de retorno de inversión y $r$ corresponde a la tasa de interés (se considera de 0.09 para el caso base), $N$ es la vida útil del generador, que ha sido establecida
+en 20 años, $I^p$ indica el costo de inversión por unidad de potencia (\$5000=kW) y $G^E$ es el costo de operación y mantenimiento por unidad de potencia generada. La función de costo por generación fotovoltaica queda definida entonces como:
 \begin{equation}\label{eq:PV3}
    f_3(P_3)=545.016P_3 
 \end{equation}
@@ -695,12 +696,12 @@ valores de $I^p$ y $G^E$, la función de costo para la generación eólica queda
 f_4(P_4) = 152.616P_4
 \end{equation}
 \subsubsection{Costo de Sistema de Almacenamiento de Energía}
-Para el ESS se considera un banco de baterías de 2kW. En \cite{zapata_zapata_control_2017}, el costo $I^p$ por unidad de almacenamiento instalada es de \$1000/kW, mientras que el GE conserva el valor de (centavos 1.6/kW) dando como resultado la siguiente función de costo:
+Para el SAE se considera un banco de baterías de 2kW. En \cite{zapata_zapata_control_2017}, el costo $I^p$ por unidad de almacenamiento instalada es de \$1000/kW, mientras que el $G^E$ es igual a \cent 1.6/kW y representa el costo de operación y mantenimiento por unidad de potencia generada. El uso del SAE describe la siguiente función de costo:
 \begin{equation}\label{eq:ESS}
 f_2(P_2) = 119P_2
 \end{equation}
 \subsection{Planteamiento del Problema de Optimización}
-El despacho económico es el método eficiente para obtener un menor costo del sistema al tiempo que se satisface la carga o demanda de energía mediante el despacho de las fuentes de generación. Simultáneamente, las restricciones de las fuentes de generación deben ser satisfechas. En el presente caso de estudio se deben calcular las potencias de cada uno de los generadores en la MR-RNI en cada hora del día, minimizando el costo. El vector de variables de diseño se plantea en la Ecuación  \ref{eq:MR-vector de variables}:
+El despacho económico es un método eficiente para obtener un menor costo del sistema al tiempo que se satisface la carga o demanda de energía mediante el despacho de las fuentes de generación. Simultáneamente, las restricciones de las fuentes de generación deben ser satisfechas. En el presente caso de estudio se deben calcular las potencias de cada uno de los generadores en la MR-RNI en cada hora del día, minimizando el costo. El vector de variables de diseño se plantea en la Ecuación  \ref{eq:MR-vector de variables}:
  \begin{equation}\label{eq:MR-vector de variables}
   \vec{p}=\left[ P_1,P_2,P_3,P_4 \right]^T
  \end{equation}
@@ -717,7 +718,7 @@ Donde $NG$ es el número de fuentes; $P_{i}$ es el generador de fuente $i$; $F_{
 min \quad f(\vec{p} ) = w_1C_f f(P_1(\tau)) + w_2f(P_2(\tau)) + w_3f(P_3(\tau))+ w_4f(P_4(\tau))
  \end{equation}
  
-Donde $w_1$,$w_2$,$w_3$,$w_4$ son los pesos asignados a los generadores, cumpliéndose que  $w_1+ w_2+w_3+w_4=0$ y   $w_1=w_2=w_3=w_4=0.25$. $C_f$ es el costo del combustible de diesel que se asignó en US\$1.
+Donde $w_1$,$w_2$,$w_3$,$w_4$ son los pesos asignados a los generadores, cumpliéndose que  $w_1+ w_2+w_3+w_4=1$ y  se establece que $w_1=w_2=w_3=w_4=0.25$. $C_f$ es el costo del combustible de diésel que se asignó en 1 USD.
 
 
 Teniendo en cuenta que el costo de generación de energía debe ser calculado en cada hora del día la función objetivo para las 24 horas del día se define según la Ecuación \ref{eq:MR-FO2}:
@@ -733,7 +734,7 @@ La gestión de generación de energía en la MR-RNI está sujeta a las siguiente
 P_1+P_2+P_3+P_4=P_L
  \end{equation}
  \item \textit{Modelo del banco de baterías}: El poder de salida del generador PV y la carga demandada en cierta hora $t$, determinan el poder de carga y descarga dentro y fuera del banco de baterías.
-El estado de carga ($SOC$) del banco de baterías en cualquier hora, $SOC(t)$,depende del $SOC$ en la hora previa $SOC(t-1)$. Luego Para el  flujo de energía de la hora $t-1$ a $t$, se debe considerar la siguiente relación \cite{tazvinga2013minimum}:
+El estado de carga ($SOC$ por sus siglas en inglés) del banco de baterías en cualquier hora, $SOC(t)$,depende del $SOC$ en la hora previa $SOC(t-1)$. Luego, para el flujo de energía de la hora $t-1$ a $t$, se debe considerar la siguiente relación \cite{tazvinga2013minimum}:
  \begin{equation}
 SOC(t)=SOC(t-1)- \alpha_DP_2(t)+\alpha_CP_3(t)+\alpha_CP_4(t)
  \end{equation}
@@ -742,12 +743,12 @@ SOC(t)=SOC(t-1)- \alpha_DP_2(t)+\alpha_CP_3(t)+\alpha_CP_4(t)
 SOC(t-1)=SOC(0)- \alpha_D \sum_{\tau=1}^{t}P_2(\tau)+\alpha_C\sum_{\tau=1}^{t}P_3(\tau)+\alpha_C \sum_{\tau=1}^{t}P_4(\tau)
  \end{equation}
  
-donde se tiene que $SOC(0)$ como el $SOC$ inicial de la batería y  $\alpha_C\sum_{\tau=1}^{t}P_3(\tau)+\alpha_C \sum_{\tau=1}^{t}P_4(\tau)$ es el poder aceptado por la batería en la hora $t$ y  $\alpha_D \sum_{\tau=1}^{t}P_2(\tau)$ es el poder de descarga de la batería en el tiempo $t$
+donde se tiene que $SOC(0)$ como el $SOC$ inicial de la batería y  $\alpha_C\sum_{\tau=1}^{t}P_3(\tau)+\alpha_C \sum_{\tau=1}^{t}P_4(\tau)$ es el poder aceptado por la batería en la hora $t$ y  $\alpha_D \sum_{\tau=1}^{t}P_2(\tau)$ es el poder de descarga de la batería en el tiempo $t$.
 Además se debe tener en cuenta que la capacidad disponible de la batería no debe ser menor que la capacidad mínima permitida ni mayor que la capacidad máxima permitida \cite{tazvinga2013minimum}, es decir:
 \begin{equation}
 SOC^{min}-SOC(t)\leq 0 \quad, \quad SOC(t)-SOC^{max}-\leq 0 
  \end{equation}
- Los parámetros del banco de baterías se muestran en la Tabla \ref{tab:MR-Parámetros del ESS}
+ Los parámetros del banco de baterías se muestran en la Tabla \ref{tab:MR-Parámetros del Sistemas de Almacenamiento de Energía}
 \begin{table}[]
 \centering
 \begin{tabular}{ll}
@@ -759,8 +760,8 @@ SOC^{min}-SOC(t)\leq 0 \quad, \quad SOC(t)-SOC^{max}-\leq 0
  Estado mínimo de carga ($SOC_{min}$)& 40\\
  \hline
 \end{tabular}
-\caption{Parámetros del ESS}
-\label{tab:MR-Parámetros del Sistemas de Almacenamiento de Energía (ESS)}
+\caption{Parámetros del Sistemas de Almacenamiento de Energía en la Micro-Red No Interconectable.}
+\label{tab:MR-Parámetros del Sistemas de Almacenamiento de Energía}
 \end{table}
 
 \end{itemize}
@@ -783,9 +784,12 @@ La carga $P_L(\tau)$ fue obtenida de \cite{tazvinga2014energy} y los límites su
 0  & \leq & P_3(\tau)   \leq  P_{pv}( \tau) \\
 0  & \leq & P_4(\tau)   \leq  P_{wind}(\tau )  \label{eq:ultima restriccion MR}
 \end{eqnarray}
-donde $GD_{nominal}$ es la capacidad nominal del generador diesel, con un valor de 5000 VA (5 kVA) para este caso de estudio. El límite superior para $ P_2(\tau)$ depende de la capacidad máxima de la batería ($Bc_{max}$) que es de 2000 VA (2 kVA) y el estado inicial de la misma. Los datos de $ P_{pv}( \tau)$ y $ P_{wind}(\tau )$  fueron tomados de \cite{Ramabhotla_Economic_dispatch}
+donde $GD_{nominal}$ es la capacidad nominal del generador diesel, con un valor de 5000 VA (5 kVA) para cada hora del día en este caso de estudio. El límite superior para $ P_2(\tau)$ depende de la capacidad máxima de la batería ($Bc_{max}$) que es de 2000 VA (2 kVA) y el estado inicial de la misma. Los datos de $ P_{pv}( \tau)$ y $ P_{wind}(\tau )$  fueron tomados de \cite{Ramabhotla_Economic_dispatch}. El estado de carga $SOC(0)$ de la batería se generó de forma aleatoria entre un rango de 40\% y 95\%. La potencia de $P_3$ es equivalente a siete módulos fotovoltaicos.				
+	
+						
+
 
 \section{Conclusiones}
-En el presente capítulo se plantea la formulación matemática de los problemas a resolver en la propuesta de solución. Es necesario primeramente destacar la complejidad de los diferentes casos de la síntesis óptima del mecanismo de cuatro barras donde el análisis cinemático del mecanismo, realizado para obtener la trayectoria deseada por el punto $C$ del acoplador, concibe una función compleja no lineal que incluye operaciones mediante funciones trigonométricas y de potencias sobre las variables de diseño. Se puede observar que la función objetivo del problema puede tener valores imaginarios (Ecuación \ref{eq:MEPolarEuler}) para vectores reales. Al no ser continua en los reales, los métodos de optimización basados en información del gradiente suelen no son aplicables, surgiendo la necesidad de aplicar métodos directos. Además las restricciones de diseño para garantizar el cumplimiento de las leyes de Grashoff y la secuencia de ángulos acotan el espacio factible aumentando la dificultad del problema. 
+En el presente capítulo se plantea la formulación matemática de los problemas a resolver por la propuesta de solución. Es necesario primeramente destacar la complejidad de los diferentes casos de diseño cinemático de mecanismos, donde el análisis realizado para obtener la trayectoria deseada por el punto del acoplador, concibe una función compleja no lineal que incluye operaciones mediante funciones trigonométricas y de potencias sobre las variables de diseño. Se puede observar que la función objetivo de estos problemas puede tener valores imaginarios (Ecuación \ref{eq:MEPolarEuler}) para vectores reales. Al no estar definida en los reales para todo su dominio, los métodos de optimización basados en información del gradiente suelen no ser aplicables, surgiendo la necesidad de aplicar métodos directos. Además, las restricciones de diseño para garantizar el cumplimiento de las leyes de Grashoff y la secuencia de ángulos acotan el espacio factible aumentando la dificultad del problema. 
 
-A diferencia de los casos del diseño de mecanismo, la función objetivo a optimizar en el problema de la MR-RNI es una función cuadrática. Sin embargo, en este problema se presentan límites diferentes en cada hora del día para las variables de diseño y una restricción de igualdad las cuales son generalmente más difíciles de satisfacer. 
+A diferencia de los casos de diseño de mecanismos, la función objetivo a optimizar en el problema de la MR-RNI es una función cuadrática. Sin embargo, en este problema se presentan límites diferentes en cada hora del día para las variables de diseño. Para la potencia generada por el sistema de almacenamiento de energía, este límite depende del estado de la carga en la hora anterior lo que representa un reto para el algoritmo de optimización. Por otra parte, el balance de carga implica una restricción de igualdad, las cuales son generalmente más difíciles de satisfacer. 

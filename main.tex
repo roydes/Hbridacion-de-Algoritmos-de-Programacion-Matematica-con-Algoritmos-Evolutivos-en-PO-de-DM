@@ -54,7 +54,7 @@ headsepline, % Uncomment to get a line under the header
 
 \theoremstyle{definition}
 \newtheorem{defn}[thm]{Definición} % definition numbers are dependent on theorem numbers
-\newtheorem{exmp}[thm]{Example}
+\newtheorem{exmp}[thm]{Ejemplo}
 \usepackage{graphicx} % graficos
 \usepackage{enumitem} % enumerados
 \usepackage{multirow}
@@ -93,8 +93,10 @@ headsepline, % Uncomment to get a line under the header
 }
 \renewcommand\thesubsubsection{\arabic{subsubsection}}
 
-\renewcommand{\listtablename}{Índice de tablas} 
+\usepackage{wasysym}
+
 \AtBeginDocument{%
+ \renewcommand{\listtablename}{Índice de tablas} 	
   \renewcommand\tablename{Tabla}
 }
 
@@ -134,6 +136,7 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
+
 %----------------------------------------------------------------------------------------
 %	MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
@@ -156,7 +159,7 @@ headsepline, % Uncomment to get a line under the header
 \supervisor{Dr. Efrén Mezura Montes} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
 \examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{Maestro en Computación Aplicada} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
-\author{Ing. Roides Javier Cruz Lara} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\author{Ing. Roides J. Cruz Lara} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
 \addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
 
 \subject{Inteligencia Artificial} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
@@ -171,6 +174,12 @@ headsepline, % Uncomment to get a line under the header
 \hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
 \hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
 }
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Sonny]{fncychap}
+ \ChNameVar{\LARGE}
+\ChTitleVar{\LARGE\bfseries}
+
+
 
 \begin{document}
 

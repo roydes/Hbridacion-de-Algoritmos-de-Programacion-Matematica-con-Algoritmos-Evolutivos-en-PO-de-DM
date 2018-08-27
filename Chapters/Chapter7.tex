@@ -1,12 +1,16 @@
 \chapter{Experimentos y Resultados} \label{Chapter7}
 
-La investigación de algoritmos metaheurísticos y, especialmente, en la computación evolutiva (CE) se basa principalmente en dos pilares: la teoría y la práctica. Sin embargo, la mayor parte del trabajo publicado en esta área se dedica a la aplicación de la CE y los métodos relacionados a problemas reales o de referencia. En la teoría de análisis de algoritmos la medición del desempeño de un método determinado se enfoca fundamentalmente el conocer cómo este funciona para el peor caso posible. Por otra parte, las investigaciones experimentales rara vez se preocupan por los peores casos, sobre todo si el problema tiene un trasfondo del mundo real, donde la observación del peor caso puede ser poco probable. Por lo tanto, el mayor interés se centra en el promedio de cierta cantidad los casos. Los trabajos experimentales han tenido dos motivaciones principales: resolver problemas del mundo real o al menos demostrar que pueden ser resueltos mediante un algoritmo evolutivo y demostrar la eficacia de un algoritmo (preferiblemente nuevo) en una clase de problemas. La realización de experimentos en ciencias de la computación puede requerir las siguientes tareas \cite{BartzBeielstein2014ExperimentalAO}:
+La investigación de algoritmos metaheurísticos y especialmente la computación evolutiva (CE) se basa principalmente en dos pilares: la teoría y la práctica. Sin embargo, la mayor parte del trabajo publicado en esta área se dedica a la aplicación de la CE y los métodos relacionados a problemas reales o de referencia. En la teoría de análisis de algoritmos la medición del desempeño de un método determinado se enfoca fundamentalmente en conocer cómo este funciona para el peor caso posible. Por otra parte, las investigaciones experimentales rara vez se preocupan por los peores casos, sobre todo si el problema tiene un trasfondo del mundo real, donde la observación del peor caso puede ser poco probable. Por lo tanto, el mayor interés se centra en el promedio de cierta cantidad los casos.
+
+ Los trabajos experimentales han tenido dos motivaciones principales: resolver problemas del mundo real o al menos demostrar que pueden ser resueltos mediante un algoritmo evolutivo y demostrar la eficacia de un algoritmo (preferiblemente nuevo) en una clase de problemas. La realización de experimentos en ciencias de la computación puede requerir las siguientes tareas \cite{BartzBeielstein2014ExperimentalAO}:
 \begin{enumerate}
-	\item Encontrar los mejores parámetros o algoritmos dados $k$ conjuntos de números aleatorios representando el resultado de ciertos experimentos.
+	\item Encontrar los mejores parámetros o algoritmos dados $k$ conjuntos de números aleatorios que representan el resultado de ciertos experimentos.
 	\item  Encontrar la mejor asignación para un conjunto de variables reales (dentro de un rango dado) que representan los parámetros del algoritmo para una clase de problema.
 	\item Dadas las posibles formas de modificar un algoritmo $A$ (por ejemplo, mediante el uso de operadores adicionales) encontrar la mejor combinación para una clase de problema.
 \end{enumerate}
-El presente capítulo se enfoca fundamentalmente en esta última tarea. Sin embargo, las muestras que se pueden obtener para realizar las comparaciones en un número determinado de aspectos como: operadores, problemas de optimización, parámetros, número de evaluaciones entre otros; no permiten necesariamente obtener conclusiones generales sobre los algoritmos comparados. Por tanto, la pregunta de investigación más adecuada es bajo qué condiciones  un algoritmo $A$ es mejor que $A'$ y por qué. En este caso, se trata de comparar los algoritmos propuestos con aquellos que mejores resultados han obtenido en el conjunto específico de problemas planteados. Para realizar estas comparaciones se realizarán mediciones que permitirán además describir el comportamiento de los algoritmos propuestos e implementar ciertas mejoras.
+El presente capítulo se enfoca fundamentalmente en esta última tarea. Sin embargo, las muestras que se pueden obtener para realizar las comparaciones en un número determinado de aspectos como: operadores, problemas de optimización, parámetros, número de evaluaciones entre otros; no permiten necesariamente obtener conclusiones generales sobre los algoritmos comparados. Por tanto, la pregunta de investigación más adecuada es bajo qué condiciones  un algoritmo $A$ es mejor que $A'$ y por qué. 
+
+En este caso, se trata de comparar los algoritmos propuestos con aquellos que mejores resultados han obtenido en el conjunto específico de problemas planteados. Para realizar estas comparaciones se realizarán mediciones que permitirán además describir el comportamiento de los algoritmos propuestos e implementar ciertas mejoras. El proceso de experimentación debe ser guiado por una metodología que estructure el diseño experimental y garantice su rigurosidad. 
 \section{Diseño Experimental}
 
 El diseño experimental de la propuesta de solución se estructuran de acuerdo a la metodología planteada a continuación. El objetivo  de especificar una metodología es organizar el proceso de experimentación y garantizar la calidad de los resultados. Basado en lo presentado en \cite{BartzBeielstein2014ExperimentalAO}, se plantea una metodología que contempla los siguientes pasos:
@@ -824,18 +828,21 @@ Teniendo en cuenta los resultados obtenidos en ambos experimentos se pueden real
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Experimentos finales}
-Los experimentos iniciales permitieron observar el comportamiento de las variantes HNMED diseñadas bajo el enfoque de hibridación propuesto en la Sección \ref{sec:Enfoque propuesto}. Se evidenció que a pesar de la rapidez de estos algoritmos, se presentaron dificultades en los problemas MCE1, MCE3 y GCE2. Estos problemas presentan un espacio de búsqueda más complejo, ya sea por presentar mayor número de restricciones, dimesionalidad, complejidad de la función objetivo o la cualquier combinación de estas características. 
+Los experimentos iniciales permitieron observar el comportamiento de las variantes HNMED diseñadas bajo el enfoque de hibridación propuesto en la Sección \ref{sec:Enfoque propuesto}. Se evidenció que a pesar de la rapidez de estos algoritmos, se presentaron dificultades en los problemas MCE1, MCE3 y GCE2. Estos problemas presentan un espacio de búsqueda más complejo, ya sea por contar con mayor número de restricciones, dimesionalidad, complejidad de la función objetivo o la cualquier combinación de estas características. 
 
 Las variantes propuestas heredan, en cierta medida, algunas deficiencias del método de búsqueda local utilizado como la reducción del desempeño ante un aumento de la dimesionalidad del problema y la sensibilidad a los puntos iniciales. Por tanto, una mayor capacidad de exploración es requerida en orden de alcanzar mejores resultados. Con este objetivo trazado, se diseñó la HNMED-V6 cuyo desempeño es medido en los experimentos finales junto a la variante HNMED-V5.
 
 
 \subsection{Experimentos D y E : Comparación de Variantes HNMED-V5 y HNMED-V6 con Algoritmo C-LSHADE}
-El objetivo de ambos experimentos es comprobar la competitividad  de las dos mejores versiones HNMED. Por tanto, se realizan dos comparaciones finales por medio de estadística descriptiva e inferencial: el algoritmo HNMED-V5 y HNMED-V6 con el algoritmo C-LSHADE propuesto por Zapata en \cite{zapata_zapata_control_2017}, el cual es una variante competitiva del algoritmo DECV para el conjunto de problemas a resolver.
+El objetivo de ambos experimentos es comprobar la competitividad  de las dos mejores versiones HNMED. Por tanto, se realizan dos comparaciones finales por medio de estadística descriptiva e inferencial: el algoritmo HNMED-V5 y HNMED-V6 con el algoritmo C-LSHADE propuesto por Zapata en \cite{zapata_zapata_control_2017} una adaptación del algoritmo L-SHADE para problemas con restricciones. L-SHADE está basado en la Evolución Diferencial y se caracteriza por realizar una adaptación de los parámetros $F$ y $CR$ utilizando una memoria histórica de parámetros, donde se almacenan aquellos valores de $F$ y $CR$ que han tenido éxito en el mejoramiento de los individuos. Su procedimiento también incorpora
+un mecanismo de reducción lineal del tamaño de población. L-SHADE fue ganador de la Sesión
+Especial y Competencia de Optimización Mono-Objetivo con Parámetros Reales
+CEC-2014 \cite{tanabe2014improving}. 
 \subsubsection{Definición de medidas}
-Se obtiene para cada algoritmo una muestra de $n=31$ ejecuciones. Para cada problema las observaciones en la muestra corresponden al valor de la función objetivo del mejor individuo factible encontrado por el algoritmo $A_i$en la ejecución $j$ para $j= \{ 1,2,...,n\}$. Se aplicarán al conjunto de muestras las siguientes pruebas de estadística descriptiva e inferencial:
+Se obtiene para cada algoritmo una muestra de $n=31$ ejecuciones. Para cada problema las observaciones en la muestra corresponden al valor de la función objetivo del mejor individuo factible encontrado por el algoritmo $A_i$ en la ejecución $j$ para $j= \{ 1,2,...,n\}$. Se aplicarán al conjunto de muestras las siguientes pruebas de estadística descriptiva e inferencial:
 \begin{enumerate}
 	\item \textbf{Estadística descriptiva}: Se obtiene la la mejor y peor solución, mediana, promedio y desviación estándar de las muestras
-	\item \textbf{Gráfica de convergencia}: Se presenta la gráfica de convergencia correspondiente a la mediana de la muestra para cada los dos algoritmo en comparación.
+	\item \textbf{Gráfica de convergencia}: Se presenta la gráfica de convergencia correspondiente a la mediana de la muestra para cada uno de los algoritmos en comparación.
 	\item \textbf{Prueba suma de Jerarquías de Wilcoxon}: con nivel significancia $\alpha=0.05$ para determinar si existen diferencias significativas entre el desempeño los dos algoritmos comparados. 
 	
 \end{enumerate}
@@ -860,11 +867,11 @@ Para este experimento se mantuvo el número de evaluaciones realizadas por C-LSH
 	\end{tabular}
 	
 \end{table}
-La configuración de parámetros utilizada por las variantes HNMED-V6:
+Se mantiene la configuración de HNMED-V5 y C-LSHADE. La configuración de parámetros utilizada por la variante HNMED-V6:
 \begin{enumerate}
-	\item Se establece la probabilidad de cruza $CR=\{0.8, 1\}$ para ED y HNMED para todos los problemas.
-	\item Se establece el factor de escala $F=\{0.3, 0.9\}$ para ED y HNMED para todos los problemas.
-	\item Para la variante HNMEDV5 establecieron los parámetros de reflexión $\alpha=2$, expansión $\gamma=1.7$ $\beta=0.3$ para todos los problemas.
+	\item Se establece la probabilidad de cruza $CR=\{0.8, 1\}$  para todos los problemas.
+	\item Se establece el factor de escala $F=\{0.3, 0.9\}$ para todos los problemas.
+	\item Establecieron los parámetros de reflexión $\alpha=2$, expansión $\gamma=1.7$ $\beta=0.3$ para todos los problemas.
 	\item El tamaño de población utilizado se ajusta para cada algoritmo según la Tabla \ref{tab:Tamaños de población utilizados para cada problema en los experimentos finales}. 
 \end{enumerate}
 
@@ -890,7 +897,7 @@ La configuración de parámetros utilizada por las variantes HNMED-V6:
 
 
 \subsubsection{Resultados del Experimento D}
-La Tabla \ref{tab:Resultados estadísticos obtenidos por HNMED-V5 y el algoritmo C-LSHADE en los seis problemas de diseño mecatrónico} muestra los resultados estadísticos obtenidos por HNMED-V5 y los obtenidos por C-LSHADE en \cite{zapata_zapata_control_2017}. En la Figura \ref{fig: Gráficas de convergencia obtenidas por HNMED-V5 y CLSHADE para el Experimento D} se presentan las gráficas de convergencias correspondientes al Experimento D para los seis problemas. Finalmente, la Tabla \ref{tab:Wilcoxon HNMED-V5-CLSHADE} contiene los resultados de la prueba de Suma de Jerarquías de Wilcoxon con un nivel de significancia de 95\%.
+La Tabla \ref{tab:Resultados estadísticos obtenidos por HNMED-V5 y el algoritmo C-LSHADE en los seis problemas de diseño mecatrónico} muestra los resultados estadísticos obtenidos por HNMED-V5 y los obtenidos por C-LSHADE en \cite{zapata_zapata_control_2017}. En la Figura \ref{fig: Gráficas de convergencia obtenidas por HNMED-V5 y CLSHADE para el Experimento D} se presentan las gráficas de convergencias correspondientes al Experimento D para los seis problemas. Finalmente, la Tabla \ref{tab:Wilcoxon HNMED-V5-CLSHADE} contiene los resultados de la prueba de Suma de Jerarquías de Wilcoxon para los seis problemas de optimización con un nivel de significancia de 95\%.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{table}
@@ -1000,7 +1007,7 @@ La Tabla \ref{tab:Resultados estadísticos obtenidos por HNMED-V5 y el algoritmo
 
 
 \subsubsection{Resultados del Experimento E}
-Las Tablas \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y ED  en experimento E.} y \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y CLSHADE  en experimento E.} se muestran los resultados estadísticos obtenidos por la HNMED-V6 frente a la ED/rand/1/bin y C-LSHADE respectivamente. Se agrega la comparación estadística de HNMED-V6 con la ED/rand/1/bin para evidenciar la reducción del número evaluaciones. En la Figura \ref{fig: Gráficas de convergencia obtenidas por HNMED-V6 y CLSHADE para el Experimento E.} se muestran las gráficas de convergencia correspondientes al Experimento E. En la Tabla \ref{tab:Wilcoxon HNMED-V6-CLSHADE} se presenta para la comparación de HNMED-V6 y C-LSHADE mediante prueba de suma de jerarquías de Wilcoxon.  
+En las Tablas \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y ED  en experimento E.} y \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y CLSHADE  en experimento E.} se muestran los resultados estadísticos obtenidos por la HNMED-V6 frente a la ED/rand/1/bin y C-LSHADE respectivamente. Se agrega la comparación estadística de HNMED-V6 con la ED/rand/1/bin para evidenciar la reducción del número evaluaciones respecto a esta variante. Se realizó la comparación directa con C-LSHADE ya que este supera en desempeño a la ED/rand/1/bin \cite{zapata_zapata_control_2017}. En la Figura \ref{fig: Gráficas de convergencia obtenidas por HNMED-V6 y CLSHADE para el Experimento E.} se muestra las gráficas de convergencia correspondientes al Experimento E. Por último, en la Tabla \ref{tab:Wilcoxon HNMED-V6-CLSHADE} se presenta para la comparación de HNMED-V6 y C-LSHADE mediante prueba de Suma de Jerarquías de Wilcoxon  para lo seis problemas de optimización de diseño mecatrónico con un nivel de significancia del 95\%.  
 
 \begin{table}
 	\centering
@@ -1173,7 +1180,7 @@ Las Tablas \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y ED
 		&$\approx$&   &         &$\approx$&      &       &  2     
 	\end{tabular}
 \end{table}
-
+ \newpage
 \subsubsection{Observaciones Finales}
 Los resultados de los experimentos E y D permiten plantear las siguientes observaciones finales:
 \begin{enumerate}
@@ -1421,4 +1428,4 @@ A partir de estos vectores se generó la Figura \ref{Visualización del suminist
 
 
 \section{Conclusiones del capítulo}
-En el presente capítulo se describió el diseño experimental llevado a cabo para diseñar la propuesta de solución. Este proceso de experimentación se llevo a cabo en dos etapas: Una fase de experimentos preliminares que tuvo como objetivo validar la competitividad del enfoque de hibridación propuesto y evaluar el comportamiento de las primeras 5 variantes presentadas. Los resultados obtenidos en experimentos preliminares sirvieron para guiar el diseño del algoritmo HNMED-V6 el cual incluye una estrategia de inicialización de los símpleces y el buscador global se aplica a un subconjunto élite mayor durante el proceso de minimización. Los experimentos finales muestran un desempeño competitivo de esta versión con respecto a los algoritmos ED/rand/1/bin y C-LSHADE. Sin embargo HNMED-V6 utiliza un número inferior de evaluaciones de la función objetivo.
+En el presente capítulo se describió el diseño experimental llevado a cabo para implementar la propuesta de solución. Este proceso de experimentación se llevo a cabo en dos etapas: una fase de experimentos preliminares que tuvo como objetivo validar la competitividad del enfoque de hibridación propuesto y evaluar el comportamiento de las primeras 5 variantes presentadas. Los resultados obtenidos en experimentos preliminares sirvieron para guiar el diseño del algoritmo HNMED-V6 el cual incluye una estrategia de inicialización de los símpleces y el buscador global se aplica a un subconjunto élite mayor durante el proceso de minimización. Los experimentos finales muestran un desempeño competitivo de esta versión con respecto a los algoritmos ED/rand/1/bin y C-LSHADE. Sin embargo HNMED-V6 utiliza un número inferior de evaluaciones de la función objetivo.
