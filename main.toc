@@ -82,18 +82,18 @@
 \contentsline {subsubsection}{Restricciones de Dise\IeC {\~n}o}{84}{section*.381}
 \contentsline {section}{\numberline {5.3}Conclusiones}{86}{section.390}
 \contentsline {chapter}{\numberline {6}Hibridaci\IeC {\'o}n de M\IeC {\'e}todos de Programaci\IeC {\'o}n Matem\IeC {\'a}tica con Algoritmos Evolutivos}{87}{chapter.391}
-\contentsline {section}{\numberline {6.1}Hibridaci\IeC {\'o}n del Algoritmo Evoluci\IeC {\'o}n Diferencial con M\IeC {\'e}todos de B\IeC {\'u}squeda Local}{89}{section.403}
+\contentsline {section}{\numberline {6.1}Hibridaci\IeC {\'o}n de la Evoluci\IeC {\'o}n Diferencial con M\IeC {\'e}todos de B\IeC {\'u}squeda Local}{89}{section.403}
 \contentsline {section}{\numberline {6.2}Enfoque propuesto}{91}{section.404}
-\contentsline {subsection}{\numberline {6.2.1}M\IeC {\'e}todo de Nelder Mead con Expansi\IeC {\'o}n de Longitud Aleatoria: NMELA}{93}{subsection.412}
-\contentsline {subsubsection}{Operador de Expansi\IeC {\'o}n con Longitud Aleatoria}{94}{section*.413}
-\contentsline {subsubsection}{Operador de Expansi\IeC {\'o}n Inversa con Longitud Aleatoria }{95}{section*.449}
-\contentsline {subsubsection}{Combinaci\IeC {\'o}n de los operadores}{95}{section*.482}
-\contentsline {subsection}{\numberline {6.2.2}Observaciones Preliminares}{99}{subsection.517}
-\contentsline {subsection}{\numberline {6.2.3}Algoritmo H\IeC {\'\i }brido basado en el M\IeC {\'e}todo Nelder Mead con Evoluci\IeC {\'o}n Diferencial: HNMED. Variante I}{100}{subsection.518}
+\contentsline {subsection}{\numberline {6.2.1}M\IeC {\'e}todo de Nelder Mead con Expansi\IeC {\'o}n de Longitud Aleatoria: NMELA}{92}{subsection.412}
+\contentsline {subsubsection}{Operador de Expansi\IeC {\'o}n con Longitud Aleatoria}{93}{section*.413}
+\contentsline {subsubsection}{Operador de Expansi\IeC {\'o}n Inversa con Longitud Aleatoria }{94}{section*.449}
+\contentsline {subsubsection}{Combinaci\IeC {\'o}n de los operadores}{94}{section*.482}
+\contentsline {subsection}{\numberline {6.2.2}Observaciones Preliminares}{98}{subsection.517}
+\contentsline {subsection}{\numberline {6.2.3}Algoritmo H\IeC {\'\i }brido basado en el M\IeC {\'e}todo Nelder Mead con Evoluci\IeC {\'o}n Diferencial: HNMED. Variante I}{99}{subsection.518}
 \contentsline {subsubsection}{HNMED. Variantes II y III}{101}{section*.567}
-\contentsline {subsubsection}{HNMED. Variantes IV y V }{104}{section*.570}
-\contentsline {subsubsection}{HNMED. Variante VI}{104}{section*.573}
-\contentsline {section}{\numberline {6.3}Conclusiones del cap\IeC {\'\i }tulo}{106}{section.629}
+\contentsline {subsubsection}{HNMED. Variantes IV y V }{103}{section*.570}
+\contentsline {subsubsection}{HNMED. Variante VI}{103}{section*.573}
+\contentsline {section}{\numberline {6.3}Conclusiones del cap\IeC {\'\i }tulo}{105}{section.582}
 \contentsline {chapter}{\numberline {7}Experimentos y Resultados}{109}{chapter.630}
 \contentsline {section}{\numberline {7.1}Dise\IeC {\~n}o Experimental}{110}{section.634}
 \contentsline {section}{\numberline {7.2}Estad\IeC {\'\i }stica inferencial: Pruebas estad\IeC {\'\i }sticas no param\IeC {\'e}tricas}{111}{section.649}
