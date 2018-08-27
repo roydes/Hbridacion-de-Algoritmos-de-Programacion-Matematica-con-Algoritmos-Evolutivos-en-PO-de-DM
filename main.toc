@@ -97,17 +97,17 @@
 \contentsline {chapter}{\numberline {7}Experimentos y Resultados}{109}{chapter.630}
 \contentsline {section}{\numberline {7.1}Dise\IeC {\~n}o Experimental}{110}{section.634}
 \contentsline {section}{\numberline {7.2}Estad\IeC {\'\i }stica inferencial: Pruebas estad\IeC {\'\i }sticas no param\IeC {\'e}tricas}{111}{section.649}
-\contentsline {subsection}{\numberline {7.2.1}Prueba de suma de jerarqu\IeC {\'\i }as de Wilcoxon}{112}{subsection.651}
-\contentsline {subsection}{\numberline {7.2.2}Pruebas de Friedman}{113}{subsection.660}
+\contentsline {subsection}{\numberline {7.2.1}Prueba de suma de jerarqu\IeC {\'\i }as de Wilcoxon}{113}{subsection.651}
+\contentsline {subsection}{\numberline {7.2.2}Pruebas de Friedman}{114}{subsection.660}
 \contentsline {subsection}{\numberline {7.2.3}Pruebas Post-hoc: Bonferroni-Dunn}{114}{subsection.668}
 \contentsline {section}{\numberline {7.3}Experimentos preliminares}{115}{section.671}
 \contentsline {subsection}{\numberline {7.3.1}Experimento A: Pruebas de estad\IeC {\'\i }sticas sobre el M\IeC {\'e}todo Nelder Mead con Expansi\IeC {\'o}n de Longitud Aleatoria}{116}{subsection.675}
 \contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{117}{section*.678}
 \contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{117}{section*.686}
 \contentsline {subsubsection}{Presentaci\IeC {\'o}n de resultados}{118}{section*.690}
-\contentsline {subsubsection}{Observaciones}{118}{section*.693}
+\contentsline {subsubsection}{Observaciones}{121}{section*.693}
 \contentsline {subsection}{\numberline {7.3.2}Experimento B: Comparaci\IeC {\'o}n de desempe\IeC {\~n}o entre Variantes HNMED vs ED/rand/1/bin}{121}{subsection.694}
-\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{121}{section*.700}
+\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{122}{section*.700}
 \contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{122}{section*.709}
 \contentsline {subsubsection}{Presentaci\IeC {\'o}n de resultados}{123}{section*.716}
 \contentsline {subsubsection}{Observaciones}{126}{section*.721}
@@ -118,16 +118,16 @@
 \contentsline {subsubsection}{Observaciones}{132}{section*.752}
 \contentsline {section}{\numberline {7.4}Experimentos finales}{137}{section.756}
 \contentsline {subsection}{\numberline {7.4.1}Experimentos D y E : Comparaci\IeC {\'o}n de Variantes HNMED-V5 y HNMED-V6 con Algoritmo C-LSHADE}{137}{subsection.757}
-\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{137}{section*.758}
+\contentsline {subsubsection}{Definici\IeC {\'o}n de medidas}{138}{section*.758}
 \contentsline {subsubsection}{Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{138}{section*.762}
 \contentsline {subsubsection}{Resultados del Experimento D}{139}{section*.769}
 \contentsline {subsubsection}{Resultados del Experimento E}{139}{section*.773}
-\contentsline {subsubsection}{Observaciones Finales}{139}{section*.778}
-\contentsline {section}{\numberline {7.5}Visualizaci\IeC {\'o}n de Resultados}{146}{section.783}
+\contentsline {subsubsection}{Observaciones Finales}{143}{section*.778}
+\contentsline {section}{\numberline {7.5}Visualizaci\IeC {\'o}n de Resultados}{147}{section.783}
 \contentsline {subsection}{\numberline {7.5.1}Mecanismo de Cuatro Barras}{147}{subsection.784}
-\contentsline {subsection}{\numberline {7.5.2}Efector Final de Tres Dedos}{149}{subsection.787}
-\contentsline {subsection}{\numberline {7.5.3}Microrred Aislada}{149}{subsection.790}
-\contentsline {section}{\numberline {7.6}Conclusiones del cap\IeC {\'\i }tulo}{151}{section.793}
+\contentsline {subsection}{\numberline {7.5.2}Efector Final de Tres Dedos}{147}{subsection.787}
+\contentsline {subsection}{\numberline {7.5.3}Microrred Aislada}{150}{subsection.790}
+\contentsline {section}{\numberline {7.6}Conclusiones del cap\IeC {\'\i }tulo}{154}{section.793}
 \contentsline {chapter}{\numberline {8}Conclusiones y trabajos futuros}{155}{chapter.794}
 \contentsline {section}{\numberline {8.1}Observaciones Finales}{156}{section.795}
 \contentsline {section}{\numberline {8.2}Objetivos cumplidos}{157}{section.803}

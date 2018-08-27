@@ -571,4 +571,11 @@ Joaqu{\'\i}n Derrac, Salvador Garc{\'\i}a, Daniel Molina, and Francisco
   a methodology for comparing evolutionary and swarm intelligence algorithms.
 \newblock {\em Swarm and Evolutionary Computation}, 1(1):3--18, 2011.
 
+\bibitem{tanabe2014improving}
+Ryoji Tanabe and Alex~S Fukunaga.
+\newblock Improving the search performance of shade using linear population
+  size reduction.
+\newblock In {\em Evolutionary Computation (CEC), 2014 IEEE Congress on}, pages
+  1658--1665. IEEE, 2014.
+
 \end{thebibliography}
