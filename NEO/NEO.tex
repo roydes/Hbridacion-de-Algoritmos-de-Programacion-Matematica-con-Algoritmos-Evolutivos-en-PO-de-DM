@@ -1,7 +1,7 @@
 \documentclass[a4paper,12pt]{article}
 
 \usepackage[T1]{fontenc}
-\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}% Required for inputting international
 \usepackage{amssymb, amsmath}
 
 \pagestyle{empty}
@@ -22,37 +22,44 @@
 
 \begin{document}
 
-\centerline{\bf Hybridization of Mathematical Programming Methods with Evolutionary Algorithms}
-\centerline{\bf in Mechatronic Design Optimization Problems}
+\centerline{\bf }
 
 \vspace{12pt}
 
-\centerline{ \bf Roides Javier Cruz Lara$^{\rm a}$,  \bf Efrén Mezura Montes$^{\rm b}$}
+\centerline{ \bf Roides Javier Cruz Lara$^{\rm a}$,  \bf Efr\'en Mezura Montes$^{\rm b}$}
 
 \vspace{12pt}
 
-\centerline{$^{\rm a}$Maestría en Computación Aplicada}
-\centerline{Laboratorio Nacional de Informática Avanzada}
-\centerline{Rébsamen 80 Col. Centro, Xalapa. Veracruz}
+\centerline{$^{\rm a}$Master's Degree in Applied Computing}
+\centerline{National Laboratory of Advanced Computing}
+\centerline{R\'ebsamen 80 Zona Centro, Xalapa Enr\'iquez, Ver.}
 \centerline{rcruz\_mca16@lania.edu.mx}
 
 \vspace{12pt}
 
-\centerline{$^{\rm b}$Department Institution B}
-\centerline{Institution B}
-\centerline{Address}
-\centerline{email}
+\centerline{$^{\rm b}$ Department Institution B}
+\centerline{Artificial Intelligence Research Center}
+\centerline{Sebasti\'an Camacho 5, Zona Centro, Xalapa Enr\'iquez, Ver.}
+\centerline{emezura@uv.mx}
 
 \vspace{12pt}
 \vspace{12pt}
 
-La presente investigación realiza un estudio sobre la hibridación de Métodos de programación matemática con Algoritmos Evolutivos. Se resuelven seis problemas de optimización de Diseño Mecatrónico. Los primeros tres problemas son casos de estudio de la "Síntesis Óptima de un Mecanismo de Cuatro Barras", los cuales consisten en minimizar el error respecto a una trayectoria deseada. De forma similar, se procede para los dos casos de la "Síntesis Óptima de un Efector Final de Tres Dedos", donde se necesita maximizar la precisión de los dedos del efector mediante la minimización del error de la trayectoria del acoplador. El último problema resolver es la " {Optimización de la Generación de Energía en una micro-red eléctrica aislada}". Para este problema se considera cada hora del día como un problema de optimización donde las límites para las variables de diseño varían de acuerdo a lo acontecido en la hora anterior. 
+In this paper, a Hybrid Algorithm based on the Nelder Mead Method and the Differential Evolution (HNMED) is presented. The design of the algorithm is based on a new approach of hybridization that aims to increase the synergy between the local and global search engines as well as guarantee a greater balance between the exploration and exploitation operations  in the minimization of global optimization problems. The fundamental guideline of the approach states the distribution of several instances of a local search engine in random points of the search space to guarantee the exploration. However, operators of local search methods only exploit a relatively small neighborhood around the starting point; therefore it is proposed that a global search engine most be responsible for indicating the different local search instances, where the most promising regions are located. In addition, the work must be balanced: this means that the function evaluations budget destined for each search engine must not be disproportionated. 
 
-Se propone un nuevo enfoque de hibridación que plantea siete lineamientos de diseño. La distribución de diferentes instancias de un buscador local en puntos aleatorios del espacio de búsqueda, la comunicación y el balance entre los métodos de búsqueda global y local son las directrices más representativas. Siguiendo este enfoque se propusieron seis variantes del Algoritmo Híbrido basado en el Método Nelder Mead con Evolución Diferencial (HNMED). El algoritmo divide la población en $NS$ de símpleces los cuales son operados por las instancias del Método Nelder Mead modificado. La Evolución Diferencial es aplicada a un subconjunto élite de la población en cada generación. El diseño experimental se dividió en Experimentos Preliminares y Finales. En los primeros se obtuvieron las primeras cinco variantes HNMED mediante la aplicación de pruebas de estadística descriptiva e inferencial. Teniendo en cuenta los resultados obtenidos se plantea HNMED-V6 la cual alcanza el mejor desempeño. Los experimentos finales comparan las dos ultimas variantes HNMED con la ED/rand/1/bin y C-LSHADE. 
-Los resultados obtenidos muestran que las variantes propuestas son capaces de obtener resultados iguales o mejores a los ya reportados en la literatura utilizando un número significativamente menor de evaluaciones durante el proceso de minimización.
-
+The selected local search engine was the Nelder Mead method. This is a derivate-free method, proposed in \cite{nelder_simplex_1965} for the minimization of a $ N $ dimensional function by performing reflection, expansion or contraction operations on a simplex in the search space. The simplex is adapted to the "local landscape", lengthening by long inclined planes, changing direction when finding a descent at a certain angle and contracting around neighborhood of a minimum. The original procedure of the Nelder Mead Method was modified for hybridization porposes. An operator based on the current-to-best differential mutation was added:  $ x_ {new} = x_ {r_1} + F (best-x_ {r_1}) + (1-F) (x_ {r_2} -x_ {r_3 }) $. Note that in the third member of the operator the scale factor is $ 1-F $ which is the complement of  $ F=\left\lbrace 0.3,0.9\right\rbrace $. This modification follows the proposed approach and aims to maintain a balance between the elitist exploitation and the random exploration members. This operator is applied when none of the original operators of the NMM are able to improve the value of the objective function for the worst point in the simplex. The selected global search engine was the Differential Evolution (ED). This is an efficient evolutionary algorithm for the global optimization in continuous spaces proposed by Storn and Price. The ED as a parallel direct search method that uses a set of $ NP $ vectors of $ D $ dimensions $ x_ {i, G} $ with $ i = \left \lbrace 1; 2; ... NP \right \rbrace $ as population for each generation $ G $. One of the most significant characteristics of the ED is its the mutation operator defined in the equation $ v_ {i, G + 1} = x_ {r_1, G} + F (x_ {r_2, G} -x_ {r_3, G} ) $. The mutated vector $ v_{i, G + 1} $ is generated from three randomly selected vectors, such that the random indices comply that $ i \neq r_1 \neq r_2 \neq r_3 $. Then $ v_ {i, G + 1} $ is calculated by adding  to the first vector the weighted difference between the other two vectors. Where $ F> 0 $ is a real constant which determines how wide the difference will be \cite{stornprice1995}. The ED was modified using a new operator based on the current-to-best operator: $ v_ {m, G + 1} = x_ {m, G} + F (x ^ r_l-x_ {r_1, G}) + (1-F) (x_ {r_2, G} -x_ {r_3, G}) $. Where $ m = \left \lbrace 1,2, .., NS \right \rbrace $ indicates the position in simplex $ S_k $ where the ED will operate and $ NS $ is the number of simpleces. The individual $ x ^ r_l $ is randomly selected from $ X_l $, the best individuals of each simplex.
 
 
+The general procedure of HNMED uses a population  $ X $ composed by $ NS $ simplces or sub-populations of size $ N + 1 $. The initial simpleces are generated using an initialization strategy that locate the edges of the simpleces around the inner neighborhood of the search space bounds. In the generation $ G $, each instance $ k = \left \lbrace 1,2, ..., NS \right \rbrace $ of the Modified Nelder Mead (MNM) method will perform a local search on the simplex $ S_k $. Then, the ED is applied to an  elite individual $ x_ {m, G} $ of each simplex. This individual will change in each generation according to the $m$ index, which increases by one per generation and takes values from 1 to $NS$. When $ m $ reaches the value of $ NS $ it is reset to 1. For constraint handling both search engines use the simple feasibility rules propoused by Deb in \cite {Deb98anefficient}. Also, a boundary rule for the design variables is applied before any function evaluation.  The algorithm was obtained through the experimental design wich included the analysis of each component separately and then combined.
+
+Six problems of Mechatronic Design Optimization were solved. The first three problems: MCS1, MCS2 and MCS3 are study cases of the "Optimal Synthesis of a Four-Bar Mechanism", which consists of minimizing the mechanism trayectory error respect to a desired trajectory \cite{VegaMEC1} \cite{Portilla_Mezura_MEC3}. The number of variables is equal to 15, 6 and 19 for  MCS1, MCS2 and MCS3 respectively. Similarly, in the two cases of the "Optimal Synthesis of a Final Fingertip Effector" (GSC1 and GSC2), it is necessary to maximize the accuracy of the fingers of the griper by minimizing the error of the trajectory of the coupler. In both study cases, the number of design variables is 15 \cite{mezura-montes_dynamic_2015}. The kinematic analysis of mechanisms conceives a non-continuous non-linear function that includes trigonometric and power operations over the design variables. The search space is restricted by linear functions. The last problem solved is the "Optimization of the Energy Generation in an Isolated Smart Grid" (SSC1). For this problem it is considered every hour of the day as an optimization problem where the limits for the design variables can vary according to what happened in the previous hour \cite{tazvinga2013minimum} \cite{Ramabhotla_Economic_dispatch} \cite{zapata_zapata_control_2017}. The objective function is a quadratic function of four variables, constrained by two linear inequalities and an one linear equality.
+The descriptive and inferential statistics tests showed a competitive performance of HNMED versus the ED/rand/1/bin and C-LSHADE a variant of LSHADE to solve problems with restrictions proposed in \cite{ZapataZapata2017EvolucinDC}. However, the number of evaluations of the objective function used was significantly lower for all optimization problems. New solutions where found for GCS1,MSC2,SSC1. In the case of MSC2,SSC1 a better function value was reached.
+ 
+
+
+
+\bibliography{NEO}{}
+\bibliographystyle{unsrt}
 
 
 % \bibliographystyle{plain}

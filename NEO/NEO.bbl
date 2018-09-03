@@ -1,0 +1,68 @@
+\begin{thebibliography}{10}
+
+\bibitem{nelder_simplex_1965}
+J.~A. Nelder and R.~Mead.
+\newblock A {Simplex} {Method} for {Function} {Minimization}.
+\newblock {\em The Computer Journal}, 7(4):308--313, January 1965.
+
+\bibitem{stornprice1995}
+Rainer Storn and Kenneth Price.
+\newblock Differential evolution: A simple and efficient adaptive scheme for
+  global optimization over continuous spaces.
+\newblock 23, 01 1995.
+
+\bibitem{Deb98anefficient}
+Kalyanmoy Deb.
+\newblock An efficient constraint handling method for genetic algorithms.
+\newblock In {\em Computer Methods in Applied Mechanics and Engineering}, pages
+  311--338, 1998.
+
+\bibitem{VegaMEC1}
+Eduardo Vega-Alvarado, Edgar Flores, Efrén Mezura-Montes, Leticia
+  Flores~Pulido, and Maria Bárbara Calva-Yáñez.
+\newblock A memetic algorithm applied to the optimal design of a planar
+  mechanism for trajectory tracking.
+\newblock 53:83--90, 01 2016.
+
+\bibitem{Portilla_Mezura_MEC3}
+Á. Sánchez-Márquez, E.~Vega-Alvarado, E.~A. Portilla-Flores, and
+  E.~Mezura-Montes.
+\newblock Synthesis of a planar four-bar mechanism for position control using
+  the harmony search algorithm.
+\newblock In {\em 2014 11th International Conference on Electrical Engineering,
+  Computing Science and Automatic Control (CCE)}, pages 1--6, Sept 2014.
+
+\bibitem{mezura-montes_dynamic_2015}
+Efren Mezura-Montes, Edgar-Alfredo Portilla-Flores, and Edith
+  Capistran-Gumersindo.
+\newblock Dynamic {{Parameter Control}} in {{Differential Evolution}} with
+  {{Combined Variants}} to {{Optimize}} a {{Three}}-{{Finger End Effector}}.
+
+\bibitem{tazvinga2013minimum}
+Henerica Tazvinga, Xiaohua Xia, and Jiangfeng Zhang.
+\newblock Minimum cost solution of photovoltaic--diesel--battery hybrid power
+  systems for remote consumers.
+\newblock {\em Solar Energy}, 96:292--299, 2013.
+
+\bibitem{Ramabhotla_Economic_dispatch}
+S.~Ramabhotla, S.~Bayne, and M.~Giesselmann.
+\newblock Economic dispatch optimization of microgrid in islanded mode.
+\newblock In {\em International Energy and Sustainability Conference 2014},
+  pages 1--5, Oct 2014.
+
+\bibitem{zapata_zapata_control_2017}
+Maury~Faney Zapata~Zapata.
+\newblock Control de {Parámetros} del {Algoritmo} {Evolución} {Diferencial}
+  con {Variantes} {Combinadas} para la {Solución} de {Problemas} de
+  {Optimización} en {Mecatrónica}.
+\newblock Master's thesis, Laboratorio Nacional de Informática Avanzada,
+  Xalapa. Veracruz, 2017.
+
+\bibitem{ZapataZapata2017EvolucinDC}
+Maury-Faney Zapata-Zapata, Efr{\'e}n Mezura-Montes, and Edgar~Alfredo
+  Portilla-Flores.
+\newblock Evoluci{\'o}n diferencial con memoria de par{\'a}metros para la
+  optimizaci{\'o}n de mecanismos de cuatro barras.
+\newblock {\em Research in Computing Science}, 134:9--22, 2017.
+
+\end{thebibliography}
