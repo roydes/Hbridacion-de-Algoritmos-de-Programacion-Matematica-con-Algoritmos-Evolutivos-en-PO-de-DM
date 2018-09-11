@@ -145,14 +145,14 @@ Para responder estas interrogantes se plantearon las variantes NMELA descritas e
  	\item \textbf{Mediana}: valor que se encuentra en el centro de la muestra ordenada. Esta medida es fundamental para evaluar el desempeño ya que el promedio puede ser afectado por valores anómalos. 
  	\item \textbf{Promedio}: valor característico o tendencia central la muestra.
  	\item \textbf{Desviación estándar}: grado de dispersión de las soluciones registradas en la muestra con respecto al promedio.
- 	\item \textbf{Prueba de Friedman}: con nivel significancia $\alpha=0.05$ para determinar si existen diferencias significativas entre el desempeño de al menos dos de los algoritmos comparados. 
- 	\item \textbf{Prueba Bonferroni-Dunn}: con nivel significancia $\alpha=0.05$. Teniendo en cuenta el promedio jerarquías obtenidas en la prueba de Friedman se determina entre cuáles de los algoritmos comparados existe una diferencia significativa de desempeño.
+ 	\item \textbf{Prueba de Friedman}: con nivel significancia $\alpha=0.05$ para determinar si existen diferencias significativas entre el desempeño de al menos dos de los algoritmos comparados. La hipótesis nula $H_0$ plantea que no existen diferencias significativas entre el desempeño de los algoritmos comparados. La hipótesis alternativa concluye que existen diferencias significativas entre al menos dos de los algoritmos comparados. 
+ 	\item \textbf{Prueba Bonferroni-Dunn}: con nivel significancia $\alpha=0.05$. Teniendo en cuenta el promedio jerarquías obtenidas en la prueba de Friedman se determina entre cuáles de los algoritmos comparados existe una diferencia significativa de desempeño. La hipótesis nula $H_0$ plantea que no existen diferencias significativas entre el desempeño del algoritmo $A_i$ y $A_j$. La hipótesis alternativa concluye lo contrario.
 
  \end{enumerate}
  \subsubsection{Planificación pre-experimental y configuración}
  Para el presente experimento se generaron 5 muestras por cada problema, correspondientes a los algoritmos NMELA, NMEILA, NM2ELA, las versiones deterministas NM y el método Nelder Mead con operador de encogimiento. Cada muestra tiene un tamaño tamaño $n=31$. Las pruebas se realizaron sobre los resultados obtenidos en los 5 primeros problemas de optimización correspondientes al diseño cinemático. Las ejecuciones se llevaron a cabo en una computadora con procesador AMD Athlon II X2, memoria RAM 2GB, sistema operativo Windows 7 con arquitectura de 64 bits y como entorno de programación se utilizó  MatLab R2016b. 
  
- Para este experimento se utilizó un número fijo de evaluaciones para todos los algoritmos en comparación en cada problema de optimización según se describe en la Tabla \ref{tab:Evaluaciones utilizadas por problema de optimización: Experimento A.}:
+ Para este experimento se utilizó un número fijo de evaluaciones para todos los algoritmos en comparación. Valores superiores a este no fueron considerados ya que debido la rápida convergencia del NM, no se evidenciaron diferencias de desempeño cuando se utilizaba un presupuesto de evaluaciones superior. En la Tabla \ref{tab:Evaluaciones utilizadas por problema de optimización: Experimento A.} se describe el número de evaluaciones empleado para cada problema:
  
  \begin{table}[]
  	\centering
@@ -175,10 +175,10 @@ Para responder estas interrogantes se plantearon las variantes NMELA descritas e
  \end{enumerate}
  
  \subsubsection{Presentación de resultados}
- En la Tabla \ref{tab:resultados NMELA} se observan los resultados obtenidos para las medidas de estadística descriptivas definidas para el experimento. Las primeras dos columnas muestran los resultados correspondientes a las variantes deterministas NM(versión descrita en sección \ref{sec: Metodo NM}) y el NM con operador de encogimiento (NMS).  La Figura \ref{fig: Bonferroni-Dunn -NMELA} muestra los resultados de las pruebas post hoc de Bonferroni-Dunn utilizando los promedios de jerarquías obtenidos en la prueba de Friedman para los 5 problemas de diseño cinemático. Las etiquetas 1 y 2, corresponden al NM y NMS, y las etiquetas 3, 4 y 5 corresponden a NMELA, NMEILA y NM2ELA respectivamente. Las lineas son los intervalos de confianza calculados. En caso de que dos intervalos se traslapen indica que la sub-hipótesis nula se cumple para ambos algoritmos.
+ En la Tabla \ref{tab:resultados NMELA} se observan los resultados obtenidos para las medidas de estadística descriptivas definidas para el experimento. Las primeras dos columnas muestran los resultados correspondientes a las variantes deterministas NM(versión descrita en sección \ref{sec: Metodo NM}) y el NM con operador de encogimiento (NMS). Las columnas 3, 4 y 5 corresponden a las variantes NMELA, NMEILA y NM2ELA respectivamente. La Figura \ref{fig: Bonferroni-Dunn -NMELA} muestra los resultados de las pruebas post hoc de Bonferroni-Dunn utilizando los promedios de jerarquías obtenidos en la prueba de Friedman para los 5 problemas de diseño cinemático. Las etiquetas 1 y 2, corresponden al NM y NMS, y las etiquetas 3, 4 y 5 corresponden a NMELA, NMEILA y NM2ELA respectivamente. Las lineas son los intervalos de confianza calculados. En caso de que dos intervalos se traslapen indica que la sub-hipótesis nula se cumple para ambos algoritmos.
  \begin{table}[]  
  	\centering
- 	\caption[Resultados estadísticos obtenidos por las versiones aleatorizadas NMELA en el Experimento A.]{Resultados estadísticos obtenidos por las versiones aleatorizadas NMELA en el Experimento A. Los mejores resultados se resaltan en negritas.}
+ 	\caption[Resultados estadísticos obtenidos por las versiones aleatorizadas NMELA en el Experimento A.]{Resultados estadísticos obtenidos por las versiones aleatorizadas NMELA en el Experimento A. El i-ésimo elemento de la muestra es el valor de la función objetivo del mejor individuo factible encontrado en la ejecución $i$. Los mejores resultados se resaltan en negritas. }
  	\label{tab:resultados NMELA}
  		\resizebox{\textwidth}{!}{%
  	\begin{tabular}{clccccc}
@@ -275,13 +275,14 @@ Se obtendrá para cada algoritmo una muestra de $n$ ejecuciones. Cada elemento d
 	\item \textbf{Promedio}: valor característico o tendencia central la muestra.
 	\item \textbf{Desviación estándar}: grado de dispersión de las soluciones registradas en la muestra con respecto al promedio.
 	\item \textbf{Gráfica de convergencia}: Presenta el valor de la función objetivo del mejor individuo en la población en cada evaluación para la ejecución correspondiente a la mediana de la muestra. La graficación de estos valores permite observar la rapidez de convergencia de los métodos.
-    \item \textbf{Prueba de Friedman}: con nivel significancia $\alpha=0.05$ para determinar si existen diferencias significativas entre el desempeño de al menos dos de los algoritmos comparados. 
-	\item \textbf{Prueba Bonferroni-Dunn}: con nivel significancia $\alpha=0.05$. Teniendo en cuenta el promedio jerarquías obtenidas en la prueba de Friedman se determina entre cuáles de los algoritmos comparados existe una diferencia significativa de desempeño.     
+    \item \textbf{Prueba de Friedman}: con nivel significancia $\alpha=0.05$. La hipótesis nula $H_0$ plantea que no existen diferencias significativas entre el desempeño de los algoritmos comparados. La hipótesis alternativa concluye que existen diferencias significativas entre al menos dos de los algoritmos comparados. 
+	\item \textbf{Prueba Bonferroni-Dunn}: con nivel significancia $\alpha=0.05$. Teniendo en cuenta los promedios de jerarquías obtenidos en la prueba de Friedman se determina entre cuáles de los algoritmos comparados existe una diferencia significativa de desempeño. La hipótesis nula $H_0$ plantea que no existen diferencias significativas entre el desempeño del algoritmo $A_i$ y $A_j$. La hipótesis alternativa concluye lo contrario.     
+
 \end{enumerate}
 \subsubsection{Planificación pre-experimental y configuración}
 Para el presente experimento se generaron 6 muestras correspondientes a las 5 variantes propuestas y la  ED/rand/1/bin de tamaño $n=31$. Las ejecuciones se llevaron a cabo en una computadora con procesador AMD Athlon II X2, memoria RAM 2GB, sistema operativo Windows 7 con arquitectura de 64 bits y como entorno de programación se utilizó  MatLab R2016b. 
 
-Para este experimento se utilizó un número fijo de evaluaciones (las utilizadas por la ED) para todos los algoritmos en comparación en cada problema de optimización según se describe en la tabla \ref{tab:Evaluaciones utilizadas por problema de optimización: Experimento B.}:
+Se selecciona como número de evaluaciones las utilizadas por la ED/rand/1/bin en la literatura especializada. En este caso, se desea observar el comportamiento de las variantes HNMED, en un proceso extenso de minimización. En la Tabla \ref{tab:Evaluaciones utilizadas por problema de optimización: Experimento B.} se presentan las evaluaciones a utilizar para cada problema:
 
 \begin{table}[]
 	\centering
@@ -329,7 +330,7 @@ En la Tabla \ref{tab:Resultados estadísticos obtenidos por variantes HNMED y DE
 
 \begin{table}
 	
-	\caption[Resultados estadísticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de optimización.]{Resultados estadísticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de optimización. Se marcan en negritas los mejores valores de cada medida.}\label{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin  experimento B.}
+	\caption[Resultados estadísticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de optimización.]{Resultados estadísticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de optimización. El i-ésimo elemento de la muestra es el valor de la función objetivo del mejor individuo factible encontrado en la ejecución $i$. Los mejores resultados se resaltan en negritas.}\label{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/rand/1/bin  experimento B.}
 	
 	\centering
 	\resizebox{\textwidth}{!}{%
@@ -540,7 +541,7 @@ En la Tabla \ref{tab:Resultados Firedman obtenidos por variantes HNMED y DE/rand
 	
 	\item \textbf{GCE2}: EL algoritmo ganador es HNMED-V5. Todas las versiones HNMED obtienen mejores jerarquías que la ED  a excepción de la V1. En este caso la hipótesis nula se acepta por lo tanto no se confirma que existen diferencias significativas entre el desempeño de las variantes ganadoras y la ED. 
 	
-	\item \textbf{SCE1}: En este caso se rechaza la hipótesis nula con valor de $p=1.7205E-03$, siendo HNMED-V5 el algoritmo con mejor promedio de jerarquía. Sin embargo, como se puede observar en la Subfigura F de la Figura \ref{fig: Resultados de las pruebas de Bonferroni-Dunn  para las variantes HNMED y ED/rand/1/bin}, las diferencias significativas se encuentran entre HNMED-V5 y las variantes V1 y V2.  
+	\item \textbf{SCE1}: En este caso se rechaza la hipótesis nula con valor de $p=1.7205E-03$, siendo HNMED-V5 el algoritmo con mejor promedio de jerarquía. Sin embargo, como se puede observar en la Subfigura F de la Figura \ref{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el Experitmento B}, las diferencias significativas se encuentran entre HNMED-V5 y las variantes V1 y V2.  
 	 
 \end{enumerate}
 De forma general se observa un desempeño competitivo de las variantes propuestas, obteniéndose resultados significativamente mejores en 2 de los problemas y desempeño similar el resto con respecto a la ED/rand/1/bin. La variante HNMED-V5 consigue el mejor desempeño de forma general la cual obtiene mejor promedio de jerarquías en 4 de los 6 problemas de optimización. Los peores promedios de jerarquía se obtienen en los problemas MCE1,MCE3 y GCE2 los cuales presentan mayor dimensión, restricciones y complejidad de la función. A pesar de que las variantes propuestas ganan en rapidez de convergencia, heredan en cierta medida las deficiencias del método de búsqueda local cuyas operaciones están destinadas a la explotación. Por tanto, se presenta un decremento del desempeño para problemas de mayor dimensionalidad aunque este no es significativo.
@@ -1198,7 +1199,7 @@ En las secciones anteriores se evidenció que los mejores resultados fueron obte
 \subsection{Mecanismo de Cuatro Barras}
 En la Tabla \ref{tab:Vectores de diseño por HNMED-V6 y C-LSHADE para los tres casos de estudio del mecanismo de cuatro barras, correspondientes al la mejor observación de la muestra.} se muestran los resultados obtenidos por HNMED-V6 y se incorporan además los vectores obtenidos mediante C-LSHADE. Se puede observar para el caso del MEC2, que el vector obtenido por HNMED-V6 es un punto del espacio de búsqueda distante del encontrado por C-LSHADE y ED/rand/1/bin. En los demás casos se encontraron vectores similares.  
 
-A partir de los vectores obtenidos por HNMED-V6 se realizaron las simulaciones correspondientes, cuyas graficas se presentan en la Figura \ref{fig: Mecanismos correspondientes a las mejores soluciones encontradas por el algoritmo HNMED-V6 en los
+A partir de los vectores obtenidos por HNMED-V6 se realizaron las simulaciones correspondientes, cuyas gráficas se presentan en la Figura \ref{fig: Mecanismos correspondientes a las mejores soluciones encontradas por el algoritmo HNMED-V6 en los
 	tres casos de estudio de la Síntesis Óptima del Mecanismo de Cuatro Barras.}. Se obtienen tres mecanismos diferentes para cada caso de estudio. EN el problema MCE1 el vector de diseño describe un mecanismo que sigue una trayectoria lineal vertical con una precisión cercan a cero.  Para el caso MCE2 se obtiene un nuevo mecanismo que es capaz de seguir una trayectoria no alineada con mayor precisión ($f(\vec{x})=\boldsymbol{2.5644E-04}$). Por último,  se obtiene para el caso 3 un mecanismo similar a los ya encontrados, capaz de trasladar el acoplador entre los diez pares de puntos de precisión.
 
 \begin{table}

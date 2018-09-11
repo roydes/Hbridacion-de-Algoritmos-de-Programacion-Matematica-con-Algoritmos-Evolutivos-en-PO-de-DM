@@ -1,0 +1,878 @@
+\begin{thebibliography}{10}
+  \providebibliographyfont{name}{}%
+  \providebibliographyfont{lastname}{}%
+  \providebibliographyfont{title}{\emph}%
+  \providebibliographyfont{jtitle}{\btxtitlefont}%
+  \providebibliographyfont{etal}{\emph}%
+  \providebibliographyfont{journal}{}%
+  \providebibliographyfont{volume}{}%
+  \providebibliographyfont{ISBN}{\MakeUppercase}%
+  \providebibliographyfont{ISSN}{\MakeUppercase}%
+  \providebibliographyfont{url}{\url}%
+  \providebibliographyfont{numeral}{}%
+  \expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+
+\expandafter\btxselectlanguage\expandafter {\btxfallbacklanguage}
+\bibitem {silva_mechatronics:_2010}
+\btxnamefont {\btxlastnamefont {De~Silva}, Clarence\btxfnamespacelong
+  W}\btxauthorcolon\ \btxtitlefont {Mechatronics: a foundation course}.
+\newblock \btxpublisherfont {CRC press}, 2010.
+
+\bibitem {bishop_mechatronics_2002}
+\btxnamefont {\btxlastnamefont {Bishop}, Robert\btxfnamespacelong
+  H}\btxauthorcolon\ \btxtitlefont {The Mechatronics Handbook, -2 Volume Set}.
+\newblock \btxpublisherfont {CRC press}, 2002.
+
+\bibitem {shetty_mechatronics_2010}
+\btxnamefont {\btxlastnamefont {Shetty}, Devdas} \btxandlong {}\ \btxnamefont
+  {Richard\btxfnamespacelong A \btxlastnamefont {Kolk}}\btxauthorcolon\
+  \btxtitlefont {Mechatronics system design, SI version}.
+\newblock \btxpublisherfont {Cengage Learning}, 2010.
+
+\bibitem {fritzson_basic_2011}
+\btxnamefont {\btxlastnamefont {Fritzson}, Peter}\btxauthorcolon\ \btxtitlefont
+  {Introduction to modeling and simulation of technical and physical systems
+  with Modelica}.
+\newblock \btxpublisherfont {John Wiley \& Sons}, 2011.
+
+\bibitem {portilla-flores_dynamic_nodate}
+\btxnamefont {\btxlastnamefont {Portilla-Flores}, Edgar\btxfnamespacelong A},
+  \btxnamefont {Maria\btxfnamespacelong B \btxlastnamefont
+  {Calva-Y{\'a}{\~n}ez}}, \btxnamefont {Miguel\btxfnamespacelong G
+  \btxlastnamefont {Villarreal-Cervantes}}, \btxnamefont
+  {Paola\btxfnamespacelong A\btxfnamespacelong Nino \btxlastnamefont
+  {Su{\'a}rez}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Gabriel
+  \btxlastnamefont {Sep{\'u}lveda-Cervantes}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Dynamic approach to optimum synthesis of a four-bar
+  mechanism using a swarm intelligence algorithm}{Dynamic approach to optimum
+  synthesis of a four-bar mechanism using a swarm intelligence algorithm}}.
+\newblock \btxjournalfont {Kybernetika}, 50(5):786--803, 2014.
+
+\bibitem {mezura-montes_optimum_2014}
+\btxnamefont {\btxlastnamefont {Mezura-Montes}, Efr{\'e}n}, \btxnamefont
+  {Edgar\btxfnamespacelong A \btxlastnamefont {Portilla-Flores}}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {Betania \btxlastnamefont
+  {Hern{\'a}ndez-Oca{\~n}a}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Optimum synthesis of a four-bar mechanism using the modified bacterial
+  foraging algorithm}{Optimum synthesis of a four-bar mechanism using the
+  modified bacterial foraging algorithm}}.
+\newblock \btxjournalfont {International Journal of Systems Science},
+  45(5):1080--1100, 2014.
+
+\bibitem {herne1_two_swim_2016}
+\btxnamefont {\btxlastnamefont {Hern{\'a}ndez-Oca{\~n}a}, Betania},
+  \btxnamefont {Ma\btxfnamespacelong Del\btxfnamespacelong Pilar
+  \btxlastnamefont {Pozos-Parra}}, \btxnamefont {Efr{\'e}n \btxlastnamefont
+  {Mezura-Montes}}, \btxnamefont {Edgar\btxfnamespacelong Alfredo
+  \btxlastnamefont {Portilla-Flores}}, \btxnamefont {Eduardo \btxlastnamefont
+  {Vega-Alvarado}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Maria\btxfnamespacelong B{\'a}rbara \btxlastnamefont
+  {Calva-Y{\'a}{\~n}ez}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Two-swim operators in the modified bacterial foraging algorithm for the
+  optimal synthesis of four-bar mechanisms}{Two-swim operators in the modified
+  bacterial foraging algorithm for the optimal synthesis of four-bar
+  mechanisms}}.
+\newblock \btxjournalfont {Computational intelligence and neuroscience},
+  2016:17, 2016.
+
+\bibitem {portilla-flores_integration_2007}
+\btxnamefont {\btxlastnamefont {Portilla-Flores}, Edgar\btxfnamespacelong A},
+  \btxnamefont {Efr{\'e}n \btxlastnamefont {Mezura-Montes}}, \btxnamefont
+  {Jaime \btxlastnamefont {{\'A}lvarez-Gallegos}}, \btxnamefont
+  {Carlos\btxfnamespacelong A \btxlastnamefont {Coello-Coello}}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {Carlos\btxfnamespacelong A \btxlastnamefont
+  {Cruz-Villar}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Integration
+  of structure and control using an evolutionary approach: An application to
+  the optimal concurrent design of a cvt}{Integration of structure and control
+  using an evolutionary approach: An application to the optimal concurrent
+  design of a CVT}}.
+\newblock \btxjournalfont {International Journal for Numerical Methods in
+  Engineering}, 71(8):883--901, 2007.
+
+\bibitem {villarreal-cervantes_control_2013}
+\btxnamefont {\btxlastnamefont {Villarreal-Cervantes}, Miguel\btxfnamespacelong
+  G} \btxandlong {}\ \btxnamefont {Efr{\'e}n \btxlastnamefont
+  {Mezura-Montes}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Control
+  adaptable basado en evolucion diferencial para un motor de cd}{Control
+  adaptable basado en evolucion diferencial para un motor de CD}}.
+\newblock Congreso Nacional de Control Autom{\'a}tico, AMCA, 2013.
+
+\bibitem {mezura-montes_dynamic_2015}
+\btxnamefont {\btxlastnamefont {Mezura-Montes}, Efr{\'e}n}, \btxnamefont
+  {Edgar\btxfnamespacelong Alfredo \btxlastnamefont
+  {Portilla-Flores}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Edith
+  \btxlastnamefont {Capistran-Gumersindo}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Dynamic parameter control in differential evolution with
+  combined variants to optimize a three-finger end effector}{Dynamic parameter
+  control in differential evolution with combined variants to optimize a
+  three-finger end effector}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Power, Electronics and Computing
+  (ROPEC), 2015 IEEE International Autumn Meeting on}, \btxpageslong {}\ 1--6.
+  IEEE, 2015.
+
+\bibitem {ramabhotla2014economic}
+\btxnamefont {\btxlastnamefont {Ramabhotla}, Sundari}, \btxnamefont {Stephen
+  \btxlastnamefont {Bayne}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Michael \btxlastnamefont {Giesselmann}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Economic dispatch optimization of microgrid in islanded
+  mode}{Economic dispatch optimization of microgrid in islanded mode}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Energy and Sustainability Conference
+  (IESC), 2014 International}, \btxpageslong {}\ 1--5. IEEE, 2014.
+
+\bibitem {heredia-ramirez_optimal_2014}
+\btxnamefont {\btxlastnamefont {Heredia-Ramirez}, FA}, \btxnamefont {E
+  \btxlastnamefont {Rivas-Trujillo}}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {JA \btxlastnamefont {Hernandez-Mora}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Optimal power flow in electrical
+  microgrids}{Optimal power flow in electrical microgrids}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Central America and Panama Convention
+  (CONCAPAN XXXIV), 2014 IEEE}, \btxpageslong {}\ 1--6. IEEE, 2014.
+
+\bibitem {zapata_zapata_control_2017}
+\btxnamefont {\btxlastnamefont {Zapata~Zapata}, Maury\btxfnamespacelong
+  Faney}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Control de
+  {Parámetros} del {Algoritmo} {Evolución} {Diferencial} con {Variantes}
+  {Combinadas} para la {Solución} de {Problemas} de {Optimización} en
+  {Mecatrónica}}{Control de {Parámetros} del {Algoritmo} {Evolución}
+  {Diferencial} con {Variantes} {Combinadas} para la {Solución} de {Problemas}
+  de {Optimización} en {Mecatrónica}}}.
+\newblock \btxifchangecase {Tesis de {{Maestría}} en {{Computación
+  Aplicada}}}{Tesis de {{Maestría}} En {{Computación Aplicada}}}, Laboratorio
+  Nacional de Informática Avanzada, Xalapa. Veracruz, 2017.
+
+\bibitem {yang_swarm_2013}
+\btxnamefont {\btxlastnamefont {Yang}, Xin\btxfnamespacelong She}, \btxnamefont
+  {Zhihua \btxlastnamefont {Cui}}, \btxnamefont {Renbin \btxlastnamefont
+  {Xiao}}, \btxnamefont {Amir\btxfnamespacelong Hossein \btxlastnamefont
+  {Gandomi}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Mehmet
+  \btxlastnamefont {Karamanoglu}}\btxauthorcolon\ \btxtitlefont {Swarm
+  Intelligence and Bio-Inspired Computation: Theory and Applications}.
+\newblock \btxpublisherfont {Newnes}, 2013.
+
+\bibitem {ferrante_handbook_2012}
+\btxnamefont {\btxlastnamefont {Neri}, Ferrante}, \btxnamefont {Carlos
+  \btxlastnamefont {Cotta}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Pablo
+  \btxlastnamefont {Moscato}}\btxauthorcolon\ \btxtitlefont {Handbook of
+  memetic algorithms}, \btxvolumelong {}\ \btxvolumefont {379}.
+\newblock \btxpublisherfont {Springer}, 2012.
+
+\bibitem {VegaMEC1}
+\btxnamefont {\btxlastnamefont {Vega-Alvarado}, Eduardo}, \btxnamefont {Edgar
+  \btxlastnamefont {Flores}}, \btxnamefont {Efrén \btxlastnamefont
+  {Mezura-Montes}}, \btxnamefont {Leticia \btxlastnamefont
+  {Flores~Pulido}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Maria
+  \btxlastnamefont {Bárbara Calva-Yáñez}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {A memetic algorithm applied to the optimal design of a
+  planar mechanism for trajectory tracking}{A Memetic Algorithm Applied to the
+  Optimal Design of a Planar Mechanism for Trajectory Tracking}}.
+\newblock 53:83--90, \btxprintmonthyear{.}{9}{2016}{long}.
+
+\bibitem {munaro2014fast}
+\btxnamefont {\btxlastnamefont {Munaro}, Matteo} \btxandlong {}\ \btxnamefont
+  {Emanuele \btxlastnamefont {Menegatti}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Fast rgb-d people tracking for service robots}{Fast RGB-D
+  people tracking for service robots}}.
+\newblock \btxjournalfont {Autonomous Robots}, 37(3):227--242, 2014.
+
+\bibitem {jiang2015novel}
+\btxnamefont {\btxlastnamefont {Jiang}, Ming} \btxandlong {}\ \btxnamefont {Li
+  \btxlastnamefont {Zhang}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {A
+  novel continuous learning and collaborative decision making mechanism for
+  real-time cooperation of humanoid service robots}{A Novel Continuous Learning
+  and Collaborative Decision Making Mechanism for Real-Time Cooperation of
+  Humanoid Service Robots}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Computer and Information Technology;
+  Ubiquitous Computing and Communications; Dependable, Autonomic and Secure
+  Computing; Pervasive Intelligence and Computing (CIT/IUCC/DASC/PICOM), 2015
+  IEEE International Conference on}, \btxpageslong {}\ 221--225. IEEE, 2015.
+
+\bibitem {shi2017advanced}
+\btxnamefont {\btxlastnamefont {Shi}, Yang}, \btxnamefont {Chao
+  \btxlastnamefont {Shen}}, \btxnamefont {Huazhen \btxlastnamefont
+  {Fang}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Huiping \btxlastnamefont
+  {Li}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Advanced control in
+  marine mechatronic systems: A survey}{Advanced control in marine mechatronic
+  systems: A survey}}.
+\newblock \btxjournalfont {IEEE/ASME Transactions on Mechatronics},
+  22(3):1121--1131, 2017.
+
+\bibitem {burgner2015continuum}
+\btxnamefont {\btxlastnamefont {Burgner-Kahrs}, Jessica}, \btxnamefont
+  {D\btxfnamespacelong Caleb \btxlastnamefont {Rucker}}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {Howie \btxlastnamefont
+  {Choset}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Continuum robots
+  for medical applications: A survey}{Continuum robots for medical
+  applications: A survey}}.
+\newblock \btxjournalfont {IEEE Transactions on Robotics}, 31(6):1261--1280,
+  2015.
+
+\bibitem {sacco_metropolis_2008}
+\btxnamefont {\btxlastnamefont {Sacco}, Wagner}, \btxnamefont {Hermes
+  \btxlastnamefont {Filho}}, \btxnamefont {Nélio \btxlastnamefont
+  {Henderson}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Cassiano
+  \btxlastnamefont {Oliveira}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {A metropolis algorithm combined with nelder–mead simplex applied to
+  nuclear reactor core design}{A Metropolis algorithm combined with
+  Nelder–Mead Simplex applied to nuclear reactor core design}}.
+\newblock 35:861--867, \btxprintmonthyear{.}{05}{2008}{long}.
+
+\bibitem {koch_hybridization_2009}
+\btxnamefont {\btxlastnamefont {Koch}, Patrick}, \btxnamefont {Oliver
+  \btxlastnamefont {Kramer}}, \btxnamefont {G{\"u}nter \btxlastnamefont
+  {Rudolph}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Nicola
+  \btxlastnamefont {Beume}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {On
+  the hybridization of sms-emoa and local search for continuous multiobjective
+  optimization}{On the hybridization of SMS-EMOA and local search for
+  continuous multiobjective optimization}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 11th Annual
+  conference on Genetic and evolutionary computation}, \btxpageslong {}\
+  603--610. ACM, 2009.
+
+\bibitem {jovanovic_cuckoo_2016}
+\btxnamefont {\btxlastnamefont {Jovanovic}, Raka}, \btxnamefont {Sabre
+  \btxlastnamefont {Kais}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Fahhad\btxfnamespacelong H \btxlastnamefont {Alharbi}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Cuckoo search inspired hybridization of the
+  nelder-mead simplex algorithm applied to optimization of photovoltaic
+  cells}{Cuckoo search inspired hybridization of the nelder-mead simplex
+  algorithm applied to optimization of photovoltaic cells}}.
+\newblock \btxjournalfont {arXiv preprint arXiv:1411.0217}, 2014.
+
+\bibitem {frazzoli_real-time_2002}
+\btxnamefont {\btxlastnamefont {Frazzoli}, Emilio}, \btxnamefont
+  {Munther\btxfnamespacelong A \btxlastnamefont {Dahleh}}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {Eric \btxlastnamefont {Feron}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Real-time motion planning for agile
+  autonomous vehicles}{Real-time motion planning for agile autonomous
+  vehicles}}.
+\newblock \btxjournalfont {Journal of guidance, control, and dynamics},
+  25(1):116--129, 2002.
+
+\bibitem {liu_real-time_2004}
+\btxnamefont {\btxlastnamefont {Liu}, Guanfeng} \btxandlong {}\ \btxnamefont
+  {Zexiang \btxlastnamefont {Li}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Real-time grasping-force optimization for multifingered
+  manipulation: theory and experiments}{Real-time grasping-force optimization
+  for multifingered manipulation: theory and experiments}}.
+\newblock \btxjournalfont {IEEE/ASME transactions on Mechatronics},
+  9(1):65--77, 2004.
+
+\bibitem {kumar2017smart}
+\btxnamefont {\btxlastnamefont {Kumar}, A}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {What is a smart grid?}{What is a smart grid?}}
+\newblock \Btxinlong {}\ \btxtitlefont {2017 American Association of
+  Geographers Annual Meeting (AAG 2017), April 5-9, 2017, Boston, Mass., USA},
+  2017.
+
+\bibitem {ahat2013smart}
+\btxnamefont {\btxlastnamefont {Ahat}, Murat}, \btxnamefont
+  {Soufian\btxfnamespacelong Ben \btxlastnamefont {Amor}}, \btxnamefont {Marc
+  \btxlastnamefont {Bui}}, \btxnamefont {Alain \btxlastnamefont {Bui}},
+  \btxnamefont {Guillaume \btxlastnamefont {Gu{\'e}rard}}\btxandcomma {}
+  \btxandlong {}\ \btxnamefont {Coralie \btxlastnamefont
+  {Petermann}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Smart grid and
+  optimization}{Smart grid and optimization}}.
+\newblock \btxjournalfont {American Journal of Operations Research}, 3(01):196,
+  2013.
+
+\bibitem {mortaji2016smart}
+\btxnamefont {\btxlastnamefont {Mortaji}, Hamed}, \btxnamefont
+  {Ow\btxfnamespacelong Siew \btxlastnamefont {Hock}}, \btxnamefont {Mahmoud
+  \btxlastnamefont {Moghavvemi}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Haider\btxfnamespacelong AF \btxlastnamefont {Almurib}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Smart grid demand response management using
+  internet of things for load shedding and smart-direct load control}{Smart
+  grid demand response management using internet of things for load shedding
+  and smart-direct load control}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Industry Applications Society Annual
+  Meeting, 2016 IEEE}, \btxpageslong {}\ 1--7. IEEE, 2016.
+
+\bibitem {rao_engineering_2009}
+\btxnamefont {\btxlastnamefont {Rao}, Singiresu\btxfnamespacelong
+  S}\btxauthorcolon\ \btxtitlefont {Engineering optimization: theory and
+  practice}.
+\newblock \btxpublisherfont {John Wiley \& Sons}, 2009.
+
+\bibitem {nocedal2006numerical}
+\btxnamefont {\btxlastnamefont {Nocedal}, Jorge} \btxandlong {}\ \btxnamefont
+  {Stephen\btxfnamespacelong J \btxlastnamefont {Wright}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Numerical optimization 2nd}{Numerical
+  optimization 2nd}}, 2006.
+
+\bibitem {antoniou_practical_2007}
+\btxnamefont {\btxlastnamefont {Antoniou}, Andreas} \btxandlong {}\
+  \btxnamefont {Wu\btxfnamespacelong Sheng \btxlastnamefont
+  {Lu}}\btxauthorcolon\ \btxtitlefont {Practical Optimization: Algorithms and
+  Engineering Applications}.
+\newblock \btxpublisherfont {Springer Publishing Company, Incorporated},
+  \btxeditionnumlong {1ra}{}, 2007\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {0387711066, 9780387711065}}}.
+
+\bibitem {belegundu_optimization_2011}
+\btxnamefont {\btxlastnamefont {Belegundu}, Ashok\btxfnamespacelong D}
+  \btxandlong {}\ \btxnamefont {Tirupathi\btxfnamespacelong R \btxlastnamefont
+  {Chandrupatla}}\btxauthorcolon\ \btxtitlefont {Optimization concepts and
+  applications in engineering}.
+\newblock \btxpublisherfont {Cambridge University Press}, 2011.
+
+\bibitem {luenberger_linear_2015}
+\btxnamefont {\btxlastnamefont {Luenberger}, David\btxfnamespacelong G},
+  \btxnamefont {Yinyu \btxlastnamefont {Ye}}\btxandcomma {} \btxetalfont
+  {\btxetalshort {.}}\btxauthorcolon\ \btxtitlefont {Linear and nonlinear
+  programming}, \btxvolumelong {}~\btxvolumefont {2}.
+\newblock \btxpublisherfont {Springer}, 1984.
+
+\bibitem {arora_optimization:_2015}
+\btxnamefont {\btxlastnamefont {Arora}, Rajesh\btxfnamespacelong
+  Kumar}\btxauthorcolon\ \btxtitlefont {Optimization: algorithms and
+  applications}.
+\newblock \btxpublisherfont {Chapman and Hall/CRC}, 2015.
+
+\bibitem {tuy_convex_2015}
+\btxnamefont {\btxlastnamefont {Tuy}, Hoang}, \btxnamefont {Tuy
+  \btxlastnamefont {Hoang}}, \btxnamefont {Tuy \btxlastnamefont {Hoang}},
+  \btxnamefont {Vi{\^e}t\btxfnamespacelong nam \btxlastnamefont
+  {Math{\'e}maticien}}, \btxnamefont {Tuy \btxlastnamefont {Hoang}}\btxandcomma
+  {} \btxandlong {}\ \btxnamefont {Vietnam \btxlastnamefont
+  {Mathematician}}\btxauthorcolon\ \btxtitlefont {Convex analysis and global
+  optimization}.
+\newblock \btxpublisherfont {Springer}, 1998.
+
+\bibitem {dantzig_linear_2016}
+\btxnamefont {\btxlastnamefont {Dantzig}, George}\btxauthorcolon\ \btxtitlefont
+  {Linear programming and extensions}.
+\newblock \btxpublisherfont {Princeton university press}, 2016.
+
+\bibitem {takriti1994ampl}
+\btxnamefont {\btxlastnamefont {Takriti}, Samer}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Ampl: A modeling language for mathematical
+  programming}{Ampl: A modeling language for mathematical programming}}, 1994.
+
+\bibitem {jean_algebra_2017}
+\btxnamefont {\btxlastnamefont {Jean}, Gallier} \btxandlong {}\ \btxnamefont
+  {Quaintance \btxlastnamefont {Jocelyn}}\btxauthorcolon\ \btxtitlefont
+  {Algebra, {Topology}, {Differential} {Calculus}, and {Optimization} {Theory}
+  {For} {Computer} {Science} and {Engineering}}.
+\newblock \btxpublisherfont {University of Pennsylvania}, 2017.
+
+\bibitem {gilbert_calculus_2010}
+\btxnamefont {\btxlastnamefont {Gilbert}, Strang}\btxauthorcolon\ \btxtitlefont
+  {Calculus}.
+\newblock \btxpublisherfont {Wellesley-Cambridge Press}, \btxeditionnumlong
+  {2da}{}, 2010\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {978-09802327-4-5}}}.
+
+\bibitem {soliman_mathematical_2012}
+\btxnamefont {\btxlastnamefont {Soliman}, Soliman\btxfnamespacelong
+  Abdel\btxfnamespacelong Hady} \btxandlong {}\ \btxnamefont
+  {Abdel\btxfnamespacelong Aal\btxfnamespacelong Hassan \btxlastnamefont
+  {Mantawy}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Mathematical
+  optimization techniques}{Mathematical Optimization Techniques}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Modern Optimization Techniques with
+  Applications in Electric Power Systems}, \btxpageslong {}\ 23--81.
+  \btxpublisherfont {Springer}, 2012.
+
+\bibitem {spendley_sequential_1962}
+\btxnamefont {\btxlastnamefont {Spendley}, W.}, \btxnamefont
+  {G.\btxfnamespacelong R. \btxlastnamefont {Hext}}\btxandcomma {} \btxandlong
+  {}\ \btxnamefont {F.\btxfnamespacelong R. \btxlastnamefont
+  {Himsworth}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Sequential
+  {Application} of {Simplex} {Designs} in {Optimisation} and {Evolutionary}
+  {Operation}}{Sequential {Application} of {Simplex} {Designs} in
+  {Optimisation} and {Evolutionary} {Operation}}}.
+\newblock \btxjournalfont {Technometrics}, 4(4):441--461,
+  \btxprintmonthyear{.}{11}{1962}{long}\ifbtxprintISSN {,
+  \mbox{\btxISSN~\btxISSNfont {0040-1706}}}.
+
+\bibitem {nelder_simplex_1965}
+\btxnamefont {\btxlastnamefont {Nelder}, John\btxfnamespacelong A} \btxandlong
+  {}\ \btxnamefont {Roger \btxlastnamefont {Mead}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {A simplex method for function
+  minimization}{A simplex method for function minimization}}.
+\newblock \btxjournalfont {The computer journal}, 7(4):308--313, 1965.
+
+\bibitem {deb_optimization_2004}
+\btxnamefont {\btxlastnamefont {Deb}, Kalyanmoy}\btxauthorcolon\ \btxtitlefont
+  {Optimization for {Engineering} {Design}: {Algorithms} and {Examples}}.
+\newblock \btxpublisherfont {Prentice-Hall of India},
+  \btxprintmonthyear{.}{2}{2004}{long}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {9788120309432}}}.
+
+\bibitem {blume1994mathematics}
+\btxnamefont {\btxlastnamefont {Simon}, Carl\btxfnamespacelong P} \btxandlong
+  {}\ \btxnamefont {Lawrence \btxlastnamefont {Blume}}\btxauthorcolon\
+  \btxtitlefont {Mathematics for economists}, \btxvolumelong {}~\btxvolumefont
+  {7}.
+\newblock \btxpublisherfont {Norton New York}, 1994.
+
+\bibitem {de2006evolutionary}
+\btxnamefont {\btxlastnamefont {De~Jong}, Kenneth\btxfnamespacelong
+  A}\btxauthorcolon\ \btxtitlefont {Evolutionary computation: a unified
+  approach}.
+\newblock \btxpublisherfont {MIT press}, 2006.
+
+\bibitem {angeline1995adaptive}
+\btxnamefont {\btxlastnamefont {Angeline}, Peter\btxfnamespacelong
+  J}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Adaptive and
+  self-adaptive evolutionary computations}{Adaptive and self-adaptive
+  evolutionary computations}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Computational intelligence: a dynamic
+  systems perspective}. Citeseer, 1995.
+
+\bibitem {holland1992adaptation}
+\btxnamefont {\btxlastnamefont {Holland}, John\btxfnamespacelong
+  Henry}\btxauthorcolon\ \btxtitlefont {Adaptation in natural and artificial
+  systems: an introductory analysis with applications to biology, control, and
+  artificial intelligence}.
+\newblock \btxpublisherfont {MIT press}, 1992.
+
+\bibitem {weise2009global}
+\btxnamefont {\btxlastnamefont {Weise}, Thomas}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Global optimization algorithms-theory and
+  application}{Global optimization algorithms-theory and application}}.
+\newblock \btxjournalfont {Self-published}, 2, 2009.
+
+\bibitem {deb2001multi}
+\btxnamefont {\btxlastnamefont {Deb}, Kalyanmoy}\btxauthorcolon\ \btxtitlefont
+  {Multi-objective optimization using evolutionary algorithms}, \btxvolumelong
+  {}~\btxvolumefont {16}.
+\newblock \btxpublisherfont {John Wiley \& Sons}, 2001.
+
+\bibitem {eiben2015evolutionary}
+\btxnamefont {\btxlastnamefont {Eiben}, Agoston\btxfnamespacelong E}
+  \btxandlong {}\ \btxnamefont {Jim \btxlastnamefont {Smith}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {From evolutionary computation to the
+  evolution of things}{From evolutionary computation to the evolution of
+  things}}.
+\newblock \btxjournalfont {Nature}, 521(7553):476, 2015.
+
+\bibitem {chiam_issues_2006}
+\btxnamefont {\btxlastnamefont {Chiam}, SC}, \btxnamefont {CK \btxlastnamefont
+  {Goh}}\btxandcomma {} \btxandlong {}\ \btxnamefont {KC \btxlastnamefont
+  {Tan}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Issues of binary
+  representation in evolutionary algorithms}{Issues of binary representation in
+  evolutionary algorithms}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Cybernetics and Intelligent Systems,
+  2006 IEEE Conference on}, \btxpageslong {}\ 1--8. IEEE,
+  \btxprintmonthyear{.}{6}{2006}{long}.
+
+\bibitem {michalewicz_genetic_1995}
+\btxnamefont {\btxlastnamefont {Michalewicz}, Zbigniew}\btxauthorcolon\
+  \btxtitlefont {Genetic Algorithms + Data Structures = Evolution Programs}.
+\newblock \btxpublisherfont {Springer-Verlag}, Berlin, Heidelberg,
+  \btxeditionnumlong {3ra}{}, 1996\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {3-540-60676-9}}}.
+
+\bibitem {okabe_evolutionary_2003}
+\btxnamefont {\btxlastnamefont {Okabe}, Tatsuya}, \btxnamefont {Yaochu
+  \btxlastnamefont {Jin}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Bernhard
+  \btxlastnamefont {Sendhoff}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Evolutionary multi-objective optimisation with a hybrid
+  representation}{Evolutionary multi-objective optimisation with a hybrid
+  representation}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of Congress on Evolutionary
+  Computation (CEC-2003)}, \btxvolumelong {}~\btxvolumefont {4}, \btxpageslong
+  {}\ 2262--2269, \btxprintmonthyear{.}{12}{2003}{long}.
+
+\bibitem {Koza94geneticprogramming}
+\btxnamefont {\btxlastnamefont {Koza}, John\btxfnamespacelong
+  R.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Genetic programming as
+  a means for programming computers by natural selection}{Genetic programming
+  as a means for programming computers by natural selection}}.
+\newblock \btxjournalfont {Stat. Comput. (UK}, 4:191--198, 1994.
+
+\bibitem {Goldberg91acomparative}
+\btxnamefont {\btxlastnamefont {Goldberg}, David\btxfnamespacelong E.}
+  \btxandlong {}\ \btxnamefont {Kalyanmoy \btxlastnamefont
+  {Deb}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {A comparative
+  analysis of selection schemes used in genetic algorithms}{A comparative
+  analysis of selection schemes used in genetic algorithms}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Foundations of Genetic Algorithms},
+  \btxpageslong {}\ 69--93. \btxpublisherfont {Morgan Kaufmann}, 1991.
+
+\bibitem {sarma1997analysis}
+\btxnamefont {\btxlastnamefont {Sarma}, Jayshree} \btxandlong {}\ \btxnamefont
+  {Kenneth\btxfnamespacelong A \btxlastnamefont {De~Jong}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {An analysis of local selection algorithms in
+  a spatially structured evolutionary algorithm.}{An Analysis of Local
+  Selection Algorithms in a Spatially Structured Evolutionary Algorithm.}}
+\newblock \Btxinlong {}\ \btxtitlefont {ICGA}, \btxpageslong {}\ 181--187.
+  Citeseer, 1997.
+
+\bibitem {Zhong_comparisonof}
+\btxnamefont {\btxlastnamefont {Zhong}, Jinghui}, \btxnamefont {Xiaomin
+  \btxlastnamefont {Hu}}, \btxnamefont {Jun \btxlastnamefont
+  {Zhang}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Min \btxlastnamefont
+  {Gu}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Comparison of
+  performance between different selection strategies on simple genetic
+  algorithms}{Comparison of performance between different selection strategies
+  on simple genetic algorithms}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Computational Intelligence for
+  Modelling, Control and Automation, 2005 and International Conference on
+  Intelligent Agents, Web Technologies and Internet Commerce, International
+  Conference on}, \btxvolumelong {}~\btxvolumefont {2}, \btxpageslong {}\
+  1115--1121. IEEE, 2005.
+
+\bibitem {deb_efficient_1998}
+\btxnamefont {\btxlastnamefont {Deb}, Kalyanmoy}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {An efficient constraint handling method for genetic
+  algorithms}{An efficient constraint handling method for genetic algorithms}}.
+\newblock \btxjournalfont {Computer methods in applied mechanics and
+  engineering}, 186(2-4):311--338, 2000.
+
+\bibitem {laessig_threshold_2008}
+\btxnamefont {\btxlastnamefont {Laessig}, Joerg}, \btxnamefont {Karl
+  \btxlastnamefont {Heinz~Hoffmann}}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {Mihaela \btxlastnamefont {Enachescu}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Threshold selecting: {Best} possible
+  probability distribution for crossover selection in genetic
+  algorithms}{Threshold selecting: {Best} possible probability distribution for
+  crossover selection in genetic algorithms}}.
+\newblock \btxpageslong {}\ 2181--2186, \btxprintmonthyear{.}{1}{2008}{long}.
+
+\bibitem {de1975analysis}
+\btxnamefont {\btxlastnamefont {De~Jong}, Kenneth\btxfnamespacelong
+  Alan}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Analysis of the
+  behavior of a class of genetic adaptive systems}{Analysis of the behavior of
+  a class of genetic adaptive systems}}.
+\newblock 1975.
+
+\bibitem {fogel1993applying}
+\btxnamefont {\btxlastnamefont {Fogel}, David\btxfnamespacelong
+  B}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Applying evolutionary
+  programming to selected traveling salesman problems}{Applying evolutionary
+  programming to selected traveling salesman problems}}.
+\newblock \btxjournalfont {Cybernetics and systems}, 24(1):27--36, 1993.
+
+\bibitem {rechenberg1973evolution}
+\btxnamefont {\btxlastnamefont {Rechenberg}, Ingo}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Evolution strategy: Optimization of
+  technical systems by means of biological evolution}{Evolution Strategy:
+  Optimization of Technical systems by means of biological evolution}}.
+\newblock \btxjournalfont {Fromman-Holzboog, Stuttgart}, 104:15--16, 1973.
+
+\bibitem {schwefel1995contemporary}
+\btxnamefont {\btxlastnamefont {Schwefel}, Hans\btxfnamespacelong Paul}
+  \btxandlong {}\ \btxnamefont {G{\"u}nter \btxlastnamefont
+  {Rudolph}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Contemporary
+  evolution strategies}{Contemporary evolution strategies}}.
+\newblock \Btxinlong {}\ \btxtitlefont {European conference on artificial
+  life}, \btxpageslong {}\ 891--907. Springer, 1995.
+
+\bibitem {holland1962outline}
+\btxnamefont {\btxlastnamefont {Holland}, John\btxfnamespacelong
+  H}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Outline for a logical
+  theory of adaptive systems}{Outline for a logical theory of adaptive
+  systems}}.
+\newblock \btxjournalfont {Journal of the ACM (JACM)}, 9(3):297--314, 1962.
+
+\bibitem {holland1969adaptive}
+\btxnamefont {\btxlastnamefont {Holland}, John\btxfnamespacelong
+  H}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Adaptative plans optimal
+  for payoff-only environments.}{Adaptative plans optimal for payoff-only
+  environments.}}
+\newblock \btxtechreplong {}, Michigan Univ ANN Arbor Logic of Computers Group,
+  1969.
+
+\bibitem {storn_differential_1997}
+\btxnamefont {\btxlastnamefont {Storn}, Rainer} \btxandlong {}\ \btxnamefont
+  {Kenneth \btxlastnamefont {Price}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Differential evolution--a simple and efficient heuristic
+  for global optimization over continuous spaces}{Differential evolution--a
+  simple and efficient heuristic for global optimization over continuous
+  spaces}}.
+\newblock \btxjournalfont {Journal of global optimization}, 11(4):341--359,
+  \btxprintmonthyear{.}{12}{1997}{long}.
+
+\bibitem {mezura2004simple}
+\btxnamefont {\btxlastnamefont {Mezura-Montes}, Efr{\'e}n}, \btxnamefont
+  {Carlos\btxfnamespacelong A\btxfnamespacelong Coello \btxlastnamefont
+  {Coello}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Edy\btxfnamespacelong
+  I \btxlastnamefont {Tun-Morales}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Simple feasibility rules and differential evolution for
+  constrained optimization}{Simple feasibility rules and differential evolution
+  for constrained optimization}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Mexican International Conference on
+  Artificial Intelligence}, \btxpageslong {}\ 707--716. Springer, 2004.
+
+\bibitem {wright1991genetic}
+\btxnamefont {\btxlastnamefont {Wright}, Alden\btxfnamespacelong
+  H}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Genetic algorithms for
+  real parameter optimization}{Genetic algorithms for real parameter
+  optimization}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Foundations of genetic algorithms},
+  \btxvolumelong {}~\btxvolumefont {1}, \btxpageslong {}\ 205--218.
+  \btxpublisherfont {Elsevier}, 1991.
+
+\bibitem {han2000genetic}
+\btxnamefont {\btxlastnamefont {Han}, Kuk\btxfnamespacelong Hyun} \btxandlong
+  {}\ \btxnamefont {Jong\btxfnamespacelong Hwan \btxlastnamefont
+  {Kim}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Genetic quantum
+  algorithm and its application to combinatorial optimization problem}{Genetic
+  quantum algorithm and its application to combinatorial optimization
+  problem}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Evolutionary Computation, 2000.
+  Proceedings of the 2000 Congress on}, \btxvolumelong {}~\btxvolumefont {2},
+  \btxpageslong {}\ 1354--1360. IEEE, 2000.
+
+\bibitem {nolfi2016evolutionary}
+\btxnamefont {\btxlastnamefont {Nolfi}, Stefano}, \btxnamefont {Josh
+  \btxlastnamefont {Bongard}}, \btxnamefont {Phil \btxlastnamefont
+  {Husbands}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Dario
+  \btxlastnamefont {Floreano}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Evolutionary robotics}{Evolutionary robotics}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Springer Handbook of Robotics},
+  \btxpageslong {}\ 2035--2068. \btxpublisherfont {Springer}, 2016.
+
+\bibitem {wang2016double}
+\btxnamefont {\btxlastnamefont {Wang}, Xuewu}, \btxnamefont {Yingpan
+  \btxlastnamefont {Shi}}, \btxnamefont {Dongyan \btxlastnamefont
+  {Ding}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Xingsheng
+  \btxlastnamefont {Gu}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Double global optimum genetic algorithm--particle swarm optimization-based
+  welding robot path planning}{Double global optimum genetic
+  algorithm--particle swarm optimization-based welding robot path planning}}.
+\newblock \btxjournalfont {Engineering Optimization}, 48(2):299--316, 2016.
+
+\bibitem {yildiz2013comparison}
+\btxnamefont {\btxlastnamefont {Yildiz}, Ali\btxfnamespacelong
+  R}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Comparison of
+  evolutionary-based optimization algorithms for structural design
+  optimization}{Comparison of evolutionary-based optimization algorithms for
+  structural design optimization}}.
+\newblock \btxjournalfont {Engineering applications of artificial
+  intelligence}, 26(1):327--333, 2013.
+
+\bibitem {dasgupta2013evolutionary}
+\btxnamefont {\btxlastnamefont {Dasgupta}, Dipankar} \btxandlong {}\
+  \btxnamefont {Zbigniew \btxlastnamefont {Michalewicz}}\btxauthorcolon\
+  \btxtitlefont {Evolutionary algorithms in engineering applications}.
+\newblock \btxpublisherfont {Springer Science \& Business Media}, 2013.
+
+\bibitem {myszka2004machines}
+\btxnamefont {\btxlastnamefont {Myszka}, David\btxfnamespacelong
+  H}\btxauthorcolon\ \btxtitlefont {Machines and mechanisms}.
+\newblock \btxpublisherfont {Prentice Hall}, 2004.
+
+\bibitem {weisstein_euler_nodate}
+\btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
+  W.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Euler {Formula}}{Euler
+  {Formula}}}.
+\newblock {\latintext
+  \btxurlfont{http://mathworld.wolfram.com/EulerFormula.html}}\empty
+  \btxurldatecomment {\btxkeywordlanguage {\btxurldatefont{2018-02-27}}}.
+
+\bibitem {shigley1983teoria}
+\btxnamefont {\btxlastnamefont {Shigley}, Joseph\btxfnamespacelong Edward},
+  \btxnamefont {John\btxfnamespacelong Joseph \btxlastnamefont {Uicker}},
+  \btxnamefont {Jos{\'e}\btxfnamespacelong H \btxlastnamefont
+  {P{\'e}rez}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Hortensia\btxfnamespacelong Corona de~\btxlastnamefont
+  {Cont{\'\i}n}}\btxauthorcolon\ \btxtitlefont {Teor{\'\i}a de m{\'a}quinas y
+  mecanismos}.
+\newblock \Btxnumberlong {}\ TJ145. S54 1983. \btxpublisherfont {McGraw-Hill
+  M{\'e}xico;}, 1983.
+
+\bibitem {Portilla_Mezura_MEC3}
+\btxnamefont {\btxlastnamefont {Sánchez-Márquez}, Á.}, \btxnamefont {E.
+  \btxlastnamefont {Vega-Alvarado}}, \btxnamefont {E.\btxfnamespacelong A.
+  \btxlastnamefont {Portilla-Flores}}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {E. \btxlastnamefont {Mezura-Montes}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Synthesis of a planar four-bar mechanism for
+  position control using the harmony search algorithm}{Synthesis of a planar
+  four-bar mechanism for position control using the harmony search algorithm}}.
+\newblock \Btxinlong {}\ \btxtitlefont {2014 11th International Conference on
+  Electrical Engineering, Computing Science and Automatic Control (CCE)},
+  \btxpageslong {}\ 1--6, 2014.
+
+\bibitem {capistran_2015}
+\btxnamefont {\btxlastnamefont {Capistran~Gumersindo}, Edith}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Computo inspirado en la naturaleza para la
+  optimización mono-objetivo de un efector final de tres dedos}{Computo
+  inspirado en la naturaleza para la optimización mono-objetivo de un efector
+  final de tres dedos}}.
+\newblock \btxifchangecase {Tesis de {{Maestría}} en {{Computación
+  Aplicada}}}{Tesis de {{Maestría}} En {{Computación Aplicada}}}.
+
+\bibitem {lasseter2002microgrids}
+\btxnamefont {\btxlastnamefont {Lasseter}, Robert\btxfnamespacelong
+  H}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Microgrids}{Microgrids}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Power Engineering Society Winter
+  Meeting, 2002. IEEE}, \btxvolumelong {}~\btxvolumefont {1}, \btxpageslong {}\
+  305--308. IEEE, 2002.
+
+\bibitem {Ramabhotla_Economic_dispatch}
+\btxnamefont {\btxlastnamefont {Ramabhotla}, S.}, \btxnamefont {S.
+  \btxlastnamefont {Bayne}}\btxandcomma {} \btxandlong {}\ \btxnamefont {M.
+  \btxlastnamefont {Giesselmann}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Economic dispatch optimization of microgrid in islanded
+  mode}{Economic dispatch optimization of microgrid in islanded mode}}.
+\newblock \Btxinlong {}\ \btxtitlefont {International Energy and Sustainability
+  Conference 2014}, \btxpageslong {}\ 1--5,
+  \btxprintmonthyear{.}{10}{2014}{long}.
+
+\bibitem {tazvinga2013minimum}
+\btxnamefont {\btxlastnamefont {Tazvinga}, Henerica}, \btxnamefont {Xiaohua
+  \btxlastnamefont {Xia}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Jiangfeng \btxlastnamefont {Zhang}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Minimum cost solution of photovoltaic--diesel--battery
+  hybrid power systems for remote consumers}{Minimum cost solution of
+  photovoltaic--diesel--battery hybrid power systems for remote consumers}}.
+\newblock \btxjournalfont {Solar Energy}, 96:292--299, 2013.
+
+\bibitem {tazvinga2014energy}
+\btxnamefont {\btxlastnamefont {Tazvinga}, Henerica}, \btxnamefont {Bing
+  \btxlastnamefont {Zhu}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Xiaohua
+  \btxlastnamefont {Xia}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {Energy dispatch strategy for a photovoltaic--wind--diesel--battery hybrid
+  power system}{Energy dispatch strategy for a
+  photovoltaic--wind--diesel--battery hybrid power system}}.
+\newblock \btxjournalfont {Solar Energy}, 108:412--420, 2014.
+
+\bibitem {wolpert1997no}
+\btxnamefont {\btxlastnamefont {Wolpert}, David\btxfnamespacelong H}
+  \btxandlong {}\ \btxnamefont {William\btxfnamespacelong G \btxlastnamefont
+  {Macready}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {No free lunch
+  theorems for optimization}{No free lunch theorems for optimization}}.
+\newblock \btxjournalfont {IEEE transactions on evolutionary computation},
+  1(1):67--82, 1997.
+
+\bibitem {Swagatam_2011}
+\btxnamefont {\btxlastnamefont {Das}, Swagatam} \btxandlong {}\ \btxnamefont
+  {Ponnuthurai \btxlastnamefont {Suganthan}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Differential evolution: A survey of the
+  state-of-the-art.}{Differential Evolution: A Survey of the
+  State-of-the-Art.}}
+\newblock 15:4--31, \btxprintmonthyear{.}{01}{2011}{long}.
+
+\bibitem {Dragoi_2015}
+\btxnamefont {\btxlastnamefont {Dragoi}, Elena\btxfnamespacelong Niculina}
+  \btxandlong {}\ \btxnamefont {Vlad \btxlastnamefont
+  {Dafinescu}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Parameter
+  control and hybridization techniques in differential evolution: a
+  survey}{Parameter control and hybridization techniques in differential
+  evolution: a survey}}.
+\newblock \btxjournalfont {Artificial Intelligence Review}, 45(4):447--470,
+  2016.
+
+\bibitem {raidl2006unified}
+\btxnamefont {\btxlastnamefont {Raidl}, G{\"u}nther\btxfnamespacelong
+  R}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {A unified view on hybrid
+  metaheuristics}{A unified view on hybrid metaheuristics}}.
+\newblock \Btxinlong {}\ \btxtitlefont {International Workshop on Hybrid
+  Metaheuristics}, \btxpageslong {}\ 1--12. Springer, 2006.
+
+\bibitem {krasnogor2005tutorial}
+\btxnamefont {\btxlastnamefont {Krasnogor}, Natalio} \btxandlong {}\
+  \btxnamefont {James \btxlastnamefont {Smith}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {A tutorial for competent memetic algorithms: model,
+  taxonomy, and design issues}{A tutorial for competent memetic algorithms:
+  model, taxonomy, and design issues}}.
+\newblock \btxjournalfont {IEEE Transactions on Evolutionary Computation},
+  9(5):474--488, 2005.
+
+\bibitem {elsayed2011integrated}
+\btxnamefont {\btxlastnamefont {Elsayed}, Saber\btxfnamespacelong M},
+  \btxnamefont {Ruhul\btxfnamespacelong A \btxlastnamefont
+  {Sarker}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Daryl\btxfnamespacelong L \btxlastnamefont {Essam}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Integrated strategies differential evolution
+  algorithm with a local search for constrained optimization}{Integrated
+  strategies differential evolution algorithm with a local search for
+  constrained optimization}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Evolutionary Computation (CEC), 2011
+  IEEE Congress on}, \btxpageslong {}\ 2618--2625. IEEE, 2011.
+
+\bibitem {liao2010two}
+\btxnamefont {\btxlastnamefont {Liao}, T\btxfnamespacelong
+  Warren}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Two hybrid
+  differential evolution algorithms for engineering design optimization}{Two
+  hybrid differential evolution algorithms for engineering design
+  optimization}}.
+\newblock \btxjournalfont {Applied Soft Computing}, 10(4):1188--1199, 2010.
+
+\bibitem {neri2008memetic}
+\btxnamefont {\btxlastnamefont {Neri}, Ferrante} \btxandlong {}\ \btxnamefont
+  {Ville \btxlastnamefont {Tirronen}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {On memetic differential evolution frameworks: a study of
+  advantages and limitations in hybridization}{On memetic differential
+  evolution frameworks: a study of advantages and limitations in
+  hybridization}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Evolutionary Computation, 2008. CEC
+  2008.(IEEE World Congress on Computational Intelligence). IEEE Congress on},
+  \btxpageslong {}\ 2135--2142. IEEE, 2008.
+
+\bibitem {rogalsky2000hybridization}
+\btxnamefont {\btxlastnamefont {Rogalsky}, T} \btxandlong {}\ \btxnamefont {RW
+  \btxlastnamefont {Derksen}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase
+  {Hybridization of differential evolution for aerodynamic
+  design}{Hybridization of differential evolution for aerodynamic design}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 8th annual
+  conference of the computational fluid dynamics society of Canada},
+  \btxpageslong {}\ 729--736, 2000.
+
+\bibitem {wang2011parameter}
+\btxnamefont {\btxlastnamefont {Wang}, Ling}, \btxnamefont {Ye \btxlastnamefont
+  {Xu}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Lingpo \btxlastnamefont
+  {Li}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Parameter
+  identification of chaotic systems by hybrid nelder--mead simplex search and
+  differential evolution algorithm}{Parameter identification of chaotic systems
+  by hybrid Nelder--Mead simplex search and differential evolution algorithm}}.
+\newblock \btxjournalfont {Expert Systems with Applications}, 38(4):3238--3245,
+  2011.
+
+\bibitem {Singer2018}
+\btxnamefont {\btxlastnamefont {Singer}, Sanja} \btxandlong {}\ \btxnamefont
+  {Sa{\v{s}}a \btxlastnamefont {Singer}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Complexity analysis of nelder-mead search
+  iterations}{Complexity analysis of Nelder-Mead search iterations}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 1. Conference on
+  Applied Mathematics and Computation, Dubrovnik, Croatia}, \btxpageslong {}\
+  185--196. PMF--Matemati{\v{c}}ki odjel, Zagreb, 1999.
+
+\bibitem {han_effect_2006}
+\btxnamefont {\btxlastnamefont {Han}, Lixing} \btxandlong {}\ \btxnamefont
+  {Michael \btxlastnamefont {Neumann}}\btxauthorcolon\ \btxjtitlefont
+  {\btxifchangecase {Effect of dimensionality on the nelder--mead simplex
+  method}{Effect of dimensionality on the Nelder--Mead simplex method}}.
+\newblock \btxjournalfont {Optimization Methods and Software}, 21(1):1--16,
+  \btxprintmonthyear{.}{2}{2006}{long}.
+
+\bibitem {BartzBeielstein2014ExperimentalAO}
+\btxnamefont {\btxlastnamefont {Bartz-Beielstein}, Thomas} \btxandlong {}\
+  \btxnamefont {Mike \btxlastnamefont {Preuss}}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Experimental analysis of optimization algorithms: Tuning
+  and beyond}{Experimental Analysis of Optimization Algorithms: Tuning and
+  Beyond}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Theory and Principled Methods for the
+  Design of Metaheuristics}, 2014.
+
+\bibitem {Lowry2004}
+\btxnamefont {\btxlastnamefont {Lowry}, Richard}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {A first glance at the question of statistical
+  significance}{A First Glance at the Question of Statistical Significance}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Concepts and Applications of
+  Inferential Statistics}, \btxpublisherfont {\btxchapterlong {}~4}. 2014.
+
+\bibitem {derrac2011practical}
+\btxnamefont {\btxlastnamefont {Derrac}, Joaqu{\'\i}n}, \btxnamefont {Salvador
+  \btxlastnamefont {Garc{\'\i}a}}, \btxnamefont {Daniel \btxlastnamefont
+  {Molina}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Francisco
+  \btxlastnamefont {Herrera}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {A practical tutorial on the use of nonparametric statistical tests as a
+  methodology for comparing evolutionary and swarm intelligence algorithms}{A
+  practical tutorial on the use of nonparametric statistical tests as a
+  methodology for comparing evolutionary and swarm intelligence algorithms}}.
+\newblock \btxjournalfont {Swarm and Evolutionary Computation}, 1(1):3--18,
+  2011.
+
+\bibitem {tanabe2014improving}
+\btxnamefont {\btxlastnamefont {Tanabe}, Ryoji} \btxandlong {}\ \btxnamefont
+  {Alex\btxfnamespacelong S \btxlastnamefont {Fukunaga}}\btxauthorcolon\
+  \btxtitlefont {\btxifchangecase {Improving the search performance of shade
+  using linear population size reduction}{Improving the search performance of
+  SHADE using linear population size reduction}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Evolutionary Computation (CEC), 2014
+  IEEE Congress on}, \btxpageslong {}\ 1658--1665. IEEE, 2014.
+
+\end{thebibliography}

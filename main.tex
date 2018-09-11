@@ -50,6 +50,8 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[Algoritmo]{algorithm}
 \usepackage{algorithmic}
 \theoremstyle{plain}
+\usepackage{babelbib}
+
 \newtheorem{thm}{Theorem} % reset theorem numbering for each chapter
 \usepackage{datetime}
 \theoremstyle{definition}
@@ -408,9 +410,10 @@ Gracias a todos.
 
 %\printbibliography[heading=bibintoc]
   \renewcommand\bibname{Referencias}
-  \addcontentsline{toc}{chapter}{Referencias}	
+  \addcontentsline{toc}{chapter}{Referencias}
+  \bibliographystyle{babunsrt}	
   \bibliography{bibliography}{}
-  \bibliographystyle{unsrt}
+
 %----------------------------------------------------------------------------------------
 
 \end{document}  
