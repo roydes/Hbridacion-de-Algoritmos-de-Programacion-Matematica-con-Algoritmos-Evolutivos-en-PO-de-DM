@@ -61,22 +61,22 @@
 \contentsline {section}{\numberline {5.1}Dise\IeC {\~n}o cinem\IeC {\'a}tico de Mecanismos}{58}{section.246}
 \contentsline {subsection}{\numberline {5.1.1}An\IeC {\'a}lisis cinem\IeC {\'a}tico de un Mecanismo de Cuatro Barras}{59}{subsection.247}
 \contentsline {subsection}{\numberline {5.1.2}Planteamiento del Problema de Optimizaci\IeC {\'o}n para casos de estudio del Mecanismo de Cuatro Barras}{62}{subsection.266}
-\contentsline {subsubsection}{Funci\IeC {\'o}n Objetivo}{62}{section*.267}
+\contentsline {subsubsection}{Funci\IeC {\'o}n Objetivo}{63}{section*.267}
 \contentsline {subsubsection}{Restricciones de dise\IeC {\~n}o}{63}{section*.272}
 \contentsline {subsection}{\numberline {5.1.3}Caso de estudio 1: seguimiento de una trayectoria lineal vertical, sin sincronizaci\IeC {\'o}n previa - MCE1}{64}{subsection.277}
 \contentsline {subsection}{\numberline {5.1.4}Caso de estudio 2: seguimiento de una trayectoria no alineada, con sincronizacion previa - MCE2}{65}{subsection.283}
 \contentsline {subsection}{\numberline {5.1.5}Caso de estudio 3: generaci\IeC {\'o}n de movimiento delimitado por un conjunto de pares de puntos - MCE3}{66}{subsection.290}
 \contentsline {subsection}{\numberline {5.1.6}Dise\IeC {\~n}o de un Efector Final de Tres Dedos}{68}{subsection.296}
-\contentsline {subsection}{\numberline {5.1.7}Cinem\IeC {\'a}tica del Efector Final de Tres Dedos }{69}{subsection.298}
+\contentsline {subsection}{\numberline {5.1.7}Cinem\IeC {\'a}tica del Efector Final de Tres Dedos }{68}{subsection.298}
 \contentsline {subsection}{\numberline {5.1.8}Declaraci\IeC {\'o}n de Problemas de Optimizaci\IeC {\'o}n para Casos de Estudio del Efector}{76}{subsection.338}
 \contentsline {subsubsection}{Funci\IeC {\'o}n objetivo}{77}{section*.341}
 \contentsline {subsubsection}{Restricciones de dise\IeC {\~n}o}{77}{section*.343}
 \contentsline {subsection}{\numberline {5.1.9}Caso de estudio 1: Dise\IeC {\~n}o sin normalizaci\IeC {\'o}n de barras -GCE1}{78}{subsection.350}
 \contentsline {subsection}{\numberline {5.1.10}Caso de estudio 2: Dise\IeC {\~n}o con normalizaci\IeC {\'o}n de barras - GCE2}{79}{subsection.354}
 \contentsline {section}{\numberline {5.2}Gesti\IeC {\'o}n de Generaci\IeC {\'o}n de Energ\IeC {\'\i }a en una Microrred El\IeC {\'e}ctrica}{80}{section.359}
-\contentsline {subsection}{\numberline {5.2.1}Optimizaci\IeC {\'o}n del costo de la generaci\IeC {\'o}n de energ\IeC {\'\i }a en una Microrred El\IeC {\'e}ctrica No Interconectable - SCE1}{81}{subsection.360}
+\contentsline {subsection}{\numberline {5.2.1}Optimizaci\IeC {\'o}n del costo de la generaci\IeC {\'o}n de energ\IeC {\'\i }a en una Microrred El\IeC {\'e}ctrica No Interconectable - SCE1}{82}{subsection.360}
 \contentsline {subsubsection}{Costo de Generaci\IeC {\'o}n Di\IeC {\'e}sel}{82}{section*.365}
-\contentsline {subsubsection}{Costo de Generaci\IeC {\'o}n Solar Fotovoltaica}{82}{section*.368}
+\contentsline {subsubsection}{Costo de Generaci\IeC {\'o}n Solar Fotovoltaica}{83}{section*.368}
 \contentsline {subsubsection}{Costo de Generaci\IeC {\'o}n de Energ\IeC {\'\i }a E\IeC {\'o}lica}{83}{section*.372}
 \contentsline {subsubsection}{Costo de Sistema de Almacenamiento de Energ\IeC {\'\i }a}{83}{section*.374}
 \contentsline {subsection}{\numberline {5.2.2}Planteamiento del Problema de Optimizaci\IeC {\'o}n}{83}{subsection.376}

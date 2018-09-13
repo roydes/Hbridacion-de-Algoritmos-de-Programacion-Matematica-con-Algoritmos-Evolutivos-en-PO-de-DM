@@ -206,38 +206,6 @@
 \newblock \btxjournalfont {IEEE Transactions on Robotics}, 31(6):1261--1280,
   2015.
 
-\bibitem {sacco_metropolis_2008}
-\btxnamefont {\btxlastnamefont {Sacco}, Wagner}, \btxnamefont {Hermes
-  \btxlastnamefont {Filho}}, \btxnamefont {Nélio \btxlastnamefont
-  {Henderson}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Cassiano
-  \btxlastnamefont {Oliveira}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
-  {A metropolis algorithm combined with nelder–mead simplex applied to
-  nuclear reactor core design}{A Metropolis algorithm combined with
-  Nelder–Mead Simplex applied to nuclear reactor core design}}.
-\newblock 35:861--867, \btxprintmonthyear{.}{05}{2008}{long}.
-
-\bibitem {koch_hybridization_2009}
-\btxnamefont {\btxlastnamefont {Koch}, Patrick}, \btxnamefont {Oliver
-  \btxlastnamefont {Kramer}}, \btxnamefont {G{\"u}nter \btxlastnamefont
-  {Rudolph}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Nicola
-  \btxlastnamefont {Beume}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {On
-  the hybridization of sms-emoa and local search for continuous multiobjective
-  optimization}{On the hybridization of SMS-EMOA and local search for
-  continuous multiobjective optimization}}.
-\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 11th Annual
-  conference on Genetic and evolutionary computation}, \btxpageslong {}\
-  603--610. ACM, 2009.
-
-\bibitem {jovanovic_cuckoo_2016}
-\btxnamefont {\btxlastnamefont {Jovanovic}, Raka}, \btxnamefont {Sabre
-  \btxlastnamefont {Kais}}\btxandcomma {} \btxandlong {}\ \btxnamefont
-  {Fahhad\btxfnamespacelong H \btxlastnamefont {Alharbi}}\btxauthorcolon\
-  \btxjtitlefont {\btxifchangecase {Cuckoo search inspired hybridization of the
-  nelder-mead simplex algorithm applied to optimization of photovoltaic
-  cells}{Cuckoo search inspired hybridization of the nelder-mead simplex
-  algorithm applied to optimization of photovoltaic cells}}.
-\newblock \btxjournalfont {arXiv preprint arXiv:1411.0217}, 2014.
-
 \bibitem {frazzoli_real-time_2002}
 \btxnamefont {\btxlastnamefont {Frazzoli}, Emilio}, \btxnamefont
   {Munther\btxfnamespacelong A \btxlastnamefont {Dahleh}}\btxandcomma {}
@@ -286,6 +254,38 @@
   and smart-direct load control}}.
 \newblock \Btxinlong {}\ \btxtitlefont {Industry Applications Society Annual
   Meeting, 2016 IEEE}, \btxpageslong {}\ 1--7. IEEE, 2016.
+
+\bibitem {sacco_metropolis_2008}
+\btxnamefont {\btxlastnamefont {Sacco}, Wagner}, \btxnamefont {Hermes
+  \btxlastnamefont {Filho}}, \btxnamefont {Nélio \btxlastnamefont
+  {Henderson}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Cassiano
+  \btxlastnamefont {Oliveira}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
+  {A metropolis algorithm combined with nelder–mead simplex applied to
+  nuclear reactor core design}{A Metropolis algorithm combined with
+  Nelder–Mead Simplex applied to nuclear reactor core design}}.
+\newblock 35:861--867, \btxprintmonthyear{.}{05}{2008}{long}.
+
+\bibitem {koch_hybridization_2009}
+\btxnamefont {\btxlastnamefont {Koch}, Patrick}, \btxnamefont {Oliver
+  \btxlastnamefont {Kramer}}, \btxnamefont {G{\"u}nter \btxlastnamefont
+  {Rudolph}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Nicola
+  \btxlastnamefont {Beume}}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {On
+  the hybridization of sms-emoa and local search for continuous multiobjective
+  optimization}{On the hybridization of SMS-EMOA and local search for
+  continuous multiobjective optimization}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Proceedings of the 11th Annual
+  conference on Genetic and evolutionary computation}, \btxpageslong {}\
+  603--610. ACM, 2009.
+
+\bibitem {jovanovic_cuckoo_2016}
+\btxnamefont {\btxlastnamefont {Jovanovic}, Raka}, \btxnamefont {Sabre
+  \btxlastnamefont {Kais}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Fahhad\btxfnamespacelong H \btxlastnamefont {Alharbi}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {Cuckoo search inspired hybridization of the
+  nelder-mead simplex algorithm applied to optimization of photovoltaic
+  cells}{Cuckoo search inspired hybridization of the nelder-mead simplex
+  algorithm applied to optimization of photovoltaic cells}}.
+\newblock \btxjournalfont {arXiv preprint arXiv:1411.0217}, 2014.
 
 \bibitem {rao_engineering_2009}
 \btxnamefont {\btxlastnamefont {Rao}, Singiresu\btxfnamespacelong
@@ -397,6 +397,14 @@
 \newblock \btxpublisherfont {Prentice-Hall of India},
   \btxprintmonthyear{.}{2}{2004}{long}\ifbtxprintISBN {,
   \mbox{\btxISBN~\btxISBNfont {9788120309432}}}.
+
+\bibitem {hooke1961direct}
+\btxnamefont {\btxlastnamefont {Hooke}, Robert} \btxandlong {}\ \btxnamefont
+  {Terry\btxfnamespacelong A \btxlastnamefont {Jeeves}}\btxauthorcolon\
+  \btxjtitlefont {\btxifchangecase {``direct search''solution of numerical and
+  statistical problems}{``Direct Search''Solution of Numerical and Statistical
+  Problems}}.
+\newblock \btxjournalfont {Journal of the ACM (JACM)}, 8(2):212--229, 1961.
 
 \bibitem {blume1994mathematics}
 \btxnamefont {\btxlastnamefont {Simon}, Carl\btxfnamespacelong P} \btxandlong

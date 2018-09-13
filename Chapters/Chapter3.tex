@@ -21,7 +21,7 @@ Sea $A$  cualquier subconjunto abierto no vacío de ${\rm I\!R}$ , y $a \in A$. 
 donde $U =\{h \in {\rm I\!R}\,|\, a+h \in A, \, h \neq 0 \}$ este límite se denota como derivada $f'(a)$ o $\frac{\partial f}{\partial x}(a)$. Cuando la derivada existe en todo $a \in A$ se dice que la función es \textit{diferenciable}.
 \end{defn}
 
-La derivada de una función $f'$ es otra función, que evaluada en $a$ es la pendiente de la recta tangente a la curva $f$ si esta es representada gráficamente. Este concepto es sumamente importante para la teoría de la programación matemática, ya que una recta horizontal tangente a un punto de $f$ describe un cambio de comportamiento en la función. Los puntos cuyas rectas tangentes son horizontales se denominan \textit{puntos estacionarios} y pueden satisfacer la condición de óptimo de la función. Esto no siempre se cumple ya que puede tratarse de un punto de inflexión. Luego, el cálculo de los puntos estacionarios de la función consiste en hallar aquellos cuya recta tangente tenga pendiente igual cero, esto es $f'(x)=0$.Véase Figura \ref{fig:Puntos estacionarios y sus rectas tangentes} . Este procedimiento se conoce como la \textit{prueba de la primera derivada}.
+La derivada de una función $f'$ es otra función, que evaluada en $a$ es la pendiente de la recta tangente a la curva $f$ si esta es representada gráficamente. Este concepto es sumamente importante para la teoría de la programación matemática, ya que una recta horizontal tangente a un punto de $f$ describe un cambio de comportamiento en la función. Los puntos cuyas rectas tangentes son horizontales se denominan \textit{puntos estacionarios} y pueden satisfacer la condición de óptimo de la función. Esto no siempre se cumple ya que puede tratarse de un punto de inflexión. Luego, el cálculo de los puntos estacionarios de la función consiste en hallar aquellos cuya recta tangente tenga pendiente igual cero, esto es $f'(x)=0$. Véase Figura \ref{fig:Puntos estacionarios y sus rectas tangentes} . Este procedimiento se conoce como la \textit{prueba de la primera derivada}.
 
 \begin{figure}
 \centering
@@ -72,7 +72,7 @@ Los métodos descritos en la sección anterior solo pueden ser aplicados para fu
 \nabla f(\vec{x})=\bigg[ \frac{\partial f}{\partial x_1}, \frac{\partial f}{\partial x_2},\ldots,\frac{\partial f}{\partial x_n}\bigg]^T
 \end{equation}
 
-La derivada parcial  $\frac{\partial f}{\partial x_i}$ con $i=\{1,2,\ldots,n\}$ trata las restantes $n-1$ variables como constante y viceversa. Cada derivada parcial $\frac{\partial f}{\partial x_i}$ evaluada en un punto cualquiera denota la pendiente en la dirección $x_i$. Si se concibe la función como una hiper-superficie, el gradiente describe en qué dirección la superficie toma un valor máximo. Por tanto indica la dirección de ascenso, y su magnitud $|\nabla f(\vec{x})|$ indica el grado de inclinación de la superficie \cite{gilbert_calculus_2010}. La Figura \ref{fig: gradiente} muestra a la izquierda el capo vectorial de la superficie $x e^{(-x^2-y^2)}$. Se puede observar cómo la dirección del gradiente indica hacia donde la superficie asciende y su longitud es mayor en áreas con cambios de ascenso máximo. Luego en los puntos donde la función se hace plana, o llega a su valor máximo o mínimo, el gradiente tiende a desaparecer.  
+La derivada parcial  $\frac{\partial f}{\partial x_i}$ con $i=\{1,2,\ldots,n\}$ trata las restantes $n-1$ variables como constante y viceversa. Cada derivada parcial $\frac{\partial f}{\partial x_i}$ evaluada en un punto cualquiera denota la pendiente en la dirección $x_i$. Si se concibe la función como una hiper-superficie, el gradiente describe en qué dirección la superficie toma un valor máximo. Por tanto indica la dirección de ascenso, y su magnitud $|\nabla f(\vec{x})|$ indica el grado de inclinación de la superficie \cite{gilbert_calculus_2010}. La Figura \ref{fig: gradiente} muestra a la izquierda el campo vectorial de la superficie $x e^{(-x^2-y^2)}$. Se puede observar cómo la dirección del gradiente indica hacia donde la superficie asciende y su longitud es mayor en áreas con cambios de ascenso máximo. Luego en los puntos donde la función se hace plana, o llega a su valor máximo o mínimo, el gradiente tiende a desaparecer.  
 
 
 \begin{figure}[h]  
@@ -209,7 +209,7 @@ La actualización de los puntos interiores y los intervalos se realiza atendiend
 Aunque es poco probable, se puede dar el caso en que $f(x_{a\,k}) = f(x_{b\,k})$. Entonces se pueden aplicar cualquiera de las asignaciones anteriores ya que $x^*$ está contenido en ambos intervalos  $[x_{L\,k}, x_{b\,k}]$ y  $[ x_{a\,k}, x_{U\,k}]$. Este procedimiento se repite hasta que $k = n - 2$ en cuyo caso $I_k + 2 = I_n$ y $x^* = x_{a\,k+1} =  x_{b\,k+1}$ \cite{antoniou_practical_2007}.
 
 \subsection{Método de la Sección Dorada}
-Este método tiene sus antecedentes en la antigua Grecia donde los arquitectos griegos afirmaban que un edificio con lados $d$ y $b$ satisficiera la siguiente relación tendría mejores propiedades:
+Este método tiene sus antecedentes en la antigua Grecia donde los arquitectos griegos afirmaban que un edificio con lados $d$ y $b$ que satisficiera la siguiente relación tendría mejores propiedades:
 \begin{center}
 \begin{equation}
 \frac{d+b}{d}=\frac{d}{b}= \phi=1.618034
@@ -316,7 +316,7 @@ Basándose  en el trabajo de Spendley \cite{spendley_sequential_1962} donde se p
 	\caption{Método de Nelder-Mead}\label{alg:Nelder Mead}
 \end{algorithm}
 
-El Algoritmo \ref{alg:Nelder Mead} es una versión ligeramente modificada de la original, planteada en \cite{deb_optimization_2004}. La condición de parada es el error estándar entre los puntos del simplex. El desempeño del Método de Nelder-Mead (NMM por sus siglas en inglés) depende de los parámetros $\gamma$ (parametro de expansión) y $\beta$ (parámetro de contracción). Si los valores de $\gamma$ o $\frac{1}{\beta}$ aumentan se llegará más rápido a la vecindad del óptimo pero la convergencia al mismo puede dificultarse. En cambio  si valores menores de $\gamma$ o $\frac{1}{\beta}$  son seleccionados se necesitarán más evaluaciones de la función objetivo pero se logra un mayor acercamiento al mínimo. 
+El Algoritmo \ref{alg:Nelder Mead} es una versión ligeramente modificada de la original, planteada en \cite{deb_optimization_2004}. A diferencia del algoritmo descrito en \cite{nelder_simplex_1965}, este procedimiento utiliza el punto $x_g$ para determinar si se aplica el operador de contracción, en lugar de comparar todos los puntos $i \neq h$ del simplex. Debido a que los puntos del simplex quedan ordenados ascendentemente según su valor de función objetivo esta operación es innecesaria. Además, el algoritmo de Nelder y Mead solo la contracción hacia dentro y una operación de encogimiento cuando el operador de contracción falla al mejorar el peor punto. Por otra parte, el coeficiente de reflexión $\alpha$ se fija en 1 para el operador de reflexión original $\vec{x}_r=(1+\alpha)\vec{x}_c -\alpha\vec{x}_h$. La condición de parada es el error estándar entre los puntos del simplex. El desempeño del Método de Nelder-Mead (NMM por sus siglas en inglés) depende de los parámetros $\gamma$ (párametro de expansión) y $\beta$ (parámetro de contracción). Si los valores de $\gamma$ o $\frac{1}{\beta}$ aumentan se llegará más rápido a la vecindad del óptimo pero la convergencia al mismo puede dificultarse. En cambio  si valores menores de $\gamma$ o $\frac{1}{\beta}$  son seleccionados se necesitarán más evaluaciones de la función objetivo pero se logra un mayor acercamiento al mínimo. 
 \begin{figure}
 	\centering
 	\begin{subfigure}[b]{0.49\linewidth}
@@ -344,9 +344,9 @@ El Algoritmo \ref{alg:Nelder Mead} es una versión ligeramente modificada de la 
 Como se muestra en la Figura \ref{Posibles movientos del simplex durante una iteración del Nleder Mead} se realizan una serie de pasos, de acuerdo a determinadas condiciones. Una vez calculado el centroide $\vec{x}_c$ y la reflexión correspondiente a $\vec{x}_h$ en el punto $\vec{x}_r$, se realiza una expansión del simplex en la dirección de $\vec{x}_r$ si este mejora el valor de la función respecto a $\vec{x}_h$. Si el punto de reflexión es peor o igual a $\vec{x}_h$ se realiza una contracción hacia adentro donde el punto $\vec{x}_{new}$ resultante se encuentra entre $\vec{x}_h$ y $x_c$. En cambio, si $\vec{x}_r$ se encuentra entre $\vec{x}_g$ y $\vec{x}_h$ se realiza una contracción hacia afuera donde el punto $\vec{x}_{new}$ queda entre  $\vec{x}_c$ y $\vec{x}_r$. En caso de que las condiciones anteriores no se cumplan $\vec{x}_{new}$ será igual a $\vec{x}_r$.
 
 \subsection{Método de Hooke-Jeeves}
-Al igual que el método Nelder-Mead, el método de Hooke y Jeeves, es un método directo.  El patrón de búsqueda en este algoritmo genera una serie de direcciones de forma iterativa de tal manera que se cubra todo el espacio de búsqueda. Esto significa que, las direcciones generadas deben ser tales que partiendo de cualquier punto en el espacio se debe poder llegar cualquier otro punto siguiendo solo las direcciones generadas.
+Al igual que el método Nelder-Mead, el procedimiento planteado por Hooke y Jeeves en \cite{hooke1961direct}, es un método directo o libre de derivada, considerado como un algoritmo de búsqueda de patrones. Estos métodos de búsqueda se caracterizan por realizar una serie de movimientos exploratorios que consideran el comportamiento de la función objetivo en un patrón de puntos. Los movimientos exploratorios consisten en una estrategia sistemática para visitar los puntos en la vecindad del punto $x_k$ de la iteración actual.
 
- El método realiza dos operaciones principales: movimientos de exploración y movimientos según patrones heurísticos. La exploración se realiza en vecindad del punto actual de forma sistemática para para encontrar el punto mejor alrededor del punto actual. Tanto el punto actual como el mejor punto encontrado a su alrededor se utilizan para realizar un movimiento de patrón:
+ El método de Hooke y Jeeves realiza dos operaciones principales: movimientos de exploración y movimientos heurísticos basados en patrones. La exploración se realiza sobre punto actual, donde se realiza un muestreo obteniendo el valor de la función objetivo en $2N$ puntos vecinos. El tamaño de la vecindad está dado por $\Delta$. Este muestreo permite encontrar nuevas direcciones de búsqueda en caso de que se encuentre un mejor punto durante la exploración, o realizar mayor explotación de la vecindad en caso contrario. Tanto el punto actual como el mejor punto encontrado a su alrededor se utilizan para realizar un movimiento de patrón:
 \begin{enumerate}
 \item \textbf{Exploración}: Se denota $\vec{x}_c$ como el punto actual y $\vec{x}$ el mejor punto en la vecindad de $\vec{x}_c$, se asigna $\vec{x}=\vec{x}_c$ y el número de la iteración $i=1$. Se realizan las siguientes operaciones:
 \begin{enumerate}
@@ -376,7 +376,7 @@ El método continúa iterativamente realizando aplicaciones de ambos operadores 
           \ENDFOR
           
           \IF{$\vec{x} \neq \vec{x}_k$} 
-          \STATE Hacer $\vec{x}_k=\vec{x}$,\, $\vec{x}_{k-1}=\vec{x}_k,\, k=k+1 $.Si la exploración es exitosa hacer movimiento de patrón.
+          \STATE Hacer $\vec{x}_k=\vec{x}$,\, $\vec{x}_{k-1}=\vec{x}_k,\, k=k+1 $. Si la exploración es exitosa hacer movimiento de patrón.
           \WHILE {$f(\vec{x}_{k+1})<f(\vec{x}_{k})$}
           \STATE Calcular $\vec{x}_{k+1}=\vec{x}_{k}+(\vec{x}_{k}-\vec{x}_{k-1})$
            \STATE Hacer $\vec{x}=\vec{x}_{k+1}$. Hacer exploración.
@@ -396,9 +396,9 @@ El método continúa iterativamente realizando aplicaciones de ambos operadores 
 	\caption{Método de Jookes-Jeeves}\label{alg:Jookes-Jeeves}
 \end{algorithm}
 \section{Técnicas de optimización con restricciones}
-Los métodos descritos en las secciones anteriores realizan la optimización de un problema sin tener en cuenta las restricciones. En problemas reales la ausencia de restricciones es poco probable, por esta razón se han desarrollado diferentes técnicas de programación matemática diseñadas para resolver problemas restringidos. Cuando se aplica un técnica clásica como la condición de optimalidad de primer orden $f'(x)=0$ en la función objetivo, el mínimo se puede obtener en cierto punto $x^*$. Sin embargo, en presencia de una restricción que excluya a $x^*$, el mínimo ocurre en un punto factible ${x'}^*$. En este escenario las condiciones de optimalidad pueden no identificar el óptimo del problema. A continuación se discuten primeramente las condiciones de optimalidad con restricciones mediante el Método de Multiplicadores de Lagrange, así como diferentes técnicas para la solución de problemas con restricciones tales como los Métodos de Penalización, y la Programación Cuadrática Secuencial.
+Los métodos descritos en las secciones anteriores realizan la optimización de un problema sin tener en cuenta las restricciones. En problemas reales la ausencia de restricciones es poco probable, por esta razón se han desarrollado diferentes técnicas de programación matemática diseñadas para resolver problemas restringidos. Cuando se aplica un técnica clásica como la condición de optimalidad de primer orden $f'(x)=0$ en la función objetivo, el mínimo se puede obtener en cierto punto $x^*$. Sin embargo, en presencia de una restricción que excluya a $x^*$, el mínimo ocurre en un punto factible ${x'}^*$. En este escenario las condiciones de optimalidad pueden no identificar el óptimo del problema. A continuación se discuten primeramente las condiciones de optimalidad con restricciones mediante el Método de Multiplicadores de Lagrange (Sección \ref{sec:Método de Multiplicadores de Lagrange}) y las condiciones de Kuhn-Tucker (Sección \ref{sec: Condiciones de Optimalidad en problemas con restricciones}), así como diferentes técnicas para la solución de problemas con restricciones tales como las Métodos de Penalización (Sección \ref{sec:Método de Penalización de Restricciones}), y la Programación Cuadrática Secuencial (Sección \ref{sec:Programación Cuadrática Secuencial}).
 
-\subsection{Método de Multiplicadores de Lagrange}
+\subsection{Método de Multiplicadores de Lagrange} \label{sec:Método de Multiplicadores de Lagrange}
 Este método consiste en encontrar las raíces de la función Lagrangiana, la cual esta compuesta por la función objetivo más la sumatoria de cada restricción de igualdad $h_i$ multiplicada por una variable $\lambda_i$ denominada multiplicador de Lagrange. Este método se puede generalizar a problemas con restricciones de desigualdad si estas se transforman en restricciones de igualdad agregando variables de holgura no negativas $y_j$. Luego, la fórmula general de la ecuación Lagrangiana está definida por la siguiente expresión:
 
 \begin{equation}
@@ -451,7 +451,7 @@ J h(\vec{x}^*)^T  & H\mathcal{L}(\vec{x}^*)
 \end{bmatrix}
  \end{equation}
  Si el determinante de la matriz Hessiana ampliada es negativo y definido significa que el punto $\vec{x}^*$ es un mínimo. Si por el contrario, es positivo definido el punto $\vec{x}^*$ es un máximo. 
-\subsection{Condiciones de Optimalidad en problemas con restricciones}
+\subsection{Condiciones de Optimalidad en problemas con restricciones} \label{sec: Condiciones de Optimalidad en problemas con restricciones}
 Análogamente a los problemas sin restricciones, existen condiciones de optimalidad para problemas restringidos. Estas condiciones también se conocen como las condiciones de Kuhn-Tucker por los matemáticos  Harold W. Kuhn, y  Albert W. Tucker quienes las derivaron. En problemas restringidos es evidente que el gradiente no necesita ser igual a cero en el punto óptimo.  Si el óptimo se encuentra en el interior, donde todas las restricciones están inactivas, entonces la condición de gradiente cero es verdadera. Sin embargo, cuando el punto estacionario está excluido de la región factible por alguna restricción, estas condiciones de optimalidad dejan de ser válidas. 
 
 Las condiciones de optimalidad para problemas con restricciones se puede dividir en dos procedimientos fundamentales. Primero, solo se considerarán las restricciones activas a través del método de los multiplicadores de Lagrange. Luego se aplica la condición denominada calificación de restricción. 
@@ -477,7 +477,7 @@ Si la calificación de la restricción se viola en el punto $\vec{x}^*$, la Ecua
 \end{enumerate}
 Es importante tener en cuenta que las condiciones Kuhn-Tucker  son necesarias pero no suficientes para la optimalidad. Es decir, puede haber otros óptimos locales en los que se satisfagan las condiciones de Kuhn-Tucker. 
 
-\subsection{Método de Penalización de Restricciones}
+\subsection{Método de Penalización de Restricciones}\label{sec:Método de Penalización de Restricciones}
 Como su nombre indica, este método penaliza la función objetivo en caso de que se violen las restricciones. La motivación del método de función de penalización es resolver el problema de optimización restringida utilizando algoritmos para problemas no restringidos, donde en cada iteración se modifica el parámetro de penalización $R$. La función objetivo modificada con términos de penalización se escribe como:
 \begin{equation} \label{eq: Penalizacion 1}
 P(\vec{x},R)=f(x)+ \Omega(R,g(\vec{x}),h(\vec{x}))
@@ -511,7 +511,7 @@ Donde $\Omega$ es una función llamada \textit{término de penalización}. Estas
 
 Con este mecanismo para el manejo de restricciones el minimizador puede iniciar desde un punto no factible. Además, esta técnica puede ser integrada directamente en métodos de optimización sin restricciones como los descritos anteriormente. No obstante es importante considerar que la  función objetivo se transforma a medida que aumenta el valor de los términos de penalización. Debido a cambios abruptos en el valor de la función, el valor del gradiente puede ser grande y el algoritmo puede mostrar divergencia. Dado que este método no satisface exactamente las restricciones, no es adecuado para problemas de optimización donde la viabilidad debe garantizarse en todas las iteraciones \cite{arora_optimization:_2015}.
 
-\subsection{Programación Cuadrática Secuencial}
+\subsection{Programación Cuadrática Secuencial} \label{sec:Programación Cuadrática Secuencial}
 El método de Programación Cuadrática Secuencial (SQP por sus siglas en inglés) es uno de los métodos de Programación Matemática más recientes y efectivos sobre todo en problemas convexos. Su base teórica se relaciona primeramente con la solución de un conjunto de ecuaciones no lineales utilizando el método de Newton y luego con la derivación de ecuaciones simultaneas utilizando las condiciones de Kunn-Tucker. El procedimiento de este método consiste en aproximar la función objetivo a una forma cuadrática y trasforma a lineales las restricciones en cada iteración. El problema de programación cuadrática se resuelve para obtener $\Delta \vec{x}$:
 \begin{equation}
 Q=\Delta \vec{x}^T \nabla f(x)+ \frac{1}{2}\Delta \vec{x}^T \nabla^2 \mathcal{L} \Delta \vec{x}

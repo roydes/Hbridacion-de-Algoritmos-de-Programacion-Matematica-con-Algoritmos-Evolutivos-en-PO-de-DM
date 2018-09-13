@@ -8,14 +8,16 @@ En el capítulo introductorio del presente trabajo se abordaron algunos concepto
 \item El objetivo de la optimización es, dado un modelo de un sistema determinado físico, encontrar una configuración óptima para este sistema. 
 \end{enumerate}
 Estos conceptos son la base para el desarrollo de la siguientes secciones. En adelante se describen primeramente tres casos de estudio de la "Síntesis Óptima de un Mecanismo de Cuatro Barras", luego se presentan dos casos de la "{Síntesis Óptima de un Efector Final de Tres Dedos}". Por último, se presenta el problema de "{Optimización del costo de generación de energía en una Micro-red Eléctrica no Interconectable}". Estos problemas han sido formulados y resueltos por investigadores del departamento de mecatrónica del Centro de Innovación y Desarrollo Tecnológico en Cómputo (CIDETEC) del Instituto Politécnico Nacional (IPN), lo que brinda un marco de referencia tanto desde el punto de vista del problema (conocimiento de óptimos) como en el conocimiento del desempeño de los algoritmos utilizados (número de evaluaciones, rapidez de convergencia, resultados de pruebas estadísticas).
-\section{Diseño cinemático de Mecanismos}\label{sec: Diseño cinemático de Mecanismos}
-Las máquinas son dispositivos utilizados para alterar, transmitir y dirigir las fuerzas para lograr un objetivo específico. Un mecanismo es la parte mecánica de una máquina que tiene la función de transferir movimiento y fuerzas desde una fuente de alimentación a una salida. Los mecanismos se pueden considerar como piezas rígidas que están dispuestas y conectadas para que produzcan el movimiento deseado de la máquina. Los mecanismos de enlace son aquellos compuestos por diferentes eslabones (barras) conectados entre sí para formar una cadena. Los eslabones son las partes individuales del mecanismo y se consideran cuerpos rígidos que se encadenan  para transmitir movimiento y fuerza. Teóricamente, un cuerpo rígido no cambia de forma durante el movimiento. A pesar de que no existe un verdadero cuerpo rígido, pues los componentes del mecanismo siempre están sujetos a ciertas deformaciones, en lo adelante se consideran estos componentes como cuerpos rígidos, atendiendo solo al análisis cinemático. En los mecanismos de enlace un eslabón se designa como marco (frame en inglés) de referencia para el movimiento de todas las otras partes. El marco de referencia es típicamente un eslabón que no realiza movimiento. Entre dos eslabones existe una conexión movible que permite el movimiento relativo entre estos, llamada \textit{junta}. Las articulaciones básicas pueden ser clasificadas en giratorias y deslizantes. La articulación giratoria permite la rotación pura entre los dos enlaces que conecta. La junta deslizante también llamada pistón o junta prismática, permite el deslizamiento lineal entre los enlaces conectados. Además existen otros tipos de juntas como la junta de leva que permite tanto la rotación como el deslizamiento entre los dos enlaces que conecta. La junta de engranaje también permite la rotación y el deslizamiento entre dos engranajes. Ambos tipos de juntas son consideradas articulaciones de orden superior debido a que permiten movimientos más complejos \cite{myszka2004machines}.
 
-La síntesis es el proceso de desarrollar un mecanismo para satisfacer un conjunto de requisitos de rendimiento para una máquina. De forma general, la cinemática estudia el movimiento de los cuerpos sólidos. Aplicada al diseño de mecanismos, se utiliza para analizar la geometría del movimiento, lo que implica el análisis de la posición, el desplazamiento, la rotación, la velocidad, y la aceleración de los componentes. Por tanto, el análisis cinemático asegura que el mecanismo mostrará un movimiento que cumplirá con determinado conjunto de requisitos. Para lograr la síntesis óptima de un mecanismo es necesario recurrir a técnicas analíticas avanzadas que implican el modelado mediante funciones matemáticas. Las técnicas analíticas combinan las teorías de geometría, trigonometría y análisis de mecanismos gráficos. La síntesis óptima comprende la modelación de estos mecanismos matemáticamente, en forma de problemas de optimización numérica. Estos problemas pueden ser resueltos mediante algunas de las técnicas abordadas en capítulos anteriores \cite{myszka2004machines}. 
+
+\section{Diseño cinemático de Mecanismos}\label{sec: Diseño cinemático de Mecanismos}
+Las máquinas son dispositivos utilizados para alterar, transmitir y dirigir las fuerzas para lograr un objetivo específico. Un mecanismo es la parte mecánica de una máquina que tiene la función de transferir movimiento y fuerzas desde una fuente de alimentación a una salida. Los mecanismos se pueden considerar como piezas rígidas que están dispuestas y conectadas para que produzcan el movimiento deseado de la máquina. Los mecanismos de enlace son aquellos compuestos por diferentes eslabones (barras) conectados entre sí para formar una cadena. Los eslabones son las partes individuales del mecanismo y se consideran cuerpos rígidos que se encadenan  para transmitir movimiento y fuerza. Teóricamente, un cuerpo rígido no cambia de forma durante el movimiento. A pesar de que no existe un verdadero cuerpo rígido, pues los componentes del mecanismo siempre están sujetos a ciertas deformaciones, en lo adelante se consideran estos componentes como cuerpos rígidos, atendiendo solo al análisis cinemático. En los mecanismos de enlace, un eslabón se designa como marco (frame en inglés) de referencia para el movimiento de todas las otras partes. El marco de referencia es típicamente un eslabón que no realiza movimiento. Entre dos eslabones existe una conexión movible que permite el movimiento relativo entre éstos, llamada \textit{junta}. Las articulaciones básicas pueden ser clasificadas en giratorias y deslizantes. La articulación giratoria permite la rotación pura entre los dos enlaces que conecta. La junta deslizante también llamada pistón o junta prismática, permite el deslizamiento lineal entre los enlaces conectados. Además existen otros tipos de juntas como la junta de leva que permite tanto la rotación como el deslizamiento entre los dos enlaces que conecta. La junta de engranaje también permite la rotación y el deslizamiento entre dos engranajes. Ambos tipos de juntas son consideradas articulaciones de orden superior debido a que permiten movimientos más complejos \cite{myszka2004machines}.
+
+ La síntesis es el término utilizado para describir el proceso de diseño un mecanismo que satisface un conjunto de requisitos de rendimiento para una máquina. De forma general, la cinemática estudia el movimiento de los cuerpos sólidos. Aplicada al diseño de mecanismos, se utiliza para analizar la geometría del movimiento, lo que implica el análisis de la posición, el desplazamiento, la rotación, la velocidad, y la aceleración de los componentes. Por tanto, el análisis cinemático asegura que el mecanismo mostrará un movimiento que cumplirá con determinado conjunto de requisitos. Para lograr la síntesis óptima de un mecanismo es necesario recurrir a técnicas analíticas avanzadas que implican el modelado mediante funciones matemáticas. Las técnicas analíticas combinan las teorías de geometría, trigonometría y análisis de mecanismos gráficos. La síntesis óptima comprende la modelación de estos mecanismos matemáticamente, en forma de problemas de optimización numérica. Estos problemas pueden ser resueltos mediante algunas de las técnicas abordadas en capítulos anteriores \cite{myszka2004machines}. 
 
 
 \subsection{Análisis cinemático de un Mecanismo de Cuatro Barras}\label{sec:Análisis cinemático de un Mecanismo de Cuatro Barras}
-El mecanismo de cuatro barras es una combinación de cuatro eslabones, que están conectado por cuatro juntas de giratorias. Este mecanismo tiene una gran cantidad de aplicaciones por lo que se encuentra frecuentemente en la literatura. 
+El mecanismo de cuatro barras es una combinación de cuatro eslabones, que están conectados por cuatro juntas giratorias. Este mecanismo tiene una gran cantidad de aplicaciones por lo que se encuentra frecuentemente en la literatura. 
 
 
 El esquema general del mecanismo de cuatro barras que se muestra en la Figura \ref{fig:MEC}. Está formado por una barra de referencia $r_1$, una barra de entrada $r_2$ (manivela), un acoplador $r_3$ y una barra de salida $r_4$ (basculante). Para analizar este mecanismo se establecen dos sistemas de coordenadas: un sistema que se fija al mundo real ($OXY$) y otro para la auto-referencia \cite{herne1_two_swim_2016}.
@@ -44,16 +46,25 @@ Donde $e^{j\theta_1}$ es la entidad de Euler y $\theta_i$ es el ángulo comprend
 
 
 Luego sustituyendo la Ecuación \ref{eq:Euler} en \ref{eq:MElazoPolar} se obtiene la expresión:
+
 \begin{equation}\label{eq:MEPolarEuler}
-r_1(\cos{\theta_1}+j\sin{\theta_1})+r_4(\cos{\theta_4}+j\sin{\theta_1})=r_2(\cos{\theta_2}+j\sin{\theta_2})+r_3(\cos{\theta_3}+j\sin{\theta_3})
+\resizebox{0.9\textwidth}{!}{
+$r_1(\cos{\theta_1}+j\sin{\theta_1})+r_4(\cos{\theta_4}+j\sin{\theta_1})=r_2(\cos{\theta_2}+j\sin{\theta_2})+r_3(\cos{\theta_3}+j\sin{\theta_3})$
+}
 \end{equation}
 Resolviendo:
+
 \begin{equation}\label{eq:MEPolarEuler2}
-r_1 \cos{\theta_1}+r_1 j \sin{\theta_1}+r_4\cos{\theta_4}+r_4j\sin{\theta_4}=r_2\cos{\theta_2}+r_2 j\sin{\theta_2}+r_3\cos{\theta_3}+r_3j\sin{\theta_3}
+\resizebox{0.9\textwidth}{!}{
+$r_1 \cos{\theta_1}+r_1 j \sin{\theta_1}+r_4\cos{\theta_4}+r_4j\sin{\theta_4}=r_2\cos{\theta_2}+r_2 j\sin{\theta_2}+r_3\cos{\theta_3}+r_3j\sin{\theta_3}$
+}
 \end{equation}
 Agrupando la real en el miembro izquierdo y la parte imaginaria en el miembro derecho:
+
 \begin{equation}\label{eq:MEPolarEuler21}
-r_1 \cos{\theta_1}+r_4\cos{\theta_4}- r_2\cos{\theta_2}-r_3\cos{\theta_3}=r_2 j\sin{\theta_2}+r_3j\sin{\theta_3} -r_1 j \sin{\theta_1}-r_4j\sin{\theta_4}
+\resizebox{0.9\textwidth}{!}{
+$r_1 \cos{\theta_1}+r_4\cos{\theta_4}- r_2\cos{\theta_2}-r_3\cos{\theta_3}=r_2 j\sin{\theta_2}+r_3j\sin{\theta_3} -r_1 j \sin{\theta_1}-r_4j\sin{\theta_4}$
+}
 \end{equation} 
 Separando la parte real y la parte imaginaria en un sistema de ecuaciones se obtiene:
 \begin{eqnarray}
@@ -97,7 +108,7 @@ Resolviendo la ecuación \ref{eq:Lineal2dOrden} el ángulo $\theta_3$ puede ser 
 El ángulo $\theta_4$ se obtiene de forma similar, seleccionando el signo del radical para los
 ángulos $\theta_3$ y $\theta_4$ se seleccionan de acuerdo a la configuración del mecanismo según
 la Tabla \ref{tab:Signo del radical}.
-\begin{table}[]
+\begin{table}[!htbp]
 \centering
 \begin{tabular}{|l|l|l|}
 \hline
@@ -140,7 +151,7 @@ Las ecuaciones anteriores permiten calcular la trayectoria del punto $C$ durante
 Con base en el análisis cinemático abordado en la Sección \ref{sec:Análisis cinemático de un Mecanismo de Cuatro Barras} se plantea un problema de optimización numérico que tiene como objetivo minimizar el error entre el punto $C$ del acoplador y ciertos puntos de precisión para describir una trayectoria determinada. Los componentes del mecanismo como las  barras y los ángulos de rotación están sujetas ciertas restricciones para garantizar el movimiento. 
 
 \subsubsection{Función Objetivo}\label{sec:Funcion Objetivo de MEC}
-La síntesis óptima del mecanismo de cuatro barras persigue hallar una configuración que permita la máxima precisión del mecanismo al realizar una trayectoria deseada. Esto significa que se deben encontrar las longitudes de las barras, el ángulo de rotación respecto al eje $OXY$, la distancia entre los dos sistemas de referencias, los valores para el conjunto de ángulos para la barra de entrada que permitirán generar la trayectoria deseada. Esta trayectoria puede ser lograda definiendo un conjunto de puntos de precisión. En el sistema global de coordenadas el punto de precisión $i$ esta dado por:
+La síntesis óptima del mecanismo de cuatro barras persigue encontrar una configuración que permita la máxima precisión del mecanismo al realizar una trayectoria deseada. Esto significa que se deben encontrar las longitudes de las barras, el ángulo de rotación respecto al eje $OXY$, la distancia entre los dos sistemas de referencias, los valores para el conjunto de ángulos para la barra de entrada que permitirán generar la trayectoria deseada. Esta trayectoria puede lograrse definiendo un conjunto de puntos de precisión. En el sistema global de coordenadas el punto de precisión $i$ esta dado por:
 \begin{equation}
 C^i_d=\left[C^i_x,C^i_y \right],
 \end{equation}
@@ -161,7 +172,7 @@ Las restricciones aplicadas al mecanismo de cuatro barras están dirigidas a gar
 \begin{quote}
 \textit{``{En un eslabonamiento plano de cuatro barras, la suma de las longitudes más corta y más larga de los eslabones no puede ser mayor que la suma de las longitudes de los dos eslabones restantes, sí se desea que exista una rotación relativa continua entre dos elementos}."} 
 \end{quote}
-Si se aplica la convención de que el eslabón más largo tiene la longitud $l$, la del más corto es $s$ y los otros dos tienen las longitudes $p$ y $q$. La ley de Grashof especifica que uno de los eslabones, en particular el más pequeño, podrá girar continuamente en relación con los otros tres sólo cuando se satisfaga la siguiente desigualdad:
+Si se aplica la convención de que el eslabón más largo tiene la longitud $l$, la del más corto es $s$ y los otros dos tienen las longitudes $p$ y $q$. La ley de Grashoff especifica que uno de los eslabones, en particular el más pequeño, podrá girar continuamente en relación con los otros tres sólo cuando se satisfaga la siguiente desigualdad:
 \begin{equation}
 s+l \leq p+q
 \end{equation}
@@ -173,7 +184,7 @@ Además de estas condiciones, se deben tomar en cuenta las siguientes restriccio
 \begin{equation}
 r_2 < r_3;\quad r_3 < r_4;\quad r_4 < r_1 
 \end{equation}
-Debido a que el problema de la síntesis es de generación de trayectoria sin sincronizan prescrita, los valores que toman los ángulos de la manivela deben estar ordenados secuencialmente. Si el ángulo
+Debido a que el problema de la síntesis es de generación de trayectoria sin sincronización prescrita, los valores que toman los ángulos de la manivela deben estar ordenados secuencialmente. Si el ángulo
 del punto de precisión $i$ se denota como $\theta^i_2$ , se debe cumplir que:
 \begin{equation}
 \theta^1_2 < \theta^2_2< ... < \theta^N_2
@@ -190,7 +201,7 @@ El vector de variables para este caso está constituido por 15 componentes:
 \vec{p} &=& \{p_1,p_2,p_3,...,p_{15} \}\\
        &=& \{ r_1,r_2,r_3,r_4,r_{cx},r_{cy},\theta_0,x_0,y_0,\theta_1,\theta_2,\theta_3,\theta_4,\theta_5,\theta_6 \} 
 \end{eqnarray}
-Las primeras cuatro variables en el vector de diseño corresponde a los valores de la longitud de las barras, las dos variables siguientes $r_{cx}$ y $r_{cy}$ describen la posición del acoplador, $\theta_0$, $x_0$ y $y_0$ indican la la posición del sistema de referencia $O_2X_rY_r$ con respecto al sistema $OXY$ , y las variables restantes corresponden a la secuencia de ángulos de la barra de entrada $r_2$.
+Las primeras cuatro variables en el vector de diseño corresponden a los valores de la longitud de las barras, las dos variables siguientes $r_{cx}$ y $r_{cy}$ describen la posición del acoplador, $\theta_0$, $x_0$ y $y_0$ indican la posición del sistema de referencia $O_2X_rY_r$ con respecto al sistema $OXY$ , y, las variables restantes corresponden a la secuencia de ángulos de la barra de entrada $r_2$.
 
 Los límites superior e inferior de las variables de diseño se encuentran definidos
 por:
@@ -210,7 +221,7 @@ min\quad  f(\vec{p})=
 \end{aligned}
 \end{equation}
 %1 () =  ⃗ 1 + 2 − 3 − 4 ≤ 0,
-s.a:
+Sujeto a:
 \begin{eqnarray}\label{eq:Restricciones MEC1}
 g_{1}(\vec{p})&=&p_{1}+ p_{2}-p_{3}-p_{4} \leq 0,\\
 g_{2}(\vec{p})&=&p_{2}-p_{3} \leq 0,\\
@@ -225,17 +236,17 @@ g_{9}(\vec{p})&=&p_{14}-p_{15} \leq 0
 
 
 \subsection{Caso de estudio 2: seguimiento de una trayectoria no alineada, con
-sincronizacion previa - MCE2}
-En el segundo caso de estudio se plantea una trayectoria no alineada con una sincronización  prescrita. El conjunto de puntos de precisión que conforma la trayectoria deseada esta constituido por los siguientes elementos: 
+sincronización previa - MCE2}
+En el segundo caso de estudio se plantea una trayectoria no alineada con una sincronización  prescrita. El conjunto de puntos de precisión que conforma la trayectoria deseada está constituido por los siguientes elementos: 
 
 \begin{equation}\label{eq:Puntos de Presicion MEC2}
 \Omega = \left \{ (3, 3), (2.759, 3.363), (2.372, 3.663), (1.890, 3.862), (1.355, 3.943)\right\} 
 \end{equation}
-Para la sincronizacion prescrita se plantean la siguiente secuencia de ángulos:
+Para la sincronización prescrita se plantean la siguiente secuencia de ángulos:
 \begin{equation}\label{eq:Angulos MEC2}
 \Omega = \left \{ \frac{2\pi}{12},\frac{3\pi}{12},\frac{4\pi}{12},\frac{5\pi}{12},\frac{6\pi}{12}\right\} 
 \end{equation}
-Debido a la sincronizan prescrita se necesita calcular sólo la longitud de las barras. Por tanto, vector de diseño se define como:
+Debido a la sincronización, prescrita se necesita calcular sólo la longitud de las barras. Por tanto, el vector de diseño se define como:
 \begin{eqnarray}\label{eq:Vector variables MEC1}
 \vec{p} &=& \{p_1,p_2,p_3,p_{4},p_{5},p_{6} \}\\
        &=& \{ r_1,r_2,r_3,r_4,r_{cx},r_{cy} \} 
@@ -246,7 +257,7 @@ por:
 r_1,r_2,r_3,r_4& \in & \left[ 0,50\right] \\
 r_{cx},r_{cy} & \in & \left[ -50,50\right] \\
 \end{eqnarray}
-Luego, se define el problema de optimización mono-objetivo para el segundo caso de estudio según la Ecuación \ref{eq:POMEC2} a la Ecuación \ref{eq:g4_MEC2}:
+Luego, se define el problema de optimización mono-objetivo para el segundo caso de estudio según las Ecuaciones \ref{eq:POMEC2} a la \ref{eq:g4_MEC2}:
 \begin{equation}\label{eq:POMEC2}
  \begin{aligned}
 min\quad  f(\vec{p})=
@@ -257,7 +268,7 @@ min\quad  f(\vec{p})=
 \end{aligned}
 \end{equation}
 %1 () =  ⃗ 1 + 2 − 3 − 4 ≤ 0,
-s.a:
+Sujeto a:
 \begin{eqnarray}\label{eq:Restricciones MEC2}
 g_{1}(\vec{p})&=&p_{1}+ p_{2}-p_{3}-p_{4} \leq 0,\\
 g_{2}(\vec{p})&=&p_{2}-p_{3} \leq 0,\\
@@ -267,7 +278,7 @@ g_{4}(\vec{p})&=&p_{4}-p_{1} \leq 0 \label{eq:g4_MEC2}
 
 
 \subsection{Caso de estudio 3: generación de movimiento delimitado por un conjunto de pares de puntos - MCE3}
-En el tercer caso de estudio, tomado de \cite{Portilla_Mezura_MEC3}, se plantean diez pares de puntos de precisión $(K = 10)$, dados por las coordenadas de la Tabla \ref{tab:Coordenadas MEC3}. El vector de variables de diseño define entonces como:
+En el tercer caso de estudio, tomado de \cite{Portilla_Mezura_MEC3}, se plantean diez pares de puntos de precisión $(K = 10)$, dados por las coordenadas de la Tabla \ref{tab:Coordenadas MEC3}. El vector de variables de diseño se define entonces como:
 \begin{eqnarray}\label{eq:Vector variables MEC1}
 \vec{p} &=& \{p_1,p_2,p_3,...,p_{19} \}\\
        &=& \{ r_1,r_2,r_3,r_4,r_{cx},r_{cy},\theta_0,x_0,y_0,\theta^1_2,...,\theta^{10}_2 \} 
@@ -278,7 +289,7 @@ r_1,r_2,r_3,r_4& \in & \left[ 0,60\right] \\
 r_{cx},r_{cy},\theta_0,x_0,y_0 & \in & \left[ -60,60\right] \\
 \theta_0,\theta^1_2,...,\theta^{10}_2& \in & \left[ 0,2\pi \right] \\
 \end{eqnarray}
- En este caso se necesita minimizar la distancia entre los puntos de la trayectoria de $C$ en el acoplador y los $K$ pares de puntos de precisión. Básicamente, el punto $C$ debe pasar entre cada par de puntos de precisión de manera que la sumatoria de las distancias entre cada punto del par $i$ y $C$ sea mínima. Por tanto, se plantea una función diferente y trece restricciones como se describe desde la Ecuación \ref{eq:FO_MEC3} a la Ecuación \ref{eq:g13_MEC3}:
+ En este caso se necesita minimizar la distancia entre los puntos de la trayectoria de $C$ en el acoplador y los $K$ pares de puntos de precisión. Básicamente, el punto $C$ debe pasar entre cada par de puntos de precisión de manera que la sumatoria de las distancias entre cada punto del par $i$ y $C$ sea mínima. Por tanto, se plantea una función diferente y trece restricciones como se describe desde la Ecuación \ref{eq:FO_MEC3} a la \ref{eq:g13_MEC3}:
  \begin{equation}\label{eq:FO_MEC3}
  \begin{aligned}
 min\quad  f(\vec{p})=
@@ -288,7 +299,7 @@ min\quad  f(\vec{p})=
 \end{aligned}
 \end{equation}
 %1 () =  ⃗ 1 + 2 − 3 − 4 ≤ 0,
-s.a:
+Sujeto a:
 \begin{eqnarray}\label{eq:Restricciones MEC1}
 g_{1}(\vec{p})&=&p_{1}+ p_{2}-p_{3}-p_{4} \leq 0,\\
 g_{2}(\vec{p})&=&p_{2}-p_{3} \leq 0,\\
@@ -397,7 +408,7 @@ Esto es:
     \label{fig:Griper_MBC2}
 \end{figure}
 
-De forma similar al caso anterior el análisis matemático es similar al del caso anterior, se debe calcular el valor del ángulo $\theta_3$ solo que, en este caso el ángulo $\theta_2$ es la diferencia entre los ángulos $\beta$ y $\gamma$:
+El análisis matemático es similar al del caso anterior, se debe calcular el valor del ángulo $\theta_3$ solo que, en este caso el ángulo $\theta_2$ es la diferencia entre los ángulos $\beta$ y $\gamma$:
 \begin{equation}\label{eq:griper_theta23}
 \theta_2=\beta-\gamma
 \end{equation}
@@ -546,7 +557,7 @@ En la Ecuación \ref{eq:gripper_FO} se calcula la distancia (a minimizar) de los
 \subsubsection{Restricciones de diseño}\label{sec:Restricciones de diseño MEC_gripper}
 Para el correcto funcionamiento del gripper se deben tener en cuenta las siguientes restricciones de diseño: 
 \begin{itemize}
-\item \textit{Ley de Grashof:} De forma similar al mecanismo de 4 barras, debe cumplirse la ley de Grashof para el mecanismo de seis barras:
+\item \textit{Ley de Grashoff:} De forma similar al mecanismo de 4 barras, debe cumplirse la ley de Grashoff para el mecanismo de seis barras:
 \begin{equation}
 r_5+r_6 \leq r_0+r^{\prime}_2
 \end{equation}
@@ -588,7 +599,7 @@ min\quad  f(\vec{p})=
 \end{aligned}
 \end{equation}
 %1 () =  ⃗ 1 + 2 − 3 − 4 ≤ 0,
-s.a:
+Sujeto a:
 \begin{eqnarray}\label{eq:Restricciones gripper1}
 g_{1}(\vec{p})&=&p_{10}+ p_{9}-p_{8}-p_{7} \leq 0,\\
 g_{2}(\vec{p})&=&p_{7}-p_{10} \leq 0,\\
@@ -622,7 +633,7 @@ min\quad  f(\vec{p})&=&
 min\quad  f(\vec{x})&=&\frac{\sqrt[]{\sum^6_{i=1}\sum_{j=1}(x_j-x_i)^2}}{\sqrt[]{\sum^6_{i=1}x^2_i}} \label{eq:griper_NORM}
 \end{eqnarray}
 %1 () =  ⃗ 1 + 2 − 3 − 4 ≤ 0,
-s.a:
+Sujeto a:
 \begin{eqnarray}\label{eq:Restricciones griper2}
 g_{1}(\vec{p})&=&p_{10}+ p_{9}-p_{8}-p_{7} \leq 0,\\
 g_{2}(\vec{p})&=&p_{7}-p_{10} \leq 0,\\
@@ -771,7 +782,7 @@ Teniendo en cuenta las secciones anteriores, se plantea el problema de optimizac
  min\quad  F=
  \sum_{\tau=1}^{24}f(\vec{p}_\tau) \quad \vec{p}_\tau \in {\rm I\!R}^{4}
  \end{equation}
- s.a:
+ Sujeto a:
 \begin{eqnarray}\label{eq:Restricciones MR}
 g_1(\vec{p}_\tau)&=&P_1(\tau)+P_2(\tau)+P_3(\tau)+P_4(\tau)=P_L(\tau)\\
 g_2(\vec{p}_\tau)&=&SOC^{min}-SOC(t)\leq 0 \\
