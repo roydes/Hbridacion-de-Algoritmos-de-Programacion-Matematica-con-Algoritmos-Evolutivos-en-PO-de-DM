@@ -1,7 +1,7 @@
 function [X]=generate_border_simplex(NS)
 n=get_problem_n();
 bound=get_problem_bound();
-% Generador aleatorio con distribucón uniforme
+% Generador aleatorio con distribución uniforme
 rng(0,'v5uniform');
 % Límites para q_k
 a=0.05;

@@ -20,7 +20,7 @@ best=X(1,:);
 E=NP;
 XL=zeros(NS,n+2);
 E_F=[];
-% Comienza el ciclo hasta llegar al número 
+% Comienza el cíclo hasta llegar al número 
 % máximo de evaluaciones
 while E<NE
     k=1;
@@ -29,7 +29,7 @@ while E<NE
     % de escala y crizamiento
     [F,CR]=generate_F_and_CR();
     while w<NP
-        % NELDER MEAD SONBRE SIMPLEX SK
+        % NELDER-MEAD SOBRE SIMPLEX SK
         % Seleccionar Sk de X
         Sk=X(w:(w+n),:);
         % Ordenea ascendentemente de acuerdo 
@@ -45,7 +45,6 @@ while E<NE
         xc= sum(Sk(1:n,:))/(n);
         %________Reflexión____________________
         xr=alpha*xc(1:n)-xh(1:n);
-        xr=limit(xr(1:n),bounds);
         xr=evaluate_x_i(xr,n);
         xnew=xr;
         E=E+1;
@@ -105,7 +104,7 @@ while E<NE
         if compare_by_rules(u,best)
             best=u;
         end
-        % SE ACTUALIZA POBLACIÓN con Sk
+        % SE ACTUALIZA POBLACIÓN CON Sk
         X(w:w+n,:)=Sk;
         k=k+1;
         w=w+n+1;

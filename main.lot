@@ -7,30 +7,30 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Signo del radical seg\IeC {\'u}n el tipo de mecanismo.\relax }}{62}{table.caption.263}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Pares de puntos de precisi\IeC {\'o}n para el Caso de Estudio 3 del Mecanismo de Cuatro Barras.\relax }}{68}{table.caption.295}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Pares de puntos de precisi\IeC {\'o}n para el Caso de Estudio 3 del Mecanismo de Cuatro Barras.\relax }}{66}{table.caption.291}
 \contentsline {table}{\numberline {5.3}{\ignorespaces Par\IeC {\'a}metros del Sistemas de Almacenamiento de Energ\IeC {\'\i }a en la Micro-Red No Interconectable.\relax }}{85}{table.caption.386}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {7.1}{\ignorespaces Evaluaciones utilizadas por problema de optimizaci\IeC {\'o}n: Experimento A.\relax }}{118}{table.caption.687}
 \contentsline {table}{\numberline {7.2}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por las versiones aleatorizadas NMELA en el Experimento A.}}{120}{table.caption.691}
-\contentsline {table}{\numberline {7.3}{\ignorespaces Evaluaciones utilizadas por problema de optimizaci\IeC {\'o}n: Experimento B.\relax }}{123}{table.caption.710}
-\contentsline {table}{\numberline {7.4}{\ignorespaces Tama\IeC {\~n}o de poblaci\IeC {\'o}n utilizados para cada problema en el experimento B.\relax }}{124}{table.caption.715}
-\contentsline {table}{\numberline {7.5}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de optimizaci\IeC {\'o}n.}}{125}{table.caption.717}
-\contentsline {table}{\numberline {7.6}{\ignorespaces Resultados de la prueba de Friedman obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico.}}{127}{table.caption.719}
-\contentsline {table}{\numberline {7.7}{\ignorespaces Evaluaciones utilizadas por problema de optimizaci\IeC {\'o}n: Experimento C.\relax }}{132}{table.caption.741}
-\contentsline {table}{\numberline {7.8}{\ignorespaces Tama\IeC {\~n}os de poblaci\IeC {\'o}n utilizados para cada problema en el Experimento C.\relax }}{132}{table.caption.746}
-\contentsline {table}{\numberline {7.9}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento C para los seis problemas de optimizaci\IeC {\'o}n.}}{133}{table.caption.748}
-\contentsline {table}{\numberline {7.10}{\ignorespaces Resultados de la prueba de Friedman obtenidos por las variantes HNMED y DE/rand/1/bin en el experimento C para los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico.}}{135}{table.caption.750}
-\contentsline {table}{\numberline {7.11}{\ignorespaces Evaluaciones utilizadas por problema de optimizaci\IeC {\'o}n: Experimentos D y E.\relax }}{139}{table.caption.763}
-\contentsline {table}{\numberline {7.12}{\ignorespaces Tama\IeC {\~n}os de poblaci\IeC {\'o}n utilizados para cada problema en los experimentos finales.\relax }}{139}{table.caption.768}
-\contentsline {table}{\numberline {7.13}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por HNMED-V5 y C-LSHADE en el Experimento D para los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico.}}{140}{table.caption.770}
-\contentsline {table}{\numberline {7.14}{\ignorespaces Comparaci\IeC {\'o}n de C-LSHADE y HNMED-V5 en los seis problemas de optimizaci\IeC {\'o}n mediante la prueba de Suma de Jerarqu\IeC {\'\i }as de Wilcoxon.}}{142}{table.caption.772}
-\contentsline {table}{\numberline {7.15}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por HNMED-V6 vs ED/rand/1/bin en el experimento E para los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico.}}{143}{table.caption.774}
-\contentsline {table}{\numberline {7.16}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por HNMED-V6 vs C-LSHADE en los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico}}{144}{table.caption.775}
-\contentsline {table}{\numberline {7.17}{\ignorespaces Comparaci\IeC {\'o}n de C-LSHADE y HNMED-V6 en los seis problemas de optimizaci\IeC {\'o}n mediante la prueba de Suma de Jerarqu\IeC {\'\i }as de Wilcoxon.}}{146}{table.caption.777}
-\contentsline {table}{\numberline {7.18}{\ignorespaces Vectores de dise\IeC {\~n}o obtenidos por HNMED-V6 y C-LSHADE para los tres casos de estudio del mecanismo de cuatro barras, correspondientes a la mejor observaci\IeC {\'o}n de una muestra de ejecuciones independientes.\relax }}{148}{table.caption.785}
-\contentsline {table}{\numberline {7.19}{\ignorespaces Vectores de dise\IeC {\~n}o por HNMED-V6 y C-LSHADE para los dos casos de estudio del efector final de tres dedos, correspondientes al la mejor observaci\IeC {\'o}n de una muestra de ejecuciones independientes.\relax }}{151}{table.caption.788}
-\contentsline {table}{\numberline {7.20}{\ignorespaces Vectores de dise\IeC {\~n}o obtenidos por HNMED-V6 para la microrred aislada en las 24 horas del d\IeC {\'\i }a, correspondientes al la mejor observaci\IeC {\'o}n de una muestra de ejecuciones independientes.\relax }}{153}{table.caption.791}
+\contentsline {table}{\numberline {7.3}{\ignorespaces Evaluaciones utilizadas por problema de optimizaci\IeC {\'o}n: Experimento B.\relax }}{123}{table.caption.703}
+\contentsline {table}{\numberline {7.4}{\ignorespaces Tama\IeC {\~n}o de poblaci\IeC {\'o}n utilizados para cada problema en el experimento B.\relax }}{124}{table.caption.708}
+\contentsline {table}{\numberline {7.5}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de optimizaci\IeC {\'o}n.}}{125}{table.caption.710}
+\contentsline {table}{\numberline {7.6}{\ignorespaces Resultados de la prueba de Friedman obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento B para los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico.}}{127}{table.caption.712}
+\contentsline {table}{\numberline {7.7}{\ignorespaces Evaluaciones utilizadas por problema de optimizaci\IeC {\'o}n: Experimento C.\relax }}{132}{table.caption.735}
+\contentsline {table}{\numberline {7.8}{\ignorespaces Tama\IeC {\~n}os de poblaci\IeC {\'o}n utilizados para cada problema en el Experimento C.\relax }}{133}{table.caption.740}
+\contentsline {table}{\numberline {7.9}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por las variantes HNMED y DE/rand/1/bin en el Experimento C para los seis problemas de optimizaci\IeC {\'o}n.}}{134}{table.caption.742}
+\contentsline {table}{\numberline {7.10}{\ignorespaces Resultados de la prueba de Friedman obtenidos por las variantes HNMED y DE/rand/1/bin en el experimento C para los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico.}}{136}{table.caption.744}
+\contentsline {table}{\numberline {7.11}{\ignorespaces Evaluaciones utilizadas por problema de optimizaci\IeC {\'o}n: Experimentos D y E.\relax }}{139}{table.caption.758}
+\contentsline {table}{\numberline {7.12}{\ignorespaces Tama\IeC {\~n}os de poblaci\IeC {\'o}n utilizados para cada problema en los experimentos finales.\relax }}{140}{table.caption.763}
+\contentsline {table}{\numberline {7.13}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por HNMED-V5 y C-LSHADE en el Experimento D para los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico.}}{141}{table.caption.765}
+\contentsline {table}{\numberline {7.14}{\ignorespaces Comparaci\IeC {\'o}n de C-LSHADE y HNMED-V5 en los seis problemas de optimizaci\IeC {\'o}n mediante la prueba de Suma de Jerarqu\IeC {\'\i }as de Wilcoxon.}}{144}{table.caption.767}
+\contentsline {table}{\numberline {7.15}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por HNMED-V6 vs ED/rand/1/bin en el experimento E para los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico.}}{145}{table.caption.769}
+\contentsline {table}{\numberline {7.16}{\ignorespaces Resultados estad\IeC {\'\i }sticos obtenidos por HNMED-V6 vs C-LSHADE en los seis problemas de dise\IeC {\~n}o mecatr\IeC {\'o}nico}}{146}{table.caption.770}
+\contentsline {table}{\numberline {7.17}{\ignorespaces Comparaci\IeC {\'o}n de C-LSHADE y HNMED-V6 en los seis problemas de optimizaci\IeC {\'o}n mediante la prueba de Suma de Jerarqu\IeC {\'\i }as de Wilcoxon.}}{147}{table.caption.772}
+\contentsline {table}{\numberline {7.18}{\ignorespaces Vectores de dise\IeC {\~n}o obtenidos por HNMED-V6 y C-LSHADE para los tres casos de estudio del mecanismo de cuatro barras, correspondientes a la mejor observaci\IeC {\'o}n de una muestra de ejecuciones independientes.\relax }}{149}{table.caption.780}
+\contentsline {table}{\numberline {7.19}{\ignorespaces Vectores de dise\IeC {\~n}o por HNMED-V6 y C-LSHADE para los dos casos de estudio del efector final de tres dedos, correspondientes al la mejor observaci\IeC {\'o}n de una muestra de ejecuciones independientes.\relax }}{151}{table.caption.783}
+\contentsline {table}{\numberline {7.20}{\ignorespaces Vectores de dise\IeC {\~n}o obtenidos por HNMED-V6 para la microrred aislada en las 24 horas del d\IeC {\'\i }a, correspondientes al la mejor observaci\IeC {\'o}n de una muestra de ejecuciones independientes.\relax }}{153}{table.caption.786}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \babel@toc {spanish}{}

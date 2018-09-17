@@ -61,10 +61,10 @@ En ingeniería las restricciones pueden ser clasificadas de acuerdo a los requer
 
 Cuando tanto la función objetivo como todas las restricciones son funciones lineales de $x$, se considera un problema de programación lineal. Las ciencias de la gestión y la investigación de operaciones hacen un amplio uso de los modelos lineales. Por otra parte, los problemas de programación no lineal son aquellos en los que al menos algunas de las restricciones o la función objetivo son funciones no lineales. Este tipo de problemas son más comunes en las ciencias físicas y en la ingeniería como es el caso de la Mecatrónica. \cite{nocedal2006numerical}. En la Sección \ref{sec:Clasificación de Problemas de Optimización} se abordan una serie de clasificaciones entre las que se encuentra este tipo de problemas. 
 \section{Óptimos locales y globales}
-Para presentar las características de los óptimos locales y globales en una función objetivo se debe introducir primeramente el concepto de \textit{convexidad}. Si se tienen un conjunto $S$ de elementos y se cumple que: para todo par de elementos cualesquiera $x_1$ y $x_2$ de $S$, el segmento rectilíneo que une ambos se encuentra dentro de $S$, entonces el conjunto $S$ es un \textit{conjunto convexo}. De lo contrario se dice que el  conjunto $S$, es \textit{no convexo}, véase Figura 2.2. 
+Para presentar las características de los óptimos locales y globales en una función objetivo se debe introducir primeramente el concepto de \textit{convexidad}. Si se tienen un conjunto $S$ de elementos y se cumple que: para todo par de elementos cualesquiera $x_1$ y $x_2$ de $S$, el segmento rectilíneo que une ambos se encuentra dentro de $S$, entonces el conjunto $S$ es un \textit{conjunto convexo}. De lo contrario se dice que el  conjunto $S$, es \textit{no convexo}, véase Figura \ref{fig:Conjunto convexo}. 
 %Vea la Figura 1.7 para los conjuntos convexo y no convexo.
 
-\begin{figure}[h]  
+\begin{figure}[h]
 \centering 
   \begin{subfigure}[b]{0.45\linewidth}
     \begin{tikzpicture}   
@@ -96,11 +96,11 @@ Para presentar las características de los óptimos locales y globales en una fu
           } 
 \end{tikzpicture}
 \caption{Conjunto no convexo} \label{fig:M2}  
-\end{subfigure}
-\caption{Convexidad de conjuntos}
+ \end{subfigure}
+\caption{Convexidad de conjuntos} \label{fig:Conjunto convexo}
 \end{figure}
 	 
-El concepto de convexidad puede ser aplicado tanto a conjuntos como a funciones permitiendo analizar la función objetivo para identificar si tiene un solo mínimo. Un ejemplo ilustrativo consiste en plantear una función uni-variable $f(x)$ y dos puntos $x_1$ y $x_2$ en los cuales el valor de la función es $f(x_1)$ y $f(x_2)$ respectivamente. Si para cualquier punto $x$ que se seleccione entre $x_1$ y $x_2$, el valor de $f(x)$ es menor que el valor de la función lineal $l(x)$ que intersecta a $f(x_1)$ y $f(x_2)$, entonces $f(x)$ es una \textit{función convexa} y $-f(x)$ es una \textit{función cóncava}, véase Figura 2.3.  
+El concepto de convexidad puede ser aplicado tanto a conjuntos como a funciones permitiendo analizar la función objetivo para identificar si tiene un solo mínimo. Un ejemplo ilustrativo consiste en plantear una función uni-variable $f(x)$ y dos puntos $x_1$ y $x_2$ en los cuales el valor de la función es $f(x_1)$ y $f(x_2)$ respectivamente (Véase Figura \ref{fig:función convexa}). Si para cualquier punto $x$ que se seleccione entre $x_1$ y $x_2$, el valor de $f(x)$ es menor que el valor de la función lineal $l(x)$ que intersecta a $f(x_1)$ y $f(x_2)$, entonces $f(x)$ es una \textit{función convexa} y $-f(x)$ es una \textit{función cóncava}, véase Figura 2.3.  
 Formalmente se plantea que una función $f(x)$ definida sobre un conjunto convexo ${\rm I\!R}^{n}$,  es convexa si para todo par de puntos $x_1, x_2$  y cada número real $\alpha$ en el rango $0 < \alpha <1$, se cumple la desigualdad \cite{antoniou_practical_2007}: 
 \begin{equation}
 f [\alpha x_1 + ( 1-\alpha) x_2]  \leq \alpha f(x_1) + (1-\alpha) f (x_2). 
@@ -111,7 +111,7 @@ f [\alpha x_1 + ( 1-\alpha) x_2]  < \alpha f(x_1) + (1-\alpha) f (x_2).
 \end{equation}
 
 
-\begin{figure}
+\begin{figure}[h]
 \centering
 \begin{tikzpicture}
 \begin{axis}[width=5in,axis equal image,
@@ -144,7 +144,7 @@ f [\alpha x_1 + ( 1-\alpha) x_2]  < \alpha f(x_1) + (1-\alpha) f (x_2).
 \draw[-{Latex[width=4pt,length=6pt]}, densely dashed] (e) -- (m);
 \end{axis}
 \end{tikzpicture}
-\caption{Función convexa.}
+\caption{Función convexa.}\label{fig:función convexa}
 
 \end{figure}
 

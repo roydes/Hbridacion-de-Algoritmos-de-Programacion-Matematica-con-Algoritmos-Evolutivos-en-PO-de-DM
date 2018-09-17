@@ -33,7 +33,7 @@ while E<NE
     % de escala y crizamiento
     [F,CR]=generate_F_and_CR();
     while w<NP
-        % NELDER MEAD SONBRE SIMPLEX SK
+        % NELDER-MEAD SOBRE SIMPLEX SK
         % Seleccionar Sk de X
         Sk=X(w:(w+n),:);
         % Ordenea ascendentemente de acuerdo 
@@ -49,7 +49,6 @@ while E<NE
         xc= sum(Sk(1:n,:))/(n);
         %________Reflexión____________________
         xr=alpha*xc(1:n)-xh(1:n);
-        xr=limit(xr,bounds);
         xr=evaluate_x_i(xr,n);
         xnew=xr;
         E=E+1;        
@@ -116,6 +115,7 @@ while E<NE
         if compare_by_rules(u,best)
             best=u;
         end
+        % SE ACTUALIZA POBLACIÓN CON Sk
         X(w:w+n,:)=Sk;
         k=k+1;
         w=w+n+1;

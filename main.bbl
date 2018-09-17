@@ -296,8 +296,8 @@
 \bibitem {nocedal2006numerical}
 \btxnamefont {\btxlastnamefont {Nocedal}, Jorge} \btxandlong {}\ \btxnamefont
   {Stephen\btxfnamespacelong J \btxlastnamefont {Wright}}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {Numerical optimization 2nd}{Numerical
-  optimization 2nd}}, 2006.
+  \btxtitlefont {\btxifchangecase {Numerical optimization}{Numerical
+  optimization}}, 2006.
 
 \bibitem {antoniou_practical_2007}
 \btxnamefont {\btxlastnamefont {Antoniou}, Andreas} \btxandlong {}\

@@ -21,9 +21,9 @@ Sea $A$  cualquier subconjunto abierto no vacío de ${\rm I\!R}$ , y $a \in A$. 
 donde $U =\{h \in {\rm I\!R}\,|\, a+h \in A, \, h \neq 0 \}$ este límite se denota como derivada $f'(a)$ o $\frac{\partial f}{\partial x}(a)$. Cuando la derivada existe en todo $a \in A$ se dice que la función es \textit{diferenciable}.
 \end{defn}
 
-La derivada de una función $f'$ es otra función, que evaluada en $a$ es la pendiente de la recta tangente a la curva $f$ si esta es representada gráficamente. Este concepto es sumamente importante para la teoría de la programación matemática, ya que una recta horizontal tangente a un punto de $f$ describe un cambio de comportamiento en la función. Los puntos cuyas rectas tangentes son horizontales se denominan \textit{puntos estacionarios} y pueden satisfacer la condición de óptimo de la función. Esto no siempre se cumple ya que puede tratarse de un punto de inflexión. Luego, el cálculo de los puntos estacionarios de la función consiste en hallar aquellos cuya recta tangente tenga pendiente igual cero, esto es $f'(x)=0$. Véase Figura \ref{fig:Puntos estacionarios y sus rectas tangentes} . Este procedimiento se conoce como la \textit{prueba de la primera derivada}.
+La derivada de una función $f'$ es otra función, que evaluada en $a$ es la pendiente de la recta tangente a la curva $f$ si esta es representada gráficamente. Este concepto es sumamente importante para la teoría de la programación matemática, ya que una recta horizontal tangente a un punto de $f$ describe un cambio de comportamiento en la función. Los puntos cuyas rectas tangentes son horizontales se denominan \textit{puntos estacionarios} y pueden satisfacer la condición de óptimo de la función. Esto no siempre se cumple ya que puede tratarse de un punto de inflexión. Luego, el cálculo de los puntos estacionarios de la función consiste en hallar aquellos cuya recta tangente tenga pendiente igual cero, esto es $f'(x)=0$ (Véase Figura \ref{fig:Puntos estacionarios y sus rectas tangentes}). Este procedimiento se conoce como la \textit{prueba de la primera derivada}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
   \begin{tikzpicture}[scale=1]
 
@@ -150,7 +150,7 @@ El método de Fibonacci se considera como un método de eliminación de regiones
  I_n = \frac{I_0}{ F_n}
  \end{equation}
 Esto es, que para la iteración $n$ el tamaño del intervalo original será reducido al $n$-ésimo número de Fibonacci. La secuencia de intervalos de Fibonacci sólo se puede generar si se conoce $n$. Luego, si el objetivo de la optimización es encontrar $x^*$ dentro de una tolerancia prescrita, el $n$ requerido se puede deducir fácilmente usando Ecuación 3.7. Los métodos de eliminación de regiones asumen que $f(x)$ es estrictamente unimodal en $I$, donde siempre se divide el intervalo actual en dos regiones; el intervalo que contenga un punto con menor valor de la función objetivo será elegido y se convierte en el intervalo actual. Por tanto, se conoce que $n$ será menor si el mínimo de $f(x)$ es poco profundo y alto si $f(x)$ varía rápidamente en la vecindad de la solución. 
-\begin{figure}
+\begin{figure}[hb]
 \centering
 \begin{tikzpicture}
 \begin{axis}[width=5in,axis equal image,
