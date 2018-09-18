@@ -83,7 +83,7 @@ De forma similar a otras pruebas de estadística inferencial la hipótesis nula 
 	\item Conformar una matriz de $k$ columnas (muestras) y $n$ filas (tamaño de las muestras).
 	\item Para cada la fila $i$ de la muestra asignar las jerarquías correspondientes (el mejor resultado de la fila toma jerarquía 1, el segundo mejor 2 y así sucesivamente). En caso de empates asignar el promedio de las jerarquías a cada elemento.
 	\item Calcular por cada la columna los promedios de jerarquías  $R_j=\frac{1}{n}\sum_i{r_i}$ 
-	\item Calcular es estadígrafo:
+	\item Calcular el estadígrafo:
 	\begin{equation}
 	F_f=\frac{12n}{k(k+1)}\left [  \sum_j{R_j}-\frac{k(k+1)^2}{4}\right]
 	\end{equation}
@@ -537,7 +537,7 @@ En la Tabla \ref{tab:Resultados Firedman obtenidos por variantes HNMED y DE/rand
 	\item \textbf{SCE1}: En este caso se rechaza la hipótesis nula con valor de $p=1.7205E-03$, siendo HNMED-V5 el algoritmo con mejor promedio de jerarquía. Sin embargo, como se puede observar en la Subfigura F de la Figura \ref{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el Experitmento B}, las diferencias significativas se encuentran entre HNMED-V5 y las variantes V1 y V2.  
 	 
 \end{enumerate}
-En la Figura \ref{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el Experitmento B} se observa un desempeño competitivo de las variantes propuestas de forma general. Se obtienen resultados significativamente mejores en 2 de los problemas y desempeño similar el resto con respecto a la ED/rand/1/bin. La variante HNMED-V5 consigue el mejor desempeño de forma general la cual obtiene mejor promedio de jerarquías en cuatro de los seis problemas de optimización. Los peores promedios de jerarquía se obtienen en los problemas MCE1, MCE3 y GCE2 los cuales presentan mayor dimensión, restricciones y complejidad de la función. A pesar de que las variantes propuestas ganan en rapidez de convergencia, heredan en cierta medida las deficiencias del método de búsqueda local cuyas operaciones están destinadas a la explotación. Por tanto, se presenta un decremento del desempeño para problemas de mayor dimensionalidad aunque este no es significativo.
+En la Figura \ref{fig: Resultados de las pruebas de Bonferroni-Dunn para las variantes HNMED vs ED/rand/1/bin en el Experitmento B} se observa un desempeño competitivo de las variantes propuestas de forma general. Se obtienen resultados significativamente mejores en dos de los problemas y desempeño similar el resto con respecto a la ED/rand/1/bin. La variante HNMED-V5 consigue el mejor desempeño de forma general la cual obtiene mejor promedio de jerarquías en cuatro de los seis problemas de optimización. Los peores promedios de jerarquía se obtienen en los problemas MCE1, MCE3 y GCE2 los cuales presentan mayor dimensión, restricciones y complejidad de la función. A pesar de que las variantes propuestas ganan en rapidez de convergencia, heredan en cierta medida las deficiencias del método de búsqueda local cuyas operaciones están destinadas a la explotación. Por tanto, se presenta un decremento del desempeño para problemas de mayor dimensionalidad aunque este no es significativo.
 
 
 
@@ -553,7 +553,7 @@ En este experimento se mantienen los mismos algoritmos en comparación presentad
 El experimento C se realiza para conocer de forma exacta el número de evaluaciones en las que, las variantes propuestas presentan un desempeño competitivo en comparación con la ED/rand/1/bin. Con la realización de estos experimentos se reúne información sobre las variables contempladas en la hipótesis de investigación (calidad de resultados y rapidez) que permitirá junto con los experimentos finales una aceptación o rechazo de la misma.  
 
 \subsubsection{Paso 2. Definición de medidas}
-Se obtiene para cada algoritmo una muestra de $n=31$ ejecuciones. Para cada problema las observaciones en la muestra corresponden al valor de la función objetivo del mejor individuo factible encontrado por el algoritmo $A_i$en la ejecución $j$ para $j= \{ 1,2,...,n\}$. Se aplicarán al conjunto de muestras las siguientes pruebas de estadística descriptiva e inferencial:
+Se obtiene para cada algoritmo una muestra de $n=31$ ejecuciones. Para cada problema las observaciones en la muestra corresponden al valor de la función objetivo del mejor individuo factible encontrado por el algoritmo $A_i$ en la ejecución $j$ para $j= \{ 1,2,...,n\}$. Se aplicarán al conjunto de muestras las siguientes pruebas de estadística descriptiva e inferencial:
 \begin{enumerate}
 
 		\item \textbf{Estadística descriptiva}: Se obtiene la la mejor y peor solución, mediana, promedio y desviación estándar de las muestras
@@ -818,7 +818,7 @@ La Tabla \ref{tab:Resultados estadísticos obtenidos por variantes HNMED y DE/ra
 	
 \end{figure}
 \subsubsection{Paso 5. Observaciones}
-Teniendo en cuenta los resultados obtenidos en ambos experimentos se pueden realizar las siguientes observaciones:
+Teniendo en cuenta los resultados obtenidos en el presente experimento se pueden realizar las siguientes observaciones:
 \begin{enumerate}
 	\item Las variantes HNMED son capaces de encontrar resultados iguales o mejores para la mayoría de los problemas de optimización utilizando un número de evaluaciones menor, el cual representa un ahorro de más del 44\% en la mayoría de los problemas con excepción de MCE2 (-33.3\%) y SCE1 (-25.3\%) para las variante HNMED-V4 y V5).      
 	\item De forma similar al experimento B, las curvas descritas por las versiones de HNMED en las gráficas de convergencia, se encuentran por debajo de la curva correspondiente a la ED/ran/1/bin. Al reducir el número de símpleces y por tanto el tamaño de la población, se realiza un ahorro de evaluaciones por iteración. Los mínimos conocidos y valores de tendencia central competitivos son alcanzados. Por tanto, se descarta la posibilidad de que HNMED presente convergencia prematura o estancamiento para los problemas presentados. 
@@ -834,7 +834,7 @@ Los experimentos iniciales permitieron observar el comportamiento de las variant
 
 
 
-\subsection{Experimentos D y E : Comparación de Variantes HNMED-V5 y HNMED-V6 con Algoritmo C-LSHADE}
+\subsection{Experimentos D y E: Comparación de Variantes HNMED-V5 y HNMED-V6 con Algoritmo C-LSHADE}
 Las variantes HNMED propuestas inicialmente heredan, en cierta medida, algunas deficiencias del método de búsqueda local utilizado como la reducción del desempeño ante un aumento de la dimesionalidad del problema y la sensibilidad a los puntos iniciales. Por tanto, una mayor capacidad de exploración es requerida en orden de alcanzar mejores resultados. Con este objetivo trazado, se diseñó la HNMED-V6 cuyo desempeño es medido en los experimentos finales junto a la variante HNMED-V5.
 
 \subsubsection{Paso 1. Planteamiento de objetivos y preguntas de investigación del experimento}
@@ -1015,7 +1015,7 @@ La Tabla \ref{tab:Resultados estadísticos obtenidos por HNMED-V5 y el algoritmo
 
 
 \subsubsection{Paso 4.2 Resultados del Experimento E}
-En las Tablas \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y ED  en experimento E.} y \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y CLSHADE  en experimento E.} se muestran los resultados estadísticos obtenidos por la HNMED-V6 frente a la ED/rand/1/bin y C-LSHADE respectivamente. Se agrega la comparación estadística de HNMED-V6 con la ED/rand/1/bin para evidenciar la reducción del número evaluaciones respecto a esta variante. Se realizó la comparación directa con C-LSHADE ya que este supera en desempeño a la ED/rand/1/bin \cite{zapata_zapata_control_2017}. En la Figura \ref{fig: Gráficas de convergencia obtenidas por HNMED-V6 y CLSHADE para el Experimento E.} se muestra las gráficas de convergencia correspondientes al Experimento E. Por último, en la Tabla \ref{tab:Wilcoxon HNMED-V6-CLSHADE} se presenta para la comparación de HNMED-V6 y C-LSHADE mediante prueba de Suma de Jerarquías de Wilcoxon  para lo seis problemas de optimización de diseño mecatrónico con un nivel de significancia del 95\%.  
+En las Tablas \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y ED  en experimento E.} y \ref{tab:Resultados estadísticos obtenidos por variantes HNMED6 y CLSHADE  en experimento E.} se muestran los resultados estadísticos obtenidos por la HNMED-V6 frente a la ED/rand/1/bin y C-LSHADE respectivamente. Se agrega la comparación estadística de HNMED-V6 con la ED/rand/1/bin para evidenciar la reducción del número evaluaciones respecto a esta variante. Se realizó la comparación directa con C-LSHADE ya que éste supera en desempeño a la ED/rand/1/bin \cite{zapata_zapata_control_2017}. En la Figura \ref{fig: Gráficas de convergencia obtenidas por HNMED-V6 y CLSHADE para el Experimento E.} se muestra las gráficas de convergencia correspondientes al Experimento E. Por último, en la Tabla \ref{tab:Wilcoxon HNMED-V6-CLSHADE} se presenta para la comparación de HNMED-V6 y C-LSHADE mediante prueba de Suma de Jerarquías de Wilcoxon  para lo seis problemas de optimización de diseño mecatrónico con un nivel de significancia del 95\%.  
 
 \begin{table}
 	\centering
@@ -1466,4 +1466,4 @@ A partir de estos vectores se generó la Figura \ref{Visualización del suminist
 \newpage
 
 \section{Conclusiones del capítulo}
-En el presente capítulo se describió el diseño experimental llevado a cabo para implementar la propuesta de solución. Este proceso de experimentación se llevo a cabo en dos etapas: una fase de experimentos preliminares que tuvo como objetivo validar la competitividad del enfoque de hibridación propuesto y evaluar el comportamiento de las primeras 5 variantes presentadas. Los resultados obtenidos en experimentos preliminares sirvieron para guiar el diseño del algoritmo HNMED-V6 el cual incluye una estrategia de inicialización de los símpleces y el buscador global se aplica a un subconjunto élite mayor durante el proceso de minimización. Los experimentos finales muestran un desempeño competitivo de esta versión con respecto a los algoritmos ED/rand/1/bin y C-LSHADE. Sin embargo HNMED-V6 utiliza un número inferior de evaluaciones de la función objetivo.
+En el presente capítulo se describió el diseño experimental llevado a cabo para implementar la propuesta de solución. Este proceso de experimentación se llevo a cabo en dos etapas: una fase de experimentos preliminares que tuvieron como objetivo validar la competitividad del enfoque de hibridación propuesto y evaluar el comportamiento de las primeras cinco variantes presentadas. Los resultados obtenidos en experimentos preliminares sirvieron para guiar el diseño del algoritmo HNMED-V6 el cual incluye una estrategia de inicialización de los símpleces y el buscador global se aplica a un subconjunto élite mayor durante el proceso de minimización. Los experimentos finales muestran un desempeño competitivo de esta versión con respecto a los algoritmos ED/rand/1/bin y C-LSHADE. Sin embargo HNMED-V6 utiliza un número inferior de evaluaciones de la función objetivo.

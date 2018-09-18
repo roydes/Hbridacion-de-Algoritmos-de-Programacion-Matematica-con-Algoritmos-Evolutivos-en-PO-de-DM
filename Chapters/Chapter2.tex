@@ -13,7 +13,7 @@ El presente trabajo se enfoca en la práctica de la optimización debido a que s
 
 Diferentes autores coinciden en que una fase importante de la optimización, visto como proceso científico, es la modelación del problema una vez que ha sido identificado en la realidad \cite{rao_engineering_2009} \cite{nocedal2006numerical} \cite{luenberger_linear_2015}. El modelado es el proceso de expresar observaciones sobre un problema práctico en forma matemática, mediante funciones que realizan operaciones matemáticas básicas como suma, resta, multiplicación y división sobre las variables de decisión. Las observaciones se refieren a los datos obtenidos para el problema en cuestión, variando ciertos parámetros del problema a través de experimentos. El objetivo de los modelos matemáticos es proporcionar una predicción del comportamiento del problema para diferentes entradas. Si el modelo no arroja los resultados esperados, este puede refinarse realizando más experimentos como es el caso de los modelos de optimización en el proceso de diseño mecatrónico \cite{arora_optimization:_2015}.  
 
-En el presente trabajo los modelos serán planteados como problemas de minimización. Esta norma es adoptada sobre todo en problemas de ingeniería y responde al hecho de que si un punto $x^*$ corresponde al valor mínimo de la función $f(x^*)$, el mismo punto también corresponde al valor máximo del negativo de la función, $-f(x^*)$. Por tanto, sin pérdida de generalidad, la optimización de una función puede considerarse entonces como la minimización ya que el máximo de una función se puede encontrar buscando el mínimo del negativo de la misma función. Además, se debe destacar que las operaciones de multiplicación, división, adición o sustracción de $f(x)$ por una constante positiva $c$, no cambiarán la solución óptima $x^*$ \cite{rao_engineering_2009}. 
+En el presente trabajo los modelos serán planteados como problemas de minimización. Esta norma es adoptada frecuentemente en problemas de ingeniería y responde al hecho de que si un punto $x^*$ corresponde al valor mínimo de la función $f(x^*)$, el mismo punto también corresponde al valor máximo del negativo de la función, $-f(x^*)$. Por tanto, sin pérdida de generalidad, la optimización de una función puede considerarse entonces como la minimización ya que el máximo de una función se puede encontrar buscando el mínimo del negativo de la misma función. Además, se debe destacar que las operaciones de multiplicación, división, adición o sustracción de $f(x)$ por una constante positiva $c$, no cambiarán la solución óptima $x^*$ \cite{rao_engineering_2009}. 
 
 El modelo general de minimización se plantea en \cite{luenberger_linear_2015} de la siguiente forma:
 \begin{equation}
@@ -149,7 +149,7 @@ f [\alpha x_1 + ( 1-\alpha) x_2]  < \alpha f(x_1) + (1-\alpha) f (x_2).
 \end{figure}
 
 
-Cuando la función objetivo presenta varios cambios de monotonía en todo su dominio, se le denomina como \textit{función multimodal}. La condición de multimodalidad no depende ni de la continuidad ni de la convexidad de la función. En estos casos se debe diferenciar entre un punto que representa una solución óptima global y los que representan óptimos locales. Si conoce que $S \in {\rm I\!R}^{n}$ como el conjunto de todos puntos factibles del problema, el punto $x^* \in S$  que satisface:
+Cuando la función objetivo presenta varios cambios de monotonía en todo su dominio, se le denomina \textit{función multimodal}. La condición de multimodalidad no depende ni de la continuidad ni de la convexidad de la función. En estos casos se debe diferenciar entre un punto que representa una solución óptima global y los que representan óptimos locales. Si conoce que $S \in {\rm I\!R}^{n}$ como el conjunto de todos puntos factibles del problema, el punto $x^* \in S$  que satisface:
 \begin{equation}
 f(x^*) \leq f(x) \quad \forall x \in S
 \end{equation}
@@ -196,7 +196,7 @@ Esta clasificación resulta útil a la hora de aplicar un método efectivo para 
 Dependiendo de los valores permitidos para las variables de diseño, los problemas de optimización se pueden clasificar como problemas de programación enteros y de valor real:
 \begin{itemize}
 \item[1.] \textit{Problema de programación entera}: Se refiere a problemas donde algunas o todas las variables de diseño $x_1, x_2, ..., x_n$ están restringidas para tomar solo valores enteros (o discretos).
-\item[2.] \textit{Problema de programación real}: Cuando se permite que todas las variables de diseño tengan un valor de los reales, el problema de optimización se denomina problema de programación de valor real.
+\item[2.] \textit{Problema de programación real}: Cuando se permite que todas las variables de diseño tengan un valor de los reales, el problema de optimización se denomina problema de programación real.
 
 \end{itemize}
 \subsection{Clasificación basada en la naturaleza determinista de las variables}
@@ -204,7 +204,7 @@ Respecto a la naturaleza determinista de las variables involucradas, los problem
 \begin{itemize}
 \item [1.]\textit{Problemas determinísticos}: En esta categoría se incluyen la mayoría de los problemas de optimización. En estos problemas se asume que si ciertas acciones son realizadas se podrá predecir con certeza tanto el resultado que se obtiene como los requerimientos para realizar estas acciones \cite{dantzig_linear_2016}.
 \item[2.] \textit{Programación estocástica}:
-Un problema de programación estocástica es un problema de optimización en el que algunos o todos los parámetros (variables de diseño y / o parámetros preasignados) son probabilísticos (no deterministas o estocásticos).
+Un problema de programación estocástica es un problema de optimización en el que algunos o todos los parámetros (variables de diseño y parámetros preasignados) son probabilísticos (no deterministas o estocásticos).
 
 \end{itemize}
  

@@ -121,7 +121,7 @@
 \contentsline {subsubsection}{Paso 4. Presentaci\IeC {\'o}n de resultados}{133}{section*.741}
 \contentsline {subsubsection}{Paso 5. Observaciones}{133}{section*.746}
 \contentsline {section}{\numberline {7.4}Experimentos finales}{138}{section.750}
-\contentsline {subsection}{\numberline {7.4.1}Experimentos D y E : Comparaci\IeC {\'o}n de Variantes HNMED-V5 y HNMED-V6 con Algoritmo C-LSHADE}{138}{subsection.751}
+\contentsline {subsection}{\numberline {7.4.1}Experimentos D y E: Comparaci\IeC {\'o}n de Variantes HNMED-V5 y HNMED-V6 con Algoritmo C-LSHADE}{138}{subsection.751}
 \contentsline {subsubsection}{Paso 1. Planteamiento de objetivos y preguntas de investigaci\IeC {\'o}n del experimento}{138}{section*.752}
 \contentsline {subsubsection}{Paso 2. Definici\IeC {\'o}n de medidas y pruebas de desempe\IeC {\~n}o}{139}{section*.753}
 \contentsline {subsubsection}{Paso 3. Planificaci\IeC {\'o}n pre-experimental y configuraci\IeC {\'o}n}{139}{section*.757}

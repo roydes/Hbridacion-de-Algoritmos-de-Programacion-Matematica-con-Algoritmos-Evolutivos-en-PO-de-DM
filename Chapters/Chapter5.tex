@@ -11,7 +11,7 @@ Estos conceptos son la base para el desarrollo de la siguientes secciones. En ad
 
 
 \section{Diseño cinemático de Mecanismos}\label{sec: Diseño cinemático de Mecanismos}
-Las máquinas son dispositivos utilizados para alterar, transmitir y dirigir las fuerzas para lograr un objetivo específico. Un mecanismo es la parte mecánica de una máquina que tiene la función de transferir movimiento y fuerzas desde una fuente de alimentación a una salida. Los mecanismos se pueden considerar como piezas rígidas que están dispuestas y conectadas para que produzcan el movimiento deseado de la máquina. Los mecanismos de enlace son aquellos compuestos por diferentes eslabones (barras) conectados entre sí para formar una cadena. Los eslabones son las partes individuales del mecanismo y se consideran cuerpos rígidos que se encadenan  para transmitir movimiento y fuerza. Teóricamente, un cuerpo rígido no cambia de forma durante el movimiento. A pesar de que no existe un verdadero cuerpo rígido, pues los componentes del mecanismo siempre están sujetos a ciertas deformaciones, en lo adelante se consideran estos componentes como cuerpos rígidos, atendiendo solo al análisis cinemático. En los mecanismos de enlace, un eslabón se designa como marco (frame en inglés) de referencia para el movimiento de todas las otras partes. El marco de referencia es típicamente un eslabón que no realiza movimiento. Entre dos eslabones existe una conexión movible que permite el movimiento relativo entre éstos, llamada \textit{junta}. Las articulaciones básicas pueden ser clasificadas en giratorias y deslizantes. La articulación giratoria permite la rotación pura entre los dos enlaces que conecta. La junta deslizante también llamada pistón o junta prismática, permite el deslizamiento lineal entre los enlaces conectados. Además existen otros tipos de juntas como la junta de leva que permite tanto la rotación como el deslizamiento entre los dos enlaces que conecta. La junta de engranaje también permite la rotación y el deslizamiento entre dos engranajes. Ambos tipos de juntas son consideradas articulaciones de orden superior debido a que permiten movimientos más complejos \cite{myszka2004machines}.
+Las máquinas son dispositivos utilizados para alterar, transmitir y dirigir las fuerzas para lograr un objetivo específico. Un mecanismo es la parte mecánica de una máquina que tiene la función de transferir movimiento y fuerzas desde una fuente de alimentación a una salida. Los mecanismos se pueden considerar como piezas rígidas que están dispuestas y conectadas para que produzcan el movimiento deseado de la máquina. Los mecanismos de enlace son aquellos compuestos por diferentes eslabones (barras) conectados entre sí para formar una cadena. Los eslabones son las partes individuales del mecanismo y se consideran cuerpos rígidos que se encadenan  para transmitir movimiento y fuerza. Teóricamente, un cuerpo rígido no cambia de forma durante el movimiento. A pesar de que no existe un verdadero cuerpo rígido, pues los componentes del mecanismo siempre están sujetos a ciertas deformaciones, en adelante se consideran estos componentes como cuerpos rígidos, atendiendo solo al análisis cinemático. En los mecanismos de enlace, un eslabón se designa como marco (frame en inglés) de referencia para el movimiento de todas las otras partes. El marco de referencia es típicamente un eslabón que no realiza movimiento. Entre dos eslabones existe una conexión movible que permite el movimiento relativo entre éstos, llamada \textit{junta}. Las articulaciones básicas pueden ser clasificadas en giratorias y deslizantes. La articulación giratoria permite la rotación pura entre los dos enlaces que conecta. La junta deslizante también llamada pistón o junta prismática, permite el deslizamiento lineal entre los enlaces conectados. Además existen otros tipos de juntas como la junta de leva que permite tanto la rotación como el deslizamiento entre los dos enlaces que conecta. La junta de engranaje también permite la rotación y el deslizamiento entre dos engranajes. Ambos tipos de juntas son consideradas articulaciones de orden superior debido a que permiten movimientos más complejos \cite{myszka2004machines}.
 
  La síntesis es el término utilizado para describir el proceso de diseño un mecanismo que satisface un conjunto de requisitos de rendimiento para una máquina. De forma general, la cinemática estudia el movimiento de los cuerpos sólidos. Aplicada al diseño de mecanismos, se utiliza para analizar la geometría del movimiento, lo que implica el análisis de la posición, el desplazamiento, la rotación, la velocidad, y la aceleración de los componentes. Por tanto, el análisis cinemático asegura que el mecanismo mostrará un movimiento que cumplirá con determinado conjunto de requisitos. Para lograr la síntesis óptima de un mecanismo es necesario recurrir a técnicas analíticas avanzadas que implican el modelado mediante funciones matemáticas. Las técnicas analíticas combinan las teorías de geometría, trigonometría y análisis de mecanismos gráficos. La síntesis óptima comprende la modelación de estos mecanismos matemáticamente, en forma de problemas de optimización numérica. Estos problemas pueden ser resueltos mediante algunas de las técnicas abordadas en capítulos anteriores \cite{myszka2004machines}. 
 
@@ -198,7 +198,7 @@ El vector de variables para este caso está constituido por 15 componentes:
 \vec{p} &=& \{p_1,p_2,p_3,...,p_{15} \}\\
        &=& \{ r_1,r_2,r_3,r_4,r_{cx},r_{cy},\theta_0,x_0,y_0,\theta_1,\theta_2,\theta_3,\theta_4,\theta_5,\theta_6 \} 
 \end{eqnarray}
-Las primeras cuatro variables en el vector de diseño corresponden a los valores de la longitud de las barras, las dos variables siguientes $r_{cx}$ y $r_{cy}$ describen la posición del acoplador, $\theta_0$, $x_0$ y $y_0$ indican la posición del sistema de referencia $O_2X_rY_r$ con respecto al sistema $OXY$ , y, las variables restantes corresponden a la secuencia de ángulos de la barra de entrada $r_2$.
+Las primeras cuatro variables en el vector de diseño corresponden a los valores de la longitud de las barras, las dos variables siguientes $r_{cx}$ y $r_{cy}$ describen la posición del acoplador, $\theta_0$, $x_0$ y $y_0$ indican la posición del sistema de referencia $O_2X_rY_r$ con respecto al sistema $OXY$ y, las variables restantes corresponden a la secuencia de ángulos de la barra de entrada $r_2$.
 
 Los límites superior e inferior de las variables de diseño se encuentran definidos
 por:
@@ -207,7 +207,7 @@ r_1,r_2,r_3,r_4& \in & \left[ 0,60\right] \\
 r_{cx},r_{cy},\theta_0,x_0,y_0 & \in & \left[ -60,60\right] \\
 \theta_1,\theta_2,\theta_3,\theta_4,\theta_5,\theta_6& \in & \left[ 0,2\pi \right] \\
 \end{eqnarray}
-El problema de optimización mono-objetivo para el este caso de estudio se define como:
+El problema de optimización mono-objetivo para este caso de estudio se define como:
  \begin{equation}\label{}
  \begin{aligned}
 min\quad  f(\vec{p})=
@@ -339,7 +339,7 @@ g_{13}(\vec{p})&=&p_{18}-p_{19} \leq 0 \label{eq:g13_MEC3}
 
 
 \subsection{Diseño de un Efector Final de Tres Dedos}
-De forma similar a los casos de estudio planteados en el problema del mecanismo de cuatro barras, en este problema se desea obtener la síntesis dimensional de generación de trayectoria. El mecanismo en este caso es un efector final o gripper, el cual está compuesto de tres dedos. Cada dedo esta diseñado con un mecanismo de seis barras (Figura \ref{fig:Griper}) cuya configuración permite un agarre esférico. En este mecanismo los dedos son simétricos por lo que es suficiente obtener la síntesis de uno de ellos para construir el efector final.
+De forma similar a los casos de estudio planteados en el problema del mecanismo de cuatro barras, en este problema se desea obtener la síntesis dimensional de generación de trayectoria. El mecanismo en este caso es un efector final o gripper, el cual está compuesto de tres dedos. Cada dedo está diseñado con un mecanismo de seis barras (Figura \ref{fig:Griper}) cuya configuración permite un agarre esférico. En este mecanismo los dedos son simétricos por lo que es suficiente obtener la síntesis de uno de ellos para construir el efector final.
 \begin{figure}[htb]
     \centering
      \includegraphics[width=0.9\textwidth]{Griper1.png}
@@ -516,7 +516,7 @@ Luego, $\theta_6$ se define como:
 \begin{equation} \label{eq:griper_noLineal2dOrden_theta6}
 \theta_6= 2\arctan \left[ \frac{-E \pm \sqrt{E^2+D^2-F^2}}{F-D} \right]
 \end{equation}
-Las Ecuaciones \ref{eq:griper_noLineal2dOrden_theta5} y \ref{eq:griper_noLineal2dOrden_theta6} determinan los ángulos de la biela y el balancín del mecanismo de cuatro barras. El signo del radical para los ángulos $\theta_5$ y $\theta_6$ también se seleccionan de acuerdo a la la Tabla \ref{tab:Signo del radical} de la Sección \ref{sec:Análisis cinemático de un Mecanismo de Cuatro Barras}. Para analizar, se debe determinar la posición del punto $E$ del acoplador (Figura \ref{fig:Griper_MEC1}) a través de la siguiente relación:
+Las Ecuaciones \ref{eq:griper_noLineal2dOrden_theta5} y \ref{eq:griper_noLineal2dOrden_theta6} determinan los ángulos de la biela y el balancín del mecanismo de cuatro barras. El signo del radical para los ángulos $\theta_5$ y $\theta_6$ también se seleccionan de acuerdo a la Tabla \ref{tab:Signo del radical} de la Sección \ref{sec:Análisis cinemático de un Mecanismo de Cuatro Barras}. Para finalizar, se debe determinar la posición del punto $E$ del acoplador (Figura \ref{fig:Griper_MEC1}) a través de la siguiente relación:
 \begin{equation} \label{eq:griper_E}
 E=r^{\prime}_2+ r_{EX}+r_{EY}
 \end{equation}
@@ -538,7 +538,7 @@ en donde:
     \label{fig:Griper_MEC1}
 \end{figure}
 \subsection{Declaración de Problemas de Optimización para Casos de Estudio del Efector}
-Para la optimización del diseño correspondiente a un dedo del efector final, se deben encontrar las dimensiones de todas los eslabones del mecanismo de seis barras de tal forma que el punto E del acoplador siga una trayectoria esferica. Los puntos de la trayectoria se encuentran definidos por la Ecuación \ref{eq:griper_puntosP} y fueron tomados de \cite{capistran_2015}.
+Para la optimización del diseño correspondiente a un dedo del efector final, se deben encontrar las dimensiones de todas los eslabones del mecanismo de seis barras de tal forma que el punto E del acoplador siga una trayectoria esférica. Los puntos de la trayectoria se encuentran definidos por la Ecuación \ref{eq:griper_puntosP} y fueron tomados de \cite{capistran_2015}.
 \begin{equation} \label{eq:griper_puntosP}
  \Omega= \left\{(10, 160), (10, 170), (40, 165) \right\}
 \end{equation}

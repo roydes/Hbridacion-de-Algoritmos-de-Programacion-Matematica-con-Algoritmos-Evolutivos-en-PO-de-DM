@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.6.12)  17 SEP 2018 14:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.6.12)  17 SEP 2018 20:06
 entering extended mode
 **./main.tex
 (main.tex
@@ -5247,51 +5247,51 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 19.
  (Figures/MEC.tikz) (Figures/MEC.tikz) (Figures/MEC.tikz)
 (Figures/MEC.tikz) (Figures/MEC.tikz) (Figures/MEC.tikz) (Figures/MEC.tikz)
-LaTeX Info: Redefining \. on input line 53.
-LaTeX Info: Redefining \% on input line 53.
+LaTeX Info: Redefining \. on input line 34.
+LaTeX Info: Redefining \% on input line 34.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 34.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 53.
+(babel)             in language  on input line 34.
 
 [59]
-LaTeX Info: Redefining \. on input line 75.
-LaTeX Info: Redefining \% on input line 75.
+LaTeX Info: Redefining \. on input line 80.
+LaTeX Info: Redefining \% on input line 80.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 80.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 80.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 80.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 80.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 80.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 80.
  [60]
-LaTeX Info: Redefining \. on input line 119.
-LaTeX Info: Redefining \% on input line 119.
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 122.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 122.
  [61]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 147.
@@ -5317,20 +5317,20 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 150.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 150.
-LaTeX Info: Redefining \. on input line 152.
-LaTeX Info: Redefining \% on input line 152.
+LaTeX Info: Redefining \. on input line 158.
+LaTeX Info: Redefining \% on input line 158.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 158.
  [62]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 167.
@@ -5344,20 +5344,20 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 167.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 167.
-LaTeX Info: Redefining \. on input line 179.
-LaTeX Info: Redefining \% on input line 179.
+LaTeX Info: Redefining \. on input line 183.
+LaTeX Info: Redefining \% on input line 183.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 183.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 183.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 183.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 183.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 183.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 179.
+(babel)             in language  on input line 183.
  [63]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 190.
@@ -9709,21 +9709,27 @@ LaTeX Info: Redefining \% on input line 143.
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: ED085E95FB7C595DE10BFDFD955F71C1;38485.
 
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: ED085E95FB7C595DE10BFDFD955F71C1;38485
+(rerunfilecheck)             After:  248FC516C3D4D92B323E241E4BD54C2B;38477.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 59979 strings out of 493305
- 1328900 string characters out of 3138865
+ 59971 strings out of 493305
+ 1328798 string characters out of 3138865
  1939572 words of memory out of 3000000
- 60960 multiletter control sequences out of 15000+200000
+ 60952 multiletter control sequences out of 15000+200000
  630474 words of font info for 236 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,21n,430p,2116b,3254s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 82i,21n,430p,2113b,3254s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\ESTANCIA\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi6
 00\ectt1200.pk>{C:/MikTex/fonts/enc/dvips/base/8r.enc}<C:/MikTex/fonts/type1/pu
 blic/amsfonts/cm/cmbsy10.pfb><C:/MikTex/fonts/type1/public/amsfonts/cm/cmex10.p
@@ -9735,7 +9741,7 @@ kTex/fonts/type1/urw/palatino/uplb8a.pfb><C:/MikTex/fonts/type1/urw/palatino/up
 lbi8a.pfb><C:/MikTex/fonts/type1/urw/palatino/uplr8a.pfb><C:/MikTex/fonts/type1
 /urw/palatino/uplr8a.pfb><C:/MikTex/fonts/type1/urw/palatino/uplri8a.pfb><C:/Mi
 kTex/fonts/type1/public/wasy/wasy10.pfb>
-Output written on main.pdf (202 pages, 2693999 bytes).
+Output written on main.pdf (202 pages, 2693873 bytes).
 PDF statistics:
  3711 PDF objects out of 4296 (max. 8388607)
  1450 named destinations out of 1728 (max. 500000)
