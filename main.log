@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.6.12)  17 SEP 2018 20:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.6.12)  18 SEP 2018 13:28
 entering extended mode
 **./main.tex
 (main.tex
@@ -1641,7 +1641,7 @@ LaTeX Info: Redefining \pageref on input line 6443.
 )
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of hyperref version, that doesn't
-(scrhack)             need that hack, on input line 69.
+(scrhack)             need that hack, on input line 56.
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (C:\MikTex\tex\latex\hyperref\hpdftex.def
@@ -2247,17 +2247,17 @@ Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
 \pyy=\skip83
 \pxx=\skip84
 )
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 190.
-Package hyperref Info: Option `hypertexnames' set `false' on input line 190.
-Package hyperref Info: Option `colorlinks' set `false' on input line 190.
-Package hyperref Info: Option `unicode' set `true' on input line 190.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 180.
+Package hyperref Info: Option `hypertexnames' set `false' on input line 180.
+Package hyperref Info: Option `colorlinks' set `false' on input line 180.
+Package hyperref Info: Option `unicode' set `true' on input line 180.
 
 (C:\MikTex\tex\latex\hyperref\puenc.def
 File: puenc.def 2018/02/06 v6.86b Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 190.
+Package hyperref Info: Option `breaklinks' set `true' on input line 180.
 \tikzscale@accuracy=\skip85
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -2530,10 +2530,10 @@ LaTeX Info: Redefining \. on input line 47.
 LaTeX Info: Redefining \% on input line 47.
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
-LaTeX Info: Redefining \. on input line 129.
-LaTeX Info: Redefining \% on input line 129.
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+LaTeX Info: Redefining \. on input line 128.
+LaTeX Info: Redefining \% on input line 128.
 LaTeX Info: Redefining \. on input line 142.
 LaTeX Info: Redefining \% on input line 142.
 LaTeX Info: Redefining \. on input line 143.
@@ -2541,29 +2541,29 @@ LaTeX Info: Redefining \% on input line 143.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 190.
-LaTeX Font Info:    ... okay on input line 190.
-LaTeX Font Info:    Try loading font information for T1+ppl on input line 190.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 180.
+LaTeX Font Info:    ... okay on input line 180.
+LaTeX Font Info:    Try loading font information for T1+ppl on input line 180.
 
 (C:\MikTex\tex\latex\psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-LaTeX Info: Redefining \. on input line 190.
-LaTeX Info: Redefining \% on input line 190.
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
  (C:\MikTex\tex\latex\base\ts1enc.dfu
@@ -2716,9 +2716,9 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package scrlayer Info: Setting magic \footheight to \baselineskip while
-(scrlayer)             \begin{document} on input line 190.
+(scrlayer)             \begin{document} on input line 180.
 \c@lstlisting=\count392
-Package scrhack Info: undefining \float@addtolists on input line 190.
+Package scrhack Info: undefining \float@addtolists on input line 180.
 babelbib: Use citation-dependent languages in bibliography
 babelbib: Set bibliography fall-back language to spanish
 (C:\MikTex\tex\latex\babelbib\spanish.bdf
@@ -2727,10 +2727,10 @@ File: spanish.bdf 2012/01/03 v1.31 babelbib: multilingual bibliographies (HH)
 babelbib extension \bibsspanish added to \extrasspanish
 babelbib extension \btxifchangecaseoff added to \extrasspanish
 )
-LaTeX Info: Redefining \. on input line 190.
-LaTeX Info: Redefining \% on input line 190.
+LaTeX Info: Redefining \. on input line 180.
+LaTeX Info: Redefining \% on input line 180.
 \AtBeginShipoutBox=\box77
-Package hyperref Info: Link coloring OFF on input line 190.
+Package hyperref Info: Link coloring OFF on input line 180.
  (C:\MikTex\tex\latex\hyperref\nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2739,9 +2739,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count393
 )
-LaTeX Info: Redefining \ref on input line 190.
-LaTeX Info: Redefining \pageref on input line 190.
-LaTeX Info: Redefining \nameref on input line 190.
+LaTeX Info: Redefining \ref on input line 180.
+LaTeX Info: Redefining \pageref on input line 180.
+LaTeX Info: Redefining \nameref on input line 180.
  (main.out) (main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -2752,84 +2752,84 @@ Package pgfplots notification 'compat/show suggested version=true': document ha
 s been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 190.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 190.
-LaTeX Font Info:    Try loading font information for OT1+ppl on input line 190.
+(babel)             in language  on input line 180.
+LaTeX Font Info:    Try loading font information for OT1+ppl on input line 180.
 
 (C:\MikTex\tex\latex\psnfss\ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 190
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 180
 .
  (C:\MikTex\tex\latex\psnfss\omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 190
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 180
 .
 
 (C:\MikTex\tex\latex\psnfss\omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 190
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 180
 .
  (C:\MikTex\tex\latex\psnfss\omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 190
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 180
 .
 (C:\MikTex\tex\latex\psnfss\ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 190.
+(Font)              scaled to size 12.50409pt on input line 180.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 190.
+(Font)              scaled to size 9.37807pt on input line 180.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 190.
+(Font)              scaled to size 7.29405pt on input line 180.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 190.
+(Font)              scaled to size 12.50409pt on input line 180.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 9.37807pt on input line 190.
+(Font)              scaled to size 9.37807pt on input line 180.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.29405pt on input line 190.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 190.
+(Font)              scaled to size 7.29405pt on input line 180.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 180.
  (C:\MikTex\tex\latex\jknappen\ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 190.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 180.
 (C:\MikTex\tex\latex\wasysym\uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
@@ -2837,22 +2837,22 @@ File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 <./Figures/logolania.png, id=582, 509.65407pt x 98.61844pt>
 File: ./Figures/logolania.png Graphic file (type png)
 <use ./Figures/logolania.png>
-Package pdftex.def Info: ./Figures/logolania.png  used on input line 206.
+Package pdftex.def Info: ./Figures/logolania.png  used on input line 196.
 (pdftex.def)             Requested size: 256.07741pt x 49.55286pt.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 214.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 204.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 247.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 247.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 247.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 247.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 247.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 257.
+(babel)             in language  on input line 247.
 [1
 
 
@@ -2860,17 +2860,17 @@ Package babel Info: Redefining spanish shorthand "?
 {C:/Users/ESTANCIA/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Figure
 s/logolania.png>]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
  [2
 
 ]
@@ -2878,45 +2878,45 @@ Package babel Info: Redefining spanish shorthand "?
  Resumen
 --------------------
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 290.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 276.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 290.
+(babel)             in language  on input line 276.
 1: section
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
 [3]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 301.
+(babel)             in language  on input line 287.
  [4
 
 ]
@@ -2924,48 +2924,48 @@ Package babel Info: Redefining spanish shorthand "?
  Agradecimientos
 --------------------
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 288.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 288.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 288.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 288.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 288.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 288.
 1: section
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
 [5]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 324.
+(babel)             in language  on input line 310.
  [6
 
 ]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 324.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 310.
  (main.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -3070,30 +3070,30 @@ LaTeX Info: Redefining \% on input line 152.
 \openout6 = `main.toc'.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
  [13]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 326.
+(babel)             in language  on input line 312.
  [14
 
 ] (main.lof
@@ -3133,17 +3133,17 @@ LaTeX Info: Redefining \% on input line 43.
 \openout7 = `main.lof'.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 315.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 315.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 315.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 315.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 315.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 328.
+(babel)             in language  on input line 315.
  [16] (main.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -3229,43 +3229,43 @@ LaTeX Info: Redefining \% on input line 41.
 \openout8 = `main.lot'.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 329.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 329.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 329.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 329.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 329.
+(babel)             in language  on input line 316.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 329.
+(babel)             in language  on input line 316.
  [18]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
  [19]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 374.
+(babel)             in language  on input line 361.
  [20
 
 ]
@@ -3274,30 +3274,30 @@ Package babel Info: Redefining spanish shorthand "?
 --------------------
 1: section
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
 [21]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 380.
+(babel)             in language  on input line 367.
  [22
 
 ]
@@ -3869,20 +3869,20 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 197.
 )
-LaTeX Info: Redefining \. on input line 387.
-LaTeX Info: Redefining \% on input line 387.
+LaTeX Info: Redefining \. on input line 374.
+LaTeX Info: Redefining \% on input line 374.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 387.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 387.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 387.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 387.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 387.
+(babel)             in language  on input line 374.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 387.
+(babel)             in language  on input line 374.
  [12]
 \openout2 = `Chapters/Chapter2.aux'.
 
@@ -4226,20 +4226,20 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 218.
 )
-LaTeX Info: Redefining \. on input line 388.
-LaTeX Info: Redefining \% on input line 388.
+LaTeX Info: Redefining \. on input line 375.
+LaTeX Info: Redefining \% on input line 375.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 388.
+(babel)             in language  on input line 375.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 388.
+(babel)             in language  on input line 375.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 388.
+(babel)             in language  on input line 375.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 388.
+(babel)             in language  on input line 375.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 388.
+(babel)             in language  on input line 375.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 388.
+(babel)             in language  on input line 375.
  [23]
 \openout2 = `Chapters/Chapter3.aux'.
 
@@ -4849,20 +4849,20 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 529.
  [44])
-LaTeX Info: Redefining \. on input line 389.
-LaTeX Info: Redefining \% on input line 389.
+LaTeX Info: Redefining \. on input line 376.
+LaTeX Info: Redefining \% on input line 376.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 389.
+(babel)             in language  on input line 376.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 389.
+(babel)             in language  on input line 376.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 389.
+(babel)             in language  on input line 376.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 389.
+(babel)             in language  on input line 376.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 389.
+(babel)             in language  on input line 376.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 389.
+(babel)             in language  on input line 376.
  [45]
 \openout2 = `Chapters/Chapter4.aux'.
 
@@ -5157,20 +5157,20 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 145.
  [55])
-LaTeX Info: Redefining \. on input line 390.
-LaTeX Info: Redefining \% on input line 390.
+LaTeX Info: Redefining \. on input line 377.
+LaTeX Info: Redefining \% on input line 377.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 390.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 390.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 390.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 390.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 390.
+(babel)             in language  on input line 377.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 390.
+(babel)             in language  on input line 377.
  [56]
 \openout2 = `Chapters/Chapter5.aux'.
 
@@ -5978,20 +5978,20 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 809.
  [85])
-LaTeX Info: Redefining \. on input line 391.
-LaTeX Info: Redefining \% on input line 391.
+LaTeX Info: Redefining \. on input line 378.
+LaTeX Info: Redefining \% on input line 378.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 378.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 378.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 378.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 378.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 378.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 378.
  [86]
 \openout2 = `Chapters/Chapter6.aux'.
 
@@ -6487,20 +6487,20 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 446.
  [106])
-LaTeX Info: Redefining \. on input line 392.
-LaTeX Info: Redefining \% on input line 392.
+LaTeX Info: Redefining \. on input line 379.
+LaTeX Info: Redefining \% on input line 379.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 392.
+(babel)             in language  on input line 379.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 392.
+(babel)             in language  on input line 379.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 392.
+(babel)             in language  on input line 379.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 392.
+(babel)             in language  on input line 379.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 392.
+(babel)             in language  on input line 379.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 392.
+(babel)             in language  on input line 379.
  [107]
 \openout2 = `Chapters/Chapter7.aux'.
 
@@ -7811,13 +7811,13 @@ File: ./Figures/D-Grafica_Convergencia_Problema_1.png Graphic file (type png)
 Package pdftex.def Info: ./Figures/D-Grafica_Convergencia_Problema_1.png  used 
 on input line 974.
 (pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
-<./Figures/D-Grafica_Convergencia_Problema_2.png, id=2760, 578.16pt x 433.62pt>
-
+<./Figures/D-Grafica_Convergencia_Problema_2.png, id=2760, 903.375pt x 677.5312
+5pt>
 File: ./Figures/D-Grafica_Convergencia_Problema_2.png Graphic file (type png)
 <use ./Figures/D-Grafica_Convergencia_Problema_2.png>
 Package pdftex.def Info: ./Figures/D-Grafica_Convergencia_Problema_2.png  used 
 on input line 978.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
+(pdftex.def)             Requested size: 209.1301pt x 156.84206pt.
 <./Figures/D-Grafica_Convergencia_Problema_3.png, id=2761, 421.575pt x 311.6643
 7pt>
 File: ./Figures/D-Grafica_Convergencia_Problema_3.png Graphic file (type png)
@@ -7839,13 +7839,13 @@ File: ./Figures/D-Grafica_Convergencia_Problema_5.png Graphic file (type png)
 Package pdftex.def Info: ./Figures/D-Grafica_Convergencia_Problema_5.png  used 
 on input line 990.
 (pdftex.def)             Requested size: 209.1301pt x 154.6096pt.
-<./Figures/D-Grafica_Convergencia_Problema_6.png, id=2764, 578.16pt x 433.62pt>
-
+<./Figures/D-Grafica_Convergencia_Problema_6.png, id=2764, 903.375pt x 677.5312
+5pt>
 File: ./Figures/D-Grafica_Convergencia_Problema_6.png Graphic file (type png)
 <use ./Figures/D-Grafica_Convergencia_Problema_6.png>
 Package pdftex.def Info: ./Figures/D-Grafica_Convergencia_Problema_6.png  used 
 on input line 994.
-(pdftex.def)             Requested size: 209.1301pt x 156.84413pt.
+(pdftex.def)             Requested size: 209.1301pt x 156.84206pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1017.
 Package babel Info: Redefining spanish shorthand >>
@@ -7944,11 +7944,10 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1195.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1195.
- [142 <./Figures/D-Grafica_Convergencia_Problema_1.png (PNG copy)> <./Figures/D
--Grafica_Convergencia_Problema_2.png> <./Figures/D-Grafica_Convergencia_Problem
-a_3.png (PNG copy)> <./Figures/D-Grafica_Convergencia_Problema_4.png (PNG copy)
-> <./Figures/D-Grafica_Convergencia_Problema_5.png (PNG copy)> <./Figures/D-Gra
-fica_Convergencia_Problema_6.png (PNG copy)>]
+ [142 <./Figures/D-Grafica_Convergencia_Problema_1.png> <./Figures/D-Grafica_Co
+nvergencia_Problema_2.png> <./Figures/D-Grafica_Convergencia_Problema_3.png> <.
+/Figures/D-Grafica_Convergencia_Problema_4.png> <./Figures/D-Grafica_Convergenc
+ia_Problema_5.png> <./Figures/D-Grafica_Convergencia_Problema_6.png>]
 LaTeX Info: Redefining \. on input line 1195.
 LaTeX Info: Redefining \% on input line 1195.
 Package babel Info: Redefining spanish shorthand <<
@@ -7963,11 +7962,10 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1195.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1195.
- [143 <./Figures/E-Grafica_Convergencia_Problema_1.png (PNG copy)> <./Figures/E
--Grafica_Convergencia_Problema_2.png (PNG copy)> <./Figures/E-Grafica_Convergen
-cia_Problema_3.png (PNG copy)> <./Figures/E-Grafica_Convergencia_Problema_4.png
- (PNG copy)> <./Figures/E-Grafica_Convergencia_Problema_5.png (PNG copy)> <./Fi
-gures/E-Grafica_Convergencia_Problema_6.png (PNG copy)>]
+ [143 <./Figures/E-Grafica_Convergencia_Problema_1.png> <./Figures/E-Grafica_Co
+nvergencia_Problema_2.png> <./Figures/E-Grafica_Convergencia_Problema_3.png> <.
+/Figures/E-Grafica_Convergencia_Problema_4.png> <./Figures/E-Grafica_Convergenc
+ia_Problema_5.png> <./Figures/E-Grafica_Convergencia_Problema_6.png>]
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language  on input line 1196.
 Package babel Info: Redefining spanish shorthand >>
@@ -8009,7 +8007,8 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1202.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1202.
- [145]
+
+[145]
 LaTeX Info: Redefining \. on input line 1202.
 LaTeX Info: Redefining \% on input line 1202.
 Package babel Info: Redefining spanish shorthand <<
@@ -8064,17 +8063,17 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language  on input line 1212.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1212.
-<./Figures/MCE1.png, id=2819, 417.05812pt x 365.86688pt>
+<./Figures/MCE1.png, id=2830, 417.05812pt x 365.86688pt>
 File: ./Figures/MCE1.png Graphic file (type png)
 <use ./Figures/MCE1.png>
 Package pdftex.def Info: ./Figures/MCE1.png  used on input line 1283.
 (pdftex.def)             Requested size: 196.32687pt x 172.231pt.
-<./Figures/MCE2.png, id=2820, 516.42938pt x 420.06938pt>
+<./Figures/MCE2.png, id=2831, 516.42938pt x 420.06938pt>
 File: ./Figures/MCE2.png Graphic file (type png)
 <use ./Figures/MCE2.png>
 Package pdftex.def Info: ./Figures/MCE2.png  used on input line 1288.
 (pdftex.def)             Requested size: 196.32687pt x 159.69212pt.
-<./Figures/MCE3.png, id=2821, 591.71063pt x 382.42876pt>
+<./Figures/MCE3.png, id=2832, 591.71063pt x 382.42876pt>
 File: ./Figures/MCE3.png Graphic file (type png)
 <use ./Figures/MCE3.png>
 Package pdftex.def Info: ./Figures/MCE3.png  used on input line 1294.
@@ -8140,7 +8139,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1311.
  [150 <./Figures/MCE1.png> <./Figures/MCE2.png> <./Figures/MCE3.png>]
-<./Figures/GCE1.png, id=2841, 417.05812pt x 447.17062pt>
+<./Figures/GCE1.png, id=2852, 417.05812pt x 447.17062pt>
 File: ./Figures/GCE1.png Graphic file (type png)
 <use ./Figures/GCE1.png>
 Package pdftex.def Info: ./Figures/GCE1.png  used on input line 1367.
@@ -8153,12 +8152,12 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 10.42007pt on input line 1368.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.91925pt on input line 1368.
-<./Figures/GCE1_2.png, id=2842, 394.47375pt x 423.08063pt>
+<./Figures/GCE1_2.png, id=2853, 394.47375pt x 423.08063pt>
 File: ./Figures/GCE1_2.png Graphic file (type png)
 <use ./Figures/GCE1_2.png>
 Package pdftex.def Info: ./Figures/GCE1_2.png  used on input line 1371.
 (pdftex.def)             Requested size: 192.0548pt x 205.98145pt.
-<./Figures/GCE2.png, id=2843, 447.17062pt x 450.18187pt>
+<./Figures/GCE2.png, id=2854, 447.17062pt x 450.18187pt>
 File: ./Figures/GCE2.png Graphic file (type png)
 <use ./Figures/GCE2.png>
 Package pdftex.def Info: ./Figures/GCE2.png  used on input line 1376.
@@ -8221,7 +8220,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1458.
 
 [153]
-<./Figures/SCE1.png, id=2860, 578.16pt x 433.62pt>
+<./Figures/SCE1.png, id=2871, 578.16pt x 433.62pt>
 File: ./Figures/SCE1.png Graphic file (type png)
 <use ./Figures/SCE1.png>
 Package pdftex.def Info: ./Figures/SCE1.png  used on input line 1461.
@@ -8254,20 +8253,20 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 1468.
 )
-LaTeX Info: Redefining \. on input line 393.
-LaTeX Info: Redefining \% on input line 393.
+LaTeX Info: Redefining \. on input line 380.
+LaTeX Info: Redefining \% on input line 380.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 380.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 380.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 380.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 380.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 380.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 393.
+(babel)             in language  on input line 380.
  [155]
 \openout2 = `Chapters/Chapter8.aux'.
 
@@ -8410,20 +8409,20 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 53.
 )
-LaTeX Info: Redefining \. on input line 394.
-LaTeX Info: Redefining \% on input line 394.
+LaTeX Info: Redefining \. on input line 381.
+LaTeX Info: Redefining \% on input line 381.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 381.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 381.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 381.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 381.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 381.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 394.
+(babel)             in language  on input line 381.
  [161]
 \openout2 = `Appendices/AppendixA.aux'.
 
@@ -8674,33 +8673,33 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 39.
 
 [171]))
-LaTeX Info: Redefining \. on input line 405.
-LaTeX Info: Redefining \% on input line 405.
+LaTeX Info: Redefining \. on input line 392.
+LaTeX Info: Redefining \% on input line 392.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 392.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 392.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 392.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 392.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 392.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 392.
  [172]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 415.
+(babel)             in language  on input line 400.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 415.
+(babel)             in language  on input line 400.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 415.
+(babel)             in language  on input line 400.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 415.
+(babel)             in language  on input line 400.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 415.
+(babel)             in language  on input line 400.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 415.
+(babel)             in language  on input line 400.
  (main.bbl
 babelbib: Using the BibTeX style's default font for `name'.
 babelbib: Using the BibTeX style's default font for `lastname'.
@@ -8733,624 +8732,746 @@ LaTeX Info: Redefining \lsc on input line 15.
 LaTeX Info: Redefining \. on input line 15.
 LaTeX Info: Redefining \% on input line 15.
 LaTeX Info: Redefining \dotlessi on input line 15.
-LaTeX Info: Redefining \sptext on input line 27.
-LaTeX Info: Redefining \lsc on input line 27.
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
-LaTeX Info: Redefining \dotlessi on input line 27.
-LaTeX Info: Redefining \sptext on input line 44.
-LaTeX Info: Redefining \lsc on input line 44.
-LaTeX Info: Redefining \. on input line 44.
-LaTeX Info: Redefining \% on input line 44.
-LaTeX Info: Redefining \dotlessi on input line 44.
+LaTeX Info: Redefining \sptext on input line 19.
+LaTeX Info: Redefining \lsc on input line 19.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
+LaTeX Info: Redefining \dotlessi on input line 19.
+LaTeX Info: Redefining \sptext on input line 19.
+LaTeX Info: Redefining \lsc on input line 19.
+LaTeX Info: Redefining \. on input line 19.
+LaTeX Info: Redefining \% on input line 19.
+LaTeX Info: Redefining \dotlessi on input line 19.
+LaTeX Info: Redefining \sptext on input line 25.
+LaTeX Info: Redefining \lsc on input line 25.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \dotlessi on input line 25.
+LaTeX Info: Redefining \sptext on input line 25.
+LaTeX Info: Redefining \lsc on input line 25.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+LaTeX Info: Redefining \dotlessi on input line 25.
+LaTeX Info: Redefining \sptext on input line 29.
+LaTeX Info: Redefining \lsc on input line 29.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
+LaTeX Info: Redefining \dotlessi on input line 29.
+LaTeX Info: Redefining \sptext on input line 32.
+LaTeX Info: Redefining \lsc on input line 32.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+LaTeX Info: Redefining \dotlessi on input line 32.
+LaTeX Info: Redefining \sptext on input line 32.
+LaTeX Info: Redefining \lsc on input line 32.
+LaTeX Info: Redefining \. on input line 32.
+LaTeX Info: Redefining \% on input line 32.
+LaTeX Info: Redefining \dotlessi on input line 32.
+LaTeX Info: Redefining \sptext on input line 47.
+LaTeX Info: Redefining \lsc on input line 47.
+LaTeX Info: Redefining \. on input line 47.
+LaTeX Info: Redefining \% on input line 47.
+LaTeX Info: Redefining \dotlessi on input line 47.
 
-Underfull \hbox (badness 3039) in paragraph at lines 39--50
+Underfull \hbox (badness 3039) in paragraph at lines 42--53
 []\T1/ppl/m/n/12 Portilla-Flores, Ed-gar A, Ma-ria B Calva-Yáñez, Mi-guel G Vil
 larreal-
  []
 
-LaTeX Info: Redefining \sptext on input line 54.
-LaTeX Info: Redefining \lsc on input line 54.
-LaTeX Info: Redefining \. on input line 54.
-LaTeX Info: Redefining \% on input line 54.
-LaTeX Info: Redefining \dotlessi on input line 54.
-LaTeX Info: Redefining \sptext on input line 68.
-LaTeX Info: Redefining \lsc on input line 68.
-LaTeX Info: Redefining \. on input line 68.
-LaTeX Info: Redefining \% on input line 68.
-LaTeX Info: Redefining \dotlessi on input line 68.
+LaTeX Info: Redefining \sptext on input line 57.
+LaTeX Info: Redefining \lsc on input line 57.
+LaTeX Info: Redefining \. on input line 57.
+LaTeX Info: Redefining \% on input line 57.
+LaTeX Info: Redefining \dotlessi on input line 57.
+LaTeX Info: Redefining \sptext on input line 71.
+LaTeX Info: Redefining \lsc on input line 71.
+LaTeX Info: Redefining \. on input line 71.
+LaTeX Info: Redefining \% on input line 71.
+LaTeX Info: Redefining \dotlessi on input line 71.
 
-Underfull \hbox (badness 2189) in paragraph at lines 63--77
+Underfull \hbox (badness 2189) in paragraph at lines 66--80
 []\T1/ppl/m/n/12 Hernández-Ocaña, Be-ta-nia, Ma Del Pi-lar Pozos-Parra, Efrén M
 ezura-
  []
 
-LaTeX Info: Redefining \sptext on input line 83.
-LaTeX Info: Redefining \lsc on input line 83.
-LaTeX Info: Redefining \. on input line 83.
-LaTeX Info: Redefining \% on input line 83.
-LaTeX Info: Redefining \dotlessi on input line 83.
+LaTeX Info: Redefining \sptext on input line 86.
+LaTeX Info: Redefining \lsc on input line 86.
+LaTeX Info: Redefining \. on input line 86.
+LaTeX Info: Redefining \% on input line 86.
+LaTeX Info: Redefining \dotlessi on input line 86.
 1: section
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 94.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 92.
+(babel)             in language  on input line 94.
 [173
 
 
 ]
-LaTeX Info: Redefining \sptext on input line 94.
-LaTeX Info: Redefining \lsc on input line 94.
-LaTeX Info: Redefining \. on input line 94.
-LaTeX Info: Redefining \% on input line 94.
-LaTeX Info: Redefining \dotlessi on input line 94.
-LaTeX Info: Redefining \sptext on input line 103.
-LaTeX Info: Redefining \lsc on input line 103.
-LaTeX Info: Redefining \. on input line 103.
-LaTeX Info: Redefining \% on input line 103.
-LaTeX Info: Redefining \dotlessi on input line 103.
-LaTeX Info: Redefining \sptext on input line 109.
-LaTeX Info: Redefining \lsc on input line 109.
-LaTeX Info: Redefining \. on input line 109.
-LaTeX Info: Redefining \% on input line 109.
-LaTeX Info: Redefining \dotlessi on input line 109.
-LaTeX Info: Redefining \sptext on input line 110.
-LaTeX Info: Redefining \lsc on input line 110.
-LaTeX Info: Redefining \. on input line 110.
-LaTeX Info: Redefining \% on input line 110.
-LaTeX Info: Redefining \dotlessi on input line 110.
-LaTeX Info: Redefining \sptext on input line 115.
-LaTeX Info: Redefining \lsc on input line 115.
-LaTeX Info: Redefining \. on input line 115.
-LaTeX Info: Redefining \% on input line 115.
-LaTeX Info: Redefining \dotlessi on input line 115.
-LaTeX Info: Redefining \sptext on input line 119.
-LaTeX Info: Redefining \lsc on input line 119.
-LaTeX Info: Redefining \. on input line 119.
-LaTeX Info: Redefining \% on input line 119.
-LaTeX Info: Redefining \dotlessi on input line 119.
-LaTeX Info: Redefining \sptext on input line 120.
-LaTeX Info: Redefining \lsc on input line 120.
-LaTeX Info: Redefining \. on input line 120.
-LaTeX Info: Redefining \% on input line 120.
-LaTeX Info: Redefining \dotlessi on input line 120.
-LaTeX Info: Redefining \sptext on input line 124.
-LaTeX Info: Redefining \lsc on input line 124.
-LaTeX Info: Redefining \. on input line 124.
-LaTeX Info: Redefining \% on input line 124.
-LaTeX Info: Redefining \dotlessi on input line 124.
-LaTeX Info: Redefining \sptext on input line 128.
-LaTeX Info: Redefining \lsc on input line 128.
-LaTeX Info: Redefining \. on input line 128.
-LaTeX Info: Redefining \% on input line 128.
-LaTeX Info: Redefining \dotlessi on input line 128.
-LaTeX Info: Redefining \sptext on input line 129.
-LaTeX Info: Redefining \lsc on input line 129.
-LaTeX Info: Redefining \. on input line 129.
-LaTeX Info: Redefining \% on input line 129.
-LaTeX Info: Redefining \dotlessi on input line 129.
-LaTeX Info: Redefining \sptext on input line 147.
-LaTeX Info: Redefining \lsc on input line 147.
-LaTeX Info: Redefining \. on input line 147.
-LaTeX Info: Redefining \% on input line 147.
-LaTeX Info: Redefining \dotlessi on input line 147.
+LaTeX Info: Redefining \sptext on input line 97.
+LaTeX Info: Redefining \lsc on input line 97.
+LaTeX Info: Redefining \. on input line 97.
+LaTeX Info: Redefining \% on input line 97.
+LaTeX Info: Redefining \dotlessi on input line 97.
+LaTeX Info: Redefining \sptext on input line 106.
+LaTeX Info: Redefining \lsc on input line 106.
+LaTeX Info: Redefining \. on input line 106.
+LaTeX Info: Redefining \% on input line 106.
+LaTeX Info: Redefining \dotlessi on input line 106.
+LaTeX Info: Redefining \sptext on input line 112.
+LaTeX Info: Redefining \lsc on input line 112.
+LaTeX Info: Redefining \. on input line 112.
+LaTeX Info: Redefining \% on input line 112.
+LaTeX Info: Redefining \dotlessi on input line 112.
+LaTeX Info: Redefining \sptext on input line 113.
+LaTeX Info: Redefining \lsc on input line 113.
+LaTeX Info: Redefining \. on input line 113.
+LaTeX Info: Redefining \% on input line 113.
+LaTeX Info: Redefining \dotlessi on input line 113.
+LaTeX Info: Redefining \sptext on input line 118.
+LaTeX Info: Redefining \lsc on input line 118.
+LaTeX Info: Redefining \. on input line 118.
+LaTeX Info: Redefining \% on input line 118.
+LaTeX Info: Redefining \dotlessi on input line 118.
+LaTeX Info: Redefining \sptext on input line 122.
+LaTeX Info: Redefining \lsc on input line 122.
+LaTeX Info: Redefining \. on input line 122.
+LaTeX Info: Redefining \% on input line 122.
+LaTeX Info: Redefining \dotlessi on input line 122.
+LaTeX Info: Redefining \sptext on input line 123.
+LaTeX Info: Redefining \lsc on input line 123.
+LaTeX Info: Redefining \. on input line 123.
+LaTeX Info: Redefining \% on input line 123.
+LaTeX Info: Redefining \dotlessi on input line 123.
+LaTeX Info: Redefining \sptext on input line 127.
+LaTeX Info: Redefining \lsc on input line 127.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+LaTeX Info: Redefining \dotlessi on input line 127.
+LaTeX Info: Redefining \sptext on input line 131.
+LaTeX Info: Redefining \lsc on input line 131.
+LaTeX Info: Redefining \. on input line 131.
+LaTeX Info: Redefining \% on input line 131.
+LaTeX Info: Redefining \dotlessi on input line 131.
+LaTeX Info: Redefining \sptext on input line 132.
+LaTeX Info: Redefining \lsc on input line 132.
+LaTeX Info: Redefining \. on input line 132.
+LaTeX Info: Redefining \% on input line 132.
+LaTeX Info: Redefining \dotlessi on input line 132.
+LaTeX Info: Redefining \sptext on input line 150.
+LaTeX Info: Redefining \lsc on input line 150.
+LaTeX Info: Redefining \. on input line 150.
+LaTeX Info: Redefining \% on input line 150.
+LaTeX Info: Redefining \dotlessi on input line 150.
 LaTeX Info: Redefining \sptext on input line 154.
 LaTeX Info: Redefining \lsc on input line 154.
 LaTeX Info: Redefining \. on input line 154.
 LaTeX Info: Redefining \% on input line 154.
 LaTeX Info: Redefining \dotlessi on input line 154.
-LaTeX Info: Redefining \sptext on input line 156.
-LaTeX Info: Redefining \lsc on input line 156.
-LaTeX Info: Redefining \. on input line 156.
-LaTeX Info: Redefining \% on input line 156.
-LaTeX Info: Redefining \dotlessi on input line 156.
+LaTeX Info: Redefining \sptext on input line 154.
+LaTeX Info: Redefining \lsc on input line 154.
+LaTeX Info: Redefining \. on input line 154.
+LaTeX Info: Redefining \% on input line 154.
+LaTeX Info: Redefining \dotlessi on input line 154.
+LaTeX Info: Redefining \sptext on input line 159.
+LaTeX Info: Redefining \lsc on input line 159.
+LaTeX Info: Redefining \. on input line 159.
+LaTeX Info: Redefining \% on input line 159.
+LaTeX Info: Redefining \dotlessi on input line 159.
+LaTeX Info: Redefining \sptext on input line 161.
+LaTeX Info: Redefining \lsc on input line 161.
+LaTeX Info: Redefining \. on input line 161.
+LaTeX Info: Redefining \% on input line 161.
+LaTeX Info: Redefining \dotlessi on input line 161.
 LaTeX Info: Redefining \sptext on input line 163.
 LaTeX Info: Redefining \lsc on input line 163.
 LaTeX Info: Redefining \. on input line 163.
 LaTeX Info: Redefining \% on input line 163.
 LaTeX Info: Redefining \dotlessi on input line 163.
-LaTeX Info: Redefining \sptext on input line 168.
-LaTeX Info: Redefining \lsc on input line 168.
-LaTeX Info: Redefining \. on input line 168.
-LaTeX Info: Redefining \% on input line 168.
-LaTeX Info: Redefining \dotlessi on input line 168.
-LaTeX Info: Redefining \sptext on input line 171.
-LaTeX Info: Redefining \lsc on input line 171.
-LaTeX Info: Redefining \. on input line 171.
-LaTeX Info: Redefining \% on input line 171.
-LaTeX Info: Redefining \dotlessi on input line 171.
-LaTeX Info: Redefining \sptext on input line 178.
-LaTeX Info: Redefining \lsc on input line 178.
-LaTeX Info: Redefining \. on input line 178.
-LaTeX Info: Redefining \% on input line 178.
-LaTeX Info: Redefining \dotlessi on input line 178.
-LaTeX Info: Redefining \sptext on input line 184.
-LaTeX Info: Redefining \lsc on input line 184.
-LaTeX Info: Redefining \. on input line 184.
-LaTeX Info: Redefining \% on input line 184.
-LaTeX Info: Redefining \dotlessi on input line 184.
-LaTeX Info: Redefining \sptext on input line 187.
-LaTeX Info: Redefining \lsc on input line 187.
-LaTeX Info: Redefining \. on input line 187.
-LaTeX Info: Redefining \% on input line 187.
-LaTeX Info: Redefining \dotlessi on input line 187.
+LaTeX Info: Redefining \sptext on input line 163.
+LaTeX Info: Redefining \lsc on input line 163.
+LaTeX Info: Redefining \. on input line 163.
+LaTeX Info: Redefining \% on input line 163.
+LaTeX Info: Redefining \dotlessi on input line 163.
+LaTeX Info: Redefining \sptext on input line 170.
+LaTeX Info: Redefining \lsc on input line 170.
+LaTeX Info: Redefining \. on input line 170.
+LaTeX Info: Redefining \% on input line 170.
+LaTeX Info: Redefining \dotlessi on input line 170.
+
+Underfull \hbox (badness 1342) in paragraph at lines 167--177
+[]\T1/ppl/m/n/12 Vega-Alvarado, Eduar-do, Ed-gar Al-fre-do Portilla-Flores, Efr
+én Mezura-
+ []
+
+LaTeX Info: Redefining \sptext on input line 179.
+LaTeX Info: Redefining \lsc on input line 179.
+LaTeX Info: Redefining \. on input line 179.
+LaTeX Info: Redefining \% on input line 179.
+LaTeX Info: Redefining \dotlessi on input line 179.
+LaTeX Info: Redefining \sptext on input line 186.
+LaTeX Info: Redefining \lsc on input line 186.
+LaTeX Info: Redefining \. on input line 186.
+LaTeX Info: Redefining \% on input line 186.
+LaTeX Info: Redefining \dotlessi on input line 186.
 LaTeX Info: Redefining \sptext on input line 192.
 LaTeX Info: Redefining \lsc on input line 192.
 LaTeX Info: Redefining \. on input line 192.
 LaTeX Info: Redefining \% on input line 192.
 LaTeX Info: Redefining \dotlessi on input line 192.
-LaTeX Info: Redefining \sptext on input line 198.
-LaTeX Info: Redefining \lsc on input line 198.
-LaTeX Info: Redefining \. on input line 198.
-LaTeX Info: Redefining \% on input line 198.
-LaTeX Info: Redefining \dotlessi on input line 198.
+LaTeX Info: Redefining \sptext on input line 195.
+LaTeX Info: Redefining \lsc on input line 195.
+LaTeX Info: Redefining \. on input line 195.
+LaTeX Info: Redefining \% on input line 195.
+LaTeX Info: Redefining \dotlessi on input line 195.
+LaTeX Info: Redefining \sptext on input line 196.
+LaTeX Info: Redefining \lsc on input line 196.
+LaTeX Info: Redefining \. on input line 196.
+LaTeX Info: Redefining \% on input line 196.
+LaTeX Info: Redefining \dotlessi on input line 196.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 196.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 196.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 196.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 196.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 198.
+(babel)             in language  on input line 196.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 198.
- [174]
-LaTeX Info: Redefining \sptext on input line 202.
-LaTeX Info: Redefining \lsc on input line 202.
-LaTeX Info: Redefining \. on input line 202.
-LaTeX Info: Redefining \% on input line 202.
-LaTeX Info: Redefining \dotlessi on input line 202.
-LaTeX Info: Redefining \sptext on input line 212.
-LaTeX Info: Redefining \lsc on input line 212.
-LaTeX Info: Redefining \. on input line 212.
-LaTeX Info: Redefining \% on input line 212.
-LaTeX Info: Redefining \dotlessi on input line 212.
+(babel)             in language  on input line 196.
+[174]
+LaTeX Info: Redefining \sptext on input line 200.
+LaTeX Info: Redefining \lsc on input line 200.
+LaTeX Info: Redefining \. on input line 200.
+LaTeX Info: Redefining \% on input line 200.
+LaTeX Info: Redefining \dotlessi on input line 200.
+LaTeX Info: Redefining \sptext on input line 210.
+LaTeX Info: Redefining \lsc on input line 210.
+LaTeX Info: Redefining \. on input line 210.
+LaTeX Info: Redefining \% on input line 210.
+LaTeX Info: Redefining \dotlessi on input line 210.
 LaTeX Info: Redefining \sptext on input line 220.
 LaTeX Info: Redefining \lsc on input line 220.
 LaTeX Info: Redefining \. on input line 220.
 LaTeX Info: Redefining \% on input line 220.
 LaTeX Info: Redefining \dotlessi on input line 220.
-LaTeX Info: Redefining \sptext on input line 231.
-LaTeX Info: Redefining \lsc on input line 231.
-LaTeX Info: Redefining \. on input line 231.
-LaTeX Info: Redefining \% on input line 231.
-LaTeX Info: Redefining \dotlessi on input line 231.
-LaTeX Info: Redefining \sptext on input line 240.
-LaTeX Info: Redefining \lsc on input line 240.
-LaTeX Info: Redefining \. on input line 240.
-LaTeX Info: Redefining \% on input line 240.
-LaTeX Info: Redefining \dotlessi on input line 240.
-LaTeX Info: Redefining \sptext on input line 249.
-LaTeX Info: Redefining \lsc on input line 249.
-LaTeX Info: Redefining \. on input line 249.
-LaTeX Info: Redefining \% on input line 249.
-LaTeX Info: Redefining \dotlessi on input line 249.
-LaTeX Info: Redefining \sptext on input line 255.
-LaTeX Info: Redefining \lsc on input line 255.
-LaTeX Info: Redefining \. on input line 255.
-LaTeX Info: Redefining \% on input line 255.
-LaTeX Info: Redefining \dotlessi on input line 255.
-LaTeX Info: Redefining \sptext on input line 256.
-LaTeX Info: Redefining \lsc on input line 256.
-LaTeX Info: Redefining \. on input line 256.
-LaTeX Info: Redefining \% on input line 256.
-LaTeX Info: Redefining \dotlessi on input line 256.
-LaTeX Info: Redefining \sptext on input line 261.
-LaTeX Info: Redefining \lsc on input line 261.
-LaTeX Info: Redefining \. on input line 261.
-LaTeX Info: Redefining \% on input line 261.
-LaTeX Info: Redefining \dotlessi on input line 261.
-LaTeX Info: Redefining \sptext on input line 266.
-LaTeX Info: Redefining \lsc on input line 266.
-LaTeX Info: Redefining \. on input line 266.
-LaTeX Info: Redefining \% on input line 266.
-LaTeX Info: Redefining \dotlessi on input line 266.
-LaTeX Info: Redefining \sptext on input line 271.
-LaTeX Info: Redefining \lsc on input line 271.
-LaTeX Info: Redefining \. on input line 271.
-LaTeX Info: Redefining \% on input line 271.
-LaTeX Info: Redefining \dotlessi on input line 271.
-LaTeX Info: Redefining \sptext on input line 276.
-LaTeX Info: Redefining \lsc on input line 276.
-LaTeX Info: Redefining \. on input line 276.
-LaTeX Info: Redefining \% on input line 276.
-LaTeX Info: Redefining \dotlessi on input line 276.
-LaTeX Info: Redefining \sptext on input line 277.
-LaTeX Info: Redefining \lsc on input line 277.
-LaTeX Info: Redefining \. on input line 277.
-LaTeX Info: Redefining \% on input line 277.
-LaTeX Info: Redefining \dotlessi on input line 277.
-LaTeX Info: Redefining \sptext on input line 282.
-LaTeX Info: Redefining \lsc on input line 282.
-LaTeX Info: Redefining \. on input line 282.
-LaTeX Info: Redefining \% on input line 282.
-LaTeX Info: Redefining \dotlessi on input line 282.
-LaTeX Info: Redefining \sptext on input line 297.
-LaTeX Info: Redefining \lsc on input line 297.
-LaTeX Info: Redefining \. on input line 297.
-LaTeX Info: Redefining \% on input line 297.
-LaTeX Info: Redefining \dotlessi on input line 297.
+LaTeX Info: Redefining \sptext on input line 228.
+LaTeX Info: Redefining \lsc on input line 228.
+LaTeX Info: Redefining \. on input line 228.
+LaTeX Info: Redefining \% on input line 228.
+LaTeX Info: Redefining \dotlessi on input line 228.
+LaTeX Info: Redefining \sptext on input line 239.
+LaTeX Info: Redefining \lsc on input line 239.
+LaTeX Info: Redefining \. on input line 239.
+LaTeX Info: Redefining \% on input line 239.
+LaTeX Info: Redefining \dotlessi on input line 239.
+LaTeX Info: Redefining \sptext on input line 248.
+LaTeX Info: Redefining \lsc on input line 248.
+LaTeX Info: Redefining \. on input line 248.
+LaTeX Info: Redefining \% on input line 248.
+LaTeX Info: Redefining \dotlessi on input line 248.
+LaTeX Info: Redefining \sptext on input line 257.
+LaTeX Info: Redefining \lsc on input line 257.
+LaTeX Info: Redefining \. on input line 257.
+LaTeX Info: Redefining \% on input line 257.
+LaTeX Info: Redefining \dotlessi on input line 257.
+LaTeX Info: Redefining \sptext on input line 263.
+LaTeX Info: Redefining \lsc on input line 263.
+LaTeX Info: Redefining \. on input line 263.
+LaTeX Info: Redefining \% on input line 263.
+LaTeX Info: Redefining \dotlessi on input line 263.
+LaTeX Info: Redefining \sptext on input line 264.
+LaTeX Info: Redefining \lsc on input line 264.
+LaTeX Info: Redefining \. on input line 264.
+LaTeX Info: Redefining \% on input line 264.
+LaTeX Info: Redefining \dotlessi on input line 264.
+LaTeX Info: Redefining \sptext on input line 269.
+LaTeX Info: Redefining \lsc on input line 269.
+LaTeX Info: Redefining \. on input line 269.
+LaTeX Info: Redefining \% on input line 269.
+LaTeX Info: Redefining \dotlessi on input line 269.
+LaTeX Info: Redefining \sptext on input line 280.
+LaTeX Info: Redefining \lsc on input line 280.
+LaTeX Info: Redefining \. on input line 280.
+LaTeX Info: Redefining \% on input line 280.
+LaTeX Info: Redefining \dotlessi on input line 280.
+LaTeX Info: Redefining \sptext on input line 285.
+LaTeX Info: Redefining \lsc on input line 285.
+LaTeX Info: Redefining \. on input line 285.
+LaTeX Info: Redefining \% on input line 285.
+LaTeX Info: Redefining \dotlessi on input line 285.
+LaTeX Info: Redefining \sptext on input line 286.
+LaTeX Info: Redefining \lsc on input line 286.
+LaTeX Info: Redefining \. on input line 286.
+LaTeX Info: Redefining \% on input line 286.
+LaTeX Info: Redefining \dotlessi on input line 286.
+LaTeX Info: Redefining \sptext on input line 291.
+LaTeX Info: Redefining \lsc on input line 291.
+LaTeX Info: Redefining \. on input line 291.
+LaTeX Info: Redefining \% on input line 291.
+LaTeX Info: Redefining \dotlessi on input line 291.
 LaTeX Info: Redefining \sptext on input line 303.
 LaTeX Info: Redefining \lsc on input line 303.
 LaTeX Info: Redefining \. on input line 303.
 LaTeX Info: Redefining \% on input line 303.
 LaTeX Info: Redefining \dotlessi on input line 303.
-LaTeX Info: Redefining \sptext on input line 308.
-LaTeX Info: Redefining \lsc on input line 308.
-LaTeX Info: Redefining \. on input line 308.
-LaTeX Info: Redefining \% on input line 308.
-LaTeX Info: Redefining \dotlessi on input line 308.
-LaTeX Info: Redefining \sptext on input line 308.
-LaTeX Info: Redefining \lsc on input line 308.
-LaTeX Info: Redefining \. on input line 308.
-LaTeX Info: Redefining \% on input line 308.
-LaTeX Info: Redefining \dotlessi on input line 308.
-LaTeX Info: Redefining \sptext on input line 313.
-LaTeX Info: Redefining \lsc on input line 313.
-LaTeX Info: Redefining \. on input line 313.
-LaTeX Info: Redefining \% on input line 313.
-LaTeX Info: Redefining \dotlessi on input line 313.
-LaTeX Info: Redefining \sptext on input line 317.
-LaTeX Info: Redefining \lsc on input line 317.
-LaTeX Info: Redefining \. on input line 317.
-LaTeX Info: Redefining \% on input line 317.
-LaTeX Info: Redefining \dotlessi on input line 317.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 317.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 317.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 317.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 317.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 317.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 317.
- [175]
-LaTeX Info: Redefining \sptext on input line 321.
-LaTeX Info: Redefining \lsc on input line 321.
-LaTeX Info: Redefining \. on input line 321.
-LaTeX Info: Redefining \% on input line 321.
-LaTeX Info: Redefining \dotlessi on input line 321.
+LaTeX Info: Redefining \sptext on input line 303.
+LaTeX Info: Redefining \lsc on input line 303.
+LaTeX Info: Redefining \. on input line 303.
+LaTeX Info: Redefining \% on input line 303.
+LaTeX Info: Redefining \dotlessi on input line 303.
+LaTeX Info: Redefining \sptext on input line 307.
+LaTeX Info: Redefining \lsc on input line 307.
+LaTeX Info: Redefining \. on input line 307.
+LaTeX Info: Redefining \% on input line 307.
+LaTeX Info: Redefining \dotlessi on input line 307.
+LaTeX Info: Redefining \sptext on input line 310.
+LaTeX Info: Redefining \lsc on input line 310.
+LaTeX Info: Redefining \. on input line 310.
+LaTeX Info: Redefining \% on input line 310.
+LaTeX Info: Redefining \dotlessi on input line 310.
+LaTeX Info: Redefining \sptext on input line 310.
+LaTeX Info: Redefining \lsc on input line 310.
+LaTeX Info: Redefining \. on input line 310.
+LaTeX Info: Redefining \% on input line 310.
+LaTeX Info: Redefining \dotlessi on input line 310.
+LaTeX Info: Redefining \sptext on input line 314.
+LaTeX Info: Redefining \lsc on input line 314.
+LaTeX Info: Redefining \. on input line 314.
+LaTeX Info: Redefining \% on input line 314.
+LaTeX Info: Redefining \dotlessi on input line 314.
+LaTeX Info: Redefining \sptext on input line 319.
+LaTeX Info: Redefining \lsc on input line 319.
+LaTeX Info: Redefining \. on input line 319.
+LaTeX Info: Redefining \% on input line 319.
+LaTeX Info: Redefining \dotlessi on input line 319.
+LaTeX Info: Redefining \sptext on input line 319.
+LaTeX Info: Redefining \lsc on input line 319.
+LaTeX Info: Redefining \. on input line 319.
+LaTeX Info: Redefining \% on input line 319.
+LaTeX Info: Redefining \dotlessi on input line 319.
 LaTeX Info: Redefining \sptext on input line 322.
 LaTeX Info: Redefining \lsc on input line 322.
 LaTeX Info: Redefining \. on input line 322.
 LaTeX Info: Redefining \% on input line 322.
 LaTeX Info: Redefining \dotlessi on input line 322.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 322.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 322.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 322.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 322.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 322.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 322.
+ [175]
+LaTeX Info: Redefining \sptext on input line 324.
+LaTeX Info: Redefining \lsc on input line 324.
+LaTeX Info: Redefining \. on input line 324.
+LaTeX Info: Redefining \% on input line 324.
+LaTeX Info: Redefining \dotlessi on input line 324.
+LaTeX Info: Redefining \sptext on input line 328.
+LaTeX Info: Redefining \lsc on input line 328.
+LaTeX Info: Redefining \. on input line 328.
+LaTeX Info: Redefining \% on input line 328.
+LaTeX Info: Redefining \dotlessi on input line 328.
+LaTeX Info: Redefining \sptext on input line 328.
+LaTeX Info: Redefining \lsc on input line 328.
+LaTeX Info: Redefining \. on input line 328.
+LaTeX Info: Redefining \% on input line 328.
+LaTeX Info: Redefining \dotlessi on input line 328.
+LaTeX Info: Redefining \sptext on input line 334.
+LaTeX Info: Redefining \lsc on input line 334.
+LaTeX Info: Redefining \. on input line 334.
+LaTeX Info: Redefining \% on input line 334.
+LaTeX Info: Redefining \dotlessi on input line 334.
+LaTeX Info: Redefining \sptext on input line 335.
+LaTeX Info: Redefining \lsc on input line 335.
+LaTeX Info: Redefining \. on input line 335.
+LaTeX Info: Redefining \% on input line 335.
+LaTeX Info: Redefining \dotlessi on input line 335.
 LaTeX Info: Redefining \sptext on input line 336.
 LaTeX Info: Redefining \lsc on input line 336.
 LaTeX Info: Redefining \. on input line 336.
 LaTeX Info: Redefining \% on input line 336.
 LaTeX Info: Redefining \dotlessi on input line 336.
-LaTeX Info: Redefining \sptext on input line 352.
-LaTeX Info: Redefining \lsc on input line 352.
-LaTeX Info: Redefining \. on input line 352.
-LaTeX Info: Redefining \% on input line 352.
-LaTeX Info: Redefining \dotlessi on input line 352.
-LaTeX Info: Redefining \sptext on input line 362.
-LaTeX Info: Redefining \lsc on input line 362.
-LaTeX Info: Redefining \. on input line 362.
-LaTeX Info: Redefining \% on input line 362.
-LaTeX Info: Redefining \dotlessi on input line 362.
-LaTeX Info: Redefining \sptext on input line 362.
-LaTeX Info: Redefining \lsc on input line 362.
-LaTeX Info: Redefining \. on input line 362.
-LaTeX Info: Redefining \% on input line 362.
-LaTeX Info: Redefining \dotlessi on input line 362.
+LaTeX Info: Redefining \sptext on input line 336.
+LaTeX Info: Redefining \lsc on input line 336.
+LaTeX Info: Redefining \. on input line 336.
+LaTeX Info: Redefining \% on input line 336.
+LaTeX Info: Redefining \dotlessi on input line 336.
+LaTeX Info: Redefining \sptext on input line 343.
+LaTeX Info: Redefining \lsc on input line 343.
+LaTeX Info: Redefining \. on input line 343.
+LaTeX Info: Redefining \% on input line 343.
+LaTeX Info: Redefining \dotlessi on input line 343.
+LaTeX Info: Redefining \sptext on input line 343.
+LaTeX Info: Redefining \lsc on input line 343.
+LaTeX Info: Redefining \. on input line 343.
+LaTeX Info: Redefining \% on input line 343.
+LaTeX Info: Redefining \dotlessi on input line 343.
+LaTeX Info: Redefining \sptext on input line 349.
+LaTeX Info: Redefining \lsc on input line 349.
+LaTeX Info: Redefining \. on input line 349.
+LaTeX Info: Redefining \% on input line 349.
+LaTeX Info: Redefining \dotlessi on input line 349.
+LaTeX Info: Redefining \sptext on input line 349.
+LaTeX Info: Redefining \lsc on input line 349.
+LaTeX Info: Redefining \. on input line 349.
+LaTeX Info: Redefining \% on input line 349.
+LaTeX Info: Redefining \dotlessi on input line 349.
+LaTeX Info: Redefining \sptext on input line 360.
+LaTeX Info: Redefining \lsc on input line 360.
+LaTeX Info: Redefining \. on input line 360.
+LaTeX Info: Redefining \% on input line 360.
+LaTeX Info: Redefining \dotlessi on input line 360.
+LaTeX Info: Redefining \sptext on input line 363.
+LaTeX Info: Redefining \lsc on input line 363.
+LaTeX Info: Redefining \. on input line 363.
+LaTeX Info: Redefining \% on input line 363.
+LaTeX Info: Redefining \dotlessi on input line 363.
+LaTeX Info: Redefining \sptext on input line 364.
+LaTeX Info: Redefining \lsc on input line 364.
+LaTeX Info: Redefining \. on input line 364.
+LaTeX Info: Redefining \% on input line 364.
+LaTeX Info: Redefining \dotlessi on input line 364.
 LaTeX Info: Redefining \sptext on input line 367.
 LaTeX Info: Redefining \lsc on input line 367.
 LaTeX Info: Redefining \. on input line 367.
 LaTeX Info: Redefining \% on input line 367.
 LaTeX Info: Redefining \dotlessi on input line 367.
-LaTeX Info: Redefining \sptext on input line 371.
-LaTeX Info: Redefining \lsc on input line 371.
-LaTeX Info: Redefining \. on input line 371.
-LaTeX Info: Redefining \% on input line 371.
-LaTeX Info: Redefining \dotlessi on input line 371.
-LaTeX Info: Redefining \sptext on input line 372.
-LaTeX Info: Redefining \lsc on input line 372.
-LaTeX Info: Redefining \. on input line 372.
-LaTeX Info: Redefining \% on input line 372.
-LaTeX Info: Redefining \dotlessi on input line 372.
-LaTeX Info: Redefining \sptext on input line 378.
-LaTeX Info: Redefining \lsc on input line 378.
-LaTeX Info: Redefining \. on input line 378.
-LaTeX Info: Redefining \% on input line 378.
-LaTeX Info: Redefining \dotlessi on input line 378.
-LaTeX Info: Redefining \sptext on input line 384.
-LaTeX Info: Redefining \lsc on input line 384.
-LaTeX Info: Redefining \. on input line 384.
-LaTeX Info: Redefining \% on input line 384.
-LaTeX Info: Redefining \dotlessi on input line 384.
-LaTeX Info: Redefining \sptext on input line 389.
-LaTeX Info: Redefining \lsc on input line 389.
-LaTeX Info: Redefining \. on input line 389.
-LaTeX Info: Redefining \% on input line 389.
-LaTeX Info: Redefining \dotlessi on input line 389.
-LaTeX Info: Redefining \sptext on input line 398.
-LaTeX Info: Redefining \lsc on input line 398.
-LaTeX Info: Redefining \. on input line 398.
-LaTeX Info: Redefining \% on input line 398.
-LaTeX Info: Redefining \dotlessi on input line 398.
-LaTeX Info: Redefining \sptext on input line 402.
-LaTeX Info: Redefining \lsc on input line 402.
-LaTeX Info: Redefining \. on input line 402.
-LaTeX Info: Redefining \% on input line 402.
-LaTeX Info: Redefining \dotlessi on input line 402.
-LaTeX Info: Redefining \sptext on input line 411.
-LaTeX Info: Redefining \lsc on input line 411.
-LaTeX Info: Redefining \. on input line 411.
-LaTeX Info: Redefining \% on input line 411.
-LaTeX Info: Redefining \dotlessi on input line 411.
-LaTeX Info: Redefining \sptext on input line 412.
-LaTeX Info: Redefining \lsc on input line 412.
-LaTeX Info: Redefining \. on input line 412.
-LaTeX Info: Redefining \% on input line 412.
-LaTeX Info: Redefining \dotlessi on input line 412.
+LaTeX Info: Redefining \sptext on input line 377.
+LaTeX Info: Redefining \lsc on input line 377.
+LaTeX Info: Redefining \. on input line 377.
+LaTeX Info: Redefining \% on input line 377.
+LaTeX Info: Redefining \dotlessi on input line 377.
+LaTeX Info: Redefining \sptext on input line 377.
+LaTeX Info: Redefining \lsc on input line 377.
+LaTeX Info: Redefining \. on input line 377.
+LaTeX Info: Redefining \% on input line 377.
+LaTeX Info: Redefining \dotlessi on input line 377.
+LaTeX Info: Redefining \sptext on input line 382.
+LaTeX Info: Redefining \lsc on input line 382.
+LaTeX Info: Redefining \. on input line 382.
+LaTeX Info: Redefining \% on input line 382.
+LaTeX Info: Redefining \dotlessi on input line 382.
+LaTeX Info: Redefining \sptext on input line 386.
+LaTeX Info: Redefining \lsc on input line 386.
+LaTeX Info: Redefining \. on input line 386.
+LaTeX Info: Redefining \% on input line 386.
+LaTeX Info: Redefining \dotlessi on input line 386.
+LaTeX Info: Redefining \sptext on input line 387.
+LaTeX Info: Redefining \lsc on input line 387.
+LaTeX Info: Redefining \. on input line 387.
+LaTeX Info: Redefining \% on input line 387.
+LaTeX Info: Redefining \dotlessi on input line 387.
+LaTeX Info: Redefining \sptext on input line 393.
+LaTeX Info: Redefining \lsc on input line 393.
+LaTeX Info: Redefining \. on input line 393.
+LaTeX Info: Redefining \% on input line 393.
+LaTeX Info: Redefining \dotlessi on input line 393.
+LaTeX Info: Redefining \sptext on input line 399.
+LaTeX Info: Redefining \lsc on input line 399.
+LaTeX Info: Redefining \. on input line 399.
+LaTeX Info: Redefining \% on input line 399.
+LaTeX Info: Redefining \dotlessi on input line 399.
+LaTeX Info: Redefining \sptext on input line 404.
+LaTeX Info: Redefining \lsc on input line 404.
+LaTeX Info: Redefining \. on input line 404.
+LaTeX Info: Redefining \% on input line 404.
+LaTeX Info: Redefining \dotlessi on input line 404.
+LaTeX Info: Redefining \sptext on input line 413.
+LaTeX Info: Redefining \lsc on input line 413.
+LaTeX Info: Redefining \. on input line 413.
+LaTeX Info: Redefining \% on input line 413.
+LaTeX Info: Redefining \dotlessi on input line 413.
+LaTeX Info: Redefining \sptext on input line 413.
+LaTeX Info: Redefining \lsc on input line 413.
+LaTeX Info: Redefining \. on input line 413.
+LaTeX Info: Redefining \% on input line 413.
+LaTeX Info: Redefining \dotlessi on input line 413.
+LaTeX Info: Redefining \sptext on input line 413.
+LaTeX Info: Redefining \lsc on input line 413.
+LaTeX Info: Redefining \. on input line 413.
+LaTeX Info: Redefining \% on input line 413.
+LaTeX Info: Redefining \dotlessi on input line 413.
+LaTeX Info: Redefining \sptext on input line 417.
+LaTeX Info: Redefining \lsc on input line 417.
+LaTeX Info: Redefining \. on input line 417.
+LaTeX Info: Redefining \% on input line 417.
+LaTeX Info: Redefining \dotlessi on input line 417.
+LaTeX Info: Redefining \sptext on input line 426.
+LaTeX Info: Redefining \lsc on input line 426.
+LaTeX Info: Redefining \. on input line 426.
+LaTeX Info: Redefining \% on input line 426.
+LaTeX Info: Redefining \dotlessi on input line 426.
 LaTeX Info: Redefining \sptext on input line 427.
 LaTeX Info: Redefining \lsc on input line 427.
 LaTeX Info: Redefining \. on input line 427.
 LaTeX Info: Redefining \% on input line 427.
 LaTeX Info: Redefining \dotlessi on input line 427.
+LaTeX Info: Redefining \sptext on input line 429.
+LaTeX Info: Redefining \lsc on input line 429.
+LaTeX Info: Redefining \. on input line 429.
+LaTeX Info: Redefining \% on input line 429.
+LaTeX Info: Redefining \dotlessi on input line 429.
+LaTeX Info: Redefining \sptext on input line 429.
+LaTeX Info: Redefining \lsc on input line 429.
+LaTeX Info: Redefining \. on input line 429.
+LaTeX Info: Redefining \% on input line 429.
+LaTeX Info: Redefining \dotlessi on input line 429.
 LaTeX Info: Redefining \sptext on input line 436.
 LaTeX Info: Redefining \lsc on input line 436.
 LaTeX Info: Redefining \. on input line 436.
 LaTeX Info: Redefining \% on input line 436.
 LaTeX Info: Redefining \dotlessi on input line 436.
+LaTeX Info: Redefining \sptext on input line 439.
+LaTeX Info: Redefining \lsc on input line 439.
+LaTeX Info: Redefining \. on input line 439.
+LaTeX Info: Redefining \% on input line 439.
+LaTeX Info: Redefining \dotlessi on input line 439.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 439.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 439.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 439.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 439.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 439.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 436.
+(babel)             in language  on input line 439.
  [176]
-LaTeX Info: Redefining \sptext on input line 446.
-LaTeX Info: Redefining \lsc on input line 446.
-LaTeX Info: Redefining \. on input line 446.
-LaTeX Info: Redefining \% on input line 446.
-LaTeX Info: Redefining \dotlessi on input line 446.
-LaTeX Info: Redefining \sptext on input line 451.
-LaTeX Info: Redefining \lsc on input line 451.
-LaTeX Info: Redefining \. on input line 451.
-LaTeX Info: Redefining \% on input line 451.
-LaTeX Info: Redefining \dotlessi on input line 451.
-LaTeX Info: Redefining \sptext on input line 459.
-LaTeX Info: Redefining \lsc on input line 459.
-LaTeX Info: Redefining \. on input line 459.
-LaTeX Info: Redefining \% on input line 459.
-LaTeX Info: Redefining \dotlessi on input line 459.
-LaTeX Info: Redefining \sptext on input line 463.
-LaTeX Info: Redefining \lsc on input line 463.
-LaTeX Info: Redefining \. on input line 463.
-LaTeX Info: Redefining \% on input line 463.
-LaTeX Info: Redefining \dotlessi on input line 463.
-LaTeX Info: Redefining \sptext on input line 464.
-LaTeX Info: Redefining \lsc on input line 464.
-LaTeX Info: Redefining \. on input line 464.
-LaTeX Info: Redefining \% on input line 464.
-LaTeX Info: Redefining \dotlessi on input line 464.
+LaTeX Info: Redefining \sptext on input line 444.
+LaTeX Info: Redefining \lsc on input line 444.
+LaTeX Info: Redefining \. on input line 444.
+LaTeX Info: Redefining \% on input line 444.
+LaTeX Info: Redefining \dotlessi on input line 444.
+LaTeX Info: Redefining \sptext on input line 445.
+LaTeX Info: Redefining \lsc on input line 445.
+LaTeX Info: Redefining \. on input line 445.
+LaTeX Info: Redefining \% on input line 445.
+LaTeX Info: Redefining \dotlessi on input line 445.
 LaTeX Info: Redefining \sptext on input line 465.
 LaTeX Info: Redefining \lsc on input line 465.
 LaTeX Info: Redefining \. on input line 465.
 LaTeX Info: Redefining \% on input line 465.
 LaTeX Info: Redefining \dotlessi on input line 465.
-LaTeX Info: Redefining \sptext on input line 471.
-LaTeX Info: Redefining \lsc on input line 471.
-LaTeX Info: Redefining \. on input line 471.
-LaTeX Info: Redefining \% on input line 471.
-LaTeX Info: Redefining \dotlessi on input line 471.
-LaTeX Info: Redefining \sptext on input line 471.
-LaTeX Info: Redefining \lsc on input line 471.
-LaTeX Info: Redefining \. on input line 471.
-LaTeX Info: Redefining \% on input line 471.
-LaTeX Info: Redefining \dotlessi on input line 471.
 
-Underfull \hbox (badness 1817) in paragraph at lines 468--473
+Underfull \hbox (badness 1701) in paragraph at lines 463--468
+\T1/ppl/m/n/12 vo-lu-men 16.  John Wi-ley & Sons, Inc., New York, NY, USA, 2001
+,
+ []
+
+LaTeX Info: Redefining \sptext on input line 471.
+LaTeX Info: Redefining \lsc on input line 471.
+LaTeX Info: Redefining \. on input line 471.
+LaTeX Info: Redefining \% on input line 471.
+LaTeX Info: Redefining \dotlessi on input line 471.
+LaTeX Info: Redefining \sptext on input line 479.
+LaTeX Info: Redefining \lsc on input line 479.
+LaTeX Info: Redefining \. on input line 479.
+LaTeX Info: Redefining \% on input line 479.
+LaTeX Info: Redefining \dotlessi on input line 479.
+LaTeX Info: Redefining \sptext on input line 483.
+LaTeX Info: Redefining \lsc on input line 483.
+LaTeX Info: Redefining \. on input line 483.
+LaTeX Info: Redefining \% on input line 483.
+LaTeX Info: Redefining \dotlessi on input line 483.
+LaTeX Info: Redefining \sptext on input line 484.
+LaTeX Info: Redefining \lsc on input line 484.
+LaTeX Info: Redefining \. on input line 484.
+LaTeX Info: Redefining \% on input line 484.
+LaTeX Info: Redefining \dotlessi on input line 484.
+LaTeX Info: Redefining \sptext on input line 485.
+LaTeX Info: Redefining \lsc on input line 485.
+LaTeX Info: Redefining \. on input line 485.
+LaTeX Info: Redefining \% on input line 485.
+LaTeX Info: Redefining \dotlessi on input line 485.
+LaTeX Info: Redefining \sptext on input line 491.
+LaTeX Info: Redefining \lsc on input line 491.
+LaTeX Info: Redefining \. on input line 491.
+LaTeX Info: Redefining \% on input line 491.
+LaTeX Info: Redefining \dotlessi on input line 491.
+LaTeX Info: Redefining \sptext on input line 491.
+LaTeX Info: Redefining \lsc on input line 491.
+LaTeX Info: Redefining \. on input line 491.
+LaTeX Info: Redefining \% on input line 491.
+LaTeX Info: Redefining \dotlessi on input line 491.
+
+Underfull \hbox (badness 1817) in paragraph at lines 488--493
 []\T1/ppl/m/n/12 Michalewicz, Zbig-niew: \T1/ppl/m/it/12 Ge-ne-tic Al-go-rithms
  + Da-ta Struc-tu-res = Evo-lu-
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 468--473
+Underfull \hbox (badness 1371) in paragraph at lines 488--493
 \T1/ppl/m/it/12 tion Pro-grams\T1/ppl/m/n/12 .  Springer-Verlag, Ber-lin, Hei-d
 el-berg, 3ra edi-ción, 1996,
  []
 
-LaTeX Info: Redefining \sptext on input line 476.
-LaTeX Info: Redefining \lsc on input line 476.
-LaTeX Info: Redefining \. on input line 476.
-LaTeX Info: Redefining \% on input line 476.
-LaTeX Info: Redefining \dotlessi on input line 476.
-LaTeX Info: Redefining \sptext on input line 481.
-LaTeX Info: Redefining \lsc on input line 481.
-LaTeX Info: Redefining \. on input line 481.
-LaTeX Info: Redefining \% on input line 481.
-LaTeX Info: Redefining \dotlessi on input line 481.
-LaTeX Info: Redefining \sptext on input line 482.
-LaTeX Info: Redefining \lsc on input line 482.
-LaTeX Info: Redefining \. on input line 482.
-LaTeX Info: Redefining \% on input line 482.
-LaTeX Info: Redefining \dotlessi on input line 482.
-LaTeX Info: Redefining \sptext on input line 483.
-LaTeX Info: Redefining \lsc on input line 483.
-LaTeX Info: Redefining \. on input line 483.
-LaTeX Info: Redefining \% on input line 483.
-LaTeX Info: Redefining \dotlessi on input line 483.
-LaTeX Info: Redefining \sptext on input line 483.
-LaTeX Info: Redefining \lsc on input line 483.
-LaTeX Info: Redefining \. on input line 483.
-LaTeX Info: Redefining \% on input line 483.
-LaTeX Info: Redefining \dotlessi on input line 483.
-LaTeX Info: Redefining \sptext on input line 494.
-LaTeX Info: Redefining \lsc on input line 494.
-LaTeX Info: Redefining \. on input line 494.
-LaTeX Info: Redefining \% on input line 494.
-LaTeX Info: Redefining \dotlessi on input line 494.
-LaTeX Info: Redefining \sptext on input line 498.
-LaTeX Info: Redefining \lsc on input line 498.
-LaTeX Info: Redefining \. on input line 498.
-LaTeX Info: Redefining \% on input line 498.
-LaTeX Info: Redefining \dotlessi on input line 498.
-LaTeX Info: Redefining \sptext on input line 499.
-LaTeX Info: Redefining \lsc on input line 499.
-LaTeX Info: Redefining \. on input line 499.
-LaTeX Info: Redefining \% on input line 499.
-LaTeX Info: Redefining \dotlessi on input line 499.
+LaTeX Info: Redefining \sptext on input line 496.
+LaTeX Info: Redefining \lsc on input line 496.
+LaTeX Info: Redefining \. on input line 496.
+LaTeX Info: Redefining \% on input line 496.
+LaTeX Info: Redefining \dotlessi on input line 496.
+LaTeX Info: Redefining \sptext on input line 501.
+LaTeX Info: Redefining \lsc on input line 501.
+LaTeX Info: Redefining \. on input line 501.
+LaTeX Info: Redefining \% on input line 501.
+LaTeX Info: Redefining \dotlessi on input line 501.
 LaTeX Info: Redefining \sptext on input line 502.
 LaTeX Info: Redefining \lsc on input line 502.
 LaTeX Info: Redefining \. on input line 502.
 LaTeX Info: Redefining \% on input line 502.
 LaTeX Info: Redefining \dotlessi on input line 502.
-LaTeX Info: Redefining \sptext on input line 507.
-LaTeX Info: Redefining \lsc on input line 507.
-LaTeX Info: Redefining \. on input line 507.
-LaTeX Info: Redefining \% on input line 507.
-LaTeX Info: Redefining \dotlessi on input line 507.
-LaTeX Info: Redefining \sptext on input line 507.
-LaTeX Info: Redefining \lsc on input line 507.
-LaTeX Info: Redefining \. on input line 507.
-LaTeX Info: Redefining \% on input line 507.
-LaTeX Info: Redefining \dotlessi on input line 507.
-LaTeX Info: Redefining \sptext on input line 513.
-LaTeX Info: Redefining \lsc on input line 513.
-LaTeX Info: Redefining \. on input line 513.
-LaTeX Info: Redefining \% on input line 513.
-LaTeX Info: Redefining \dotlessi on input line 513.
+LaTeX Info: Redefining \sptext on input line 503.
+LaTeX Info: Redefining \lsc on input line 503.
+LaTeX Info: Redefining \. on input line 503.
+LaTeX Info: Redefining \% on input line 503.
+LaTeX Info: Redefining \dotlessi on input line 503.
+LaTeX Info: Redefining \sptext on input line 503.
+LaTeX Info: Redefining \lsc on input line 503.
+LaTeX Info: Redefining \. on input line 503.
+LaTeX Info: Redefining \% on input line 503.
+LaTeX Info: Redefining \dotlessi on input line 503.
+LaTeX Info: Redefining \sptext on input line 514.
+LaTeX Info: Redefining \lsc on input line 514.
+LaTeX Info: Redefining \. on input line 514.
+LaTeX Info: Redefining \% on input line 514.
+LaTeX Info: Redefining \dotlessi on input line 514.
 LaTeX Info: Redefining \sptext on input line 518.
 LaTeX Info: Redefining \lsc on input line 518.
 LaTeX Info: Redefining \. on input line 518.
 LaTeX Info: Redefining \% on input line 518.
 LaTeX Info: Redefining \dotlessi on input line 518.
-LaTeX Info: Redefining \sptext on input line 521.
-LaTeX Info: Redefining \lsc on input line 521.
-LaTeX Info: Redefining \. on input line 521.
-LaTeX Info: Redefining \% on input line 521.
-LaTeX Info: Redefining \dotlessi on input line 521.
-LaTeX Info: Redefining \sptext on input line 521.
-LaTeX Info: Redefining \lsc on input line 521.
-LaTeX Info: Redefining \. on input line 521.
-LaTeX Info: Redefining \% on input line 521.
-LaTeX Info: Redefining \dotlessi on input line 521.
+LaTeX Info: Redefining \sptext on input line 519.
+LaTeX Info: Redefining \lsc on input line 519.
+LaTeX Info: Redefining \. on input line 519.
+LaTeX Info: Redefining \% on input line 519.
+LaTeX Info: Redefining \dotlessi on input line 519.
+LaTeX Info: Redefining \sptext on input line 522.
+LaTeX Info: Redefining \lsc on input line 522.
+LaTeX Info: Redefining \. on input line 522.
+LaTeX Info: Redefining \% on input line 522.
+LaTeX Info: Redefining \dotlessi on input line 522.
+LaTeX Info: Redefining \sptext on input line 527.
+LaTeX Info: Redefining \lsc on input line 527.
+LaTeX Info: Redefining \. on input line 527.
+LaTeX Info: Redefining \% on input line 527.
+LaTeX Info: Redefining \dotlessi on input line 527.
+LaTeX Info: Redefining \sptext on input line 527.
+LaTeX Info: Redefining \lsc on input line 527.
+LaTeX Info: Redefining \. on input line 527.
+LaTeX Info: Redefining \% on input line 527.
+LaTeX Info: Redefining \dotlessi on input line 527.
 LaTeX Info: Redefining \sptext on input line 533.
 LaTeX Info: Redefining \lsc on input line 533.
 LaTeX Info: Redefining \. on input line 533.
 LaTeX Info: Redefining \% on input line 533.
 LaTeX Info: Redefining \dotlessi on input line 533.
-LaTeX Info: Redefining \sptext on input line 539.
-LaTeX Info: Redefining \lsc on input line 539.
-LaTeX Info: Redefining \. on input line 539.
-LaTeX Info: Redefining \% on input line 539.
-LaTeX Info: Redefining \dotlessi on input line 539.
-LaTeX Info: Redefining \sptext on input line 539.
-LaTeX Info: Redefining \lsc on input line 539.
-LaTeX Info: Redefining \. on input line 539.
-LaTeX Info: Redefining \% on input line 539.
-LaTeX Info: Redefining \dotlessi on input line 539.
+LaTeX Info: Redefining \sptext on input line 538.
+LaTeX Info: Redefining \lsc on input line 538.
+LaTeX Info: Redefining \. on input line 538.
+LaTeX Info: Redefining \% on input line 538.
+LaTeX Info: Redefining \dotlessi on input line 538.
 LaTeX Info: Redefining \sptext on input line 541.
 LaTeX Info: Redefining \lsc on input line 541.
 LaTeX Info: Redefining \. on input line 541.
 LaTeX Info: Redefining \% on input line 541.
 LaTeX Info: Redefining \dotlessi on input line 541.
+LaTeX Info: Redefining \sptext on input line 541.
+LaTeX Info: Redefining \lsc on input line 541.
+LaTeX Info: Redefining \. on input line 541.
+LaTeX Info: Redefining \% on input line 541.
+LaTeX Info: Redefining \dotlessi on input line 541.
+LaTeX Info: Redefining \sptext on input line 550.
+LaTeX Info: Redefining \lsc on input line 550.
+LaTeX Info: Redefining \. on input line 550.
+LaTeX Info: Redefining \% on input line 550.
+LaTeX Info: Redefining \dotlessi on input line 550.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 541.
+(babel)             in language  on input line 550.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 541.
+(babel)             in language  on input line 550.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 541.
+(babel)             in language  on input line 550.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 541.
+(babel)             in language  on input line 550.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 541.
+(babel)             in language  on input line 550.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 541.
+(babel)             in language  on input line 550.
 [177]
-LaTeX Info: Redefining \sptext on input line 564.
-LaTeX Info: Redefining \lsc on input line 564.
-LaTeX Info: Redefining \. on input line 564.
-LaTeX Info: Redefining \% on input line 564.
-LaTeX Info: Redefining \dotlessi on input line 564.
-LaTeX Info: Redefining \sptext on input line 567.
-LaTeX Info: Redefining \lsc on input line 567.
-LaTeX Info: Redefining \. on input line 567.
-LaTeX Info: Redefining \% on input line 567.
-LaTeX Info: Redefining \dotlessi on input line 567.
-LaTeX Info: Redefining \sptext on input line 568.
-LaTeX Info: Redefining \lsc on input line 568.
-LaTeX Info: Redefining \. on input line 568.
-LaTeX Info: Redefining \% on input line 568.
-LaTeX Info: Redefining \dotlessi on input line 568.
-LaTeX Info: Redefining \sptext on input line 582.
-LaTeX Info: Redefining \lsc on input line 582.
-LaTeX Info: Redefining \. on input line 582.
-LaTeX Info: Redefining \% on input line 582.
-LaTeX Info: Redefining \dotlessi on input line 582.
-LaTeX Info: Redefining \sptext on input line 586.
-LaTeX Info: Redefining \lsc on input line 586.
-LaTeX Info: Redefining \. on input line 586.
-LaTeX Info: Redefining \% on input line 586.
-LaTeX Info: Redefining \dotlessi on input line 586.
-LaTeX Info: Redefining \sptext on input line 593.
-LaTeX Info: Redefining \lsc on input line 593.
-LaTeX Info: Redefining \. on input line 593.
-LaTeX Info: Redefining \% on input line 593.
-LaTeX Info: Redefining \dotlessi on input line 593.
-LaTeX Info: Redefining \sptext on input line 598.
-LaTeX Info: Redefining \lsc on input line 598.
-LaTeX Info: Redefining \. on input line 598.
-LaTeX Info: Redefining \% on input line 598.
-LaTeX Info: Redefining \dotlessi on input line 598.
-LaTeX Info: Redefining \sptext on input line 603.
-LaTeX Info: Redefining \lsc on input line 603.
-LaTeX Info: Redefining \. on input line 603.
-LaTeX Info: Redefining \% on input line 603.
-LaTeX Info: Redefining \dotlessi on input line 603.
-LaTeX Info: Redefining \sptext on input line 604.
-LaTeX Info: Redefining \lsc on input line 604.
-LaTeX Info: Redefining \. on input line 604.
-LaTeX Info: Redefining \% on input line 604.
-LaTeX Info: Redefining \dotlessi on input line 604.
-LaTeX Info: Redefining \sptext on input line 611.
-LaTeX Info: Redefining \lsc on input line 611.
-LaTeX Info: Redefining \. on input line 611.
-LaTeX Info: Redefining \% on input line 611.
-LaTeX Info: Redefining \dotlessi on input line 611.
-LaTeX Info: Redefining \sptext on input line 612.
-LaTeX Info: Redefining \lsc on input line 612.
-LaTeX Info: Redefining \. on input line 612.
-LaTeX Info: Redefining \% on input line 612.
-LaTeX Info: Redefining \dotlessi on input line 612.
-LaTeX Info: Redefining \sptext on input line 612.
-LaTeX Info: Redefining \lsc on input line 612.
-LaTeX Info: Redefining \. on input line 612.
-LaTeX Info: Redefining \% on input line 612.
-LaTeX Info: Redefining \dotlessi on input line 612.
-LaTeX Info: Redefining \sptext on input line 617.
-LaTeX Info: Redefining \lsc on input line 617.
-LaTeX Info: Redefining \. on input line 617.
-LaTeX Info: Redefining \% on input line 617.
-LaTeX Info: Redefining \dotlessi on input line 617.
-LaTeX Info: Redefining \sptext on input line 622.
-LaTeX Info: Redefining \lsc on input line 622.
-LaTeX Info: Redefining \. on input line 622.
-LaTeX Info: Redefining \% on input line 622.
-LaTeX Info: Redefining \dotlessi on input line 622.
+LaTeX Info: Redefining \sptext on input line 553.
+LaTeX Info: Redefining \lsc on input line 553.
+LaTeX Info: Redefining \. on input line 553.
+LaTeX Info: Redefining \% on input line 553.
+LaTeX Info: Redefining \dotlessi on input line 553.
+LaTeX Info: Redefining \sptext on input line 559.
+LaTeX Info: Redefining \lsc on input line 559.
+LaTeX Info: Redefining \. on input line 559.
+LaTeX Info: Redefining \% on input line 559.
+LaTeX Info: Redefining \dotlessi on input line 559.
+LaTeX Info: Redefining \sptext on input line 559.
+LaTeX Info: Redefining \lsc on input line 559.
+LaTeX Info: Redefining \. on input line 559.
+LaTeX Info: Redefining \% on input line 559.
+LaTeX Info: Redefining \dotlessi on input line 559.
+LaTeX Info: Redefining \sptext on input line 565.
+LaTeX Info: Redefining \lsc on input line 565.
+LaTeX Info: Redefining \. on input line 565.
+LaTeX Info: Redefining \% on input line 565.
+LaTeX Info: Redefining \dotlessi on input line 565.
+LaTeX Info: Redefining \sptext on input line 584.
+LaTeX Info: Redefining \lsc on input line 584.
+LaTeX Info: Redefining \. on input line 584.
+LaTeX Info: Redefining \% on input line 584.
+LaTeX Info: Redefining \dotlessi on input line 584.
+LaTeX Info: Redefining \sptext on input line 587.
+LaTeX Info: Redefining \lsc on input line 587.
+LaTeX Info: Redefining \. on input line 587.
+LaTeX Info: Redefining \% on input line 587.
+LaTeX Info: Redefining \dotlessi on input line 587.
+LaTeX Info: Redefining \sptext on input line 588.
+LaTeX Info: Redefining \lsc on input line 588.
+LaTeX Info: Redefining \. on input line 588.
+LaTeX Info: Redefining \% on input line 588.
+LaTeX Info: Redefining \dotlessi on input line 588.
+LaTeX Info: Redefining \sptext on input line 602.
+LaTeX Info: Redefining \lsc on input line 602.
+LaTeX Info: Redefining \. on input line 602.
+LaTeX Info: Redefining \% on input line 602.
+LaTeX Info: Redefining \dotlessi on input line 602.
+LaTeX Info: Redefining \sptext on input line 606.
+LaTeX Info: Redefining \lsc on input line 606.
+LaTeX Info: Redefining \. on input line 606.
+LaTeX Info: Redefining \% on input line 606.
+LaTeX Info: Redefining \dotlessi on input line 606.
+LaTeX Info: Redefining \sptext on input line 613.
+LaTeX Info: Redefining \lsc on input line 613.
+LaTeX Info: Redefining \. on input line 613.
+LaTeX Info: Redefining \% on input line 613.
+LaTeX Info: Redefining \dotlessi on input line 613.
+LaTeX Info: Redefining \sptext on input line 618.
+LaTeX Info: Redefining \lsc on input line 618.
+LaTeX Info: Redefining \. on input line 618.
+LaTeX Info: Redefining \% on input line 618.
+LaTeX Info: Redefining \dotlessi on input line 618.
 LaTeX Info: Redefining \sptext on input line 623.
 LaTeX Info: Redefining \lsc on input line 623.
 LaTeX Info: Redefining \. on input line 623.
@@ -9361,105 +9482,125 @@ LaTeX Info: Redefining \lsc on input line 624.
 LaTeX Info: Redefining \. on input line 624.
 LaTeX Info: Redefining \% on input line 624.
 LaTeX Info: Redefining \dotlessi on input line 624.
-LaTeX Info: Redefining \sptext on input line 629.
-LaTeX Info: Redefining \lsc on input line 629.
-LaTeX Info: Redefining \. on input line 629.
-LaTeX Info: Redefining \% on input line 629.
-LaTeX Info: Redefining \dotlessi on input line 629.
+LaTeX Info: Redefining \sptext on input line 631.
+LaTeX Info: Redefining \lsc on input line 631.
+LaTeX Info: Redefining \. on input line 631.
+LaTeX Info: Redefining \% on input line 631.
+LaTeX Info: Redefining \dotlessi on input line 631.
 LaTeX Info: Redefining \sptext on input line 632.
 LaTeX Info: Redefining \lsc on input line 632.
 LaTeX Info: Redefining \. on input line 632.
 LaTeX Info: Redefining \% on input line 632.
 LaTeX Info: Redefining \dotlessi on input line 632.
-LaTeX Info: Redefining \sptext on input line 633.
-LaTeX Info: Redefining \lsc on input line 633.
-LaTeX Info: Redefining \. on input line 633.
-LaTeX Info: Redefining \% on input line 633.
-LaTeX Info: Redefining \dotlessi on input line 633.
-LaTeX Info: Redefining \sptext on input line 638.
-LaTeX Info: Redefining \lsc on input line 638.
-LaTeX Info: Redefining \. on input line 638.
-LaTeX Info: Redefining \% on input line 638.
-LaTeX Info: Redefining \dotlessi on input line 638.
-LaTeX Info: Redefining \sptext on input line 655.
-LaTeX Info: Redefining \lsc on input line 655.
-LaTeX Info: Redefining \. on input line 655.
-LaTeX Info: Redefining \% on input line 655.
-LaTeX Info: Redefining \dotlessi on input line 655.
-LaTeX Info: Redefining \sptext on input line 660.
-LaTeX Info: Redefining \lsc on input line 660.
-LaTeX Info: Redefining \. on input line 660.
-LaTeX Info: Redefining \% on input line 660.
-LaTeX Info: Redefining \dotlessi on input line 660.
+LaTeX Info: Redefining \sptext on input line 632.
+LaTeX Info: Redefining \lsc on input line 632.
+LaTeX Info: Redefining \. on input line 632.
+LaTeX Info: Redefining \% on input line 632.
+LaTeX Info: Redefining \dotlessi on input line 632.
+LaTeX Info: Redefining \sptext on input line 637.
+LaTeX Info: Redefining \lsc on input line 637.
+LaTeX Info: Redefining \. on input line 637.
+LaTeX Info: Redefining \% on input line 637.
+LaTeX Info: Redefining \dotlessi on input line 637.
+LaTeX Info: Redefining \sptext on input line 642.
+LaTeX Info: Redefining \lsc on input line 642.
+LaTeX Info: Redefining \. on input line 642.
+LaTeX Info: Redefining \% on input line 642.
+LaTeX Info: Redefining \dotlessi on input line 642.
+LaTeX Info: Redefining \sptext on input line 643.
+LaTeX Info: Redefining \lsc on input line 643.
+LaTeX Info: Redefining \. on input line 643.
+LaTeX Info: Redefining \% on input line 643.
+LaTeX Info: Redefining \dotlessi on input line 643.
+LaTeX Info: Redefining \sptext on input line 644.
+LaTeX Info: Redefining \lsc on input line 644.
+LaTeX Info: Redefining \. on input line 644.
+LaTeX Info: Redefining \% on input line 644.
+LaTeX Info: Redefining \dotlessi on input line 644.
+LaTeX Info: Redefining \sptext on input line 649.
+LaTeX Info: Redefining \lsc on input line 649.
+LaTeX Info: Redefining \. on input line 649.
+LaTeX Info: Redefining \% on input line 649.
+LaTeX Info: Redefining \dotlessi on input line 649.
+LaTeX Info: Redefining \sptext on input line 652.
+LaTeX Info: Redefining \lsc on input line 652.
+LaTeX Info: Redefining \. on input line 652.
+LaTeX Info: Redefining \% on input line 652.
+LaTeX Info: Redefining \dotlessi on input line 652.
+LaTeX Info: Redefining \sptext on input line 653.
+LaTeX Info: Redefining \lsc on input line 653.
+LaTeX Info: Redefining \. on input line 653.
+LaTeX Info: Redefining \% on input line 653.
+LaTeX Info: Redefining \dotlessi on input line 653.
+LaTeX Info: Redefining \sptext on input line 658.
+LaTeX Info: Redefining \lsc on input line 658.
+LaTeX Info: Redefining \. on input line 658.
+LaTeX Info: Redefining \% on input line 658.
+LaTeX Info: Redefining \dotlessi on input line 658.
+LaTeX Info: Redefining \sptext on input line 673.
+LaTeX Info: Redefining \lsc on input line 673.
+LaTeX Info: Redefining \. on input line 673.
+LaTeX Info: Redefining \% on input line 673.
+LaTeX Info: Redefining \dotlessi on input line 673.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 660.
+(babel)             in language  on input line 673.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 660.
+(babel)             in language  on input line 673.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 660.
+(babel)             in language  on input line 673.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 660.
+(babel)             in language  on input line 673.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 660.
+(babel)             in language  on input line 673.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 660.
+(babel)             in language  on input line 673.
  [178]
-LaTeX Info: Redefining \sptext on input line 671.
-LaTeX Info: Redefining \lsc on input line 671.
-LaTeX Info: Redefining \. on input line 671.
-LaTeX Info: Redefining \% on input line 671.
-LaTeX Info: Redefining \dotlessi on input line 671.
-LaTeX Info: Redefining \sptext on input line 671.
-LaTeX Info: Redefining \lsc on input line 671.
-LaTeX Info: Redefining \. on input line 671.
-LaTeX Info: Redefining \% on input line 671.
-LaTeX Info: Redefining \dotlessi on input line 671.
-LaTeX Info: Redefining \sptext on input line 671.
-LaTeX Info: Redefining \lsc on input line 671.
-LaTeX Info: Redefining \. on input line 671.
-LaTeX Info: Redefining \% on input line 671.
-LaTeX Info: Redefining \dotlessi on input line 671.
+LaTeX Info: Redefining \sptext on input line 675.
+LaTeX Info: Redefining \lsc on input line 675.
+LaTeX Info: Redefining \. on input line 675.
+LaTeX Info: Redefining \% on input line 675.
+LaTeX Info: Redefining \dotlessi on input line 675.
+LaTeX Info: Redefining \sptext on input line 684.
+LaTeX Info: Redefining \lsc on input line 684.
+LaTeX Info: Redefining \. on input line 684.
+LaTeX Info: Redefining \% on input line 684.
+LaTeX Info: Redefining \dotlessi on input line 684.
+LaTeX Info: Redefining \sptext on input line 684.
+LaTeX Info: Redefining \lsc on input line 684.
+LaTeX Info: Redefining \. on input line 684.
+LaTeX Info: Redefining \% on input line 684.
+LaTeX Info: Redefining \dotlessi on input line 684.
+LaTeX Info: Redefining \sptext on input line 693.
+LaTeX Info: Redefining \lsc on input line 693.
+LaTeX Info: Redefining \. on input line 693.
+LaTeX Info: Redefining \% on input line 693.
+LaTeX Info: Redefining \dotlessi on input line 693.
+LaTeX Info: Redefining \sptext on input line 693.
+LaTeX Info: Redefining \lsc on input line 693.
+LaTeX Info: Redefining \. on input line 693.
+LaTeX Info: Redefining \% on input line 693.
+LaTeX Info: Redefining \dotlessi on input line 693.
+LaTeX Info: Redefining \sptext on input line 693.
+LaTeX Info: Redefining \lsc on input line 693.
+LaTeX Info: Redefining \. on input line 693.
+LaTeX Info: Redefining \% on input line 693.
+LaTeX Info: Redefining \dotlessi on input line 693.
 
-Underfull \hbox (badness 3724) in paragraph at lines 666--672
+Underfull \hbox (badness 3724) in paragraph at lines 688--694
 []\T1/ppl/m/n/12 Weisstein, Eric W.: \T1/ppl/m/it/12 Eu-ler For-mu-la\T1/ppl/m/
 n/12 .  []$\T1/cmtt/m/n/12 http : / / mathworld . wolfram . com /
  []
 
-LaTeX Info: Redefining \sptext on input line 677.
-LaTeX Info: Redefining \lsc on input line 677.
-LaTeX Info: Redefining \. on input line 677.
-LaTeX Info: Redefining \% on input line 677.
-LaTeX Info: Redefining \dotlessi on input line 677.
-LaTeX Info: Redefining \sptext on input line 681.
-LaTeX Info: Redefining \lsc on input line 681.
-LaTeX Info: Redefining \. on input line 681.
-LaTeX Info: Redefining \% on input line 681.
-LaTeX Info: Redefining \dotlessi on input line 681.
-LaTeX Info: Redefining \sptext on input line 687.
-LaTeX Info: Redefining \lsc on input line 687.
-LaTeX Info: Redefining \. on input line 687.
-LaTeX Info: Redefining \% on input line 687.
-LaTeX Info: Redefining \dotlessi on input line 687.
-LaTeX Info: Redefining \sptext on input line 692.
-LaTeX Info: Redefining \lsc on input line 692.
-LaTeX Info: Redefining \. on input line 692.
-LaTeX Info: Redefining \% on input line 692.
-LaTeX Info: Redefining \dotlessi on input line 692.
-LaTeX Info: Redefining \sptext on input line 694.
-LaTeX Info: Redefining \lsc on input line 694.
-LaTeX Info: Redefining \. on input line 694.
-LaTeX Info: Redefining \% on input line 694.
-LaTeX Info: Redefining \dotlessi on input line 694.
-LaTeX Info: Redefining \sptext on input line 708.
-LaTeX Info: Redefining \lsc on input line 708.
-LaTeX Info: Redefining \. on input line 708.
-LaTeX Info: Redefining \% on input line 708.
-LaTeX Info: Redefining \dotlessi on input line 708.
-LaTeX Info: Redefining \sptext on input line 709.
-LaTeX Info: Redefining \lsc on input line 709.
-LaTeX Info: Redefining \. on input line 709.
-LaTeX Info: Redefining \% on input line 709.
-LaTeX Info: Redefining \dotlessi on input line 709.
+LaTeX Info: Redefining \sptext on input line 699.
+LaTeX Info: Redefining \lsc on input line 699.
+LaTeX Info: Redefining \. on input line 699.
+LaTeX Info: Redefining \% on input line 699.
+LaTeX Info: Redefining \dotlessi on input line 699.
+LaTeX Info: Redefining \sptext on input line 703.
+LaTeX Info: Redefining \lsc on input line 703.
+LaTeX Info: Redefining \. on input line 703.
+LaTeX Info: Redefining \% on input line 703.
+LaTeX Info: Redefining \dotlessi on input line 703.
 LaTeX Info: Redefining \sptext on input line 709.
 LaTeX Info: Redefining \lsc on input line 709.
 LaTeX Info: Redefining \. on input line 709.
@@ -9470,221 +9611,274 @@ LaTeX Info: Redefining \lsc on input line 714.
 LaTeX Info: Redefining \. on input line 714.
 LaTeX Info: Redefining \% on input line 714.
 LaTeX Info: Redefining \dotlessi on input line 714.
-LaTeX Info: Redefining \sptext on input line 718.
-LaTeX Info: Redefining \lsc on input line 718.
-LaTeX Info: Redefining \. on input line 718.
-LaTeX Info: Redefining \% on input line 718.
-LaTeX Info: Redefining \dotlessi on input line 718.
-LaTeX Info: Redefining \sptext on input line 719.
-LaTeX Info: Redefining \lsc on input line 719.
-LaTeX Info: Redefining \. on input line 719.
-LaTeX Info: Redefining \% on input line 719.
-LaTeX Info: Redefining \dotlessi on input line 719.
-LaTeX Info: Redefining \sptext on input line 720.
-LaTeX Info: Redefining \lsc on input line 720.
-LaTeX Info: Redefining \. on input line 720.
-LaTeX Info: Redefining \% on input line 720.
-LaTeX Info: Redefining \dotlessi on input line 720.
-LaTeX Info: Redefining \sptext on input line 724.
-LaTeX Info: Redefining \lsc on input line 724.
-LaTeX Info: Redefining \. on input line 724.
-LaTeX Info: Redefining \% on input line 724.
-LaTeX Info: Redefining \dotlessi on input line 724.
-LaTeX Info: Redefining \sptext on input line 733.
-LaTeX Info: Redefining \lsc on input line 733.
-LaTeX Info: Redefining \. on input line 733.
-LaTeX Info: Redefining \% on input line 733.
-LaTeX Info: Redefining \dotlessi on input line 733.
+LaTeX Info: Redefining \sptext on input line 716.
+LaTeX Info: Redefining \lsc on input line 716.
+LaTeX Info: Redefining \. on input line 716.
+LaTeX Info: Redefining \% on input line 716.
+LaTeX Info: Redefining \dotlessi on input line 716.
+LaTeX Info: Redefining \sptext on input line 716.
+LaTeX Info: Redefining \lsc on input line 716.
+LaTeX Info: Redefining \. on input line 716.
+LaTeX Info: Redefining \% on input line 716.
+LaTeX Info: Redefining \dotlessi on input line 716.
+LaTeX Info: Redefining \sptext on input line 730.
+LaTeX Info: Redefining \lsc on input line 730.
+LaTeX Info: Redefining \. on input line 730.
+LaTeX Info: Redefining \% on input line 730.
+LaTeX Info: Redefining \dotlessi on input line 730.
+LaTeX Info: Redefining \sptext on input line 731.
+LaTeX Info: Redefining \lsc on input line 731.
+LaTeX Info: Redefining \. on input line 731.
+LaTeX Info: Redefining \% on input line 731.
+LaTeX Info: Redefining \dotlessi on input line 731.
+LaTeX Info: Redefining \sptext on input line 731.
+LaTeX Info: Redefining \lsc on input line 731.
+LaTeX Info: Redefining \. on input line 731.
+LaTeX Info: Redefining \% on input line 731.
+LaTeX Info: Redefining \dotlessi on input line 731.
+LaTeX Info: Redefining \sptext on input line 736.
+LaTeX Info: Redefining \lsc on input line 736.
+LaTeX Info: Redefining \. on input line 736.
+LaTeX Info: Redefining \% on input line 736.
+LaTeX Info: Redefining \dotlessi on input line 736.
+LaTeX Info: Redefining \sptext on input line 740.
+LaTeX Info: Redefining \lsc on input line 740.
+LaTeX Info: Redefining \. on input line 740.
+LaTeX Info: Redefining \% on input line 740.
+LaTeX Info: Redefining \dotlessi on input line 740.
+LaTeX Info: Redefining \sptext on input line 741.
+LaTeX Info: Redefining \lsc on input line 741.
+LaTeX Info: Redefining \. on input line 741.
+LaTeX Info: Redefining \% on input line 741.
+LaTeX Info: Redefining \dotlessi on input line 741.
 LaTeX Info: Redefining \sptext on input line 742.
 LaTeX Info: Redefining \lsc on input line 742.
 LaTeX Info: Redefining \. on input line 742.
 LaTeX Info: Redefining \% on input line 742.
 LaTeX Info: Redefining \dotlessi on input line 742.
-LaTeX Info: Redefining \sptext on input line 749.
-LaTeX Info: Redefining \lsc on input line 749.
-LaTeX Info: Redefining \. on input line 749.
-LaTeX Info: Redefining \% on input line 749.
-LaTeX Info: Redefining \dotlessi on input line 749.
-LaTeX Info: Redefining \sptext on input line 754.
-LaTeX Info: Redefining \lsc on input line 754.
-LaTeX Info: Redefining \. on input line 754.
-LaTeX Info: Redefining \% on input line 754.
-LaTeX Info: Redefining \dotlessi on input line 754.
-LaTeX Info: Redefining \sptext on input line 758.
-LaTeX Info: Redefining \lsc on input line 758.
-LaTeX Info: Redefining \. on input line 758.
-LaTeX Info: Redefining \% on input line 758.
-LaTeX Info: Redefining \dotlessi on input line 758.
-LaTeX Info: Redefining \sptext on input line 770.
-LaTeX Info: Redefining \lsc on input line 770.
-LaTeX Info: Redefining \. on input line 770.
-LaTeX Info: Redefining \% on input line 770.
-LaTeX Info: Redefining \dotlessi on input line 770.
+LaTeX Info: Redefining \sptext on input line 746.
+LaTeX Info: Redefining \lsc on input line 746.
+LaTeX Info: Redefining \. on input line 746.
+LaTeX Info: Redefining \% on input line 746.
+LaTeX Info: Redefining \dotlessi on input line 746.
+LaTeX Info: Redefining \sptext on input line 755.
+LaTeX Info: Redefining \lsc on input line 755.
+LaTeX Info: Redefining \. on input line 755.
+LaTeX Info: Redefining \% on input line 755.
+LaTeX Info: Redefining \dotlessi on input line 755.
+LaTeX Info: Redefining \sptext on input line 764.
+LaTeX Info: Redefining \lsc on input line 764.
+LaTeX Info: Redefining \. on input line 764.
+LaTeX Info: Redefining \% on input line 764.
+LaTeX Info: Redefining \dotlessi on input line 764.
 LaTeX Info: Redefining \sptext on input line 771.
 LaTeX Info: Redefining \lsc on input line 771.
 LaTeX Info: Redefining \. on input line 771.
 LaTeX Info: Redefining \% on input line 771.
 LaTeX Info: Redefining \dotlessi on input line 771.
-LaTeX Info: Redefining \sptext on input line 774.
-LaTeX Info: Redefining \lsc on input line 774.
-LaTeX Info: Redefining \. on input line 774.
-LaTeX Info: Redefining \% on input line 774.
-LaTeX Info: Redefining \dotlessi on input line 774.
 LaTeX Info: Redefining \sptext on input line 781.
 LaTeX Info: Redefining \lsc on input line 781.
 LaTeX Info: Redefining \. on input line 781.
 LaTeX Info: Redefining \% on input line 781.
 LaTeX Info: Redefining \dotlessi on input line 781.
+LaTeX Info: Redefining \sptext on input line 788.
+LaTeX Info: Redefining \lsc on input line 788.
+LaTeX Info: Redefining \. on input line 788.
+LaTeX Info: Redefining \% on input line 788.
+LaTeX Info: Redefining \dotlessi on input line 788.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 781.
+(babel)             in language  on input line 788.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 781.
+(babel)             in language  on input line 788.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 781.
+(babel)             in language  on input line 788.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 781.
+(babel)             in language  on input line 788.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 781.
+(babel)             in language  on input line 788.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 781.
+(babel)             in language  on input line 788.
 [179]
-LaTeX Info: Redefining \sptext on input line 785.
-LaTeX Info: Redefining \lsc on input line 785.
-LaTeX Info: Redefining \. on input line 785.
-LaTeX Info: Redefining \% on input line 785.
-LaTeX Info: Redefining \dotlessi on input line 785.
-LaTeX Info: Redefining \sptext on input line 791.
-LaTeX Info: Redefining \lsc on input line 791.
-LaTeX Info: Redefining \. on input line 791.
-LaTeX Info: Redefining \% on input line 791.
-LaTeX Info: Redefining \dotlessi on input line 791.
-LaTeX Info: Redefining \sptext on input line 792.
-LaTeX Info: Redefining \lsc on input line 792.
-LaTeX Info: Redefining \. on input line 792.
-LaTeX Info: Redefining \% on input line 792.
-LaTeX Info: Redefining \dotlessi on input line 792.
-LaTeX Info: Redefining \sptext on input line 803.
-LaTeX Info: Redefining \lsc on input line 803.
-LaTeX Info: Redefining \. on input line 803.
-LaTeX Info: Redefining \% on input line 803.
-LaTeX Info: Redefining \dotlessi on input line 803.
-LaTeX Info: Redefining \sptext on input line 809.
-LaTeX Info: Redefining \lsc on input line 809.
-LaTeX Info: Redefining \. on input line 809.
-LaTeX Info: Redefining \% on input line 809.
-LaTeX Info: Redefining \dotlessi on input line 809.
-LaTeX Info: Redefining \sptext on input line 811.
-LaTeX Info: Redefining \lsc on input line 811.
-LaTeX Info: Redefining \. on input line 811.
-LaTeX Info: Redefining \% on input line 811.
-LaTeX Info: Redefining \dotlessi on input line 811.
-LaTeX Info: Redefining \sptext on input line 814.
-LaTeX Info: Redefining \lsc on input line 814.
-LaTeX Info: Redefining \. on input line 814.
-LaTeX Info: Redefining \% on input line 814.
-LaTeX Info: Redefining \dotlessi on input line 814.
-LaTeX Info: Redefining \sptext on input line 818.
-LaTeX Info: Redefining \lsc on input line 818.
-LaTeX Info: Redefining \. on input line 818.
-LaTeX Info: Redefining \% on input line 818.
-LaTeX Info: Redefining \dotlessi on input line 818.
-LaTeX Info: Redefining \sptext on input line 820.
-LaTeX Info: Redefining \lsc on input line 820.
-LaTeX Info: Redefining \. on input line 820.
-LaTeX Info: Redefining \% on input line 820.
-LaTeX Info: Redefining \dotlessi on input line 820.
+LaTeX Info: Redefining \sptext on input line 793.
+LaTeX Info: Redefining \lsc on input line 793.
+LaTeX Info: Redefining \. on input line 793.
+LaTeX Info: Redefining \% on input line 793.
+LaTeX Info: Redefining \dotlessi on input line 793.
+LaTeX Info: Redefining \sptext on input line 799.
+LaTeX Info: Redefining \lsc on input line 799.
+LaTeX Info: Redefining \. on input line 799.
+LaTeX Info: Redefining \% on input line 799.
+LaTeX Info: Redefining \dotlessi on input line 799.
+LaTeX Info: Redefining \sptext on input line 800.
+LaTeX Info: Redefining \lsc on input line 800.
+LaTeX Info: Redefining \. on input line 800.
+LaTeX Info: Redefining \% on input line 800.
+LaTeX Info: Redefining \dotlessi on input line 800.
+LaTeX Info: Redefining \sptext on input line 801.
+LaTeX Info: Redefining \lsc on input line 801.
+LaTeX Info: Redefining \. on input line 801.
+LaTeX Info: Redefining \% on input line 801.
+LaTeX Info: Redefining \dotlessi on input line 801.
+LaTeX Info: Redefining \sptext on input line 806.
+LaTeX Info: Redefining \lsc on input line 806.
+LaTeX Info: Redefining \. on input line 806.
+LaTeX Info: Redefining \% on input line 806.
+LaTeX Info: Redefining \dotlessi on input line 806.
+LaTeX Info: Redefining \sptext on input line 817.
+LaTeX Info: Redefining \lsc on input line 817.
+LaTeX Info: Redefining \. on input line 817.
+LaTeX Info: Redefining \% on input line 817.
+LaTeX Info: Redefining \dotlessi on input line 817.
+LaTeX Info: Redefining \sptext on input line 823.
+LaTeX Info: Redefining \lsc on input line 823.
+LaTeX Info: Redefining \. on input line 823.
+LaTeX Info: Redefining \% on input line 823.
+LaTeX Info: Redefining \dotlessi on input line 823.
 LaTeX Info: Redefining \sptext on input line 824.
 LaTeX Info: Redefining \lsc on input line 824.
 LaTeX Info: Redefining \. on input line 824.
 LaTeX Info: Redefining \% on input line 824.
 LaTeX Info: Redefining \dotlessi on input line 824.
-LaTeX Info: Redefining \sptext on input line 833.
-LaTeX Info: Redefining \lsc on input line 833.
-LaTeX Info: Redefining \. on input line 833.
-LaTeX Info: Redefining \% on input line 833.
-LaTeX Info: Redefining \dotlessi on input line 833.
-LaTeX Info: Redefining \sptext on input line 837.
-LaTeX Info: Redefining \lsc on input line 837.
-LaTeX Info: Redefining \. on input line 837.
-LaTeX Info: Redefining \% on input line 837.
-LaTeX Info: Redefining \dotlessi on input line 837.
-LaTeX Info: Redefining \sptext on input line 838.
-LaTeX Info: Redefining \lsc on input line 838.
-LaTeX Info: Redefining \. on input line 838.
-LaTeX Info: Redefining \% on input line 838.
-LaTeX Info: Redefining \dotlessi on input line 838.
-LaTeX Info: Redefining \sptext on input line 842.
-LaTeX Info: Redefining \lsc on input line 842.
-LaTeX Info: Redefining \. on input line 842.
-LaTeX Info: Redefining \% on input line 842.
-LaTeX Info: Redefining \dotlessi on input line 842.
-LaTeX Info: Redefining \sptext on input line 847.
-LaTeX Info: Redefining \lsc on input line 847.
-LaTeX Info: Redefining \. on input line 847.
-LaTeX Info: Redefining \% on input line 847.
-LaTeX Info: Redefining \dotlessi on input line 847.
+LaTeX Info: Redefining \sptext on input line 835.
+LaTeX Info: Redefining \lsc on input line 835.
+LaTeX Info: Redefining \. on input line 835.
+LaTeX Info: Redefining \% on input line 835.
+LaTeX Info: Redefining \dotlessi on input line 835.
+LaTeX Info: Redefining \sptext on input line 841.
+LaTeX Info: Redefining \lsc on input line 841.
+LaTeX Info: Redefining \. on input line 841.
+LaTeX Info: Redefining \% on input line 841.
+LaTeX Info: Redefining \dotlessi on input line 841.
+LaTeX Info: Redefining \sptext on input line 843.
+LaTeX Info: Redefining \lsc on input line 843.
+LaTeX Info: Redefining \. on input line 843.
+LaTeX Info: Redefining \% on input line 843.
+LaTeX Info: Redefining \dotlessi on input line 843.
+LaTeX Info: Redefining \sptext on input line 846.
+LaTeX Info: Redefining \lsc on input line 846.
+LaTeX Info: Redefining \. on input line 846.
+LaTeX Info: Redefining \% on input line 846.
+LaTeX Info: Redefining \dotlessi on input line 846.
 LaTeX Info: Redefining \sptext on input line 850.
 LaTeX Info: Redefining \lsc on input line 850.
 LaTeX Info: Redefining \. on input line 850.
 LaTeX Info: Redefining \% on input line 850.
 LaTeX Info: Redefining \dotlessi on input line 850.
-LaTeX Info: Redefining \sptext on input line 855.
-LaTeX Info: Redefining \lsc on input line 855.
-LaTeX Info: Redefining \. on input line 855.
-LaTeX Info: Redefining \% on input line 855.
-LaTeX Info: Redefining \dotlessi on input line 855.
-LaTeX Info: Redefining \sptext on input line 862.
-LaTeX Info: Redefining \lsc on input line 862.
-LaTeX Info: Redefining \. on input line 862.
-LaTeX Info: Redefining \% on input line 862.
-LaTeX Info: Redefining \dotlessi on input line 862.
-LaTeX Info: Redefining \sptext on input line 863.
-LaTeX Info: Redefining \lsc on input line 863.
-LaTeX Info: Redefining \. on input line 863.
-LaTeX Info: Redefining \% on input line 863.
-LaTeX Info: Redefining \dotlessi on input line 863.
-LaTeX Info: Redefining \sptext on input line 868.
-LaTeX Info: Redefining \lsc on input line 868.
-LaTeX Info: Redefining \. on input line 868.
-LaTeX Info: Redefining \% on input line 868.
-LaTeX Info: Redefining \dotlessi on input line 868.
-LaTeX Info: Redefining \sptext on input line 878.
-LaTeX Info: Redefining \lsc on input line 878.
-LaTeX Info: Redefining \. on input line 878.
-LaTeX Info: Redefining \% on input line 878.
-LaTeX Info: Redefining \dotlessi on input line 878.
-LaTeX Info: Redefining \sptext on input line 883.
-LaTeX Info: Redefining \lsc on input line 883.
-LaTeX Info: Redefining \. on input line 883.
-LaTeX Info: Redefining \% on input line 883.
-LaTeX Info: Redefining \dotlessi on input line 883.
-LaTeX Info: Redefining \sptext on input line 884.
-LaTeX Info: Redefining \lsc on input line 884.
-LaTeX Info: Redefining \. on input line 884.
-LaTeX Info: Redefining \% on input line 884.
-LaTeX Info: Redefining \dotlessi on input line 884.
-LaTeX Info: Redefining \. on input line 886.
-LaTeX Info: Redefining \% on input line 886.
-LaTeX Info: Redefining \. on input line 886.
-LaTeX Info: Redefining \% on input line 886.
-)
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \sptext on input line 852.
+LaTeX Info: Redefining \lsc on input line 852.
+LaTeX Info: Redefining \. on input line 852.
+LaTeX Info: Redefining \% on input line 852.
+LaTeX Info: Redefining \dotlessi on input line 852.
+LaTeX Info: Redefining \sptext on input line 856.
+LaTeX Info: Redefining \lsc on input line 856.
+LaTeX Info: Redefining \. on input line 856.
+LaTeX Info: Redefining \% on input line 856.
+LaTeX Info: Redefining \dotlessi on input line 856.
+LaTeX Info: Redefining \sptext on input line 865.
+LaTeX Info: Redefining \lsc on input line 865.
+LaTeX Info: Redefining \. on input line 865.
+LaTeX Info: Redefining \% on input line 865.
+LaTeX Info: Redefining \dotlessi on input line 865.
+LaTeX Info: Redefining \sptext on input line 869.
+LaTeX Info: Redefining \lsc on input line 869.
+LaTeX Info: Redefining \. on input line 869.
+LaTeX Info: Redefining \% on input line 869.
+LaTeX Info: Redefining \dotlessi on input line 869.
+LaTeX Info: Redefining \sptext on input line 870.
+LaTeX Info: Redefining \lsc on input line 870.
+LaTeX Info: Redefining \. on input line 870.
+LaTeX Info: Redefining \% on input line 870.
+LaTeX Info: Redefining \dotlessi on input line 870.
+LaTeX Info: Redefining \sptext on input line 874.
+LaTeX Info: Redefining \lsc on input line 874.
+LaTeX Info: Redefining \. on input line 874.
+LaTeX Info: Redefining \% on input line 874.
+LaTeX Info: Redefining \dotlessi on input line 874.
+LaTeX Info: Redefining \sptext on input line 879.
+LaTeX Info: Redefining \lsc on input line 879.
+LaTeX Info: Redefining \. on input line 879.
+LaTeX Info: Redefining \% on input line 879.
+LaTeX Info: Redefining \dotlessi on input line 879.
+LaTeX Info: Redefining \sptext on input line 882.
+LaTeX Info: Redefining \lsc on input line 882.
+LaTeX Info: Redefining \. on input line 882.
+LaTeX Info: Redefining \% on input line 882.
+LaTeX Info: Redefining \dotlessi on input line 882.
+LaTeX Info: Redefining \sptext on input line 887.
+LaTeX Info: Redefining \lsc on input line 887.
+LaTeX Info: Redefining \. on input line 887.
+LaTeX Info: Redefining \% on input line 887.
+LaTeX Info: Redefining \dotlessi on input line 887.
+LaTeX Info: Redefining \sptext on input line 894.
+LaTeX Info: Redefining \lsc on input line 894.
+LaTeX Info: Redefining \. on input line 894.
+LaTeX Info: Redefining \% on input line 894.
+LaTeX Info: Redefining \dotlessi on input line 894.
+LaTeX Info: Redefining \sptext on input line 895.
+LaTeX Info: Redefining \lsc on input line 895.
+LaTeX Info: Redefining \. on input line 895.
+LaTeX Info: Redefining \% on input line 895.
+LaTeX Info: Redefining \dotlessi on input line 895.
+LaTeX Info: Redefining \sptext on input line 897.
+LaTeX Info: Redefining \lsc on input line 897.
+LaTeX Info: Redefining \. on input line 897.
+LaTeX Info: Redefining \% on input line 897.
+LaTeX Info: Redefining \dotlessi on input line 897.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 897.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 897.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 897.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 897.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 897.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 897.
  [180]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 421.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 421.
+LaTeX Info: Redefining \sptext on input line 900.
+LaTeX Info: Redefining \lsc on input line 900.
+LaTeX Info: Redefining \. on input line 900.
+LaTeX Info: Redefining \% on input line 900.
+LaTeX Info: Redefining \dotlessi on input line 900.
+LaTeX Info: Redefining \sptext on input line 910.
+LaTeX Info: Redefining \lsc on input line 910.
+LaTeX Info: Redefining \. on input line 910.
+LaTeX Info: Redefining \% on input line 910.
+LaTeX Info: Redefining \dotlessi on input line 910.
+LaTeX Info: Redefining \sptext on input line 915.
+LaTeX Info: Redefining \lsc on input line 915.
+LaTeX Info: Redefining \. on input line 915.
+LaTeX Info: Redefining \% on input line 915.
+LaTeX Info: Redefining \dotlessi on input line 915.
+LaTeX Info: Redefining \sptext on input line 916.
+LaTeX Info: Redefining \lsc on input line 916.
+LaTeX Info: Redefining \. on input line 916.
+LaTeX Info: Redefining \% on input line 916.
+LaTeX Info: Redefining \dotlessi on input line 916.
+LaTeX Info: Redefining \. on input line 918.
+LaTeX Info: Redefining \% on input line 918.
+LaTeX Info: Redefining \. on input line 918.
+LaTeX Info: Redefining \% on input line 918.
+)
+LaTeX Info: Redefining \. on input line 406.
+LaTeX Info: Redefining \% on input line 406.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 406.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 406.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 406.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 406.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 406.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 406.
+ [181]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 406.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 406.
  (main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
@@ -9698,35 +9892,29 @@ LaTeX Info: Redefining \. on input line 47.
 LaTeX Info: Redefining \% on input line 47.
 LaTeX Info: Redefining \. on input line 48.
 LaTeX Info: Redefining \% on input line 48.
-LaTeX Info: Redefining \. on input line 129.
-LaTeX Info: Redefining \% on input line 129.
-LaTeX Info: Redefining \. on input line 130.
-LaTeX Info: Redefining \% on input line 130.
+LaTeX Info: Redefining \. on input line 127.
+LaTeX Info: Redefining \% on input line 127.
+LaTeX Info: Redefining \. on input line 128.
+LaTeX Info: Redefining \% on input line 128.
 LaTeX Info: Redefining \. on input line 142.
 LaTeX Info: Redefining \% on input line 142.
 LaTeX Info: Redefining \. on input line 143.
 LaTeX Info: Redefining \% on input line 143.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 421.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 421.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 406.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 406.
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 248FC516C3D4D92B323E241E4BD54C2B;38477.
 
-
-Package rerunfilecheck Warning: File `main.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `main.out':
-(rerunfilecheck)             Before: ED085E95FB7C595DE10BFDFD955F71C1;38485
-(rerunfilecheck)             After:  248FC516C3D4D92B323E241E4BD54C2B;38477.
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 59971 strings out of 493305
- 1328798 string characters out of 3138865
- 1939572 words of memory out of 3000000
- 60952 multiletter control sequences out of 15000+200000
+ 59976 strings out of 493305
+ 1328866 string characters out of 3138865
+ 1939460 words of memory out of 3000000
+ 60956 multiletter control sequences out of 15000+200000
  630474 words of font info for 236 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  82i,21n,430p,2113b,3254s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -9741,9 +9929,9 @@ kTex/fonts/type1/urw/palatino/uplb8a.pfb><C:/MikTex/fonts/type1/urw/palatino/up
 lbi8a.pfb><C:/MikTex/fonts/type1/urw/palatino/uplr8a.pfb><C:/MikTex/fonts/type1
 /urw/palatino/uplr8a.pfb><C:/MikTex/fonts/type1/urw/palatino/uplri8a.pfb><C:/Mi
 kTex/fonts/type1/public/wasy/wasy10.pfb>
-Output written on main.pdf (202 pages, 2693873 bytes).
+Output written on main.pdf (203 pages, 2697917 bytes).
 PDF statistics:
- 3711 PDF objects out of 4296 (max. 8388607)
- 1450 named destinations out of 1728 (max. 500000)
+ 3726 PDF objects out of 4296 (max. 8388607)
+ 1451 named destinations out of 1728 (max. 500000)
  1450 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -16,18 +16,21 @@
 \bibitem {silva_mechatronics:_2010}
 \btxnamefont {\btxlastnamefont {De~Silva}, Clarence\btxfnamespacelong
   W}\btxauthorcolon\ \btxtitlefont {Mechatronics: a foundation course}.
-\newblock \btxpublisherfont {CRC press}, 2010.
+\newblock \btxpublisherfont {CRC press}, \btxeditionnumlong {1ra}{},
+  2010\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {9781420082111}}}.
 
 \bibitem {bishop_mechatronics_2002}
 \btxnamefont {\btxlastnamefont {Bishop}, Robert\btxfnamespacelong
   H}\btxauthorcolon\ \btxtitlefont {The Mechatronics Handbook, -2 Volume Set}.
-\newblock \btxpublisherfont {CRC press}, 2002.
+\newblock \btxpublisherfont {CRC press}, \btxeditionnumlong {2da}{},
+  2002\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {9780849392573}}}.
 
 \bibitem {shetty_mechatronics_2010}
 \btxnamefont {\btxlastnamefont {Shetty}, Devdas} \btxandlong {}\ \btxnamefont
   {Richard\btxfnamespacelong A \btxlastnamefont {Kolk}}\btxauthorcolon\
   \btxtitlefont {Mechatronics system design, SI version}.
-\newblock \btxpublisherfont {Cengage Learning}, 2010.
+\newblock \btxpublisherfont {Cengage Learning}, \btxeditionnumlong {2da}{},
+  2010\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {9781439061992}}}.
 
 \bibitem {fritzson_basic_2011}
 \btxnamefont {\btxlastnamefont {Fritzson}, Peter}\btxauthorcolon\ \btxtitlefont
@@ -147,25 +150,30 @@
   {Gandomi}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Mehmet
   \btxlastnamefont {Karamanoglu}}\btxauthorcolon\ \btxtitlefont {Swarm
   Intelligence and Bio-Inspired Computation: Theory and Applications}.
-\newblock \btxpublisherfont {Newnes}, 2013.
+\newblock \btxpublisherfont {Elsevier Science Publishers B. V.}, Amsterdam, The
+  Netherlands, The Netherlands, \btxeditionnumlong {1st}{}, 2013\ifbtxprintISBN
+  {, \mbox{\btxISBN~\btxISBNfont {0124051634, 9780124051638}}}.
 
 \bibitem {ferrante_handbook_2012}
 \btxnamefont {\btxlastnamefont {Neri}, Ferrante}, \btxnamefont {Carlos
   \btxlastnamefont {Cotta}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Pablo
   \btxlastnamefont {Moscato}}\btxauthorcolon\ \btxtitlefont {Handbook of
   memetic algorithms}, \btxvolumelong {}\ \btxvolumefont {379}.
-\newblock \btxpublisherfont {Springer}, 2012.
+\newblock \btxpublisherfont {Springer-Verlag Berlin Heidelberg},
+  \btxeditionnumlong {1ra}{}, 2012\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {978-3-642-23247-3}}}.
 
 \bibitem {VegaMEC1}
-\btxnamefont {\btxlastnamefont {Vega-Alvarado}, Eduardo}, \btxnamefont {Edgar
-  \btxlastnamefont {Flores}}, \btxnamefont {Efrén \btxlastnamefont
-  {Mezura-Montes}}, \btxnamefont {Leticia \btxlastnamefont
-  {Flores~Pulido}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Maria
-  \btxlastnamefont {Bárbara Calva-Yáñez}}\btxauthorcolon\ \btxjtitlefont
-  {\btxifchangecase {A memetic algorithm applied to the optimal design of a
-  planar mechanism for trajectory tracking}{A Memetic Algorithm Applied to the
-  Optimal Design of a Planar Mechanism for Trajectory Tracking}}.
-\newblock 53:83--90, \btxprintmonthyear{.}{9}{2016}{long}.
+\btxnamefont {\btxlastnamefont {Vega-Alvarado}, Eduardo}, \btxnamefont
+  {Edgar\btxfnamespacelong Alfredo \btxlastnamefont {Portilla-Flores}},
+  \btxnamefont {Efr{\'e}n \btxlastnamefont {Mezura-Montes}}, \btxnamefont
+  {Leticia \btxlastnamefont {Flores-Pulido}}\btxandcomma {} \btxandlong {}\
+  \btxnamefont {Maria\btxfnamespacelong B{\'a}rbara \btxlastnamefont
+  {Calva-Ya{\~n}{\'e}z}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {A
+  memetic algorithm applied to the optimal design of a planar mechanism for
+  trajectory tracking}{A Memetic Algorithm Applied to the Optimal Design of a
+  Planar Mechanism for Trajectory Tracking}}.
+\newblock \btxjournalfont {Polibits}, 53:83--90, 2016.
 
 \bibitem {munaro2014fast}
 \btxnamefont {\btxlastnamefont {Munaro}, Matteo} \btxandlong {}\ \btxnamefont
@@ -256,14 +264,15 @@
   Meeting, 2016 IEEE}, \btxpageslong {}\ 1--7. IEEE, 2016.
 
 \bibitem {sacco_metropolis_2008}
-\btxnamefont {\btxlastnamefont {Sacco}, Wagner}, \btxnamefont {Hermes
-  \btxlastnamefont {Filho}}, \btxnamefont {Nélio \btxlastnamefont
-  {Henderson}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Cassiano
-  \btxlastnamefont {Oliveira}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase
-  {A metropolis algorithm combined with nelder–mead simplex applied to
-  nuclear reactor core design}{A Metropolis algorithm combined with
-  Nelder–Mead Simplex applied to nuclear reactor core design}}.
-\newblock 35:861--867, \btxprintmonthyear{.}{05}{2008}{long}.
+\btxnamefont {\btxlastnamefont {Sacco}, Wagner\btxfnamespacelong F},
+  \btxnamefont {Hermes \btxlastnamefont {Alves~Filho}}, \btxnamefont {N{\'e}lio
+  \btxlastnamefont {Henderson}}\btxandcomma {} \btxandlong {}\ \btxnamefont
+  {Cassiano\btxfnamespacelong RE de~\btxlastnamefont
+  {Oliveira}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {A metropolis
+  algorithm combined with nelder--mead simplex applied to nuclear reactor core
+  design}{A Metropolis algorithm combined with Nelder--Mead Simplex applied to
+  nuclear reactor core design}}.
+\newblock \btxjournalfont {Annals of Nuclear Energy}, 35(5):861--867, 2008.
 
 \bibitem {koch_hybridization_2009}
 \btxnamefont {\btxlastnamefont {Koch}, Patrick}, \btxnamefont {Oliver
@@ -291,13 +300,15 @@
 \btxnamefont {\btxlastnamefont {Rao}, Singiresu\btxfnamespacelong
   S}\btxauthorcolon\ \btxtitlefont {Engineering optimization: theory and
   practice}.
-\newblock \btxpublisherfont {John Wiley \& Sons}, 2009.
+\newblock \btxpublisherfont {John Wiley \& Sons}, \btxeditionnumlong {4ta}{},
+  2009\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {9780470549124}}}.
 
 \bibitem {nocedal2006numerical}
 \btxnamefont {\btxlastnamefont {Nocedal}, Jorge} \btxandlong {}\ \btxnamefont
   {Stephen\btxfnamespacelong J \btxlastnamefont {Wright}}\btxauthorcolon\
-  \btxtitlefont {\btxifchangecase {Numerical optimization}{Numerical
-  optimization}}, 2006.
+  \btxtitlefont {Numerical optimization}.
+\newblock \btxpublisherfont {Springer}, \btxeditionnumlong {2da}{},
+  2006\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {978-0-387-40065-5}}}.
 
 \bibitem {antoniou_practical_2007}
 \btxnamefont {\btxlastnamefont {Antoniou}, Andreas} \btxandlong {}\
@@ -313,40 +324,44 @@
   \btxandlong {}\ \btxnamefont {Tirupathi\btxfnamespacelong R \btxlastnamefont
   {Chandrupatla}}\btxauthorcolon\ \btxtitlefont {Optimization concepts and
   applications in engineering}.
-\newblock \btxpublisherfont {Cambridge University Press}, 2011.
+\newblock \btxpublisherfont {Cambridge University Press}, \btxeditionnumlong
+  {2da}{}, 2011\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {978-1-107-67417-2}}}.
 
 \bibitem {luenberger_linear_2015}
 \btxnamefont {\btxlastnamefont {Luenberger}, David\btxfnamespacelong G},
   \btxnamefont {Yinyu \btxlastnamefont {Ye}}\btxandcomma {} \btxetalfont
   {\btxetalshort {.}}\btxauthorcolon\ \btxtitlefont {Linear and nonlinear
   programming}, \btxvolumelong {}~\btxvolumefont {2}.
-\newblock \btxpublisherfont {Springer}, 1984.
+\newblock \btxpublisherfont {Springer}, \btxeditionnumlong {3ra}{},
+  2008\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {978-0-387-74503-9}}}.
 
 \bibitem {arora_optimization:_2015}
 \btxnamefont {\btxlastnamefont {Arora}, Rajesh\btxfnamespacelong
   Kumar}\btxauthorcolon\ \btxtitlefont {Optimization: algorithms and
   applications}.
-\newblock \btxpublisherfont {Chapman and Hall/CRC}, 2015.
+\newblock \btxpublisherfont {Chapman and Hall/CRC}, \btxeditionnumlong {1ra}{},
+  2015\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {9781498721127}}}.
 
 \bibitem {tuy_convex_2015}
-\btxnamefont {\btxlastnamefont {Tuy}, Hoang}, \btxnamefont {Tuy
-  \btxlastnamefont {Hoang}}, \btxnamefont {Tuy \btxlastnamefont {Hoang}},
-  \btxnamefont {Vi{\^e}t\btxfnamespacelong nam \btxlastnamefont
-  {Math{\'e}maticien}}, \btxnamefont {Tuy \btxlastnamefont {Hoang}}\btxandcomma
-  {} \btxandlong {}\ \btxnamefont {Vietnam \btxlastnamefont
-  {Mathematician}}\btxauthorcolon\ \btxtitlefont {Convex analysis and global
-  optimization}.
-\newblock \btxpublisherfont {Springer}, 1998.
+\btxnamefont {\btxlastnamefont {Tuy}, Hoang}\btxauthorcolon\ \btxtitlefont
+  {Convex analysis and global optimization}.
+\newblock \btxpublisherfont {Springer}, \btxeditionnumlong {2da}{},
+  2016\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {978-3-319-31484-6}}}.
 
 \bibitem {dantzig_linear_2016}
 \btxnamefont {\btxlastnamefont {Dantzig}, George}\btxauthorcolon\ \btxtitlefont
   {Linear programming and extensions}.
-\newblock \btxpublisherfont {Princeton university press}, 2016.
+\newblock \btxpublisherfont {Princeton university press}, 1998\ifbtxprintISBN
+  {, \mbox{\btxISBN~\btxISBNfont {9780691059136}}}.
 
 \bibitem {takriti1994ampl}
-\btxnamefont {\btxlastnamefont {Takriti}, Samer}\btxauthorcolon\ \btxtitlefont
-  {\btxifchangecase {Ampl: A modeling language for mathematical
-  programming}{Ampl: A modeling language for mathematical programming}}, 1994.
+\btxnamefont {\btxlastnamefont {Fourer}, Robert}, \btxnamefont {David
+  \btxlastnamefont {M.~Gay}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Brian
+  \btxlastnamefont {W.~Kernighan}}\btxauthorcolon\ \btxtitlefont {AMPL: A
+  Modeling Language for Mathematical Programming}, \btxvolumelong
+  {}~\btxvolumefont {36}.
+\newblock \btxpublisherfont {JSTOR}, \btxprintmonthyear{.}{1}{2002}{long}.
 
 \bibitem {jean_algebra_2017}
 \btxnamefont {\btxlastnamefont {Jean}, Gallier} \btxandlong {}\ \btxnamefont
@@ -394,8 +409,8 @@
 \bibitem {deb_optimization_2004}
 \btxnamefont {\btxlastnamefont {Deb}, Kalyanmoy}\btxauthorcolon\ \btxtitlefont
   {Optimization for {Engineering} {Design}: {Algorithms} and {Examples}}.
-\newblock \btxpublisherfont {Prentice-Hall of India},
-  \btxprintmonthyear{.}{2}{2004}{long}\ifbtxprintISBN {,
+\newblock \btxpublisherfont {Prentice-Hall of India}, \btxeditionnumlong
+  {1ra}{}, \btxprintmonthyear{.}{2}{2004}{long}\ifbtxprintISBN {,
   \mbox{\btxISBN~\btxISBNfont {9788120309432}}}.
 
 \bibitem {hooke1961direct}
@@ -411,40 +426,45 @@
   {}\ \btxnamefont {Lawrence \btxlastnamefont {Blume}}\btxauthorcolon\
   \btxtitlefont {Mathematics for economists}, \btxvolumelong {}~\btxvolumefont
   {7}.
-\newblock \btxpublisherfont {Norton New York}, 1994.
+\newblock \btxpublisherfont {Norton New York}, \btxeditionnumlong {1ra}{},
+  1994\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {978-0393957334}}}.
 
 \bibitem {de2006evolutionary}
-\btxnamefont {\btxlastnamefont {De~Jong}, Kenneth\btxfnamespacelong
-  A}\btxauthorcolon\ \btxtitlefont {Evolutionary computation: a unified
-  approach}.
-\newblock \btxpublisherfont {MIT press}, 2006.
+\btxnamefont {\btxlastnamefont {De~Jong}, Kenneth}\btxauthorcolon\
+  \btxtitlefont {Evolutionary Computation – A Unified Approach}.
+\newblock \btxpublisherfont {MIT press},
+  \btxprintmonthyear{.}{1}{2006}{long}\ifbtxprintISBN {,
+  \mbox{\btxISBN~\btxISBNfont {978-0-262-04194-2}}}.
 
 \bibitem {angeline1995adaptive}
 \btxnamefont {\btxlastnamefont {Angeline}, Peter\btxfnamespacelong
-  J}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Adaptive and
-  self-adaptive evolutionary computations}{Adaptive and self-adaptive
-  evolutionary computations}}.
-\newblock \Btxinlong {}\ \btxtitlefont {Computational intelligence: a dynamic
-  systems perspective}. Citeseer, 1995.
+  J.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {Adaptive and
+  self-adaptive evolutionary computations}{Adaptive and Self-adaptive
+  Evolutionary Computations}}.
+\newblock \Btxinlong {}\ \btxtitlefont {Computational Intelligence: A Dynamic
+  Systems Perspective}, \btxpageslong {}\ 152--163. \btxpublisherfont {IEEE
+  Press}, 1995.
 
 \bibitem {holland1992adaptation}
 \btxnamefont {\btxlastnamefont {Holland}, John\btxfnamespacelong
-  Henry}\btxauthorcolon\ \btxtitlefont {Adaptation in natural and artificial
-  systems: an introductory analysis with applications to biology, control, and
-  artificial intelligence}.
-\newblock \btxpublisherfont {MIT press}, 1992.
+  H.}\btxauthorcolon\ \btxtitlefont {Adaptation in Natural and Artificial
+  Systems: An Introductory Analysis with Applications to Biology, Control and
+  Artificial Intelligence}.
+\newblock \btxpublisherfont {MIT Press}, Cambridge, MA, USA,
+  1992\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {0262082136}}}.
 
 \bibitem {weise2009global}
-\btxnamefont {\btxlastnamefont {Weise}, Thomas}\btxauthorcolon\ \btxjtitlefont
-  {\btxifchangecase {Global optimization algorithms-theory and
-  application}{Global optimization algorithms-theory and application}}.
-\newblock \btxjournalfont {Self-published}, 2, 2009.
+\btxnamefont {\btxlastnamefont {Weise}, Thomas}\btxauthorcolon\ \btxtitlefont
+  {\btxifchangecase {Global optimization algorithms -- theory and
+  application}{Global Optimization Algorithms -- Theory and Application}},
+  2008.
 
 \bibitem {deb2001multi}
 \btxnamefont {\btxlastnamefont {Deb}, Kalyanmoy}\btxauthorcolon\ \btxtitlefont
-  {Multi-objective optimization using evolutionary algorithms}, \btxvolumelong
+  {Multi-Objective Optimization Using Evolutionary Algorithms}, \btxvolumelong
   {}~\btxvolumefont {16}.
-\newblock \btxpublisherfont {John Wiley \& Sons}, 2001.
+\newblock \btxpublisherfont {John Wiley \& Sons, Inc.}, New York, NY, USA,
+  2001\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {047187339X}}}.
 
 \bibitem {eiben2015evolutionary}
 \btxnamefont {\btxlastnamefont {Eiben}, Agoston\btxfnamespacelong E}
@@ -487,7 +507,7 @@
   R.}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Genetic programming as
   a means for programming computers by natural selection}{Genetic programming
   as a means for programming computers by natural selection}}.
-\newblock \btxjournalfont {Stat. Comput. (UK}, 4:191--198, 1994.
+\newblock \btxjournalfont {Stat. Comput. UK}, 4:191--198, 1994.
 
 \bibitem {Goldberg91acomparative}
 \btxnamefont {\btxlastnamefont {Goldberg}, David\btxfnamespacelong E.}
@@ -540,10 +560,10 @@
 
 \bibitem {de1975analysis}
 \btxnamefont {\btxlastnamefont {De~Jong}, Kenneth\btxfnamespacelong
-  Alan}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Analysis of the
-  behavior of a class of genetic adaptive systems}{Analysis of the behavior of
-  a class of genetic adaptive systems}}.
-\newblock 1975.
+  Alan}\btxauthorcolon\ \btxtitlefont {An Analysis of the Behavior of a Class
+  of Genetic Adaptive Systems.}
+\newblock \btxphdthesis {}, Ann Arbor, MI, USA, 1975.
+\newblock AAI7609381.
 
 \bibitem {fogel1993applying}
 \btxnamefont {\btxlastnamefont {Fogel}, David\btxfnamespacelong
@@ -659,8 +679,10 @@
 
 \bibitem {myszka2004machines}
 \btxnamefont {\btxlastnamefont {Myszka}, David\btxfnamespacelong
-  H}\btxauthorcolon\ \btxtitlefont {Machines and mechanisms}.
-\newblock \btxpublisherfont {Prentice Hall}, 2004.
+  H}\btxauthorcolon\ \btxtitlefont {Machines and mechanisms-Applied kinematik
+  Analysis}.
+\newblock \btxpublisherfont {Prentice Hall}, \btxeditionnumlong {4ta}{},
+  2004\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont {978-0132157803}}}.
 
 \bibitem {weisstein_euler_nodate}
 \btxnamefont {\btxlastnamefont {Weisstein}, Eric\btxfnamespacelong
@@ -679,7 +701,7 @@
   {Cont{\'\i}n}}\btxauthorcolon\ \btxtitlefont {Teor{\'\i}a de m{\'a}quinas y
   mecanismos}.
 \newblock \Btxnumberlong {}\ TJ145. S54 1983. \btxpublisherfont {McGraw-Hill
-  M{\'e}xico;}, 1983.
+  M{\'e}xico}, 1983.
 
 \bibitem {Portilla_Mezura_MEC3}
 \btxnamefont {\btxlastnamefont {Sánchez-Márquez}, Á.}, \btxnamefont {E.
@@ -691,7 +713,7 @@
   four-bar mechanism for position control using the harmony search algorithm}}.
 \newblock \Btxinlong {}\ \btxtitlefont {2014 11th International Conference on
   Electrical Engineering, Computing Science and Automatic Control (CCE)},
-  \btxpageslong {}\ 1--6, 2014.
+  \btxpageslong {}\ 1--6, \btxprintmonthyear{.}{9}{2014}{long}.
 
 \bibitem {capistran_2015}
 \btxnamefont {\btxlastnamefont {Capistran~Gumersindo}, Edith}\btxauthorcolon\
@@ -700,7 +722,7 @@
   inspirado en la naturaleza para la optimización mono-objetivo de un efector
   final de tres dedos}}.
 \newblock \btxifchangecase {Tesis de {{Maestría}} en {{Computación
-  Aplicada}}}{Tesis de {{Maestría}} En {{Computación Aplicada}}}.
+  Aplicada}}}{Tesis de {{Maestría}} En {{Computación Aplicada}}}, 2015.
 
 \bibitem {lasseter2002microgrids}
 \btxnamefont {\btxlastnamefont {Lasseter}, Robert\btxfnamespacelong
@@ -747,11 +769,12 @@
 
 \bibitem {Swagatam_2011}
 \btxnamefont {\btxlastnamefont {Das}, Swagatam} \btxandlong {}\ \btxnamefont
-  {Ponnuthurai \btxlastnamefont {Suganthan}}\btxauthorcolon\ \btxjtitlefont
-  {\btxifchangecase {Differential evolution: A survey of the
-  state-of-the-art.}{Differential Evolution: A Survey of the
-  State-of-the-Art.}}
-\newblock 15:4--31, \btxprintmonthyear{.}{01}{2011}{long}.
+  {Ponnuthurai\btxfnamespacelong Nagaratnam \btxlastnamefont
+  {Suganthan}}\btxauthorcolon\ \btxjtitlefont {\btxifchangecase {Differential
+  evolution: a survey of the state-of-the-art}{Differential evolution: a survey
+  of the state-of-the-art}}.
+\newblock \btxjournalfont {IEEE transactions on evolutionary computation},
+  15(1):4--31, 2011.
 
 \bibitem {Dragoi_2015}
 \btxnamefont {\btxlastnamefont {Dragoi}, Elena\btxfnamespacelong Niculina}
@@ -765,10 +788,19 @@
 
 \bibitem {raidl2006unified}
 \btxnamefont {\btxlastnamefont {Raidl}, G{\"u}nther\btxfnamespacelong
-  R}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {A unified view on hybrid
-  metaheuristics}{A unified view on hybrid metaheuristics}}.
-\newblock \Btxinlong {}\ \btxtitlefont {International Workshop on Hybrid
-  Metaheuristics}, \btxpageslong {}\ 1--12. Springer, 2006.
+  R.}\btxauthorcolon\ \btxtitlefont {\btxifchangecase {A unified view on hybrid
+  metaheuristics}{A Unified View on Hybrid Metaheuristics}}.
+\newblock \Btxinlong {}\ \btxnamefont {\btxlastnamefont {Almeida}, Francisco},
+  \btxnamefont {Mar{\'i}a\btxfnamespacelong J. \btxlastnamefont
+  {Blesa~Aguilera}}, \btxnamefont {Christian \btxlastnamefont {Blum}},
+  \btxnamefont {Jos{\'e}\btxfnamespacelong Marcos \btxlastnamefont
+  {Moreno~Vega}}, \btxnamefont {Melqu{\'i}ades \btxlastnamefont
+  {P{\'e}rez~P{\'e}rez}}, \btxnamefont {Andrea \btxlastnamefont
+  {Roli}}\btxandcomma {} \btxandlong {}\ \btxnamefont {Michael \btxlastnamefont
+  {Sampels}}\ (\btxeditorslong {}): \btxtitlefont {Hybrid Metaheuristics},
+  \btxpageslong {}\ 1--12, Berlin, Heidelberg, 2006. \btxpublisherfont
+  {Springer Berlin Heidelberg}\ifbtxprintISBN {, \mbox{\btxISBN~\btxISBNfont
+  {978-3-540-46385-6}}}.
 
 \bibitem {krasnogor2005tutorial}
 \btxnamefont {\btxlastnamefont {Krasnogor}, Natalio} \btxandlong {}\

@@ -10,17 +10,11 @@ A level-1 auxiliary file: Chapters/Chapter8.aux
 A level-1 auxiliary file: Appendices/AppendixA.aux
 The style file: babunsrt.bst
 Database file #1: bibliography.bib
-Warning--string name "sept" is undefined
---line 760 of file bibliography.bib
 Warning--empty language in silva_mechatronics:_2010
 Warning--empty booktitle in villarreal-cervantes_control_2013
-Warning--empty journal in VegaMEC1
-Warning--empty journal in sacco_metropolis_2008
 Warning--empty booktitle in laessig_threshold_2008
-Warning--empty journal in de1975analysis
+Warning--empty school in de1975analysis
 Warning--there's a number but no series in shigley1983teoria
 Warning--empty school in capistran_2015
-Warning--empty year in capistran_2015
-Warning--empty journal in Swagatam_2011
 Warning--empty publisher in Lowry2004
-(There were 12 warnings)
+(There were 7 warnings)
