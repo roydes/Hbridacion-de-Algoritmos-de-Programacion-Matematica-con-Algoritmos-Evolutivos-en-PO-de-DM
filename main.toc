@@ -36,16 +36,16 @@
 \contentsline {subsection}{\numberline {3.3.2}M\IeC {\'e}todo de la Secci\IeC {\'o}n Dorada}{31}{subsection.83}
 \contentsline {subsection}{\numberline {3.3.3}M\IeC {\'e}todo de Newton-Raphson}{32}{subsection.87}
 \contentsline {section}{\numberline {3.4}M\IeC {\'e}todos de optimizaci\IeC {\'o}n multivariable}{33}{section.90}
-\contentsline {subsection}{\numberline {3.4.1}M\IeC {\'e}todo del Descenso Inclinado}{33}{subsection.91}
-\contentsline {subsection}{\numberline {3.4.2}M\IeC {\'e}todo de Newton}{34}{subsection.99}
-\contentsline {subsection}{\numberline {3.4.3}M\IeC {\'e}todo Nelder-Mead}{35}{subsection.103}
+\contentsline {subsection}{\numberline {3.4.1}M\IeC {\'e}todo del Descenso Inclinado}{34}{subsection.91}
+\contentsline {subsection}{\numberline {3.4.2}M\IeC {\'e}todo de Newton}{35}{subsection.99}
+\contentsline {subsection}{\numberline {3.4.3}M\IeC {\'e}todo Nelder-Mead}{36}{subsection.103}
 \contentsline {subsection}{\numberline {3.4.4}M\IeC {\'e}todo de Hooke-Jeeves}{38}{subsection.125}
-\contentsline {section}{\numberline {3.5}T\IeC {\'e}cnicas de optimizaci\IeC {\'o}n con restricciones}{40}{section.159}
+\contentsline {section}{\numberline {3.5}T\IeC {\'e}cnicas de optimizaci\IeC {\'o}n con restricciones}{39}{section.159}
 \contentsline {subsection}{\numberline {3.5.1}M\IeC {\'e}todo de Multiplicadores de Lagrange}{40}{subsection.160}
 \contentsline {subsection}{\numberline {3.5.2}Condiciones de Optimalidad en problemas con restricciones}{41}{subsection.166}
-\contentsline {subsection}{\numberline {3.5.3}M\IeC {\'e}todo de Penalizaci\IeC {\'o}n de Restricciones}{43}{subsection.171}
+\contentsline {subsection}{\numberline {3.5.3}M\IeC {\'e}todo de Penalizaci\IeC {\'o}n de Restricciones}{42}{subsection.171}
 \contentsline {subsection}{\numberline {3.5.4}Programaci\IeC {\'o}n Cuadr\IeC {\'a}tica Secuencial}{44}{subsection.183}
-\contentsline {section}{\numberline {3.6}Conclusiones del cap\IeC {\'\i }tulo}{45}{section.187}
+\contentsline {section}{\numberline {3.6}Conclusiones del cap\IeC {\'\i }tulo}{44}{section.187}
 \contentsline {chapter}{\numberline {4}Computaci\IeC {\'o}n Evolutiva}{47}{chapter.188}
 \contentsline {section}{\numberline {4.1}Representaci\IeC {\'o}n}{48}{section.193}
 \contentsline {section}{\numberline {4.2}Funci\IeC {\'o}n de aptitud}{50}{section.199}

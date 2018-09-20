@@ -37,7 +37,7 @@ En problemas de ingeniería las variables de diseño pueden ser capacidades de p
 
 El conjunto de variables de diseño se representa mediante  el vector de diseño $\vec{x}=[x_1, x_2, ..., x_n]^T$. Para la definición de $\vec{x}$ se plantea un espacio cartesiano $n$-dimensional llamado \textit{espacio de diseño}. Donde el i-ésimo eje de coordenadas cartesianas constituye una variable de diseño $x_i$ para  $i = \{1,2, ..., n\}$. Luego cada  vector de diseño describe un punto en el espacio de diseño \textit{n}-dimensional llamado punto de diseño  el cual representa una solución factible o no al problema de optimización \cite{rao_engineering_2009}.
 
-Desde el punto de vista de la complejidad computacional se debe tener en cuenta el orden $\vec{x}$, ya que la dimensionalidad impacta directamente la complejidad del problema, y por tanto en la eficacia de los métodos y su rapidez de convergencia.
+Desde el punto de vista de la complejidad computacional se debe tener en cuenta el orden de $\vec{x}$, ya que la dimensionalidad impacta directamente la complejidad del problema, y por tanto en la eficacia de los métodos y su rapidez de convergencia.
 
 \section{Función Objetivo}
 La \textit{función objetivo} es el criterio con respecto al cual se optimiza el diseño, expresado en función de un conjunto de variables. La elección de la función objetivo se rige por la naturaleza del problema. Los procedimientos de diseño convencionales apuntan a encontrar un diseño aceptable o adecuado que sea capaz de satisfacer los requisitos funcionales o de otro tipo del problema bajo estudio. En general, existe más de un diseño aceptable para el mismo problema, y el objetivo de la optimización es elegir el mejor de los muchos diseños aceptables y disponibles \cite{arora_optimization:_2015}.
@@ -149,13 +149,13 @@ f [\alpha x_1 + ( 1-\alpha) x_2]  < \alpha f(x_1) + (1-\alpha) f (x_2).
 \end{figure}
 
 
-Cuando la función objetivo presenta varios cambios de monotonía en todo su dominio, se le denomina \textit{función multimodal}. La condición de multimodalidad no depende ni de la continuidad ni de la convexidad de la función. En estos casos se debe diferenciar entre un punto que representa una solución óptima global y los que representan óptimos locales. Si conoce que $S \in {\rm I\!R}^{n}$ como el conjunto de todos puntos factibles del problema, el punto $x^* \in S$  que satisface:
+Cuando la función objetivo presenta varios cambios de monotonía en todo su dominio, se le denomina \textit{función multimodal}. La condición de multimodalidad no depende ni de la continuidad ni de la convexidad de la función. En estos casos se debe diferenciar entre un punto que representa una solución óptima global y los que representan óptimos locales. Si se conoce que $S \in {\rm I\!R}^{n}$ es el conjunto de todos puntos factibles del problema, el punto $x^* \in S$  que satisface:
 \begin{equation}
 f(x^*) \leq f(x) \quad \forall x \in S
 \end{equation}
-se denomina \textit{óptimo global} o \textit{solución óptima global}. Por otra parte si un punto $x'$  tal que existe una vecindad $Q \in S$ de $x'$ que satisface:
+se denomina \textit{óptimo global} o \textit{solución óptima global}. Por otra parte si un punto $x' \in S$  tal que existe una vecindad $Q$ de $x'$ que satisface:
 \begin{equation}
-f(x') \leq f(x) \quad \forall x \in Q
+f(x') \leq f(x) \quad \forall x \in S \cap Q
 \end{equation}
 se denomina \textit{óptimo local} o \textit{solución óptima local}. Cuando el problema es convexo, o sea, cuando todas las funciones $f(x)$, $h_i(x)$ $g_i(x)$ son convexas, cualquier mínimo local es global. Se dice que un problema es multiextremal cuando tiene varios mínimos locales con diferentes valores de función objetivo. Por su propia naturaleza, la optimización global requiere métodos significativamente diferentes de los utilizados en la optimización no lineal convencional, que hasta ahora se ha centrado principalmente en la búsqueda de óptimos locales.
 
@@ -164,7 +164,7 @@ La esencia de un método iterativo de optimización es que dada una solución in
 %Vea la Figura funciones convexo y no convexo.
 
 \section{Clasificación de Problemas de Optimización}\label{sec:Clasificación de Problemas de Optimización}
-En la literatura especializada se puede encontrar diversas clasificaciones para los problemas de optimización que abarcan desde la existencia de las restricciones y su naturaleza, las características de la función objetivo y las variables de diseño hasta las clasificaciones basadas en la complejidad del problema medido por el número de variables (dimensionalidad) y el número de restricciones\cite{luenberger_linear_2015}. La tarea de clasificar el problema de optimización puede resultar beneficiosa para la elección del método de solución y el análisis de complejidad del problema. En las siguientes secciones se describen una serie clasificaciones descritas por Rao \cite{rao_engineering_2009}, las cuales abarcan un amplio espectro de problemas de optimización.
+En la literatura especializada se pueden encontrar diversas clasificaciones para los problemas de optimización que abarcan desde la existencia de las restricciones y su naturaleza, las características de la función objetivo y las variables de diseño hasta las clasificaciones basadas en la complejidad del problema medido por el número de variables (dimensionalidad) y el número de restricciones\cite{luenberger_linear_2015}. La tarea de clasificar el problema de optimización puede resultar beneficiosa para la elección del método de solución y el análisis de complejidad del problema. En las siguientes secciones se describen una serie clasificaciones descritas por Rao \cite{rao_engineering_2009}, las cuales abarcan un amplio espectro de problemas de optimización.
 
 \subsection{Clasificación basada en la existencia de restricciones}
 Los problemas de optimización se pueden clasificar teniendo en cuenta la existencia de restricciones:

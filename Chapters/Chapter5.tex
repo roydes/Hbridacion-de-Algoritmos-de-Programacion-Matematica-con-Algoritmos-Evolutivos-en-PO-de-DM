@@ -4,7 +4,7 @@ En el capítulo introductorio del presente trabajo se abordaron algunos concepto
 \begin{enumerate}
 \item El modelado de un sistema mecatrónico tiene como objetivo representar el comportamiento de un sistema real mediante un conjunto de ecuaciones matemáticas.
 \item Los sistemas reales son sistemas físicos, cuyo comportamiento se basa en la materia y la energía.
-\item   Los modelos utilizados en el diseño mecatrónico representan estructuras de causa y efecto, aceptan información externa y la procesan con su lógica y ecuaciones para producir una o más salidas. 
+\item Los modelos utilizados en el diseño mecatrónico representan estructuras de causa y efecto, aceptan información externa y la procesan con su lógica y ecuaciones para producir una o más salidas. 
 \item El objetivo de la optimización es, dado un modelo de un sistema determinado físico, encontrar una configuración óptima para este sistema. 
 \end{enumerate}
 Estos conceptos son la base para el desarrollo de la siguientes secciones. En adelante se describen primeramente tres casos de estudio de la "Síntesis Óptima de un Mecanismo de Cuatro Barras", luego se presentan dos casos de la "{Síntesis Óptima de un Efector Final de Tres Dedos}". Por último, se presenta el problema de "{Optimización del costo de generación de energía en una Micro-red Eléctrica no Interconectable}". Estos problemas han sido formulados y resueltos por investigadores del departamento de mecatrónica del Centro de Innovación y Desarrollo Tecnológico en Cómputo (CIDETEC) del Instituto Politécnico Nacional (IPN), lo que brinda un marco de referencia tanto desde el punto de vista del problema (conocimiento de óptimos) como en el conocimiento del desempeño de los algoritmos utilizados (número de evaluaciones, rapidez de convergencia, resultados de pruebas estadísticas).
@@ -35,7 +35,7 @@ Para el análisis de la posición, velocidad y aceleración se comienza por plan
 \begin{equation}\label{eq:MElazo}
 \vec{r_1}+\vec{r_4}=\vec{r_2}+\vec{r_3}
 \end{equation}
- En la Ecuación \ref{eq:MElazo} las barras son consideras vectores. Como cualquier vector puede ser expresado como un número complejo utilizando notación polar, donde la parte real corresponde al eje de las abscisas y la parte imaginaria pertenece al eje de las coordenadas. Luego, la Ecuación \ref{eq:MElazo} puede ser expresada en coordenadas polares de la siguiente forma:
+ En la Ecuación \ref{eq:MElazo} las barras son consideradas vectores. Cualquier vector puede ser expresado como un número complejo utilizando notación polar, donde la parte real corresponde al eje de las abscisas y la parte imaginaria pertenece al eje de las coordenadas. Luego, la Ecuación \ref{eq:MElazo} puede ser expresada en coordenadas polares de la siguiente forma:
 \begin{equation}\label{eq:MElazoPolar}
 r_1e^{j\theta_1}+r_4e^{j\theta_4}=r_2e^{j\theta_2}+r_3e^{j\theta_3}
 \end{equation}
